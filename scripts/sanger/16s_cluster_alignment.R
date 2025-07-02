@@ -25,7 +25,20 @@ rownames(df) <- NULL
 df$ambiguous_percent <- str_count(df$sequence, "n") / nchar(df$sequence)
 df$sequence_length <- nchar(df$sequence)
 
+# Prepare the taxa
+taxa_strains <- read.csv("all-isolates-taxa.tsv", sep = "\t", header = TRUE)
+taxa_strains$genus <- sub(",s:.*", "", sub(".*g:", "", taxa_strains$taxa))
+taxa_strains$species <- sub(".*s:", "", taxa_strains$taxa)
+taxa_strains$query <- sub("^(Takasu|Kasper)_", "", taxa_strains$query)
+taxa_strains$pident <- round(taxa_strains$pident, 1)
+taxa_strains <- taxa_strains %>% select(query, genus, species, pident)
 
+write.csv(taxa_strains, file = "All-taxa-genus-species.csv")
+
+# Setup Alignment
+alignment_type <- "local" # or "global"
+gap_opening <- -5
+gap_extension <- -2
 
 sub_df <- df
 dna_set <- DNAStringSet(sub_df$sequence)
@@ -41,54 +54,30 @@ pb <- progress_bar$new(total = n * n)
 for (i in 1:n) {
   for (j in 1:n) {
     pb$tick() # Progress bar
-    #aln_global <- pairwiseAlignment(dna_set[[i]], dna_set[[j]], type = "global", substitutionMatrix = NULL, 
-    #gapOpening = -5, gapExtension = -2)
-    aln_local  <- pairwiseAlignment(dna_set[[i]], dna_set[[j]], type = "local", substitutionMatrix = NULL, 
-                                    gapOpening = -5, gapExtension = -2)
+    aln  <- pairwiseAlignment(dna_set[[i]], dna_set[[j]], type = alignment_type, substitutionMatrix = NULL, 
+                                    gapOpening = gap_opening, gapExtension = gap_extension)
     
-    # To weigh the alignment by the coverage, only for local
+    # To weigh the alignment by the coverage, only for local, returns 1 for global
     min_length <- min(sequence_lengths[[names(dna_set)[i]]], sequence_lengths[[names(dna_set)[j]]])
-    coverage_local <- nchar(gsub("-", "", as.character(alignedPattern(aln_local)))) / min_length
+    coverage <- nchar(gsub("-", "", as.character(alignedPattern(aln)))) / min_length
     
     # Print for debugging
-    # print(sprintf("Sample %s - %s coverage: %s, pid: %s, w_pid: %s", names(dna_set)[i], names(dna_set)[j], coverage_local, pid(aln_local), pid(aln_local)*coverage_local))
+    # print(sprintf("Sample %s - %s coverage: %s, pid: %s, w_pid: %s", names(dna_set)[i], names(dna_set)[j], coverage, pid(aln_local), pid(aln)*coverage))
     
-    # Add the alignment to the data frame
-    # alignment_results <- bind_rows(alignment_results, data.frame(
-    #   Sample1 = names(dna_set)[i],
-    #   Sample2 = names(dna_set)[j],
-    #   AlignmentType = c("global", "local"),
-    #   Score = c(score(aln_global), score(aln_local)),
-    #   PID = c(pid(aln_global), pid(aln_local)),
-    #   pid_weighted = c(pid(aln_global), pid(aln_local)*coverage_local), # Global is always 100% coverage by def
-    #   AlignedWidth = c(width(alignedPattern(aln_global)), width(alignedPattern(aln_local)))
-    # )) 
     alignment_results <- bind_rows(alignment_results, data.frame(
       Sample1 = names(dna_set)[i],
       Sample2 = names(dna_set)[j],
-      AlignmentType = "local",
-      Score = score(aln_local),
-      PID = pid(aln_local),
-      pid_weighted = pid(aln_local)*coverage_local,
-      AlignedWidth =width(alignedPattern(aln_local))
+      AlignmentType = alignment_type,
+      Score = score(aln),
+      PID = pid(aln),
+      pid_weighted = pid(aln)*coverage,
+      AlignedWidth =width(alignedPattern(aln))
     )) 
   }
 }
-# Use the dataframe for plotting but only local or global alignment
-identity_df <- alignment_results %>%
-  filter(AlignmentType == "local") # or "global"
-# Make a df with taxa
-taxa_strains <- read.csv("all-isolates-taxa.tsv", sep = "\t", header = TRUE)
-taxa_strains$genus <- sub(",s:.*", "", sub(".*g:", "", taxa_strains$taxa))
-taxa_strains$species <- sub(".*s:", "", taxa_strains$taxa)
-taxa_strains$query <- sub("^(Takasu|Kasper)_", "", taxa_strains$query)
-taxa_strains$pident <- round(taxa_strains$pident, 1)
-taxa_strains <- taxa_strains %>% select(query, genus, species, pident)
-
-write.csv(taxa_strains, file = "All-taxa-genus-species.csv")
 
 # Convert df to a matrix for distance matrix downsteams
-identity_matrix <- identity_df %>%
+identity_matrix <- alignment_results %>%
   select(Sample1, Sample2, pid_weighted) %>%
   pivot_wider(names_from = Sample2, values_from = pid_weighted) %>%
   tibble::column_to_rownames("Sample1")  # make Sample1 the rownames
@@ -96,7 +85,7 @@ identity_matrix <- identity_df %>%
 # Heatmap
 library(viridis)
 heat_colors <- c("#000000", "#120054", "#71047a", "#cf2649", "#fe9564", "#ffdda1", "#ffffda") # c("white", "white", "lightblue", "steelblue", "grey10")
-ggplot(identity_df, aes(Sample1, Sample2, fill = pid_weighted)) +
+ggplot(alignment_results, aes(Sample1, Sample2, fill = pid_weighted)) +
   geom_tile(color = "white") +
   scale_fill_gradientn(colors = heat_colors, values = scales::rescale(c(0, 30, 40, 60, 80, 97, 100)), limits = c(0, 100)) +
   #scale_fill_viridis(option = "G", name = "Abundance", direction = 1, na.value = "white") +
