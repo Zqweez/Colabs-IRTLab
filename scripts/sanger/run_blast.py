@@ -12,11 +12,12 @@ import pandas as pd
 import re
 
 # --- Config ---
-input_fasta = Path("02_ab1_assembled_sequences/ALL_SAMPLES_consensus.fasta")
-blast_db = Path("ezbiocloud/ezbio_db") # ezbiocloud/ezbio_db or SILVA/silva_nr99_db  # base name only, no .nsq etc.
-vsearch_db = Path("ezbiocloud/ezbiocloud.fa") # VSEARCH database, if using VSEARCH
+input_fasta = Path("data/sanger/03_ab1_assembled_sequences/ALL_SAMPLES_consensus.fasta")
+# Chose which database to use ezbiocloud/ezbio_db or SILVA/silva_nr99_db base name only, no .nsq etc.
+blast_db = Path("databases/ezbiocloud/ezbio_db")
+vsearch_db = Path("databases/ezbiocloud/ezbiocloud.fa") # VSEARCH database, if using VSEARCH
 
-output_dir = Path("03-taxa-files")
+output_dir = Path("data/sanger/04_taxa_files")
 output_dir.mkdir(exist_ok=True)
 # Final combined output
 combined_output = output_dir / "blast_results.tsv"
@@ -25,7 +26,7 @@ top_hits_compact_output = output_dir / "blast_top_hit_compact.tsv"
 sintax_combined_output = output_dir / "sintax_results.tsv"
 
 # --- Process ---
-method = "blast"  # blast or sintax
+method = "sintax"  # blast or sintax
 all_hits = []
 
 if method == "blast":
@@ -47,7 +48,6 @@ if method == "blast":
             "-db", blast_db,
             "-out", str(temp_out_blast),
             "-outfmt", "6 qseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore stitle",
-            #"-max_target_seqs", "100", # If you want to limit the number of hits, might miss some good hits so use with caution
             "-num_threads", "5"
         ]
 

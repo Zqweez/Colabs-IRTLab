@@ -7,7 +7,7 @@ library(stringr)
 library(dplyr)
 
 # Load MSA file
-msa_file <- "02_ab1_assembled_sequences/ALL_SAMPLES_consensus.fasta"
+msa_file <- "data/sanger/03_ab1_assembled_sequences/ALL_SAMPLES_consensus.fasta"
 dna_aln <- read.alignment(msa_file, format = "fasta")
 
 # Process sequences
@@ -26,14 +26,14 @@ df$ambiguous_percent <- str_count(df$sequence, "n") / nchar(df$sequence)
 df$sequence_length <- nchar(df$sequence)
 
 # Prepare the taxa
-taxa_strains <- read.csv("all-isolates-taxa.tsv", sep = "\t", header = TRUE)
+taxa_strains <- read.csv("data/sanger/04_taxa_files/blast_top_hit.tsv", sep = "\t", header = TRUE)
 taxa_strains$genus <- sub(",s:.*", "", sub(".*g:", "", taxa_strains$taxa))
 taxa_strains$species <- sub(".*s:", "", taxa_strains$taxa)
 taxa_strains$query <- sub("^(Takasu|Kasper)_", "", taxa_strains$query)
 taxa_strains$pident <- round(taxa_strains$pident, 1)
 taxa_strains <- taxa_strains %>% select(query, genus, species, pident)
 
-write.csv(taxa_strains, file = "All-taxa-genus-species.csv")
+write.csv(taxa_strains, file = "data/sanger/taxa-genus-species-pid.csv")
 
 # Setup Alignment
 alignment_type <- "local" # or "global"

@@ -1,0 +1,72 @@
+query	pident	length	mismatch	gapopen	qstart	qend	sstart	send	evalue	bitscore	taxa
+KS-01-1	99.318	1320	3	6	16	1329	4	1323	0.0	2388	AB191723.1.1439 Bacteria;Pseudomonadota;Alphaproteobacteria;Sphingomonadales;Sphingomonadaceae;Sphingobium;Sphingomonas bisphenolicum
+KS-01-2	99.535	1290	4	2	16	1303	7	1296	0.0	2355	AB191723.1.1439 Bacteria;Pseudomonadota;Alphaproteobacteria;Sphingomonadales;Sphingomonadaceae;Sphingobium;Sphingomonas bisphenolicum
+KS-02-1	99.376	1283	5	3	16	1295	6	1288	0.0	2331	AB191723.1.1439 Bacteria;Pseudomonadota;Alphaproteobacteria;Sphingomonadales;Sphingomonadaceae;Sphingobium;Sphingomonas bisphenolicum
+KS-02-2	81.617	903	150	14	2	896	3	897	0.0	832	FJ695579.1.1515 Bacteria;Bacillota;Bacilli;Staphylococcales;Staphylococcaceae;Staphylococcus;uncultured Staphylococcus sp.
+KS-03-1	99.077	1300	10	2	25	1322	1	1300	0.0	2344	AB681843.1.1457 Bacteria;Pseudomonadota;Gammaproteobacteria;Burkholderiales;Burkholderiaceae;Cupriavidus;Cupriavidus sp. NBRC 102509
+KS-04-1	99.381	1293	5	3	4	1295	3	1293	0.0	2348	CP003811.1919737.1921182 Bacteria;Pseudomonadota;Alphaproteobacteria;Hyphomicrobiales;Beijerinckiaceae;Methylobacterium;Methylobacterium oryzae CBMB20
+KS-05-1	98.857	1312	12	3	19	1327	1	1312	0.0	2355	AB681843.1.1457 Bacteria;Pseudomonadota;Gammaproteobacteria;Burkholderiales;Burkholderiaceae;Cupriavidus;Cupriavidus sp. NBRC 102509
+KS-05-2	99.309	1302	8	1	24	1324	1	1302	0.0	2359	AB681843.1.1457 Bacteria;Pseudomonadota;Gammaproteobacteria;Burkholderiales;Burkholderiaceae;Cupriavidus;Cupriavidus sp. NBRC 102509
+KS-06-1	98.947	1330	10	4	3	1329	13	1341	0.0	2388	CP026973.5864699.5866235 Bacteria;Pseudomonadota;Gammaproteobacteria;Burkholderiales;Alcaligenaceae;Achromobacter;Achromobacter insolitus
+KS-06-2	99.08	1305	6	6	12	1310	26	1330	0.0	2346	CP026973.5864699.5866235 Bacteria;Pseudomonadota;Gammaproteobacteria;Burkholderiales;Alcaligenaceae;Achromobacter;Achromobacter insolitus
+KS-07-1	99.44	1249	5	2	12	1258	4	1252	0.0	2276	AB191723.1.1439 Bacteria;Pseudomonadota;Alphaproteobacteria;Sphingomonadales;Sphingomonadaceae;Sphingobium;Sphingomonas bisphenolicum
+KS-07-2	99.689	1286	3	1	14	1298	6	1291	0.0	2355	AB191723.1.1439 Bacteria;Pseudomonadota;Alphaproteobacteria;Sphingomonadales;Sphingomonadaceae;Sphingobium;Sphingomonas bisphenolicum
+KS-08-1	99.09	1318	8	4	12	1325	7	1324	0.0	2379	AB191723.1.1439 Bacteria;Pseudomonadota;Alphaproteobacteria;Sphingomonadales;Sphingomonadaceae;Sphingobium;Sphingomonas bisphenolicum
+KS-08-2	98.786	1318	9	7	15	1325	6	1323	0.0	2355	AB191723.1.1439 Bacteria;Pseudomonadota;Alphaproteobacteria;Sphingomonadales;Sphingomonadaceae;Sphingobium;Sphingomonas bisphenolicum
+KS-09-1	99.009	1312	8	5	15	1321	24	1335	0.0	2359	LMPY01000078.283704.285163 Bacteria;Pseudomonadota;Alphaproteobacteria;Hyphomicrobiales;Beijerinckiaceae;Methylobacterium;Methylobacterium sp. Leaf361
+KS-09-2	98.707	1315	12	5	17	1326	24	1338	0.0	2350	LMPY01000078.283704.285163 Bacteria;Pseudomonadota;Alphaproteobacteria;Hyphomicrobiales;Beijerinckiaceae;Methylobacterium;Methylobacterium sp. Leaf361
+KS-10-1	98.977	1369	6	8	18	1378	22	1390	0.0	2455	CP023271.4630132.4631676 Bacteria;Pseudomonadota;Gammaproteobacteria;Lysobacterales;Lysobacteraceae;Stenotrophomonas;Stenotrophomonas sp. MYb57
+KS-10-2	98.838	1291	9	5	4	1288	23	1313	0.0	2311	CP023271.4630132.4631676 Bacteria;Pseudomonadota;Gammaproteobacteria;Lysobacterales;Lysobacteraceae;Stenotrophomonas;Stenotrophomonas sp. MYb57
+KS-11-1	99.392	1315	6	2	13	1325	23	1337	0.0	2392	CP006958.5178126.5179657 Bacteria;Pseudomonadota;Gammaproteobacteria;Burkholderiales;Alcaligenaceae;Achromobacter;Achromobacter xylosoxidans NBRC 15126 = ATCC 27061
+KS-11-2	99.468	1316	3	4	6	1317	24	1339	0.0	2392	CP006958.5178126.5179657 Bacteria;Pseudomonadota;Gammaproteobacteria;Burkholderiales;Alcaligenaceae;Achromobacter;Achromobacter xylosoxidans NBRC 15126 = ATCC 27061
+Kasper_KS-20-1	99.141	1280	7	4	15	1290	6	1285	0.0	2313	AB191723.1.1439 Bacteria;Pseudomonadota;Alphaproteobacteria;Sphingomonadales;Sphingomonadaceae;Sphingobium;Sphingomonas bisphenolicum
+Kasper_KS-20-2	98.692	1147	14	1	15	1160	6	1152	0.0	2052	AB191723.1.1439 Bacteria;Pseudomonadota;Alphaproteobacteria;Sphingomonadales;Sphingomonadaceae;Sphingobium;Sphingomonas bisphenolicum
+Kasper_KS-21-1	98.818	1269	10	5	16	1279	22	1290	0.0	2274	ACQA01000003.135811.137294 Bacteria;Pseudomonadota;Alphaproteobacteria;Hyphomicrobiales;Rhizobiaceae;Brucella;Ochrobactrum intermedium LMG 3301
+Kasper_KS-21-2	98.343	1328	13	9	6	1326	10	1335	0.0	2344	ACQA01000003.135811.137294 Bacteria;Pseudomonadota;Alphaproteobacteria;Hyphomicrobiales;Rhizobiaceae;Brucella;Ochrobactrum intermedium LMG 3301
+Kasper_KS-22-1	98.374	738	8	4	3	739	1	735	0.0	1303	AB050020.1.1521 Bacteria;Pseudomonadota;Gammaproteobacteria;Burkholderiales;Burkholderiaceae;Cupriavidus;Ralstonia sp. BA-0323
+Kasper_KS-22-2	98.238	1305	18	5	25	1324	1	1305	0.0	2305	AB681843.1.1457 Bacteria;Pseudomonadota;Gammaproteobacteria;Burkholderiales;Burkholderiaceae;Cupriavidus;Cupriavidus sp. NBRC 102509
+Kasper_KS-23-2	99.085	1312	6	6	17	1322	15	1326	0.0	2362	CP003811.1919737.1921182 Bacteria;Pseudomonadota;Alphaproteobacteria;Hyphomicrobiales;Beijerinckiaceae;Methylobacterium;Methylobacterium oryzae CBMB20
+Kasper_KS-24-1	98.925	1302	12	2	24	1323	1	1302	0.0	2338	AB681843.1.1457 Bacteria;Pseudomonadota;Gammaproteobacteria;Burkholderiales;Burkholderiaceae;Cupriavidus;Cupriavidus sp. NBRC 102509
+Kasper_KS-25-1	99.201	1252	8	2	12	1261	8	1259	0.0	2270	AB191723.1.1439 Bacteria;Pseudomonadota;Alphaproteobacteria;Sphingomonadales;Sphingomonadaceae;Sphingobium;Sphingomonas bisphenolicum
+Kasper_KS-25-2	99.444	1259	4	3	13	1268	6	1264	0.0	2290	AB191723.1.1439 Bacteria;Pseudomonadota;Alphaproteobacteria;Sphingomonadales;Sphingomonadaceae;Sphingobium;Sphingomonas bisphenolicum
+Kasper_KS-26-1	99.002	1302	11	2	23	1322	1	1302	0.0	2346	AB681843.1.1457 Bacteria;Pseudomonadota;Gammaproteobacteria;Burkholderiales;Burkholderiaceae;Cupriavidus;Cupriavidus sp. NBRC 102509
+Kasper_KS-26-2	97.849	1302	15	12	21	1309	1	1302	0.0	2261	AB681843.1.1457 Bacteria;Pseudomonadota;Gammaproteobacteria;Burkholderiales;Burkholderiaceae;Cupriavidus;Cupriavidus sp. NBRC 102509
+Kasper_KS-27-1	99.673	1222	3	1	16	1236	15	1236	0.0	2237	DQ440827.1.1452 Bacteria;Pseudomonadota;Alphaproteobacteria;Hyphomicrobiales;Beijerinckiaceae;Bosea;Bosea sp. CRIB-12
+Kasper_KS-27-2	99.211	1267	6	4	16	1278	15	1281	0.0	2289	DQ440827.1.1452 Bacteria;Pseudomonadota;Alphaproteobacteria;Hyphomicrobiales;Beijerinckiaceae;Bosea;Bosea sp. CRIB-12
+Kasper_KS-28-2	88.389	422	44	5	1	421	30	447	2.9e-160	568	CP026973.3256102.3257638 Bacteria;Pseudomonadota;Gammaproteobacteria;Burkholderiales;Alcaligenaceae;Achromobacter;Achromobacter insolitus
+Kasper_KS-29-1	99.135	1271	8	3	14	1281	15	1285	0.0	2294	DQ440827.1.1452 Bacteria;Pseudomonadota;Alphaproteobacteria;Hyphomicrobiales;Beijerinckiaceae;Bosea;Bosea sp. CRIB-12
+Kasper_KS-29-2	97.974	1333	15	12	2	1324	1	1331	0.0	2324	DQ440827.1.1452 Bacteria;Pseudomonadota;Alphaproteobacteria;Hyphomicrobiales;Beijerinckiaceae;Bosea;Bosea sp. CRIB-12
+Kasper_KS-30-1	99.152	1297	7	4	14	1306	22	1318	0.0	2342	CP006958.5178126.5179657 Bacteria;Pseudomonadota;Gammaproteobacteria;Burkholderiales;Alcaligenaceae;Achromobacter;Achromobacter xylosoxidans NBRC 15126 = ATCC 27061
+Kasper_KS-30-2	98.99	1287	9	4	8	1290	22	1308	0.0	2316	CP006958.5178126.5179657 Bacteria;Pseudomonadota;Gammaproteobacteria;Burkholderiales;Alcaligenaceae;Achromobacter;Achromobacter xylosoxidans NBRC 15126 = ATCC 27061
+Kasper_KS-32-1	99.539	1302	5	1	11	1311	1	1302	0.0	2374	AB681843.1.1457 Bacteria;Pseudomonadota;Gammaproteobacteria;Burkholderiales;Burkholderiaceae;Cupriavidus;Cupriavidus sp. NBRC 102509
+Kasper_KS-32-2	98.925	1302	11	3	16	1314	1	1302	0.0	2338	AB681843.1.1457 Bacteria;Pseudomonadota;Gammaproteobacteria;Burkholderiales;Burkholderiaceae;Cupriavidus;Cupriavidus sp. NBRC 102509
+Kasper_KS-33-1	98.13	1337	12	13	4	1327	17	1353	0.0	2337	CP026973.5864699.5866235 Bacteria;Pseudomonadota;Gammaproteobacteria;Burkholderiales;Alcaligenaceae;Achromobacter;Achromobacter insolitus
+Kasper_KS-34-1	99.394	1321	7	1	24	1343	1	1321	0.0	2401	AB681843.1.1457 Bacteria;Pseudomonadota;Gammaproteobacteria;Burkholderiales;Burkholderiaceae;Cupriavidus;Cupriavidus sp. NBRC 102509
+Kasper_KS-34-2	98.634	1318	11	7	20	1330	1	1318	0.0	2342	AB681843.1.1457 Bacteria;Pseudomonadota;Gammaproteobacteria;Burkholderiales;Burkholderiaceae;Cupriavidus;Cupriavidus sp. NBRC 102509
+Kasper_KS-35-1	99.374	1277	6	2	14	1288	6	1282	0.0	2324	AB191723.1.1439 Bacteria;Pseudomonadota;Alphaproteobacteria;Sphingomonadales;Sphingomonadaceae;Sphingobium;Sphingomonas bisphenolicum
+Kasper_KS-35-2	99.3	1286	6	3	13	1295	4	1289	0.0	2333	AB191723.1.1439 Bacteria;Pseudomonadota;Alphaproteobacteria;Sphingomonadales;Sphingomonadaceae;Sphingobium;Sphingomonas bisphenolicum
+Kasper_KS-36-1	99.464	1305	3	4	14	1314	14	1318	0.0	2374	ADMS01000149.53.1571 Bacteria;Pseudomonadota;Gammaproteobacteria;Burkholderiales;Alcaligenaceae;Achromobacter;Achromobacter piechaudii ATCC 43553
+Kasper_KS-36-2	99.227	1294	8	2	13	1304	14	1307	0.0	2346	ADMS01000149.53.1571 Bacteria;Pseudomonadota;Gammaproteobacteria;Burkholderiales;Alcaligenaceae;Achromobacter;Achromobacter piechaudii ATCC 43553
+ST-10	99.318	440	2	1	3	442	303	741	0.0	795	AGZU01000005.175430.176904 Bacteria;Pseudomonadota;Alphaproteobacteria;Sphingomonadales;Sphingomonadaceae;Sphingobium;Sphingobium yanoikuyae ATCC 51230
+ST-A1	99.545	440	2	0	4	443	308	747	0.0	802	ACQA01000001.2046366.2047850 Bacteria;Pseudomonadota;Alphaproteobacteria;Hyphomicrobiales;Rhizobiaceae;Brucella;Ochrobactrum intermedium LMG 3301
+ST-A29	99.549	443	2	0	1	443	327	769	0.0	808	AB042085.1.1507 Bacteria;Actinomycetota;Actinobacteria;Micrococcales;Microbacteriaceae;Microbacterium;Microbacterium sp. VKM Ac-2051
+ST-A35	99.567	462	2	0	2	463	317	778	0.0	843	JN867357.1.1468 Bacteria;Pseudomonadota;Gammaproteobacteria;Lysobacterales;Lysobacteraceae;Pseudoxanthomonas;Pseudoxanthomonas sp. enrichment culture clone TMX-27
+ST-B1	99.544	439	2	0	4	442	308	746	0.0	800	ACQA01000001.2046366.2047850 Bacteria;Pseudomonadota;Alphaproteobacteria;Hyphomicrobiales;Rhizobiaceae;Brucella;Ochrobactrum intermedium LMG 3301
+ST-B11	99.553	447	2	0	1	447	327	773	0.0	815	AB042085.1.1507 Bacteria;Actinomycetota;Actinobacteria;Micrococcales;Microbacteriaceae;Microbacterium;Microbacterium sp. VKM Ac-2051
+ST-B3	99.353	464	3	0	5	468	340	803	0.0	843	HQ120930.1.1516 Bacteria;Pseudomonadota;Gammaproteobacteria;Lysobacterales;Lysobacteraceae;Pseudoxanthomonas;uncultured bacterium
+ST-B5	99.544	439	2	0	4	442	308	746	0.0	800	ACQA01000001.2046366.2047850 Bacteria;Pseudomonadota;Alphaproteobacteria;Hyphomicrobiales;Rhizobiaceae;Brucella;Ochrobactrum intermedium LMG 3301
+ST-B7	99.551	445	2	0	1	445	327	771	0.0	811	AB042085.1.1507 Bacteria;Actinomycetota;Actinobacteria;Micrococcales;Microbacteriaceae;Microbacterium;Microbacterium sp. VKM Ac-2051
+ST-C7	99.324	444	2	1	1	444	327	769	0.0	804	AB042085.1.1507 Bacteria;Actinomycetota;Actinobacteria;Micrococcales;Microbacteriaceae;Microbacterium;Microbacterium sp. VKM Ac-2051
+ST-D1_1	99.571	466	2	0	4	469	291	756	0.0	850	DQ223428.1.1408 Bacteria;Pseudomonadota;Gammaproteobacteria;Lysobacterales;Lysobacteraceae;Stenotrophomonas;Stenotrophomonas maltophilia
+ST-D1_7	99.544	439	2	0	2	440	308	746	0.0	800	ACQA01000001.2046366.2047850 Bacteria;Pseudomonadota;Alphaproteobacteria;Hyphomicrobiales;Rhizobiaceae;Brucella;Ochrobactrum intermedium LMG 3301
+Takasu_ST-127	99.571	466	2	0	3	468	325	790	0.0	850	DQ264441.1.1502 Bacteria;Pseudomonadota;Gammaproteobacteria;Pseudomonadales;Pseudomonadaceae;Pseudomonas;uncultured bacterium
+Takasu_ST-3	99.566	461	2	0	7	467	329	789	0.0	841	CAQS01011573.1139.2635 Bacteria;Bacteroidota;Bacteroidia;Flavobacteriales;Weeksellaceae;Chryseobacterium;Romanomermis culicivorax
+Takasu_ST-7	98.265	461	8	0	2	462	286	746	0.0	811	KT248510.1.1371 Bacteria;Bacteroidota;Bacteroidia;Chitinophagales;Chitinophagaceae;Chitinophaga;Chitinophaga sp. NHI-3T
+Takasu_ST-71	98.932	468	3	1	4	471	317	782	0.0	837	JN867357.1.1468 Bacteria;Pseudomonadota;Gammaproteobacteria;Lysobacterales;Lysobacteraceae;Pseudoxanthomonas;Pseudoxanthomonas sp. enrichment culture clone TMX-27
+Takasu_ST-83	99.56	455	1	1	16	470	288	741	0.0	828	EU887992.1.1376 Bacteria;Pseudomonadota;Gammaproteobacteria;Burkholderiales;Alcaligenaceae;Achromobacter;uncultured beta proteobacterium
+Takasu_ST-B8-2	98.929	467	3	2	4	470	317	781	0.0	837	JN867357.1.1468 Bacteria;Pseudomonadota;Gammaproteobacteria;Lysobacterales;Lysobacteraceae;Pseudoxanthomonas;Pseudoxanthomonas sp. enrichment culture clone TMX-27
+Takasu_ST-C1	98.416	442	6	1	2	443	308	748	0.0	785	ACQA01000001.2046366.2047850 Bacteria;Pseudomonadota;Alphaproteobacteria;Hyphomicrobiales;Rhizobiaceae;Brucella;Ochrobactrum intermedium LMG 3301
+Takasu_ST-C2	98.929	467	4	1	4	470	291	756	0.0	839	DQ223428.1.1408 Bacteria;Pseudomonadota;Gammaproteobacteria;Lysobacterales;Lysobacteraceae;Stenotrophomonas;Stenotrophomonas maltophilia
+Takasu_ST-C4	98.884	448	3	1	4	451	306	751	0.0	800	JF778690.1.1431 Bacteria;Actinomycetota;Actinobacteria;Micrococcales;Micrococcaceae;Paenarthrobacter;Paenarthrobacter nitroguajacolicus
+Takasu_ST-C5	99.089	439	2	2	2	440	303	739	0.0	787	AGZU01000005.175430.176904 Bacteria;Pseudomonadota;Alphaproteobacteria;Sphingomonadales;Sphingomonadaceae;Sphingobium;Sphingobium yanoikuyae ATCC 51230
+Takasu_ST-C9-1	98.871	443	3	2	2	444	308	748	0.0	789	ACQA01000001.2046366.2047850 Bacteria;Pseudomonadota;Alphaproteobacteria;Hyphomicrobiales;Rhizobiaceae;Brucella;Ochrobactrum intermedium LMG 3301
