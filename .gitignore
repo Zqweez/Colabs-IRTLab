@@ -5,3 +5,5 @@
 /databases/ezbiocloud
 /databases/SILVA
 /data/ngs/raw_reads
+/data/ngs/fastqc/
+/data/ngs/filtered/
