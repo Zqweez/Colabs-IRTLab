@@ -1,14 +1,42 @@
 # DADA2 workflow for ASVs
 
-This script used the DADA2 pipeline to analyze NGS data to generate ASVs and optionally cluster them based on pairwise distances or though taxonomic classification. The ASVs can be saved as FASTA or CSV files for further processing with for example the associated python script that assigns taxonomic data to each ASV using either ezbiocloud or SILVA data base.
+This Quarto document executes an end‑to‑end **DADA2** pipeline:\
+\* quality‑checks raw FASTQ files (optional FastQC step)\
+\* filters / trims reads and denoises into ASVs\
+\* writes the results as CSV tables and a multi‑FASTA for downstream tools
 
-It is recommended to run this file from the top down to make sure all libraries are loaded but most code blocks should load the libraries needed for that part. However, they need to be installed first, in many places the code for install the libraries is commented out.
+All required R/Bioconductor packages are installed and loaded **once** in the first chunk (`setup-packages`). Each subsequent chunk assumes those libraries are already attached, so you can safely run the file top-to-bottom or render it as HTML/markdown without additional setup.
 
 If desired run fastqc on the raw data
 
+```{r}
+#| label: setup-packages
+#| message: false
+required_pkgs <- c(
+  "dada2",        # DADA2 pipeline
+  "Biostrings",   # DNA sequence handling
+  "DECIPHER",     # alignment & distances
+  "tidyr",        # data reshaping
+  "dplyr"         # joins, pipes
+)
+
+if (!requireNamespace("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+
+for (pkg in required_pkgs) {
+  if (!requireNamespace(pkg, quietly = TRUE)) {
+    if (pkg %in% c("dada2", "Biostrings", "DECIPHER"))
+      BiocManager::install(pkg, ask = FALSE)
+    else
+      install.packages(pkg, dependencies = TRUE)
+  }
+  library(pkg, character.only = TRUE)
+}
+```
+
 ```{bash}
 #| label: Run FASTqc on the raw reads
-# Set to false to skip this part
+# Set to *true* if you want to perform FastQC on the raw FASTQ files
 if false; then
   source /Users/kasper/miniconda3/etc/profile.d/conda.sh
   conda activate bioinfo_env
@@ -29,17 +57,15 @@ Load files modify to fit the correct path
 
 ```{r}
 #| label: Load Raw reads
-#if (!requireNamespace("BiocManager", quietly = TRUE))
-#     install.packages("BiocManager")
-#BiocManager::install("dada2")
+#| include: false
 
-library(dada2)
 # packageVersion("dada2")
 # Define file paths V1
 # Name F = sample1_R1_001.fastq.gz, Name R = sample1_R2_001.fastq.gz
 data_path <- "../../data/ngs/"
 process_sample <- "phe"
 path <- paste0(data_path, paste0("raw_reads/", process_sample))
+# list the raw FASTQ files that will be processed
 list.files(path)
 
 fnFs <- sort(list.files(path, pattern="R1.*\\.fastq\\.gz$", full.names=TRUE))
@@ -52,6 +78,7 @@ Get quality profile, turned off with #\| eval: false but can be used as a simple
 ```{r}
 #| label: Plot Quality Profiles
 #| eval: false
+#| include: false
 # Plot the quality of the reads
 plotQualityProfile(fnFs[1:3])  # a couple of forward samples
 plotQualityProfile(fnRs[1:3])  # a couple of reverse samples
@@ -59,14 +86,15 @@ plotQualityProfile(fnRs[1:3])  # a couple of reverse samples
 
 Filter and Trim reads with DADA2
 
-```{r echo=FALSE}
+```{r}
 #| label: Filter and Trim
+#| include: false
 # Filter reads (adjust parameters)
 filt_path <- file.path(data_path, "filtered")
 filtFs <- file.path(filt_path, paste0(sample.names, "_F_filt.fastq.gz"))
 filtRs <- file.path(filt_path, paste0(sample.names, "_R_filt.fastq.gz"))
 
-todo <- !(file.exists(filtFs) & file.exists(filtRs))  # need both halves
+todo <- !(file.exists(filtFs) & file.exists(filtRs))  # TRUE = still need processing
 sum(todo)   # how many still to do?
 
 out <- filterAndTrim(
@@ -147,21 +175,12 @@ Convert the table into more easy to read format with separate tables one for the
 
 ```{r}
 #| label: Generate data frames and save results 
-#if (!requireNamespace("Biostrings", quietly=TRUE))
-#    BiocManager::install("Biostrings")
-#     BiocManager::install("DECIPHER")
-#     BiocManager::install("phyloseq")
-#     install.packages("pwalign")
 
-library(Biostrings) # For DNA sequence handling
-library(DECIPHER)    # For sequence alignment and distance calculation
-library(phyloseq) 
-library(pwalign)
-library(tidyr)
-
+library(dplyr)
 
 # Get the vector of ASV sequences
 asv_seqs <- colnames(seqtab.nochim)
+# Get the length of each ASV sequence
 asv_seq_lenght <- unlist(lapply(asv_seqs, nchar))
 
 # Make short IDs
@@ -202,12 +221,12 @@ raw_ASV_counts <- raw_ASV_counts %>%
 write.csv(raw_ASV_counts %>% select(-Sequence), paste0(folder_path, "ASVs-raw-counts-no-seq.csv"))
 write.csv(raw_ASV_counts, paste0(folder_path, "ASVs-raw-counts-seq.csv"))
 
-# Also sava fasta file for all ASVs which we can run blast on
+# Write a FASTA file containing every unique ASV sequence
 dna <- DNAStringSet(asv_map$Sequence) # If all ASVs should be saved just use the asv_seqs as argument
 
 names(dna) <- sprintf("%s",
                       asv_map$ASV_ID)
 writeXStringSet(dna,
-                filepath = paste("all_asvs", process_sample,".fasta"), #All-ASV-variants
+                filepath = paste0("../../results/ngs/all_asvs_", process_sample,".fasta"), #All-ASV-variants
                 format   = "fasta")
 ```

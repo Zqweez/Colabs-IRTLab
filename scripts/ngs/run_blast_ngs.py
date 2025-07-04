@@ -12,11 +12,11 @@ import pandas as pd
 import re
 
 # --- Config ---
-input_fasta = Path("top_ASVs_per_cluster.fasta")
-blast_db = Path("ezbiocloud/ezbio_db") # ezbiocloud/ezbio_db or SILVA/silva_nr99_db  # base name only, no .nsq etc.
-vsearch_db = Path("ezbiocloud/ezbiocloud.fa") # VSEARCH database, if using VSEARCH
+input_fasta = Path("results/ngs/all_asvs_phe.fasta")
+blast_db = Path("databases/ezbiocloud/ezbio_db") # ezbiocloud/ezbio_db or SILVA/silva_nr99_db  # base name only, no .nsq etc.
+vsearch_db = Path("databases/ezbiocloud/ezbiocloud.fa") # VSEARCH database, if using VSEARCH
 
-output_dir = Path("03-taxa-files")
+output_dir = Path("results/ngs/taxa_files")
 output_dir.mkdir(exist_ok=True)
 # Final combined output
 combined_output = output_dir / "blast_results.tsv"
