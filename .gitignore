@@ -7,3 +7,4 @@
 /data/ngs/raw_reads
 /data/ngs/fastqc/
 /data/ngs/filtered/
+/results/ngs/taxa_files/blast_results.tsv
