@@ -1,33 +1,61 @@
 library(gplots)
 library(tidyverse)
 library(lubridate)
+# ---- Samples are
+# 20250619-isolates.dt3, 20250626-KS1-5.dt3, 20250626-KS8.dt4, 20250701-precult.dt1
+# This part is to modify the raw data in dt files and save it as CSV files with a correct header
+samples <- c("20250619-isolates.dt3", "20250626-KS1-5.dt3", "20250626-KS8.dt4", "20250701-precult.dt1")
+sample <- samples[4]
 
-growth <- read.table("20250619-isolates.dt3", sep = ",", header = FALSE)
-colnames(growth) <- c("point", "time", "na", "KS01-1","KS01-2","KS07-1","KS07-2","KS08-1","KS08-2")
-# Remove first datapoint
-growth <- growth %>%
+growth <- read.table(paste0("./data/growth/",sample), sep = ",", header = FALSE)
+sample <- sub("\\.dt[0-9]+$", "", sample)  # Remove the .dt1, .dt2, etc. from the sample name
+# Load the header from the txt file
+header <- read.csv(paste0("./data/growth/",sample, ".txt"), sep=",", header = F)
+colnames(growth) <- header[1,]
+
+# The Biophotorecorder is a bit unreliable when it comes to when it starts to measure either it starts at 0 or below 0
+# We correct for this by either removing or keeping the first datapoint 
+growth <- growth %>% 
   slice(-1) %>%
-  mutate(point = point-2) %>%
+  mutate(point = point - 2) %>%             
   mutate(
-    time_full = ymd_hms(paste("2025-01-01", time)),
-    crossed_midnight = c(FALSE, diff(time_full) < 0),
-    day = cumsum(crossed_midnight),
-    time_cum = time_full + days(day),
-    hour_min = format(time_cum, "%H:%M"),
-    time_lbl = paste0("Day ", day, "\n", hour_min)
-  )
+    time_full        = ymd_hms(paste("2025-01-01", time)),
+    crossed_midnight = c(FALSE, diff(time_full) < 0),     # TRUE each rollover
+    time_cum         = time_full + days(cumsum(crossed_midnight))
+  ) %>%
+  mutate(
+    elapsed_sec = as.numeric(difftime(time_cum, first(time_cum), units = "secs")),
+    day         = elapsed_sec %/% 86400,                  # whole days
+    hour        = (elapsed_sec %% 86400) %/% 3600,        # hours within day
+    minute      = (elapsed_sec %% 3600)  %/% 60,          # minutes within hour
+    elapsed_h = as.numeric(difftime(time_cum, first(time_cum), units = "hours")),
+    time_lbl    = sprintf("Day %d\n%02d:%02d", day, hour, minute)
+  ) %>%
+  select(-matches("^na"), -crossed_midnight, -time_full, -time_cum, -elapsed_sec, -day, -hour, -minute)
+write.csv(growth, paste0("./data/growth/",sample, ".csv"), row.names = TRUE)
 
-growth_long <- growth %>%
+# After converting the dt file load the CSV of interest
+
+growth_long <- growth %>%                          
   pivot_longer(
-    cols = c("KS01-1","KS01-2","KS07-1","KS07-2","KS08-1","KS08-2"),
-    names_to = "Isolate",
+    cols      = matches("^KS"),  # KS01-1, KS07-2, …
+    names_to  = "Iso_rep",        # new column = old col-name
     values_to = "OD600"
+  ) %>% 
+  separate(Iso_rep, into = c("Isolate", "Replicate"),   # KS01-1 → KS01 | 1
+           sep = "-", remove = FALSE) %>% 
+  mutate(
+    Replicate = factor(Replicate),
+    Isolate   = factor(Isolate)
   )
 
-breaks_sel <- growth$point[seq(1, nrow(growth), by = 20)]
+breaks_sel <- growth$point[seq(1, nrow(growth), by = round(nrow(growth)/16))] # total 16 points
 
-ggplot(growth_long, aes(x = point, y = OD600, colour = Isolate)) +
-  geom_line(size = 0.4) +
+ggplot(growth_long,
+       aes(x = point, y = OD600,
+           colour = Isolate,          # colour → strain family
+           group  = interaction(Isolate, Replicate))) +     # different symbol for -1 / -2
+  geom_line(linewidth = 0.4) +
   geom_point(size = 0.2) +
   scale_x_continuous(
     name = "Datapoint",
@@ -35,10 +63,13 @@ ggplot(growth_long, aes(x = point, y = OD600, colour = Isolate)) +
     sec.axis = dup_axis(
       breaks = breaks_sel,
       labels = growth$time_lbl[match(breaks_sel, growth$point)],
-      name   = "Day & Time"
+      name   = "Day & Time since start"
     )
   ) +
-  labs(y = expression(OD[600]), title = "Isolate Growth Curves") +
+  scale_colour_brewer(palette = "Set1") +
+  labs(y = expression(OD[600]),
+       colour  = "Isolate",
+       title   = "Growth curves for Isolates") +
   theme_minimal() +
   theme(
     text = element_text(size = 12),
@@ -48,48 +79,70 @@ ggplot(growth_long, aes(x = point, y = OD600, colour = Isolate)) +
     axis.title.x.top = element_text(size = 10, margin = margin(b = 8))
   )
 
-ggsave("Isolate-growth-curves.pdf", width = 8, height = 5)
+ggsave(paste0("./results/growth_models/", sample,"-growth-curves.pdf"), width = 8, height = 5)
 
 # Do statistical analysis of the data
 
+library(dplyr)
+library(tidyr)
 library(growthcurver)
-growth_long_stat <- growth_long %>%
-  select(-na, -crossed_midnight, -hour_min) %>%
+growth_long_stat <- growth_long
+
+fits <- growth_long_stat %>% 
+  group_by(Isolate, Replicate) %>% 
+  summarize(
+    model = list(
+      SummarizeGrowth(elapsed_h, OD600)   # returns a gcfit object
+    ),
+    .groups = "drop"                      # keep one row per group
+  ) %>%
   mutate(
-    Replicate = sub(".*-", "", Isolate),
-    Isolate =  sub("-.*", "", Isolate),
-    OD600 = as.numeric(OD600)
+    vals = map(model, ~ .x$vals),          # extract the parameters
+    data = map(model, ~ .x$data)           # extract the data
   )
+# Extract the data from the fits and make it into long format, ready for plotting
+pred <- fits %>%                                   
+  mutate(pred_df = map(data, \(d)                   
+                       tibble(elapsed_h = d$t,                       
+                              OD_fit    = d$N)                       
+  )) %>%
+  select(Isolate, Replicate, pred_df) %>%          
+  unnest(pred_df) %>%                             
+  mutate(Replicate = factor(Replicate)) 
 
-fits <- growth_long_stat %>%                      
-  group_by(Isolate, Replicate) %>%                  
-  group_modify(~ {
-    sg <- SummarizeGrowth(.x$point, .x$OD600)        
-    as_tibble(sg$vals)                              
-  }) %>%
-  ungroup()
+# Plot the fitted curves
+shape_vals    <- c(`1` = 16, `2` = 17)             
+linetype_vals <- c(`1` = "dashed", `2` = "dotted")
 
-param_tbl <- fits %>%
-  select(Bacteria, Replicate, mu, lag, K)
-
-anova_mu  <- aov(mu  ~ Bacteria, data = param_tbl)
-anova_lag <- aov(lag ~ Bacteria, data = param_tbl)
-anova_K   <- aov(K   ~ Bacteria, data = param_tbl)
-
-summary(anova_mu)     # F & p-value for μmax
-TukeyHSD(anova_mu)    # post-hoc pairwise
-
-
-# Overlay fitted curves
-df_preds <- fits %>%
-  mutate(pred_grid = map2(.x = Isolate, .y = Replicate, ~ {
-    tibble(time = seq(min(growth_long_stat$time), max(growth_long_stat$time), length.out = 200))
-  })) %>%
-  unnest(pred_grid) %>%
-  mutate(OD_fit = K / (1 + exp(-r*(time - t_mid))))   # change formula for Gompertz/Baranyi
-
-ggplot(growth_long_stat, aes(time, OD600, colour = Isolate)) +
-  geom_point(alpha = 0.6) +
-  geom_line(data = df_preds, aes(y = OD_fit), size = 1) +
-  facet_wrap(~Isolate) + theme_minimal()
-
+ggplot(data = growth_long, 
+       aes(x = elapsed_h, y = OD600,
+           colour = Isolate,
+           shape  = factor(Replicate))) +
+  geom_point(size = 0.5, alpha = 0.8) +
+  geom_line(linewidth = 0.1) +
+  geom_line(data = pred,
+            aes(x = elapsed_h, y = OD_fit,
+                colour   = Isolate,
+                linetype = Replicate,                       # dashed vs dotted
+                group    = interaction(Isolate, Replicate)),
+            linewidth = 0.5) +
+  scale_shape_manual(values = shape_vals,    name = "Replicate") +
+  scale_linetype_manual(values = linetype_vals, name = "Replicate") +
+  scale_colour_brewer(palette = "Set1") +
+  scale_x_continuous(
+    name   = "Datapoint",
+    breaks = breaks_sel,
+    sec.axis = dup_axis(
+      breaks = breaks_sel,
+      labels = growth$time_lbl[match(breaks_sel, growth$point)],
+      name   = "Day & Time since start"
+    )
+  ) +
+  labs(y = expression(OD[600]),
+       colour  = "Isolate",
+       title   = "Growth curves: raw vs model") +
+  theme_minimal(base_size = 12) +
+  theme(
+    axis.text.x.top  = element_text(size = 8, angle = 45, hjust = 0),
+    plot.title       = element_text(hjust = 0.5)
+  )

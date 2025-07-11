@@ -288,8 +288,8 @@ for (i_linkage in loop_linkage) {
             )
           ) %>%
           group_by(Sample, Label) %>%
-          summarise(RelAbund = sum(RelativeAbundance), .groups = "drop") %>%
-          add_count(Label, wt = RelAbund,
+          summarise(ClustRelAbundance = sum(RelativeAbundance), .groups = "drop") %>%
+          add_count(Label, wt = ClustRelAbundance,
                     name = "total_abundance_final") %>%
           mutate(Label = fct_reorder(Label, total_abundance_final),
                  Label = fct_relevel(Label, "Other", after = 0)) %>%
@@ -307,8 +307,8 @@ for (i_linkage in loop_linkage) {
           )
         ) %>%
         group_by(Sample, ClusterID) %>%
-        summarise(RelAbund = sum(RelativeAbundance), .groups = "drop") %>%
-        add_count(ClusterID, wt = RelAbund,
+        summarise(ClustRelAbundance = sum(RelativeAbundance), .groups = "drop") %>%
+        add_count(ClusterID, wt = ClustRelAbundance,
                   name = "total_abundance_final") %>%
         mutate(ClusterID = fct_reorder(ClusterID, total_abundance_final),
                ClusterID = fct_relevel(ClusterID, "Other", after = 0)) %>%
@@ -325,7 +325,7 @@ for (i_linkage in loop_linkage) {
       caption_txt <- "Clusters not in top 50 are grouped as “Other”."
       
       if (show_taxa) {
-        ggplot(cluster_df, aes(x = Sample, y = RelAbund, fill = Label)) +
+        ggplot(cluster_df, aes(x = Sample, y = ClustRelAbundance, fill = Label)) +
           geom_bar(stat = "identity", color = "grey30", linewidth = 0.2) +
           scale_y_continuous(name = "Relative Abundance",
             labels = scales::percent_format(),
@@ -349,7 +349,7 @@ for (i_linkage in loop_linkage) {
         ggsave(sprintf("figures/taxa-%s-dist-%s-link-%s.pdf",i_sample, i_similarity, i_linkage), 
                width = 10, height = 5)
       }else {
-        ggplot(cluster_df, aes(x = Sample, y = RelAbund, fill = ClusterID)) +
+        ggplot(cluster_df, aes(x = Sample, y = ClustRelAbundance, fill = ClusterID)) +
           geom_bar(stat = "identity", color = "grey30", linewidth = 0.2) +
           scale_y_continuous(name = "Relative Abundance",
             labels = scales::percent_format(),
@@ -380,7 +380,7 @@ similarity <- 0.01#c(0.005, 0.01, 0.03)
 filter_level <- 0.0005
 
 # Load taxa-file
-taxa_df <- read.csv("blast-all-ASVs.tsv", sep = "\t", header = TRUE)
+taxa_df <- read.csv("../../results/ngs/taxa_files/blast_top_hit_compact.tsv", sep = "\t", header = TRUE)
 taxa_df$taxa <- sub(".*s:", "", taxa_df$taxa)
 
 # Before running the loop filter the data
@@ -451,8 +451,8 @@ cluster_df <- filtered_set %>%                  # Sample | ASV | RelativeAbundan
       )
     ) %>%
     group_by(Sample, Label) %>%
-    summarise(RelAbund = sum(RelativeAbundance), .groups = "drop") %>%
-    add_count(Label, wt = RelAbund,
+    summarise(ClustRelAbundance = sum(RelativeAbundance), .groups = "drop") %>%
+    add_count(Label, wt = ClustRelAbundance,
               name = "total_abundance_final") %>%
     mutate(Label = fct_reorder(Label, total_abundance_final),
            Label = fct_relevel(Label, "Other", after = 0)) %>%
@@ -468,7 +468,7 @@ subtitle_txt <- glue(
 caption_txt <- if (length(unique(cluster_df$Label)) > 50) 
   {"Clusters not in top 50 are grouped as “Other”."} else {""}
 
-ggplot(cluster_df, aes(x = Sample, y = RelAbund, fill = Label)) +
+ggplot(cluster_df, aes(x = Sample, y = ClustRelAbundance, fill = Label)) +
   geom_bar(stat = "identity", color = "grey30", linewidth = 0.2) +
   scale_y_continuous(name = "Relative Abundance",
     labels = scales::percent_format(),
@@ -489,16 +489,16 @@ ggplot(cluster_df, aes(x = Sample, y = RelAbund, fill = Label)) +
     legend.spacing.y = unit(1, "mm"),                # reduce spacing between keys
     legend.position = "right"
   ) 
-ggsave(sprintf("Combined-all-samples-%s-%s-filter-%s.pdf", linkage, similarity, filter_level), width = 12, height = 5)
+ggsave(sprintf("../../results/ngs/figures/Combined-all-samples-%s-%s-filter-%s.pdf", linkage, similarity, filter_level), width = 12, height = 5)
 ```
 
 Another way to cluster the ASVs apart from the PID is to do map each ASV to a taxa and then cluster on a taxonomic level. Below is an implementation to cluster ASVs on a species or genus level.
 
 ```{r}
 cluster_taxa_level <- "s" # s or g or f
-filter_level <- 0.0001 
+filter_level <- 0
 # Load taxa-file
-taxa_df <- read.csv("blast-all-ASVs.tsv", sep = "\t", header = TRUE)
+taxa_df <- read.csv("../../results/ngs/taxa_files/blast_top_hit_compact.tsv", sep = "\t", header = TRUE)
 taxa_df$s <- sub(".*s:", "", taxa_df$taxa)
 taxa_df$g <- sub(",s:.*", "", sub(".*g:", "", taxa_df$taxa))
 taxa_df$f <- sub(",g:.*", "", sub(".*f:", "", taxa_df$taxa))
@@ -518,28 +518,29 @@ filtered_set <- asv_long %>%
 
 # Now add the taxa
 asv2clust <- taxa_df %>% 
-  rename(ASV = query) %>%
+  dplyr::rename(ASV = query) %>%
   mutate(Label = .data[[cluster_taxa_level]]) %>%
   select(ASV, {{ cluster_taxa_level }}, Label)
 
 # Get the most abundant ASV from each cluster
 filtered_taxa_df <- taxa_df %>% 
-  rename(ASV = query) %>%
+  dplyr::rename(ASV = query) %>%
   left_join(filtered_set, by = "ASV") %>%
   group_by(Sample, s) %>%
-  mutate(RelAbund = sum(RelativeAbundance)) %>%
-  add_count(s, wt = RelAbund, name = "total_abundance_final") %>%
+  mutate(ClustRelAbundance = sum(RelativeAbundance)) %>%
+  add_count(s, wt = ClustRelAbundance, name = "total_abundance_final") %>%
   ungroup() %>%
   select(ASV, s, total_abundance_final) %>%
   left_join(asv_map, by = c("ASV" = "ASV_ID")) %>%
   group_by(s) %>% 
+  filter(total_abundance_final > filter_level) %>%
   slice_max(total_abundance_final, n = 1, with_ties = FALSE) %>%
   ungroup()
 
 # Save the top ASV for each taxa cluster in a fasta file
 dna <- DNAStringSet(filtered_taxa_df$Sequence) 
 names(dna) <- sprintf("%s", filtered_taxa_df$ASV)
-writeXStringSet(dna, filepath = "top_ASVs_per_taxa.fasta", format   = "fasta")
+writeXStringSet(dna, filepath = "../../results/ngs/top_ASVs_per_taxa.fasta", format   = "fasta")
 
 cluster_df <- filtered_set %>%                  # Sample | ASV | RelativeAbundance
     left_join(asv2clust, by = "ASV") %>%      # Add Cluster
@@ -552,8 +553,8 @@ cluster_df <- filtered_set %>%                  # Sample | ASV | RelativeAbundan
       )
     ) %>%
     group_by(Sample, Label) %>%
-    summarise(RelAbund = sum(RelativeAbundance), .groups = "drop") %>%
-    add_count(Label, wt = RelAbund,
+    summarise(ClustRelAbundance = sum(RelativeAbundance), .groups = "drop") %>%
+    add_count(Label, wt = ClustRelAbundance,
               name = "total_abundance_final") %>%
     mutate(Label = fct_reorder(Label, total_abundance_final),
            Label = fct_relevel(Label, "Other", after = 0)) %>%
@@ -577,18 +578,18 @@ names(final_palette) <- c("Other", cluster_levels)
   
 # Titles and stuff
 title_txt <- sprintf("Community composition — top %s clusters", min(50, length(unique(cluster_df$Label))))
-subtitle_txt <- glue("{n_clusters} clusters from {length(unique(filtered_set$ASV))} ASVs \n Removed ASVs with sample abundance <{percent(filter_level, accuracy = 0.01)}"
+subtitle_txt <- glue("{n_clusters} clusters from {length(unique(filtered_set$ASV))} ASVs"
 )
 caption_txt <- if (length(unique(cluster_df$Label)) > 50) 
   {"Clusters not in top 50 are grouped as “Other”."} else {""}
 
-ggplot(cluster_df, aes(x = Sample, y = RelAbund, fill = Label)) +
+ggplot(cluster_df, aes(x = Sample, y = ClustRelAbundance, fill = Label)) +
   geom_bar(stat = "identity", color = "grey30", linewidth = 0.2) +
   scale_y_continuous(name = "Relative Abundance",
     labels = scales::percent_format(),
     expand = c(0, 0) # Remove padding at the bottom of the bars
    ) +
-  scale_fill_manual(name = "Cluster (top-hit species)", values = final_palette) +
+  scale_fill_manual(name = sprintf("Species cluster (top-hit species)"), values = final_palette) +
   guides(fill = guide_legend(
    override.aes = list(size = 3),   # icon / key size
    ncol = 2 
@@ -603,7 +604,7 @@ ggplot(cluster_df, aes(x = Sample, y = RelAbund, fill = Label)) +
     legend.spacing.y = unit(1, "mm"),                # reduce spacing between keys
     legend.position = "right"
   ) 
-ggsave(sprintf("Combined-all-samples-taxa-cluster-%s-filter-%s.pdf", cluster_taxa_level, filter_level), width = 12, height = 5)
+ggsave(sprintf("../../results/ngs/figures/Combined-all-samples-taxa-cluster-%s-filter-%s.pdf", cluster_taxa_level, filter_level), width = 12, height = 5)
 
 ```
 
@@ -638,8 +639,8 @@ ASV_plot_data <- filtered_set %>%
     Label = paste(ASV, "-", Label)
   ) %>%
   group_by(Sample, Label) %>%
-  summarise(RelAbund = sum(RelativeAbundance), .groups = "drop") %>%
-  add_count(Label, wt = RelAbund,
+  summarise(ClustRelAbundance = sum(RelativeAbundance), .groups = "drop") %>%
+  add_count(Label, wt = ClustRelAbundance,
             name = "total_abundance_final") %>%
   mutate(Label = fct_reorder(Label, total_abundance_final)) %>%
   ungroup()
@@ -665,7 +666,7 @@ subtitle_txt <- glue("{length(cluster_levels)} ASVs, filtered at {percent(filter
 caption_txt <- if (length(unique(cluster_df$Label)) > 50) 
   {"Relative abundances calculated from the entire community"} else {""}
 
-ggplot(ASV_plot_data, aes(x = Sample, y = RelAbund, fill = Label)) +
+ggplot(ASV_plot_data, aes(x = Sample, y = ClustRelAbundance, fill = Label)) +
   geom_bar(stat = "identity", color = "grey30", linewidth = 0.2) +
   scale_y_continuous(name = "Relative Abundance",
     labels = scales::percent_format(),
@@ -710,8 +711,8 @@ cl_long <- cl_long %>%
 fold_tbl <- cl_long %>%
   group_by(Replicate, Label) %>%
   summarise(
-    point0_abund  = sum(RelAbund[DataPoint == 0]),
-    late_abund  = max(RelAbund[DataPoint >= unique(threshold_day)]),
+    point0_abund  = sum(ClustRelAbundance[DataPoint == 0]),
+    late_abund  = max(ClustRelAbundance[DataPoint >= unique(threshold_day)]),
     fold_change = round(late_abund / (point0_abund), 2),
     .groups = "drop"
   )
@@ -743,7 +744,7 @@ final_palette <- c("Other" = "grey70", main_colors)
 names(final_palette) <- c("Other", cluster_levels)
   
 
-ggplot(plotting_clusters_df, aes(x = Sample, y = RelAbund, fill = Label)) +
+ggplot(plotting_clusters_df, aes(x = Sample, y = ClustRelAbundance, fill = Label)) +
   geom_bar(stat = "identity", color = "grey30", linewidth = 0.2) +
   scale_y_continuous(name = "Relative Abundance",
     labels = scales::percent_format(),

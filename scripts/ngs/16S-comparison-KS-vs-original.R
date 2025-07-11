@@ -10,8 +10,8 @@ library(dplyr)
 library(progress)
 library(dendextend)
 
-fasta_A <- "./KS_isolates_consensus.fasta"
-fasta_B <- "./top_ASVs_per_taxa.fasta"
+fasta_A <- "data/sanger/formatted_consensus.fasta"
+fasta_B <- "results/ngs/top_ASVs_per_taxa.fasta"
 
 # Read the alignment
 seqs_A <- read.alignment(fasta_A, format = "fasta")
@@ -35,26 +35,28 @@ df <- data.frame(
   sequence = c(seqs_A, seqs_B),
   stringsAsFactors = FALSE
 )
-df <- df %>%
-  filter(!str_ends(sample, "-2")) %>%
-  mutate(sample = sub("-[12]$", "", sample))
+
+df_clean <- df %>%
+  filter(!str_ends(sample, "KS-02-2")) %>%
+  mutate(base_id = str_remove(sample, "-[12]$")) %>% 
+  group_by(base_id) %>%
+  dplyr::slice(1) %>%                                           
+  ungroup() %>%
+  select(-sample) %>%                           
+  dplyr::rename(sample = base_id) 
 
 # Extract common prefix by removing the last "-1" or "-2"
-df$group <- sub("-[12]$", "", df$sample)
-df <- df[order(df$sample),]
-rownames(df) <- NULL # Reset the indexing, (rownames)
-
-# Filter to keep rows with the KS samples if other samples are persent in the consensus file
-# df <- df[(grepl("^KS", df$sample)), ] 
+df_clean <- df_clean[order(df_clean$sample),]
+rownames(df_clean) <- NULL # Reset the indexing, (rownames)
 
 # Count the number of ambiguous bases
-df$sequence_length <- nchar(df$sequence)
-df$ambiguous_percent <- str_count(df$sequence, "n")/nchar(df$sequence)
+df_clean$sequence_length <- nchar(df_clean$sequence)
+df_clean$ambiguous_percent <- str_count(df_clean$sequence, "n")/nchar(df_clean$sequence)
 
 # ---- Compute the Pairwise alignment of each of the consensus generating a large table -----
 
 # Convert to DNAStringSet use only a subset of the df if desired
-sub_df <- df
+sub_df <- df_clean
 dna_set <- DNAStringSet(sub_df$sequence)
 names(dna_set) <- sub_df$sample
 
@@ -62,54 +64,59 @@ names(dna_set) <- sub_df$sample
 alignment_results <- data.frame()
 n <- length(dna_set)
 
+alignment_type <- "local" # or "global"
+gap_opening <- -5
+gap_extension <- -2
+
 sequence_lengths <- setNames(nchar(df$sequence), df$sample) # To calculate weighed PID score
 # Fill with pairwise percent identity use either the df for both local and global or matrix for only one
 pb <- progress_bar$new(total = n * n)
 for (i in 1:n) {
   for (j in 1:n) {
     pb$tick() # Progress bar
-    #aln_global <- pairwiseAlignment(dna_set[[i]], dna_set[[j]], type = "global", substitutionMatrix = NULL, 
-                                    #gapOpening = -5, gapExtension = -2)
-    aln_local  <- pairwiseAlignment(dna_set[[i]], dna_set[[j]], type = "local", substitutionMatrix = NULL, 
-                                    gapOpening = -5, gapExtension = -2)
+    aln  <- pairwiseAlignment(dna_set[[i]], dna_set[[j]], type = alignment_type, substitutionMatrix = NULL, 
+                              gapOpening = gap_opening, gapExtension = gap_extension)
     
-    # To weigh the alignment by the coverage, only for local
+    # To weigh the alignment by the coverage, only for local, returns 1 for global
     min_length <- min(sequence_lengths[[names(dna_set)[i]]], sequence_lengths[[names(dna_set)[j]]])
-    coverage_local <- nchar(gsub("-", "", as.character(alignedPattern(aln_local)))) / min_length
+    coverage <- nchar(gsub("-", "", as.character(alignedPattern(aln)))) / min_length
     
     # Print for debugging
-    # print(sprintf("Sample %s - %s coverage: %s, pid: %s, w_pid: %s", names(dna_set)[i], names(dna_set)[j], coverage_local, pid(aln_local), pid(aln_local)*coverage_local))
+    # print(sprintf("Sample %s - %s coverage: %s, pid: %s, w_pid: %s", names(dna_set)[i], names(dna_set)[j], coverage, pid(aln_local), pid(aln)*coverage))
     
     alignment_results <- bind_rows(alignment_results, data.frame(
       Sample1 = names(dna_set)[i],
       Sample2 = names(dna_set)[j],
-      AlignmentType = "local",
-      Score = score(aln_local),
-      PID = pid(aln_local),
-      pid_weighted = pid(aln_local)*coverage_local, # Global is always 100% coverage by def
-      AlignedWidth = width(alignedPattern(aln_local))
+      AlignmentType = alignment_type,
+      Score = score(aln),
+      PID = pid(aln),
+      pid_weighted = pid(aln)*coverage,
+      AlignedWidth =width(alignedPattern(aln))
     )) 
-    
-    # Add the alignment to the data frame
-    # alignment_results <- bind_rows(alignment_results, data.frame(
-    #   Sample1 = names(dna_set)[i],
-    #   Sample2 = names(dna_set)[j],
-    #   AlignmentType = c("global", "local"),
-    #   Score = c(score(aln_global), score(aln_local)),
-    #   PID = c(pid(aln_global), pid(aln_local)),
-    #   pid_weighted = c(pid(aln_global), pid(aln_local)*coverage_local), # Global is always 100% coverage by def
-    #   AlignedWidth = c(width(alignedPattern(aln_global)), width(alignedPattern(aln_local)))
-    # )) 
   }
 }
+
+# Convert df to a matrix for distance matrix downsteams
+identity_matrix <- alignment_results %>%
+  select(Sample1, Sample2, pid_weighted) %>%
+  pivot_wider(names_from = Sample2, values_from = pid_weighted) %>%
+  tibble::column_to_rownames("Sample1")  # make Sample1 the rownames
+
+
 # Get KS and ST taxa
-taxa_strains <- read.csv("strain-taxa.tsv", sep = "\t", header = TRUE)
+taxa_strains <- read.csv("data/sanger/taxa-genus-species-pid.csv", sep = ",", header = TRUE)
 
 taxa_strains <- taxa_strains %>%
   mutate(taxa = sub(".*s:", "", taxa)) %>%
-  filter(!grepl("-2$", query)) %>%
+  filter(!grepl("KS-02-2$", query)) %>%
+  group_by(base_id) %>%
+  dplyr::slice(1) %>%                                           
+  ungroup() %>%
   mutate(query = sub("-1$", "", query)) %>%
   rename(Label = taxa, ASV = query)
+
+taxa_df <- read.csv("results/ngs/taxa_files/blast_top_hit_compact.tsv", sep = "\t", header = TRUE)
+taxa_df$s <- sub(".*s:", "", taxa_df$taxa)
 
 combinded_taxa <- bind_rows(asv2clust, taxa_strains) %>%
   select(ASV, Label)

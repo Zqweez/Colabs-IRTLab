@@ -25,13 +25,20 @@ rownames(df) <- NULL
 df$ambiguous_percent <- str_count(df$sequence, "n") / nchar(df$sequence)
 df$sequence_length <- nchar(df$sequence)
 
+dna <- DNAStringSet(df$sequence) 
+names(dna) <- sprintf("%s", df$sample)
+writeXStringSet(dna, filepath = "data/sanger/formatted_consensus.fasta", format   = "fasta")
+
 # Prepare the taxa
-taxa_strains <- read.csv("data/sanger/04_taxa_files/blast_top_hit.tsv", sep = "\t", header = TRUE)
-taxa_strains$genus <- sub(",s:.*", "", sub(".*g:", "", taxa_strains$taxa))
-taxa_strains$species <- sub(".*s:", "", taxa_strains$taxa)
-taxa_strains$query <- sub("^(Takasu|Kasper)_", "", taxa_strains$query)
-taxa_strains$pident <- round(taxa_strains$pident, 1)
-taxa_strains <- taxa_strains %>% select(query, genus, species, pident)
+taxa_strains <- read.csv("data/sanger/blast_top_hit_ezbio.tsv", sep = "\t", header = TRUE)
+taxa_strains <- taxa_strains %>%
+  mutate(
+    genus = sub(",s:.*", "", sub(".*g:", "", taxa)),
+    species = paste(genus, sub("^.* ", "", sub(".*s:", "", taxa))),
+    query = sub("^(Takasu|Kasper)_", "", query),
+    pident =  round(pident, 1)
+  ) %>%
+  select(query, genus, species, pident)
 
 write.csv(taxa_strains, file = "data/sanger/taxa-genus-species-pid.csv")
 
