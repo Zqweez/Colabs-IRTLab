@@ -6,6 +6,7 @@ library(ggplot2)
 library(stringr)
 library(dplyr)
 
+
 # Load MSA file
 msa_file <- "data/sanger/03_ab1_assembled_sequences/ALL_SAMPLES_consensus.fasta"
 dna_aln <- read.alignment(msa_file, format = "fasta")
