@@ -646,19 +646,19 @@ ASV_plot_data <- filtered_set %>%
   ungroup()
 
 # # Colors using polychrome
-# pastelise <- function(cluster_levels, desat = 0.6, lighten = 0.3) {
-#   n_clusters     <- length(cluster_levels)
-#   set.seed(0)
-#   anchor_pastel <- c("#FF0000", "#00FF00", "#0000FF")
-#   cols <- createPalette(n_clusters, anchor_pastel)
-#   cols %>%
-#     desaturate(amount = desat) %>%   # pull chroma toward grey
-#     lighten  (amount = lighten)      # push luminance up toward white
-# }
-# 
-# cluster_levels <- as.character(unique(ASV_plot_data$Label))
-# final_palette <- pastelise(cluster_levels)
-# names(final_palette) <- c(cluster_levels)
+pastelise <- function(cluster_levels, desat = 0.6, lighten = 0.3) {
+  n_clusters     <- length(cluster_levels)
+  set.seed(0)
+  anchor_pastel <- c("#FF0000", "#00FF00", "#0000FF")
+  cols <- createPalette(n_clusters, anchor_pastel)
+  cols %>%
+    desaturate(amount = desat) %>%   # pull chroma toward grey
+    lighten  (amount = lighten)      # push luminance up toward white
+}
+
+cluster_levels <- as.character(unique(ASV_plot_data$Label))
+final_palette <- pastelise(cluster_levels)
+names(final_palette) <- c(cluster_levels)
 
 # Titles and stuff
 title_txt <- sprintf("Community composition — ASVs in species %s", filter_ASV)
@@ -688,7 +688,7 @@ ggplot(ASV_plot_data, aes(x = Sample, y = ClustRelAbundance, fill = Label)) +
     legend.position = "right"
   )
 
-ggsave(sprintf("figures/%s-only-complete-ASVs-filter-%s.pdf", filter_ASV, filter_level), width = 8, height = 5)
+ggsave(sprintf("../../results/ngs/figures/%s-only-complete-ASVs-filter-%s.pdf", filter_ASV, filter_level), width = 12, height = 5)
 ```
 
 Investigate which ASVs or Clusters that have changed substantially in the abundance over the sampling times.

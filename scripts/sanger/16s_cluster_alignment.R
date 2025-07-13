@@ -5,7 +5,15 @@ library(Biostrings)
 library(ggplot2)
 library(stringr)
 library(dplyr)
-
+library(dichromat)
+library(ComplexHeatmap)
+library(dendextend)
+library(circlize)
+library(grid)
+library(RColorBrewer)
+library(colorspace) 
+library(Polychrome)
+library(viridis)
 
 # Load MSA file
 msa_file <- "data/sanger/03_ab1_assembled_sequences/ALL_SAMPLES_consensus.fasta"
@@ -55,45 +63,79 @@ names(dna_set) <- sub_df$sample
 # Create empty matrix
 alignment_results <- data.frame()
 n <- length(dna_set)
-
 sequence_lengths <- setNames(nchar(df$sequence), df$sample) # To calculate weighed PID score
-# Fill with pairwise percent identity use either the df for both local and global or matrix for only one
-pb <- progress_bar$new(total = n * n)
-for (i in 1:n) {
-  for (j in 1:n) {
-    pb$tick() # Progress bar
-    aln  <- pairwiseAlignment(dna_set[[i]], dna_set[[j]], type = alignment_type, substitutionMatrix = NULL, 
-                                    gapOpening = gap_opening, gapExtension = gap_extension)
-    
-    # To weigh the alignment by the coverage, only for local, returns 1 for global
-    min_length <- min(sequence_lengths[[names(dna_set)[i]]], sequence_lengths[[names(dna_set)[j]]])
-    coverage <- nchar(gsub("-", "", as.character(alignedPattern(aln)))) / min_length
-    
-    # Print for debugging
-    # print(sprintf("Sample %s - %s coverage: %s, pid: %s, w_pid: %s", names(dna_set)[i], names(dna_set)[j], coverage, pid(aln_local), pid(aln)*coverage))
-    
-    alignment_results <- bind_rows(alignment_results, data.frame(
-      Sample1 = names(dna_set)[i],
-      Sample2 = names(dna_set)[j],
-      AlignmentType = alignment_type,
-      Score = score(aln),
-      PID = pid(aln),
-      pid_weighted = pid(aln)*coverage,
-      AlignedWidth =width(alignedPattern(aln))
-    )) 
-  }
+
+num_cores <- max(1L, parallel::detectCores() - 2L)
+cl <- makeCluster(num_cores)
+registerDoSNOW(cl)
+cat(paste("Registered", num_cores, "cores for parallel processing.\n"))
+# Generate all unique pairs of indices to iterate over
+pairs <- combn(1:n, 2, simplify = FALSE)
+
+pb_parallel <- txtProgressBar(max = length(pairs), style = 3)
+progress <- function(n) setTxtProgressBar(pb_parallel, n)
+opts <- list(progress = progress)
+
+# Use foreach to process in parallel
+alignment_results_parallel <- foreach(
+  p = pairs,
+  .combine = 'bind_rows',
+  .packages = c('pwalign', 'dplyr'),
+  .export = c("dna_set", "alignment_type", "gap_opening", "gap_extension", "sequence_lengths"),
+  .options.snow = opts
+) %dopar% {
+  # Get the indices for the current pair
+  i <- p[1]
+  j <- p[2]
+  
+  # Perform pairwise alignment (same logic as before)
+  aln <- pwalign::pairwiseAlignment(dna_set[[i]], dna_set[[j]],
+                                    type = alignment_type,
+                                    substitutionMatrix = NULL,
+                                    gapOpening = gap_opening,
+                                    gapExtension = gap_extension
+  )
+  
+  # Calculate weighted PID
+  min_length <- min(sequence_lengths[[names(dna_set)[i]]], sequence_lengths[[names(dna_set)[j]]])
+  coverage <- nchar(gsub("-", "", as.character(alignedPattern(aln)))) / min_length
+  
+  # Return a data frame for this single pair. `foreach` will collect and combine them.
+  data.frame(
+    Sample1 = names(dna_set)[i],
+    Sample2 = names(dna_set)[j],
+    Score = score(aln),
+    PID = pid(aln),
+    pid_weighted = pid(aln) * coverage,
+    AlignedWidth = width(alignedPattern(aln))
+  )
 }
 
-# Convert df to a matrix for distance matrix downsteams
-identity_matrix <- alignment_results %>%
-  select(Sample1, Sample2, pid_weighted) %>%
-  pivot_wider(names_from = Sample2, values_from = pid_weighted) %>%
-  tibble::column_to_rownames("Sample1")  # make Sample1 the rownames
+# Stop the cluster when its done
+close(pb_parallel)
+stopCluster(cl)
+cat("Parallel Processing Finished!")
+
+# Build the identity matrix
+ids <- names(dna_set)
+m    <- matrix(0, nrow = n, ncol = n,
+               dimnames = list(ids, ids))
+
+m[cbind(alignment_results_parallel$Sample1, alignment_results_parallel$Sample2)] <- alignment_results_parallel$pid_weighted
+m[cbind(alignment_results_parallel$Sample2, alignment_results_parallel$Sample1)] <- alignment_results_parallel$pid_weighted
+diag(m) <- 100
+identity_matrix <- m 
+# And transform into the long form
+alignment_results <- identity_matrix %>%                 
+  as.data.frame() %>%                                
+  tibble::rownames_to_column("Sample1") %>%                   
+  pivot_longer(-Sample1,                             
+               names_to  = "Sample2",
+               values_to = "pid_weighted")
 
 # Heatmap
-library(viridis)
 heat_colors <- c("#000000", "#120054", "#71047a", "#cf2649", "#fe9564", "#ffdda1", "#ffffda") # c("white", "white", "lightblue", "steelblue", "grey10")
-ggplot(alignment_results, aes(Sample1, Sample2, fill = pid_weighted)) +
+ggplot(align_results, aes(Sample1, Sample2, fill = pid_weighted)) +
   geom_tile(color = "white") +
   scale_fill_gradientn(colors = heat_colors, values = scales::rescale(c(0, 30, 40, 60, 80, 97, 100)), limits = c(0, 100)) +
   #scale_fill_viridis(option = "G", name = "Abundance", direction = 1, na.value = "white") +
@@ -101,58 +143,25 @@ ggplot(alignment_results, aes(Sample1, Sample2, fill = pid_weighted)) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 6), axis.text.y = element_text(size = 6)) +
   labs(title = "Pairwise Aligned (local) Sequence Identity Heatmap", subtitle = "Weighted by alignment length / shortest sequence", fill = "% Identity")
-
-ggsave("figures/Heatmap-local-weighted-align-fire.pdf", width = 8, height = 8)
+ggsave("results/sanger_plots/Heatmap-local-weighted-align-fire.pdf", width = 8, height = 8)
 
 ## Hierarcheal clustering of the pid data
 distance_matrix <- 100 - identity_matrix  # Low pid => high distance
 distance_obj <- as.dist(distance_matrix)
 hc <- hclust(distance_obj, method = "average") # "average", "complete", "ward.D2", "single", "centroid", "median"
 
-pdf("figures/Hierarchical-clustering-avg-weighted-local-all-isolates.pdf", width = 8, height = 5)
+pdf("results/sanger_plots//Hierarchical-clustering-avg-weighted-local-all-isolates.pdf", width = 8, height = 5)
 plot(hc, main = "Hierarchical Clustering of Sequences", #hang = -1,
-     xlab = "Samples", cex = 0.8)
+     xlab = "Samples", cex = 0.6)
 mtext("Local weighted alignment", side = 3, line = 0.5)
 dev.off()
 
-## Combined heatmap
-library(pheatmap)       # clustered heatmaps
-library(dichromat)
-library(ComplexHeatmap)
-library(dendextend)
-library(circlize)
-library(grid)
-library(RColorBrewer)
-library(colorspace) 
-library(Polychrome)
-
+## Clustergram with genus in the annotation on the right
 pid_mat <- as.matrix(identity_matrix)
 dist_obj <- as.dist(1 - pid_mat / 100)   # values 0-1; 0 = identical
 combined_cols <- colorRamp2(
   c(0, 90, 100),
   c("#152525", "#c1c6c6", "#fefefe")             # light grey → almost-black
-)
-#colorRampPalette(c("#000000", "#fffddd"))(100)
-
-pheatmap(
-  pid_mat,
-  color                = combined_cols,
-  cluster_rows         = TRUE,
-  cluster_cols         = TRUE,
-  clustering_distance_rows = dist_obj,   # use custom distances
-  clustering_distance_cols = dist_obj,
-  clustering_method    = "average",      # UPGMA; try "complete", "ward.D2",
-  display_numbers      = TRUE,          # or TRUE if you want the PID printed
-  number_format = "%.0f",
-  treeheight_row  = 70,   # default = 50  increase for tall row trees
-  treeheight_col  = 70,   # same for column tree
-  cellwidth       = NA,    # let pheatmap shrink cells automatically
-  cellheight      = NA,
-  border_color    = NA,
-  fontsize = 6,
-  legend_breaks        = c(0, 50, 100),
-  legend_labels        = c("0", "50", "100 % PID"),
-  main                 = "Pairwise PID clustered heat-map"
 )
 
 # Complex heatmap
@@ -242,7 +251,7 @@ row_anno <- rowAnnotation(
 
 ht_full <- ht + row_anno
 
-pdf("figures/Heatmap-genus-complete.pdf", width = 9, height = 8, useDingbats = FALSE)  # safer for non-standard fonts
+pdf("results/sanger_plots/Heatmap-genus-complete.pdf", width = 9, height = 8, useDingbats = FALSE)  # safer for non-standard fonts
 draw(ht_full)
 grid.text(
   "Local weighted alignment, average linkage",

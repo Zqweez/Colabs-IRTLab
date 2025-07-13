@@ -1,0 +1,263 @@
+# DADA2 workflow for ASVs
+
+This Quarto document executes an end‑to‑end **DADA2** pipeline:\
+\* quality‑checks raw FASTQ files (optional FastQC step)\
+\* filters / trims reads and denoises into ASVs\
+\* writes the results as CSV tables and a multi‑FASTA for downstream tools
+
+All required R/Bioconductor packages are installed and loaded **once** in the first chunk (`setup-packages`). Each subsequent chunk assumes those libraries are already attached, so you can safely run the file top-to-bottom or render it as HTML/markdown without additional setup.
+
+If desired run fastqc on the raw data
+
+
+
+```{r}
+#| label: setup-packages
+#| message: false
+required_pkgs <- c(
+  "dada2",        # DADA2 pipeline
+  "Biostrings",   # DNA sequence handling
+  "DECIPHER",     # alignment & distances
+  "tidyr",        # data reshaping
+  "dplyr"         # joins, pipes
+)
+
+if (!requireNamespace("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+
+for (pkg in required_pkgs) {
+  if (!requireNamespace(pkg, quietly = TRUE)) {
+    if (pkg %in% c("dada2", "Biostrings", "DECIPHER"))
+      BiocManager::install(pkg, ask = FALSE)
+    else
+      install.packages(pkg, dependencies = TRUE)
+  }
+  library(pkg, character.only = TRUE)
+}
+```
+
+```{bash}
+#| label: Run FASTqc on the raw reads
+# Set to *true* if you want to perform FastQC on the raw FASTQ files
+if false; then
+  source /Users/kasper/miniconda3/etc/profile.d/conda.sh
+  conda activate bioinfo_env
+  # Define input/output directories
+  SAMPLE_PRO="phe" 
+  RAW_DIR="../../data/ngs/raw_reads/phe"
+  OUT_DIR="../../data/ngs/fastqc/raw_phe"
+  
+  # Create output directory if it doesn't exist
+  mkdir -p "$OUT_DIR"
+  
+  # Run FastQC on all fastq.gz files in the input folder
+  fastqc -t 4 -o "$OUT_DIR" "$RAW_DIR"/*.fastq.gz
+fi
+```
+
+
+
+Load files modify to fit the correct path
+
+
+
+```{r}
+#| label: Load Raw reads
+#| include: false
+
+# packageVersion("dada2")
+# Define file paths V1
+# Name F = sample1_R1_001.fastq.gz, Name R = sample1_R2_001.fastq.gz
+data_path <- "../../data/ngs/"
+process_sample <- "phe"
+path <- paste0(data_path, paste0("raw_reads/", process_sample))
+# list the raw FASTQ files that will be processed
+list.files(path)
+
+fnFs <- sort(list.files(path, pattern="R1.*\\.fastq\\.gz$", full.names=TRUE))
+fnRs <- sort(list.files(path, pattern="R2.*\\.fastq\\.gz$", full.names=TRUE))
+sample.names <- sapply(basename(fnFs), function(x) sub("_R1.*", "", x))
+```
+
+
+
+Get quality profile, turned off with #\| eval: false but can be used as a simpler form of fastqc
+
+
+
+```{r}
+#| label: Plot Quality Profiles
+#| eval: false
+#| include: false
+# Plot the quality of the reads
+plotQualityProfile(fnFs[1:3])  # a couple of forward samples
+plotQualityProfile(fnRs[1:3])  # a couple of reverse samples
+```
+
+
+
+Filter and Trim reads with DADA2
+
+
+
+```{r}
+#| label: Filter and Trim
+#| include: false
+# Filter reads (adjust parameters)
+filt_path <- file.path(data_path, "filtered")
+filtFs <- file.path(filt_path, paste0(sample.names, "_F_filt.fastq.gz"))
+filtRs <- file.path(filt_path, paste0(sample.names, "_R_filt.fastq.gz"))
+
+todo <- !(file.exists(filtFs) & file.exists(filtRs))  # TRUE = still need processing
+sum(todo)   # how many still to do?
+
+out <- filterAndTrim(
+  fnFs[todo], filtFs[todo], # input & filtered forward files
+  fnRs[todo], filtRs[todo], # input & filtered reverse files
+  truncLen=c(285,225),      # truncate forward reads at x bp, reverse at y bp
+  maxN=0,                   # discard reads with any Ns (ambiguous bases)
+  maxEE=c(2,2),             # expected errors ≤2 for both reads
+  truncQ=2,                 # truncate reads at first base with quality ≤2
+  rm.phix=TRUE,             # remove reads matching the phiX genome
+  compress=TRUE,            # gzip output
+  multithread=TRUE,         # use multiple cores
+  #OMP = FALSE,             # disable OpenMP
+  verbose = TRUE            # show status
+)
+head(out)
+```
+
+
+
+Rerun Fastqc after the filtering if needed
+
+
+
+```{bash}
+#| label: FASTqc after filtering
+if false; then
+  source /Users/kasper/miniconda3/etc/profile.d/conda.sh
+  conda activate bioinfo_env
+  # Define input/output directories
+  RAW_DIR="./original-NGS-data/285-filtered"
+  OUT_DIR="./post-285-filtered-fastqc-reports"
+  
+  # Create output directory if it doesn't exist
+  mkdir -p "$OUT_DIR"
+  
+  # Run FastQC on all fastq.gz files in the input folder
+  fastqc -t 4 -o "$OUT_DIR" "$RAW_DIR"/*.fastq.gz
+fi
+```
+
+
+
+Learn errors and de-noise
+
+
+
+```{r echo=FALSE}
+#| label: Learn Errors
+# Errors
+errFs <- learnErrors(filtFs, multithread = TRUE) # randomize = TRUE?
+errRs <- learnErrors(filtRs, multithread = TRUE)
+# Visualize
+#plotErrors(errFs, nominalQ=TRUE)
+#plotErrors(errRs, nominalQ=TRUE)
+# Denoise
+derepFs <- derepFastq(filtFs)
+derepRs <- derepFastq(filtRs)
+dadaF <- dada(derepFs, err = errFs, multithread = TRUE)
+dadaR <- dada(derepRs, err = errRs, multithread = TRUE)
+```
+
+
+
+Merge paired ends, construct table and remove chimeras
+
+
+
+```{r echo=FALSE}
+#| label: Merge pairs and make sequence table
+mergers <- mergePairs(
+  dadaF, derepFs,
+  dadaR, derepRs,
+  minOverlap=12,     # require ≥12 bp overlap
+  maxMismatch=0,     # no mismatches allowed in the overlap
+  verbose=TRUE,
+  returnRejects = TRUE
+)
+
+seqtab <- makeSequenceTable(mergers)
+seqtab.nochim <- removeBimeraDenovo(
+  seqtab,
+  method="consensus",    # “pooled” or “consensus” approaches
+  multithread=TRUE,
+  verbose=TRUE
+)
+```
+
+
+
+Convert the table into more easy to read format with separate tables one for the counts and one for the IDs and corresponding sequences
+
+
+
+```{r}
+#| label: Generate data frames and save results 
+
+library(dplyr)
+
+# Get the vector of ASV sequences
+asv_seqs <- colnames(seqtab.nochim)
+# Get the length of each ASV sequence
+asv_seq_lenght <- unlist(lapply(asv_seqs, nchar))
+
+# Make short IDs
+asv_ids <- paste0("ASV", seq_along(asv_seqs))
+
+# Build the count table with IDs instead of full sequences
+asv_counts <- seqtab.nochim
+colnames(asv_counts) <- asv_ids
+rownames(asv_counts) <- sub("_.*", "", rownames(asv_counts))
+
+# Build the mapping table
+asv_map <- data.frame(
+  ASV_ID   = asv_ids,
+  Sequence = asv_seqs,
+  ASV_Lenght = asv_seq_lenght,
+  stringsAsFactors = FALSE
+)
+
+# If we want to save the data from this run
+folder_path = "../../results/ngs/"
+
+if (!dir.exists(folder_path)) dir.create(folder_path)
+
+write.csv(asv_counts, paste0(folder_path, "ASV_counts_ids.csv"), quote=FALSE)
+write.csv(asv_map, paste0(folder_path, "ASV_id_sequence_map.csv"), quote=FALSE, row.names=FALSE)
+
+# Also save the counts in long form with and without the sequences which can easily be loaded and turned into the asv counts with pivot_wider()
+asv_raw_df <- as.data.frame(asv_counts)
+asv_raw_df$Sample <- rownames(asv_raw_df)
+raw_ASV_counts <- pivot_longer(asv_raw_df, 
+                         cols = -Sample,
+                         names_to = "ASV", 
+                         values_to = "Counts")
+raw_ASV_counts <- raw_ASV_counts %>%
+  left_join(asv_map, by = c("ASV" = "ASV_ID"))
+
+# Save the long forms
+write.csv(raw_ASV_counts %>% select(-Sequence), paste0(folder_path, "ASVs-raw-counts-no-seq.csv"))
+write.csv(raw_ASV_counts, paste0(folder_path, "ASVs-raw-counts-seq.csv"))
+
+# Write a FASTA file containing every unique ASV sequence
+dna <- DNAStringSet(asv_map$Sequence) # If all ASVs should be saved just use the asv_seqs as argument
+
+names(dna) <- sprintf("%s",
+                      asv_map$ASV_ID)
+writeXStringSet(dna,
+                filepath = paste0("../../results/ngs/all_asvs_", process_sample,".fasta"), #All-ASV-variants
+                format   = "fasta")
+```
+

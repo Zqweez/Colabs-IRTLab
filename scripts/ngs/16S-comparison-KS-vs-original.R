@@ -72,44 +72,9 @@ gap_opening <- -5
 gap_extension <- -2
 
 sequence_lengths <- setNames(nchar(sub_df$sequence), sub_df$sample) # To calculate weighed PID score
-# Fill with pairwise percent identity use either the df for both local and global or matrix for only one
-pb <- progress_bar$new(total = n * n)
-for (i in 1:n) {
-  for (j in 1:n) {
-    pb$tick() # Progress bar
-    aln  <- pwalign::pairwiseAlignment(dna_set[[i]], dna_set[[j]], type = alignment_type, substitutionMatrix = NULL, 
-                              gapOpening = gap_opening, gapExtension = gap_extension)
-    
-    # To weigh the alignment by the coverage, only for local, returns 1 for global
-    min_length <- min(sequence_lengths[[names(dna_set)[i]]], sequence_lengths[[names(dna_set)[j]]])
-    coverage <- nchar(gsub("-", "", as.character(alignedPattern(aln)))) / min_length
-    
-    # Print for debugging
-    # print(sprintf("Sample %s - %s coverage: %s, pid: %s, w_pid: %s", names(dna_set)[i], names(dna_set)[j], coverage, pid(aln_local), pid(aln)*coverage))
-    
-    alignment_results <- bind_rows(alignment_results, data.frame(
-      Sample1 = names(dna_set)[i],
-      Sample2 = names(dna_set)[j],
-      AlignmentType = alignment_type,
-      Score = score(aln),
-      PID = pid(aln),
-      pid_weighted = pid(aln)*coverage,
-      AlignedWidth =width(alignedPattern(aln))
-    )) 
-  }
-}
-
-# Convert df to a matrix for distance matrix downsteams
-identity_matrix <- alignment_results %>%
-  select(Sample1, Sample2, pid_weighted) %>%
-  pivot_wider(names_from = Sample2, values_from = pid_weighted) %>%
-  tibble::column_to_rownames("Sample1")  # make Sample1 the rownames
 
 ## ---- ##
-num_cores <- detectCores() - 4
-if (is.na(num_cores) || num_cores < 1) {
-  num_cores <- 1
-} # Failsafe for single-core machines
+num_cores <- max(1L, parallel::detectCores() - 2L)
 cl <- makeCluster(num_cores)
 registerDoSNOW(cl)
 cat(paste("Registered", num_cores, "cores for parallel processing.\n"))
@@ -225,7 +190,8 @@ identity_matrix_sub <- identity_matrix
 
 distance_matrix <- 100 - identity_matrix_sub  # Low pid => high distance
 distance_obj <- as.dist(distance_matrix)
-hc <- hclust(distance_obj, method = "complete") # "average", "complete", "ward.D2", "single", "centroid", "median"
+cluster_method <- "ward.D2" # "average", "complete", "ward.D2", "single", "centroid", "median"
+hc <- hclust(distance_obj, method = cluster_method) 
 
 # Save current plotting parameters
 old_par <- par(no.readonly = TRUE)
@@ -240,11 +206,11 @@ dend_colored <- dend %>%
   set("labels_cex", 0.3)
 
 # Horizontal dendrogram with colors
-pdf("results/ngs/figures/Hierarchical-clustering-avg-weighted-local-ASVs-horizontal.pdf", width = 8, height = 12)
+pdf(sprintf("results/ngs/figures/Hierarchical-clustering-%s-weighted-local-ASVs-horizontal.pdf", cluster_method), width = 8, height = 12)
 par(mar = c(5.1, 4.1, 4.1, 8))
 plot(dend_colored, main = "Hierarchical Clustering of Sequences", 
      horiz = TRUE, xlab = "Distance")
-mtext("Local weighted alignment", side = 3, line = 0.2, cex = 0.7)
+mtext(sprintf("Local weighted alignment, %s linkage", cluster_method), side = 3, line = 0.2, cex = 0.7)
 dev.off()
 
 # Reset plotting parameters
