@@ -1,0 +1,27 @@
+query	pident	length	mismatch	gapopen	qstart	qend	sstart	send	evalue	bitscore	taxa
+KS-01	99.773	440	1	0	306	745	1	440	0.0	808	ASV31-Sphingobium czechense
+KS-02	99.773	440	1	0	304	743	1	440	0.0	808	ASV31-Sphingobium czechense
+KS-03	99.785	465	1	0	332	796	1	465	0.0	854	ASV421-Cupriavidus metallidurans
+KS-04	94.331	441	25	0	305	745	2	442	0.0	676	ASV1405-Bosea vaviloviae
+KS-05	99.785	465	1	0	326	790	1	465	0.0	854	ASV421-Cupriavidus metallidurans
+KS-06	99.14	465	4	0	331	795	1	465	0.0	837	ASV1700-Achromobacter deleyi
+KS-07	99.773	440	1	0	302	741	1	440	0.0	808	ASV31-Sphingobium czechense
+KS-08	99.773	440	1	0	299	738	1	440	0.0	808	ASV31-Sphingobium czechense
+KS-09	94.331	441	25	0	302	742	2	442	0.0	676	ASV1405-Bosea vaviloviae
+KS-10	95.279	466	22	0	337	802	1	466	0.0	739	ASV1130-Pseudoxanthomonas indica
+KS-11	99.143	467	4	0	324	790	3	469	0.0	841	ASV1670-Achromobacter xylosoxidans
+KS-20	99.773	440	1	0	303	742	1	440	0.0	808	ASV31-Sphingobium czechense
+KS-21	97.5	440	11	0	301	740	1	440	0.0	752	ASV748-Ensifer adhaerens
+KS-22	98.293	410	7	0	330	739	1	410	0.0	728	ASV526-Cupriavidus metallidurans
+KS-23	94.331	441	25	0	304	744	2	442	0.0	676	ASV1405-Bosea vaviloviae
+KS-24	99.785	465	1	0	331	795	1	465	0.0	854	ASV468-Cupriavidus plantarum
+KS-25	99.773	440	1	0	298	737	1	440	0.0	808	ASV31-Sphingobium czechense
+KS-26	99.785	465	1	0	330	794	1	465	0.0	854	ASV421-Cupriavidus metallidurans
+KS-27	99.32	441	3	0	304	744	2	442	0.0	798	ASV1405-Bosea vaviloviae
+KS-29	99.32	441	3	0	302	742	2	442	0.0	798	ASV1405-Bosea vaviloviae
+KS-30	99.143	467	4	0	326	792	3	469	0.0	841	ASV1670-Achromobacter xylosoxidans
+KS-32	99.785	465	1	0	318	782	1	465	0.0	854	ASV468-Cupriavidus plantarum
+KS-33	99.14	465	4	0	327	791	1	465	0.0	837	ASV1700-Achromobacter deleyi
+KS-34	99.785	465	1	0	331	795	1	465	0.0	854	ASV468-Cupriavidus plantarum
+KS-35	99.773	440	1	0	302	741	1	440	0.0	808	ASV31-Sphingobium czechense
+KS-36	99.355	465	3	0	328	792	1	465	0.0	843	ASV1700-Achromobacter deleyi

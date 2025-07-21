@@ -5,12 +5,13 @@ library(slider)
 # ---- Samples are
 # This part is to modify the raw data in dt files and save it as CSV files with a correct header
 samples <- c("20250702-m1.dt1", "20250702-m2.dt2", "20250702-m4.dt4")
-sample <- samples[3]
+samples <- c("20250702-m1.dt1", "20250702-m2.dt2", "20250702-m4.dt4")
+sample <- samples[1]
 
 growth <- read.table(paste0("./data/phe_growth/",sample), sep = ",", header = FALSE)
 sample <- sub("\\.dt[0-9]+$", "", sample)  # Remove the .dt1, .dt2, etc. from the sample name
 # Load the header from the txt file
-header <- read.csv(paste0("./data/phe_growth/",sample, ".txt"), sep=",", header = F)
+header <- read.csv(paste0("./data/phe_growth/",sub(".*-","",sample), ".txt"), sep=",", header = F)
 colnames(growth) <- header[1,]
 
 # The Biophotorecorder is a bit unreliable when it comes to when it starts to measure either it starts at 0 or below 0

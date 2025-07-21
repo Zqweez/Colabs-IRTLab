@@ -12,9 +12,9 @@ import pandas as pd
 import re
 
 # --- Config ---
-input_fasta = Path("data/sanger/03_ab1_assembled_sequences/ALL_SAMPLES_consensus.fasta")
+input_fasta = Path("data/sanger/KS_only_formatted_consensus.fasta")
 # Chose which database to use ezbiocloud/ezbio_db or SILVA/silva_nr99_db base name only, no .nsq etc.
-blast_db = Path("databases/ezbiocloud/ezbio_db")
+blast_db = Path("databases/Isolates/isolate_db")
 vsearch_db = Path("databases/ezbiocloud/ezbiocloud.fa") # VSEARCH database, if using VSEARCH
 
 output_dir = Path("data/sanger/04_taxa_files")
@@ -26,7 +26,7 @@ top_hits_compact_output = output_dir / "blast_top_hit_compact.tsv"
 sintax_combined_output = output_dir / "sintax_results.tsv"
 
 # --- Process ---
-method = "sintax"  # blast or sintax
+method = "blast"  # blast or sintax
 all_hits = []
 
 if method == "blast":
@@ -48,7 +48,7 @@ if method == "blast":
             "-db", blast_db,
             "-out", str(temp_out_blast),
             "-outfmt", "6 qseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore stitle",
-            "-num_threads", "5"
+            "-num_threads", "8"
         ]
 
         try:

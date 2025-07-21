@@ -63,7 +63,7 @@ Load files modify to fit the correct path
 # Define file paths V1
 # Name F = sample1_R1_001.fastq.gz, Name R = sample1_R2_001.fastq.gz
 data_path <- "../../data/ngs/"
-process_sample <- "phe"
+process_sample <- "none" #phe, nap, none
 path <- paste0(data_path, paste0("raw_reads/", process_sample))
 # list the raw FASTQ files that will be processed
 list.files(path)
@@ -77,8 +77,6 @@ Get quality profile, turned off with #\| eval: false but can be used as a simple
 
 ```{r}
 #| label: Plot Quality Profiles
-#| eval: false
-#| include: false
 # Plot the quality of the reads
 plotQualityProfile(fnFs[1:3])  # a couple of forward samples
 plotQualityProfile(fnRs[1:3])  # a couple of reverse samples
@@ -90,27 +88,29 @@ Filter and Trim reads with DADA2
 #| label: Filter and Trim
 #| include: false
 # Filter reads (adjust parameters)
-filt_path <- file.path(data_path, "filtered")
+filt_path <- file.path(data_path, "filtered", process_sample)
 filtFs <- file.path(filt_path, paste0(sample.names, "_F_filt.fastq.gz"))
 filtRs <- file.path(filt_path, paste0(sample.names, "_R_filt.fastq.gz"))
 
 todo <- !(file.exists(filtFs) & file.exists(filtRs))  # TRUE = still need processing
 sum(todo)   # how many still to do?
 
-out <- filterAndTrim(
-  fnFs[todo], filtFs[todo], # input & filtered forward files
-  fnRs[todo], filtRs[todo], # input & filtered reverse files
-  truncLen=c(285,225),      # truncate forward reads at x bp, reverse at y bp
-  maxN=0,                   # discard reads with any Ns (ambiguous bases)
-  maxEE=c(2,2),             # expected errors ≤2 for both reads
-  truncQ=2,                 # truncate reads at first base with quality ≤2
-  rm.phix=TRUE,             # remove reads matching the phiX genome
-  compress=TRUE,            # gzip output
-  multithread=TRUE,         # use multiple cores
-  #OMP = FALSE,             # disable OpenMP
-  verbose = TRUE            # show status
-)
-head(out)
+if (sum(todo) > 0) {
+  out <- filterAndTrim(
+    fnFs[todo], filtFs[todo], # input & filtered forward files
+    fnRs[todo], filtRs[todo], # input & filtered reverse files
+    truncLen=c(285,225),      # truncate forward reads at x bp, reverse at y bp
+    maxN=0,                   # discard reads with any Ns (ambiguous bases)
+    maxEE=c(2,2),             # expected errors ≤2 for both reads
+    truncQ=2,                 # truncate reads at first base with quality ≤2
+    rm.phix=TRUE,             # remove reads matching the phiX genome
+    compress=TRUE,            # gzip output
+    multithread=TRUE,         # use multiple cores
+    #OMP = FALSE,             # disable OpenMP
+    verbose = TRUE            # show status
+  )
+  head(out)
+}
 ```
 
 Rerun Fastqc after the filtering if needed
@@ -200,12 +200,14 @@ asv_map <- data.frame(
 )
 
 # If we want to save the data from this run
-folder_path = "../../results/ngs/"
+results_path = "../../results/ngs/"
 
 if (!dir.exists(folder_path)) dir.create(folder_path)
+folder_path <- paste0(results_path, process_sample)
+if (!dir.exists(folder_path)) dir.create(folder_path)
 
-write.csv(asv_counts, paste0(folder_path, "ASV_counts_ids.csv"), quote=FALSE)
-write.csv(asv_map, paste0(folder_path, "ASV_id_sequence_map.csv"), quote=FALSE, row.names=FALSE)
+write.csv(asv_counts, paste0(folder_path, "ASV_counts_ids_", process_sample, ".csv"), quote=FALSE)
+write.csv(asv_map, paste0(folder_path, "ASV_id_sequence_map_", process_sample, ".csv"), quote=FALSE, row.names=FALSE)
 
 # Also save the counts in long form with and without the sequences which can easily be loaded and turned into the asv counts with pivot_wider()
 asv_raw_df <- as.data.frame(asv_counts)
@@ -218,8 +220,7 @@ raw_ASV_counts <- raw_ASV_counts %>%
   left_join(asv_map, by = c("ASV" = "ASV_ID"))
 
 # Save the long forms
-write.csv(raw_ASV_counts %>% select(-Sequence), paste0(folder_path, "ASVs-raw-counts-no-seq.csv"))
-write.csv(raw_ASV_counts, paste0(folder_path, "ASVs-raw-counts-seq.csv"))
+# write.csv(raw_ASV_counts %>% select(-Sequence), paste0(folder_path, "ASVs-raw-counts-no-seq.csv"))
 
 # Write a FASTA file containing every unique ASV sequence
 dna <- DNAStringSet(asv_map$Sequence) # If all ASVs should be saved just use the asv_seqs as argument

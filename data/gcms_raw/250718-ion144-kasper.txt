@@ -1,0 +1,104 @@
+Ion 144.00 (143.70 to 144.70): 20250718_Nap-0_05.D\data.ms
+Nap-0.05
+
+Peak #	Ret Time	Type	Width	Area	Start Time	End Time	
+1	6.016	BB  	0.113	     14474720	5.900	6.207	
+2	7.584	BB  	0.143	     18545464	7.453	7.923	
+3	9.161	BB  	0.152	     18304836	9.038	9.530	
+4	10.734	BB  	0.143	     19195346	10.624	11.072	
+Ion 144.00 (143.70 to 144.70): 20250714-ehc-1.D\data.ms
+EHC-1
+
+Peak #	Ret Time	Type	Width	Area	Start Time	End Time	
+Ion 144.00 (143.70 to 144.70): 20250714-ehc-2.D\data.ms
+EHC-2
+
+Peak #	Ret Time	Type	Width	Area	Start Time	End Time	
+Ion 144.00 (143.70 to 144.70): 20250714-ehc-od-1.D\data.ms
+EHC-OD1
+
+Peak #	Ret Time	Type	Width	Area	Start Time	End Time	
+1	6.071	BV  	0.160	     16893756	5.901	6.196	
+2	7.632	BB  	0.208	     32750853	7.442	8.218	
+3	9.207	BB  	0.222	     35572656	9.049	9.826	
+4	10.786	BB  	0.224	     36426508	10.646	11.433	
+Ion 144.00 (143.70 to 144.70): 20250714-ehc-od-2.D\data.ms
+EHC-OD2
+
+Peak #	Ret Time	Type	Width	Area	Start Time	End Time	
+Ion 144.00 (143.70 to 144.70): 20250714-ks3-100-1.D\data.ms
+KS3-1/100-1
+
+Peak #	Ret Time	Type	Width	Area	Start Time	End Time	
+Ion 144.00 (143.70 to 144.70): 20250714-ks3-100-2.D\data.ms
+KS3-1/100-2
+
+Peak #	Ret Time	Type	Width	Area	Start Time	End Time	
+Ion 144.00 (143.70 to 144.70): 20250714-ks3-10-1.D\data.ms
+KS3-1/10-1
+
+Peak #	Ret Time	Type	Width	Area	Start Time	End Time	
+Ion 144.00 (143.70 to 144.70): 20250714-ks3-10-2.D\data.ms
+KS3-1/10-2
+
+Peak #	Ret Time	Type	Width	Area	Start Time	End Time	
+Ion 144.00 (143.70 to 144.70): 20250714-ks8-100-1.D\data.ms
+KS8-1/100-1
+
+Peak #	Ret Time	Type	Width	Area	Start Time	End Time	
+Ion 144.00 (143.70 to 144.70): 20250714-ks8-100-2.D\data.ms
+KS8-1/100-2
+
+Peak #	Ret Time	Type	Width	Area	Start Time	End Time	
+Ion 144.00 (143.70 to 144.70): 20250714-ks8-10-1.D\data.ms
+KS8-1/10-1
+
+Peak #	Ret Time	Type	Width	Area	Start Time	End Time	
+Ion 144.00 (143.70 to 144.70): 20250714-ks8-10-2.D\data.ms
+KS8-1/10-2
+
+Peak #	Ret Time	Type	Width	Area	Start Time	End Time	
+Ion 144.00 (143.70 to 144.70): 20250714-ks8-ks3-1.D\data.ms
+KS8-KS3-1
+
+Peak #	Ret Time	Type	Width	Area	Start Time	End Time	
+1	6.088	BV  	0.140	     18312586	5.933	6.196	
+2	7.662	BB  	0.206	     32512079	7.519	8.218	
+3	9.234	BB  	0.216	     32456001	9.093	9.793	
+4	10.804	BB  	0.207	     34041961	10.667	11.389	
+Ion 144.00 (143.70 to 144.70): 20250714-ks8-ks3-2.D\data.ms
+KS8-KS3-1
+
+Peak #	Ret Time	Type	Width	Area	Start Time	End Time	
+1	7.662	BB  	0.192	     24581570	7.475	8.153	
+2	9.224	BB  	0.215	     39655616	9.071	9.869	
+3	10.795	BB  	0.234	     36077908	10.668	11.367	
+Ion 144.00 (143.70 to 144.70): 20250714-ks8-od-1.D\data.ms
+KS8-OD1
+
+Peak #	Ret Time	Type	Width	Area	Start Time	End Time	
+1	9.300	BB  	0.216	     22293210	9.159	9.782	
+Ion 144.00 (143.70 to 144.70): 20250714-ks8-od-2.D\data.ms
+KS8-OD2
+
+Peak #	Ret Time	Type	Width	Area	Start Time	End Time	
+1	6.082	BB  	0.141	     14628184	5.846	6.196	
+2	7.655	BB  	0.186	     21530360	7.508	8.109	
+3	9.223	BB  	0.189	     23270742	9.093	9.694	
+4	10.803	BB  	0.209	     24093860	10.646	11.291	
+Ion 144.00 (143.70 to 144.70): 20250714-nc-1.D\data.ms
+NC-1
+
+Peak #	Ret Time	Type	Width	Area	Start Time	End Time	
+Ion 144.00 (143.70 to 144.70): 20250714-nc-2.D\data.ms
+NC-2
+
+Peak #	Ret Time	Type	Width	Area	Start Time	End Time	
+Ion 144.00 (143.70 to 144.70): 20250718_Nap-0_1.D\data.ms
+Nap-0.1
+
+Peak #	Ret Time	Type	Width	Area	Start Time	End Time	
+1	6.000	BB  	0.102	     38116937	5.857	6.207	
+2	7.577	BB  	0.177	     38784650	7.453	8.054	
+3	9.155	BB  	0.175	     35037119	9.038	9.607	
+4	10.726	BB  	0.161	     40926256	10.624	11.159	

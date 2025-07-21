@@ -5,7 +5,7 @@ library(lubridate)
 # 20250619-isolates.dt3, 20250626-KS1-5.dt3, 20250626-KS8.dt4, 20250701-precult.dt1
 # This part is to modify the raw data in dt files and save it as CSV files with a correct header
 samples <- c("20250619-isolates.dt3", "20250626-KS1-5.dt3", "20250626-KS8.dt4", "20250701-precult.dt1")
-sample <- samples[4]
+sample <- samples[3]
 
 growth <- read.table(paste0("./data/growth/",sample), sep = ",", header = FALSE)
 sample <- sub("\\.dt[0-9]+$", "", sample)  # Remove the .dt1, .dt2, etc. from the sample name
@@ -70,6 +70,7 @@ ggplot(growth_long,
   labs(y = expression(OD[600]),
        colour  = "Isolate",
        title   = "Growth curves for Isolates") +
+  coord_cartesian(ylim = c(0, 2.5)) +
   theme_minimal() +
   theme(
     text = element_text(size = 12),

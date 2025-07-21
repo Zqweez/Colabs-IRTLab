@@ -16,6 +16,7 @@ library(Polychrome)
 library(viridis)
 
 # Load MSA file
+msa_file <- "data/sanger/KS_only_formatted_consensus.fasta" # File with only one KS filtered for summary
 msa_file <- "data/sanger/03_ab1_assembled_sequences/ALL_SAMPLES_consensus.fasta"
 dna_aln <- read.alignment(msa_file, format = "fasta")
 
@@ -49,14 +50,14 @@ taxa_strains <- taxa_strains %>%
   ) %>%
   select(query, genus, species, pident)
 
-write.csv(taxa_strains, file = "data/sanger/taxa-genus-species-pid.csv")
+write.csv(taxa_strains, file = "data/sanger/taxa-genus-species-pid-ks.csv")
 
 # Setup Alignment
 alignment_type <- "local" # or "global"
 gap_opening <- -5
 gap_extension <- -2
 
-sub_df <- df
+sub_df <- df %>% filter(str_starts(sample,"KS"))
 dna_set <- DNAStringSet(sub_df$sequence)
 names(dna_set) <- sub_df$sample
 
@@ -135,7 +136,7 @@ alignment_results <- identity_matrix %>%
 
 # Heatmap
 heat_colors <- c("#000000", "#120054", "#71047a", "#cf2649", "#fe9564", "#ffdda1", "#ffffda") # c("white", "white", "lightblue", "steelblue", "grey10")
-ggplot(align_results, aes(Sample1, Sample2, fill = pid_weighted)) +
+ggplot(alignment_results, aes(Sample1, Sample2, fill = pid_weighted)) +
   geom_tile(color = "white") +
   scale_fill_gradientn(colors = heat_colors, values = scales::rescale(c(0, 30, 40, 60, 80, 97, 100)), limits = c(0, 100)) +
   #scale_fill_viridis(option = "G", name = "Abundance", direction = 1, na.value = "white") +
@@ -160,8 +161,12 @@ dev.off()
 pid_mat <- as.matrix(identity_matrix)
 dist_obj <- as.dist(1 - pid_mat / 100)   # values 0-1; 0 = identical
 combined_cols <- colorRamp2(
-  c(0, 90, 100),
+  c(0, 90, 95),
   c("#152525", "#c1c6c6", "#fefefe")             # light grey → almost-black
+)
+combined_cols <- colorRamp2(
+  c(0, 70, 97),
+  c("#3366aa", "#dedede", "#de7877")             # light grey → almost-black
 )
 
 # Complex heatmap
@@ -186,32 +191,33 @@ ht <- Heatmap(
   
   cell_fun = function(j, i, x, y, width, height, fill) {
     identity_i <- pid_mat[i, j]
-    color_ide <- ifelse(identity_i < 52, "#bbb", "#000")
+    color_ide <- ifelse(identity_i < 20, "#bbb", "#000")
     grid.text(sprintf("%.0f", identity_i),        # one decimal place
               x, y,
-              gp = gpar(fontsize = 3, col = color_ide))# change to white if fill is dark
+              gp = gpar(fontsize = 4, col = color_ide))# change to white if fill is dark
   },
   
   # cosmetic
-  row_names_gp = gpar(fontsize = 7),      # shrink row text if many samples
-  column_names_gp = gpar(fontsize = 7),
+  row_names_gp = gpar(fontsize = 8),      # shrink row text if many samples
+  column_names_rot = 45,
+  column_names_gp = gpar(fontsize = 8, just="right"),
   heatmap_legend_param = list(
     at = c(0, 50, 100),
     labels = c("0 %", "50 %", "100 %")
   ),
-  column_title      = "Combined Heatmap of Percent Identity (%) \n ",
+  column_title      = "Clustergram of Percent Identity (%) \n ",
   column_title_gp   = gpar(fontsize = 12, fontface = "bold")
 )
 
 ht_draw <- draw(ht)
 dend <- row_dend(ht_draw)
 k <- 15
-row_clu <- cutree(dend, k = k)   # named vector: sample → cluster_id
+row_clu <- cutree(dend, k=15)   # named vector: sample → cluster_id
 
 clu_genus <- tibble(sample = names(row_clu),
                     cluster = row_clu) %>%
   left_join(taxa_strains, by = c("sample" = "query")) %>%
-  count(cluster, genus, name = "n") %>%
+  dplyr::count(cluster, genus, name = "n") %>%
   group_by(cluster) %>%
   mutate(prop = n / sum(n)) %>%
   slice_max(order_by = prop, n = 1, with_ties = FALSE) %>%   # top genus
@@ -246,16 +252,24 @@ row_anno <- rowAnnotation(
   Genus = row_genus_vec,
   col   = list(Genus = gen_cols),
   width = unit(4, "mm"),
-  show_legend = TRUE
+  show_legend = TRUE,
+  
+  annotation_legend_param = list(
+    Genus = list(
+      title      = "Genus",
+      labels_gp  = gpar(fontsize = 10,  fontface = "italic"),   # ← labels
+      title_gp   = gpar(fontsize = 11, fontface = "bold")       # ← title (optional)
+    )
+  )
 )
 
 ht_full <- ht + row_anno
 
-pdf("results/sanger_plots/Heatmap-genus-complete.pdf", width = 9, height = 8, useDingbats = FALSE)  # safer for non-standard fonts
+pdf("results/sanger_plots/Heatmap-genus-ks-complete.pdf", width = 9, height = 8, useDingbats = FALSE)  # safer for non-standard fonts
 draw(ht_full)
 grid.text(
   "Local weighted alignment, average linkage",
-  x = unit(0.5, "npc"),                    # centred
+  x = unit(0.44, "npc"),                    # centred
   y = unit(1, "npc") - unit(24, "pt"),                   
   gp = gpar(fontsize = 10)
 )
@@ -271,7 +285,7 @@ pca_var <- pca_var / sum(pca_var)
 
 pca_df <- as.data.frame(pca$x)
 pca_df$Sample <- rownames(pca_df)
-pca_df$group = df$group
+pca_df$group <- sub("-[12]$", "", pca_df$Sample)
 
 
 ggplot(pca_df, aes(x = PC1, y = PC2, color = group, label = Sample)) +

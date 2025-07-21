@@ -3,16 +3,37 @@ title: "analyze_asvs"
 format: html
 ---
 
+Load all packages required for this script
+
+```{r}
+library(tidyverse)
+library(gtools)
+library(RColorBrewer)
+library(forcats)
+library(DECIPHER) 
+library(Biostrings)   
+library(tidyverse)
+library(forcats)
+library(Polychrome)
+library(progress)
+library(glue)
+library(scales)
+library(stringr)
+library(colorspace)
+```
+
 Load the generated ASV files
 
 ```{r}
 #| label: Load saved data
 #| include: false
-folder_path = "../../results/ngs/"
-asv_counts <- read.csv(paste0(folder_path, "ASV_counts_ids.csv"), header = TRUE)
+process_sample <- "none" #phe, nap, none
+folder_path = paste0("../../results/ngs/", process_sample, "/")
+
+asv_counts <- read.csv(paste0(folder_path, "ASV_counts_ids_", process_sample, ".csv"), header = TRUE)
 asv_counts <- asv_counts %>% 
   tibble::column_to_rownames("X")
-asv_map <- read.csv(paste0(folder_path, "ASV_id_sequence_map.csv"), header = TRUE)
+asv_map <- read.csv(paste0(folder_path, "ASV_id_sequence_map_", process_sample, ".csv"), header = TRUE)
 
 ```
 
@@ -73,87 +94,10 @@ rownames(richEven) <- gsub("_F_filt.fastq.gz$", "", rownames(asv_counts))
 print(richEven)
 ```
 
-Do some clustering and plotting of the ASVs of interest uses global and local pairwise alignment. Can also weight the local alignment with the length of the aligned sequence against the shortest query.
-
-```{r}
-#| echo: false
-library(viridis) # Use viridis for palette
-sub_df <- ASV_of_i
-dna_set <- DNAStringSet(sub_df$Sequence)
-names(dna_set) <- sub_df$ASV
-
-# Create empty matrix
-alignment_results <- data.frame()
-n <- length(dna_set)
-
-sequence_lengths <- setNames(nchar(sub_df$Sequence), sub_df$ASV) # To calculate weighed PID score
-# Fill with pairwise percent identity use either the df for both local and global or matrix for only one
-for (i in 1:n) {
-  for (j in 1:n) {
-    pb$tick() # Progress bar
-    aln  <- pairwiseAlignment(dna_set[[i]], dna_set[[j]], type = alignment_type, substitutionMatrix = NULL, 
-                                    gapOpening = gap_opening, gapExtension = gap_extension)
-    
-    # To weigh the alignment by the coverage, only for local, returns 1 for global
-    min_length <- min(sequence_lengths[[names(dna_set)[i]]], sequence_lengths[[names(dna_set)[j]]])
-    coverage <- nchar(gsub("-", "", as.character(alignedPattern(aln)))) / min_length
-    
-    # Print for debugging
-    # print(sprintf("Sample %s - %s coverage: %s, pid: %s, w_pid: %s", names(dna_set)[i], names(dna_set)[j], coverage, pid(aln_local), pid(aln)*coverage))
-    
-    alignment_results <- bind_rows(alignment_results, data.frame(
-      Sample1 = names(dna_set)[i],
-      Sample2 = names(dna_set)[j],
-      AlignmentType = alignment_type,
-      Score = score(aln),
-      PID = pid(aln),
-      pid_weighted = pid(aln)*coverage,
-      AlignedWidth =width(alignedPattern(aln))
-    )) 
-  }
-}
-
-# Convert df to a matrix for distance matrix downsteams
-identity_matrix <- alignment_results %>%
-  select(Sample1, Sample2, pid_weighted) %>%
-  pivot_wider(names_from = Sample2, values_from = pid_weighted) %>%
-  tibble::column_to_rownames("Sample1")  # make Sample1 the rownames
-
-# Select a nice palette or just use viridis
-heat_colors <- c("white", "lightblue", "green2", "yellow2", "red2") # c("white", "white", "lightblue", "steelblue", "grey10")
-
-# Heatmap
-ggplot(alignment_results, aes(ASV_row1, ASV_row2, fill = PID)) +
-  geom_tile(color = "white") +
-  #scale_fill_gradientn(colors = heat_colors,
-                      #values = scales::rescale(c(0, 40, 60, 90, 100)), limits = c(0, 100)) +
-  scale_fill_viridis(option = "A", name = "Abundance", direction = 1, na.value = "white") +
-  xlab("") + ylab("") +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-  labs(title = "Pairwise Aligned (local) Sequence Identity Heatmap", subtitle = "Weighted by alignment length / shortest sequence", fill = "% Identity")
-
-# Hierarchrial clustering
-distance_matrix <- 100 - identity_matrix  # Low pid => high distance
-distance_obj <- as.dist(pid_mat)
-hc <- hclust(distance_obj, method = "average") # "average", "complete", "ward.D2", "single", "centroid", "median"
-
-plot(hc, main = "Hierarchical Clustering of Sequences", #hang = -1,
-     xlab = "Samples", cex = 0.15)
-mtext("Local weighted alignment", side = 3, line = 0.5)
-```
-
 Convert the raw counts to relative abundance and display plots of the relative quantity of each ASV. Note
 
 ```{r}
-#| echo: false
-# Use tidyverse to create the long form of the data
-#install.packages("tidyverse")
-library(tidyverse)
-library(gtools)
-library(RColorBrewer)
-library(forcats)
-
+#| include: false
 # Get total counts and calculate relative abundance
 row_total_counts <- rowSums(asv_counts)
 asv_rel_abundance <- asv_counts / row_total_counts
@@ -176,203 +120,7 @@ asv_long[order(asv_long$Sample),]
 asv_long$P_Sample <- sub("-.*", "", asv_long$Sample)
 ```
 
-If there are many ASVs we might want to cluster. This code block clusters based on pairwise distances using the DECIPHER distancematrix. Each sample will be processed separately, only one sample per plot. The linkage criteria and height difference to use can be set as the parameters below. The taxa associated with the most abundant ASV for each cluster can also be included in the label.
-
-```{r}
-#| echo: false
-library(DECIPHER) 
-library(Biostrings)   
-library(tidyverse)
-library(forcats)
-library(Polychrome)
-library(progress)
-library(glue)
-library(scales)
-library(stringr)
-library(colorspace)
-
-loop_samples <- c('P1', 'P2', 'P3')
-loop_linkage <- c("complete", "average")
-loop_similarity <- c(0.005, 0.01, 0.03)
-show_taxa <- TRUE
-filter_level <- 0 # Lowest relative abundance of an ASV to be kept in the data
-
-n_loops <- length(loop_samples)*length(loop_linkage)*length(loop_similarity)
-pb <- progress_bar$new(total = n_loops)
-
-# Load taxa-file
-taxa_df <- read.csv("../../results/ngs/taxa_files/blast_top_hit_compact.tsv", sep = "\t", header = TRUE)
-taxa_df$taxa <- sub(".*s:", "", taxa_df$taxa)
-
-# Before running the loop filter the data
-filtered_set <- asv_long %>%
-  group_by(ASV, P_Sample) %>%
-  mutate(p_sample_proportion = sum(RelativeAbundance)/length(unique(Sample))) %>%
-  ungroup() %>%
-  filter(p_sample_proportion > filter_level) %>%
-  group_by(Sample) %>%
-  mutate(RelativeAbundance = RelativeAbundance/sum(RelativeAbundance)) %>%
-  ungroup()
-
-# Using asv_long from before and adding the sequence
-asv_seqs <- asv_map %>%
-        distinct(ASV_ID, Sequence)
-
-# Build a DNAStringSet with one entry per ASV
-seq_set <- DNAStringSet(asv_seqs$Sequence)
-names(seq_set) <- asv_seqs$ASV           # preserve ASV IDs
-
-## Pairwise distances, global alignment (proportion mismatches, 0–1)
-dm <- DistanceMatrix(seq_set, type = "dist", verbose = FALSE)  # fast C implementation
-
-# Loop over different clustering
-for (i_linkage in loop_linkage) {
-  for (i_similarity in loop_similarity) {
-    hc <- hclust(dm, method = i_linkage)
-    cl_vec <- cutree(hc, h = i_similarity) 
-    
-    ## Map the ASVs → ClusterID
-    asv2clust <- tibble(
-      ASV        = names(seq_set),
-      ClusterID  = paste0("CL", cl_vec)    # convert integer to string label
-    )
-    if (show_taxa) {
-      top_taxa <- filtered_set %>%
-        group_by(ASV) %>%
-        summarise(Abund = sum(RelativeAbundance), .groups = "drop") %>%
-        left_join(asv2clust, by = "ASV") %>%
-        left_join(taxa_df,  by = c("ASV" = "query")) %>%
-        group_by(ClusterID) %>%
-        slice_max(Abund, n = 1, with_ties = FALSE) %>%
-        ungroup() %>%
-        mutate(Label = sprintf("%s — %s", ClusterID, taxa)) %>%
-        select(ClusterID, Label)
-      cluster_levels <- top_taxa$Label
-    } else {
-      cluster_levels <- unique(asv2clust$ClusterID)
-    }
-    
-    n_clusters     <- length(cluster_levels)
-    # Colors using polychrome
-    set.seed(0)
-    anchor_pastel <- c("#FF0000", "#00FF00", "#0000FF")
-    main_colors <- createPalette(n_clusters - 1, anchor_pastel)
-    
-    pastelise <- function(cols, desat = 0.6, lighten = 0.3) {
-      cols %>%
-        desaturate(amount = desat) %>%   # pull chroma toward grey
-          lighten(amount = lighten)      # push luminance up toward white
-    }
-    main_colors <- pastelise(main_colors)
-    final_palette <- c("Other" = "grey70", main_colors)
-    names(final_palette) <- cluster_levels
-      
-    # Loop over all the variations of interest
-    for (i_sample in loop_samples) {
-      pb$tick() # Progress bar
-      print(sprintf("Working sample: %s distance %s link %s",i_sample, i_similarity, i_linkage))
-
-      sub_set <- filtered_set[grepl(paste0("^",i_sample), filtered_set$Sample), ]
-
-      ## Merge counts inside each cluster
-      if (show_taxa) {
-        cluster_df <- sub_set %>%                  # Sample | ASV | RelativeAbundance
-          left_join(asv2clust, by = "ASV") %>%      # Add ClusterID
-          left_join(top_taxa,   by = "ClusterID") %>%
-          add_count(ClusterID, wt = RelativeAbundance, name = "total_cluster_abundance") %>%
-          mutate(
-            Label = fct_lump_n(
-              Label, n = 50,
-              w = total_cluster_abundance,
-              other_level = "Other"
-            )
-          ) %>%
-          group_by(Sample, Label) %>%
-          summarise(ClustRelAbundance = sum(RelativeAbundance), .groups = "drop") %>%
-          add_count(Label, wt = ClustRelAbundance,
-                    name = "total_abundance_final") %>%
-          mutate(Label = fct_reorder(Label, total_abundance_final),
-                 Label = fct_relevel(Label, "Other", after = 0)) %>%
-          ungroup()
-      } else {
-        cluster_df <- sub_set %>%                  # Sample | ASV | RelativeAbundance
-        left_join(asv2clust, by = "ASV") %>%      # Add ClusterID
-        add_count(ClusterID, wt = RelativeAbundance, name = "total_cluster_abundance") %>%
-        mutate(
-          ClusterID = fct_lump_n(
-            f = ClusterID,
-            n = 50,
-            w = total_cluster_abundance,
-            other_level = "Other"
-          )
-        ) %>%
-        group_by(Sample, ClusterID) %>%
-        summarise(ClustRelAbundance = sum(RelativeAbundance), .groups = "drop") %>%
-        add_count(ClusterID, wt = ClustRelAbundance,
-                  name = "total_abundance_final") %>%
-        mutate(ClusterID = fct_reorder(ClusterID, total_abundance_final),
-               ClusterID = fct_relevel(ClusterID, "Other", after = 0)) %>%
-        ungroup()
-      }
-      
-      
-      # Titles and stuff
-      title_txt <- "Community composition — top 50 clusters"
-      subtitle_txt <- glue(
-        "{str_to_title(i_linkage)} linkage at {percent(i_similarity, accuracy = 0.1)} ",
-        "→ {comma(n_clusters)} clusters"
-      )
-      caption_txt <- "Clusters not in top 50 are grouped as “Other”."
-      
-      if (show_taxa) {
-        ggplot(cluster_df, aes(x = Sample, y = ClustRelAbundance, fill = Label)) +
-          geom_bar(stat = "identity", color = "grey30", linewidth = 0.2) +
-          scale_y_continuous(name = "Relative Abundance",
-            labels = scales::percent_format(),
-            expand = c(0, 0) # Remove padding at the bottom of the bars
-           ) +
-          scale_fill_manual(name = "Cluster (top-hit species)", values = final_palette) +
-          guides(fill = guide_legend(
-           override.aes = list(size = 3),   # icon / key size
-           ncol = 2 
-          )) +
-          labs(x = "Sample", title = title_txt, 
-               subtitle = subtitle_txt, caption = caption_txt) +
-          theme_minimal(base_size = 10) +
-          theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 8),
-            legend.text = element_text(size = 5),
-            legend.title = element_text(size = 10, face = "bold"),
-            legend.key.size = unit(2, "mm"),                 # width & height
-            legend.spacing.y = unit(1, "mm"),                # reduce spacing between keys
-            legend.position = "right"
-          ) 
-        ggsave(sprintf("figures/taxa-%s-dist-%s-link-%s.pdf",i_sample, i_similarity, i_linkage), 
-               width = 10, height = 5)
-      }else {
-        ggplot(cluster_df, aes(x = Sample, y = ClustRelAbundance, fill = ClusterID)) +
-          geom_bar(stat = "identity", color = "grey30", linewidth = 0.2) +
-          scale_y_continuous(name = "Relative Abundance",
-            labels = scales::percent_format(),
-            expand = c(0, 0) # Remove padding at the bottom of the bars
-           ) +
-          scale_fill_manual(name = "Cluster", values = final_palette) +
-          labs(x = "Sample", title = title_txt, 
-               subtitle = subtitle_txt, caption = caption_txt) +
-          theme_minimal(base_size = 10) +
-          theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 8),
-            legend.position = "right"
-            # legend.position = "none"
-          ) 
-        ggsave(sprintf("figures/%s-dist-%s-link-%s.pdf",i_sample, i_similarity, i_linkage), 
-               width = 8, height = 5)
-      }
-      
-    }
-  }
-}
-```
-
-If instead of having one file per sample and criteria this block generates one giant figure for all samples. In all other aspects it works very similar but always shows the taxonomic classification for each ASV.
+If there are many ASVs we might want to cluster. This code block clusters based on pairwise distances using the DECIPHER distancematrix. The linkage criteria and height difference to use can be set as the parameters below. The taxa associated with the most abundant ASV for each cluster can also be included in the label.This block generates one combined figure for all samples.
 
 ```{r}
 linkage <- "complete" #c("single", "average", "complete", "ward.D2")
@@ -380,7 +128,7 @@ similarity <- 0.01#c(0.005, 0.01, 0.03)
 filter_level <- 0.0005
 
 # Load taxa-file
-taxa_df <- read.csv("../../results/ngs/taxa_files/blast_top_hit_compact.tsv", sep = "\t", header = TRUE)
+taxa_df <- read.csv(paste0(folder_path, "/taxa_files/blast_top_hit_compact.tsv"), sep = "\t", header = TRUE)
 taxa_df$taxa <- sub(".*s:", "", taxa_df$taxa)
 
 # Before running the loop filter the data
@@ -489,22 +237,62 @@ ggplot(cluster_df, aes(x = Sample, y = ClustRelAbundance, fill = Label)) +
     legend.spacing.y = unit(1, "mm"),                # reduce spacing between keys
     legend.position = "right"
   ) 
-ggsave(sprintf("../../results/ngs/figures/Combined-all-samples-%s-%s-filter-%s.pdf", linkage, similarity, filter_level), width = 12, height = 5)
+ggsave(sprintf(paste0(folder_path, "figures/Combined-all-samples-%s-%s-filter-%s.pdf"), linkage, similarity, filter_level), width = 12, height = 5)
 ```
 
-Another way to cluster the ASVs apart from the PID is to do map each ASV to a taxa and then cluster on a taxonomic level. Below is an implementation to cluster ASVs on a species or genus level.
+Another way to cluster the ASVs apart from the PID is to do map each ASV to a taxa and then cluster on a taxonomic level. Below is an implementation to cluster ASVs on a species or genus level. But first generate the color palette for all samples to analyze
 
 ```{r}
 cluster_taxa_level <- "s" # s or g or f
+# Load taxa-file
+samples_to_color <- c("phe", "nap", "none")
+taxa_df <- data.frame()
+for (sample_path in samples_to_color) {
+  taxa_df <- taxa_df %>%
+    bind_rows(read.csv(paste0("../../results/ngs/", sample_path, "/taxa_files/blast_top_hit_compact.tsv"), sep = "\t", header = TRUE))
+}
+
+taxa_df <- taxa_df %>%
+  mutate(
+    g = sub(",s:.*", "", sub(".*g:", "", taxa)),
+    s = paste(g, sub("^.* ", "", sub(".*s:", "", taxa))),
+    f = sub(",g:.*", "", sub(".*f:", "", taxa)),
+    o = sub(",f:.*", "", sub(".*o:", "", taxa)),
+    c = sub(",o:.*", "", sub(".*c:", "", taxa)),
+    p = sub(",c:.*", "", sub(".*p:", "", taxa))
+  )
+
+cluster_levels <- as.character(unique(taxa_df[[cluster_taxa_level]]))
+n_clusters     <- length(cluster_levels)
+# Colors using polychrome
+set.seed(0)
+anchor_pastel <- c("#FF0000", "#00FF00", "#0000FF")
+main_colors <- createPalette(n_clusters, anchor_pastel)
+
+pastelise <- function(cols, desat = 0.6, lighten = 0.3) {
+  cols %>%
+    desaturate(amount = desat) %>%   # pull chroma toward grey
+    lighten  (amount = lighten)      # push luminance up toward white
+}
+main_colors <- pastelise(main_colors)
+final_palette <- c("Other" = "grey70", main_colors)
+names(final_palette) <- c("Other", cluster_levels)
+```
+
+```{r}
 filter_level <- 0
 # Load taxa-file
-taxa_df <- read.csv("../../results/ngs/taxa_files/blast_top_hit_compact.tsv", sep = "\t", header = TRUE)
-taxa_df$s <- sub(".*s:", "", taxa_df$taxa)
-taxa_df$g <- sub(",s:.*", "", sub(".*g:", "", taxa_df$taxa))
-taxa_df$f <- sub(",g:.*", "", sub(".*f:", "", taxa_df$taxa))
-taxa_df$o <- sub(",f:.*", "", sub(".*o:", "", taxa_df$taxa))
-taxa_df$c <- sub(",o:.*", "", sub(".*c:", "", taxa_df$taxa))
-taxa_df$p <- sub(",c:.*", "", sub(".*p:", "", taxa_df$taxa))
+taxa_df <- read.csv(paste0(folder_path, "/taxa_files/blast_top_hit_compact.tsv"), sep = "\t", header = TRUE)
+
+taxa_df <- taxa_df %>%
+  mutate(
+    g = sub(",s:.*", "", sub(".*g:", "", taxa)),
+    s = paste(g, sub("^.* ", "", sub(".*s:", "", taxa))),
+    f = sub(",g:.*", "", sub(".*f:", "", taxa)),
+    o = sub(",f:.*", "", sub(".*o:", "", taxa)),
+    c = sub(",o:.*", "", sub(".*c:", "", taxa)),
+    p = sub(",c:.*", "", sub(".*p:", "", taxa))
+  )
 
 # Before running the loop filter the data
 filtered_set <- asv_long %>%
@@ -540,7 +328,7 @@ filtered_taxa_df <- taxa_df %>%
 # Save the top ASV for each taxa cluster in a fasta file
 dna <- DNAStringSet(filtered_taxa_df$Sequence) 
 names(dna) <- sprintf("%s", filtered_taxa_df$ASV)
-writeXStringSet(dna, filepath = "../../results/ngs/top_ASVs_per_taxa.fasta", format   = "fasta")
+writeXStringSet(dna, filepath = paste0(folder_path, "/top_ASVs_per_taxa.fasta"), format   = "fasta")
 
 cluster_df <- filtered_set %>%                  # Sample | ASV | RelativeAbundance
     left_join(asv2clust, by = "ASV") %>%      # Add Cluster
@@ -559,22 +347,9 @@ cluster_df <- filtered_set %>%                  # Sample | ASV | RelativeAbundan
     mutate(Label = fct_reorder(Label, total_abundance_final),
            Label = fct_relevel(Label, "Other", after = 0)) %>%
     ungroup()
-  
+
 cluster_levels <- as.character(unique(asv2clust$Label))
 n_clusters     <- length(cluster_levels)
-# Colors using polychrome
-set.seed(0)
-anchor_pastel <- c("#FF0000", "#00FF00", "#0000FF")
-main_colors <- createPalette(n_clusters, anchor_pastel)
-
-pastelise <- function(cols, desat = 0.6, lighten = 0.3) {
-  cols %>%
-    desaturate(amount = desat) %>%   # pull chroma toward grey
-    lighten  (amount = lighten)      # push luminance up toward white
-}
-main_colors <- pastelise(main_colors)
-final_palette <- c("Other" = "grey70", main_colors)
-names(final_palette) <- c("Other", cluster_levels)
   
 # Titles and stuff
 title_txt <- sprintf("Community composition — top %s clusters", min(50, length(unique(cluster_df$Label))))
@@ -604,11 +379,11 @@ ggplot(cluster_df, aes(x = Sample, y = ClustRelAbundance, fill = Label)) +
     legend.spacing.y = unit(1, "mm"),                # reduce spacing between keys
     legend.position = "right"
   ) 
-ggsave(sprintf("../../results/ngs/figures/Combined-all-samples-taxa-cluster-%s-filter-%s.pdf", cluster_taxa_level, filter_level), width = 12, height = 5)
+ggsave(sprintf(paste0(folder_path, "figures/", process_sample, "-Combined-all-samples-taxa-cluster-%s-filter-%s.pdf"), cluster_taxa_level, filter_level), width = 12, height = 5)
 
 ```
 
-Look into the Sphingobium genus or other genus
+Look into the Sphingobium genus or other genus, showing how the ASVs change in abundance, deep dive into each cluster.
 
 ```{r}
 filter_ASV <- "Sphingobium czechense" # Sphingomonadaceae Sphingobium czechense
@@ -688,7 +463,7 @@ ggplot(ASV_plot_data, aes(x = Sample, y = ClustRelAbundance, fill = Label)) +
     legend.position = "right"
   )
 
-ggsave(sprintf("../../results/ngs/figures/%s-only-complete-ASVs-filter-%s.pdf", filter_ASV, filter_level), width = 12, height = 5)
+ggsave(sprintf(paste0(folder_path, "figures/%s-only-none-complete-ASVs-filter-%s.pdf"), filter_ASV, filter_level), width = 12, height = 5)
 ```
 
 Investigate which ASVs or Clusters that have changed substantially in the abundance over the sampling times.
