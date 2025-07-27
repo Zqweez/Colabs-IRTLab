@@ -202,8 +202,7 @@ asv_map <- data.frame(
 # If we want to save the data from this run
 results_path = "../../results/ngs/"
 
-if (!dir.exists(folder_path)) dir.create(folder_path)
-folder_path <- paste0(results_path, process_sample)
+folder_path <- paste0(results_path, process_sample, "/")
 if (!dir.exists(folder_path)) dir.create(folder_path)
 
 write.csv(asv_counts, paste0(folder_path, "ASV_counts_ids_", process_sample, ".csv"), quote=FALSE)
@@ -228,6 +227,6 @@ dna <- DNAStringSet(asv_map$Sequence) # If all ASVs should be saved just use the
 names(dna) <- sprintf("%s",
                       asv_map$ASV_ID)
 writeXStringSet(dna,
-                filepath = paste0("../../results/ngs/all_asvs_", process_sample,".fasta"), #All-ASV-variants
+                filepath = paste0(folder_path, "all_asvs_", process_sample,".fasta"), #All-ASV-variants
                 format   = "fasta")
 ```

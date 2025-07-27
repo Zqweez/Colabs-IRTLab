@@ -12,7 +12,6 @@ library(RColorBrewer)
 library(forcats)
 library(DECIPHER) 
 library(Biostrings)   
-library(tidyverse)
 library(forcats)
 library(Polychrome)
 library(progress)
@@ -27,7 +26,7 @@ Load the generated ASV files
 ```{r}
 #| label: Load saved data
 #| include: false
-process_sample <- "none" #phe, nap, none
+process_sample <- "phe" #phe, nap, none
 folder_path = paste0("../../results/ngs/", process_sample, "/")
 
 asv_counts <- read.csv(paste0(folder_path, "ASV_counts_ids_", process_sample, ".csv"), header = TRUE)
@@ -310,26 +309,6 @@ asv2clust <- taxa_df %>%
   mutate(Label = .data[[cluster_taxa_level]]) %>%
   select(ASV, {{ cluster_taxa_level }}, Label)
 
-# Get the most abundant ASV from each cluster
-filtered_taxa_df <- taxa_df %>% 
-  dplyr::rename(ASV = query) %>%
-  left_join(filtered_set, by = "ASV") %>%
-  group_by(Sample, s) %>%
-  mutate(ClustRelAbundance = sum(RelativeAbundance)) %>%
-  add_count(s, wt = ClustRelAbundance, name = "total_abundance_final") %>%
-  ungroup() %>%
-  select(ASV, s, total_abundance_final) %>%
-  left_join(asv_map, by = c("ASV" = "ASV_ID")) %>%
-  group_by(s) %>% 
-  filter(total_abundance_final > filter_level) %>%
-  slice_max(total_abundance_final, n = 1, with_ties = FALSE) %>%
-  ungroup()
-
-# Save the top ASV for each taxa cluster in a fasta file
-dna <- DNAStringSet(filtered_taxa_df$Sequence) 
-names(dna) <- sprintf("%s", filtered_taxa_df$ASV)
-writeXStringSet(dna, filepath = paste0(folder_path, "/top_ASVs_per_taxa.fasta"), format   = "fasta")
-
 cluster_df <- filtered_set %>%                  # Sample | ASV | RelativeAbundance
     left_join(asv2clust, by = "ASV") %>%      # Add Cluster
     add_count(Label, wt = RelativeAbundance, name = "total_cluster_abundance") %>%
@@ -364,7 +343,7 @@ ggplot(cluster_df, aes(x = Sample, y = ClustRelAbundance, fill = Label)) +
     labels = scales::percent_format(),
     expand = c(0, 0) # Remove padding at the bottom of the bars
    ) +
-  scale_fill_manual(name = sprintf("Species cluster (top-hit species)"), values = final_palette) +
+  scale_fill_manual(name = sprintf("Species cluster"), values = final_palette) +
   guides(fill = guide_legend(
    override.aes = list(size = 3),   # icon / key size
    ncol = 2 
@@ -386,11 +365,15 @@ ggsave(sprintf(paste0(folder_path, "figures/", process_sample, "-Combined-all-sa
 Look into the Sphingobium genus or other genus, showing how the ASVs change in abundance, deep dive into each cluster.
 
 ```{r}
-filter_ASV <- "Sphingobium czechense" # Sphingomonadaceae Sphingobium czechense
-filter_level <- 0
+# Sphingomonadaceae Sphingobium czechense 
+# Cupriavidus plantarum, metallidurans, necator
+filter_ASV <- "Cupriavidus necator" 
+taxa_filter <- "s" # s, g or f
+taxa_filter_map <- if (taxa_filter == "s") "species" else if (taxa_filter == "g") "genus" else if (taxa_filter == "f") "family"
+filter_level <- 0 # To reduce the number of ASVs only keep the most abundant
 
 taxa_of_interest <- taxa_df %>%
-  filter(s == filter_ASV)
+  filter(.data[[taxa_filter]] == filter_ASV)
 
 # Now add the taxa
 asv2clust <- taxa_df %>% 
@@ -436,7 +419,7 @@ final_palette <- pastelise(cluster_levels)
 names(final_palette) <- c(cluster_levels)
 
 # Titles and stuff
-title_txt <- sprintf("Community composition — ASVs in species %s", filter_ASV)
+title_txt <- sprintf("Community composition — ASVs in %s %s", taxa_filter_map, filter_ASV)
 subtitle_txt <- glue("{length(cluster_levels)} ASVs, filtered at {percent(filter_level, accuracy = 0.01)}")
 caption_txt <- if (length(unique(cluster_df$Label)) > 50) 
   {"Relative abundances calculated from the entire community"} else {""}
@@ -449,21 +432,20 @@ ggplot(ASV_plot_data, aes(x = Sample, y = ClustRelAbundance, fill = Label)) +
    ) +
   scale_fill_manual(name = "ASV - Species", values = final_palette) +
   guides(fill = guide_legend(
-   override.aes = list(size = 3),   # icon / key size
+   override.aes = list(size = 2),   # icon / key size
    ncol = 2
   )) +
   labs(x = "Sample", title = title_txt, 
        subtitle = subtitle_txt, caption = caption_txt) +
   theme_minimal(base_size = 10) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 5),
-    legend.text = element_text(size = 5),
+    legend.text = element_text(size = 4),
     legend.title = element_text(size = 10, face = "bold"),
     legend.key.size = unit(2, "mm"),                 # width & height
     legend.spacing.y = unit(1, "mm"),                # reduce spacing between keys
     legend.position = "right"
   )
-
-ggsave(sprintf(paste0(folder_path, "figures/%s-only-none-complete-ASVs-filter-%s.pdf"), filter_ASV, filter_level), width = 12, height = 5)
+ggsave(sprintf(paste0(folder_path, "figures/", process_sample, "-%s-only-none-complete-ASVs-filter-%s.pdf"), filter_ASV, filter_level), width = 12, height = 5)
 ```
 
 Investigate which ASVs or Clusters that have changed substantially in the abundance over the sampling times.
@@ -472,37 +454,41 @@ Investigate which ASVs or Clusters that have changed substantially in the abunda
 library(dplyr)
 library(stringr)
 
+early_start  <- 0   # first x-value of the EARLY window
+late_start   <- 18  # first x-value of the LATE  window
+window_size  <- 5   # how many consecutive points to sum in each window
+fold_change_threshold <- 5
+
 cl_long <- cluster_df %>%                       
   mutate(
-    Replicate = str_extract(Sample, "P[123]"),      # P1 / P2 / P3
-    DataPoint       = as.numeric(str_extract(Sample, "\\d+$"))   # 00-28 → 0-28
+    Replicate = str_extract(Sample, "P[123]"),          # P1 / P2 / P3
+    DataPoint = as.numeric(str_extract(Sample, "\\d+$"))# 00-28 → 0-28
   )
 
-cl_long <- cl_long %>%
-  group_by(Replicate) %>%
-  mutate(threshold_day = 14) %>%      # ceiling(0.70 * max(DataPoint) each run’s x % or just 14 
-  ungroup()
-
+# Calculate window abundance
 fold_tbl <- cl_long %>%
   group_by(Replicate, Label) %>%
   summarise(
-    point0_abund  = sum(ClustRelAbundance[DataPoint == 0]),
-    late_abund  = max(ClustRelAbundance[DataPoint >= unique(threshold_day)]),
-    fold_change = round(late_abund / (point0_abund), 2),
+    early_abund = sum(
+      ClustRelAbundance[DataPoint %in%
+        seq(early_start, length.out = window_size, by = 1)]
+    ),
+    late_abund  = sum(
+      ClustRelAbundance[DataPoint %in%
+        seq(late_start,  length.out = window_size, by = 1)]
+    ),
+    fold_change = round(late_abund / early_abund, 2),
     .groups = "drop"
   )
-
 clusters_big_jump <- fold_tbl %>%
-  filter(fold_change >= 5) %>%      # avoid div/0 artefacts
-  distinct(Label, .keep_all = TRUE)                                   # one row per cluster
+  filter(fold_change >= fold_change_threshold) %>%
+  count(Label) %>%
+  filter(n == 3)
 
 plotting_clusters_df <- cluster_df %>%
   filter(Label %in% clusters_big_jump$Label)
 
-asv2clust_big_jump <- asv2clust %>%
-  filter(Label %in% clusters_big_jump$Label)
-
-cluster_levels <- as.character(unique(asv2clust_big_jump$Label))
+cluster_levels <- as.character(unique(plotting_clusters_df$Label))
 n_clusters     <- length(cluster_levels)
 # Colors using polychrome
 set.seed(0)
@@ -517,7 +503,12 @@ pastelise <- function(cols, desat = 0.6, lighten = 0.3) {
 main_colors <- pastelise(main_colors)
 final_palette <- c("Other" = "grey70", main_colors)
 names(final_palette) <- c("Other", cluster_levels)
-  
+
+# Titles and stuff
+title_txt <- sprintf("Community composition")
+subtitle_txt <- glue("For clusters with substantial abundance change")
+caption_txt <- sprintf("Clusters with >%s fold change between point %s and %s, sliding window of %s", fold_change_threshold, early_start, late_start, window_size)
+
 
 ggplot(plotting_clusters_df, aes(x = Sample, y = ClustRelAbundance, fill = Label)) +
   geom_bar(stat = "identity", color = "grey30", linewidth = 0.2) +
@@ -525,10 +516,10 @@ ggplot(plotting_clusters_df, aes(x = Sample, y = ClustRelAbundance, fill = Label
     labels = scales::percent_format(),
     expand = c(0, 0) # Remove padding at the bottom of the bars
    ) +
-  scale_fill_manual(name = "Cluster (top-hit species)", values = final_palette) +
+  scale_fill_manual(name = "Species cluster", values = final_palette) +
   guides(fill = guide_legend(
    override.aes = list(size = 3),   # icon / key size
-   ncol = 2 
+   ncol = 1
   )) +
   labs(x = "Sample", title = title_txt, 
        subtitle = subtitle_txt, caption = caption_txt) +
@@ -541,5 +532,5 @@ ggplot(plotting_clusters_df, aes(x = Sample, y = ClustRelAbundance, fill = Label
     legend.position = "right"
   ) 
 
-
+ggsave(sprintf(paste0(folder_path, "figures/", process_sample, "-abundance-change-%s-between-%s-and-%s.pdf"), fold_change_threshold, early_start, late_start), width = 12, height = 5)
 ```

@@ -5,8 +5,8 @@ library(slider)
 # ---- Samples are
 # This part is to modify the raw data in dt files and save it as CSV files with a correct header
 samples <- c("20250702-m1.dt1", "20250702-m2.dt2", "20250702-m4.dt4")
-samples <- c("20250702-m1.dt1", "20250702-m2.dt2", "20250702-m4.dt4")
-sample <- samples[1]
+samples <- c("20250714-m1.dt1", "20250714-m2.dt2", "20250714-m4.dt4")
+sample <- samples[3]
 
 growth <- read.table(paste0("./data/phe_growth/",sample), sep = ",", header = FALSE)
 sample <- sub("\\.dt[0-9]+$", "", sample)  # Remove the .dt1, .dt2, etc. from the sample name
