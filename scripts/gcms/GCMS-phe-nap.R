@@ -33,8 +33,8 @@ data <- data %>%
 data <- data %>%
   mutate(
     `Phe/decane` = if_else(
-      Date == as.Date("2025-07-22"),   # rows to alter
-      `Phe/decane` / 2,
+      Date == as.Date("2025-07-22") & !Sample %in% c("NC-1", "NC-2"),   # rows to alter
+      if_else(Sample %in% c("EHC-OD-1", "KS3-100-1"), `Phe/decane` / 1.25, `Phe/decane` / 2),
       `Phe/decane`),
     `Nap/decane`= if_else(
       Date == as.Date("2025-07-22"),   # rows to alter
@@ -111,11 +111,12 @@ ggplot(summary_df,
   facet_wrap(~ Combination, scales = "free_x", nrow = 1) +
   scale_fill_manual(values = date_colors, name = "Date") +
   labs(title = "Phenanthrene/Decane Ratios Across Samples",
+       subtitle = "Not corrected",
        x = "Duplicate",
        y = "Phenanthrene/Decane (mean ± SD)") +
   theme_minimal() +
   theme(legend.position = "bottom")
-ggsave("results/gcms_plots/l-tubes-phe-corrected-final.pdf", width = 8, height = 5)
+ggsave("results/gcms_plots/l-tubes-phe-final.pdf", width = 8, height = 5)
 
 # Color by date for Naphthol
 ggplot(summary_nap_df,
