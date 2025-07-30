@@ -1,69 +1,500 @@
-KS-34	100.000	1343	0	0	1	1343	1	1343	0.0	2462	KS-34-1
-KS-34	99.771	1308	2	1	18	1325	5	1311	0.0	2401	KS-32-1
-KS-34	99.094	1325	10	2	1	1325	2	1324	0.0	2390	KS-05-2
-KS-34	98.868	1325	11	4	1	1325	3	1323	0.0	2377	KS-24-1
-KS-34	99.015	1320	10	3	18	1337	13	1329	0.0	2375	KS-05-1
-KS-34	98.866	1323	9	6	18	1340	14	1330	0.0	2372	KS-34-2
-KS-34	99.159	1308	8	3	18	1325	10	1314	0.0	2366	KS-32-2
-KS-34	98.639	1323	16	2	1	1323	2	1322	0.0	2366	KS-03-1
-KS-34	99.085	1312	9	3	14	1325	14	1322	0.0	2362	KS-26-1
-KS-34	98.417	1327	16	5	1	1327	2	1323	0.0	2348	KS-22-2
-KS-34	98.974	1267	7	6	3	1269	1	1261	0.0	2272	KS-26-2
-KS-34	89.124	1324	133	11	18	1337	13	1329	0.0	1652	KS-11-1
-KS-34	89.342	1323	128	13	19	1337	6	1319	0.0	1650	KS-11-2
-KS-34	89.502	1305	124	11	13	1312	13	1309	0.0	1648	KS-06-1
-KS-34	89.405	1312	118	18	17	1320	14	1312	0.0	1640	KS-36-1
-KS-34	89.076	1309	126	15	17	1320	12	1308	0.0	1618	KS-06-2
-KS-34	89.275	1296	120	16	17	1304	13	1297	0.0	1615	KS-36-2
-KS-34	89.225	1290	127	12	17	1302	14	1295	0.0	1609	KS-30-1
-KS-34	89.009	1292	129	13	17	1304	8	1290	0.0	1602	KS-30-2
-KS-34	88.958	1295	126	15	15	1304	11	1293	0.0	1594	KS-33-1
-KS-34	98.514	740	9	2	1	740	2	739	0.0	1315	KS-22-1
-KS-34	83.971	1360	180	31	1	1337	2	1346	0.0	1267	KS-10-1
-KS-34	84.114	1259	167	26	19	1255	4	1251	0.0	1197	KS-10-2
-KS-34	81.272	1132	152	35	232	1343	207	1298	0.0	865	KS-01-1
-KS-34	81.167	1131	154	34	232	1343	204	1294	0.0	863	KS-08-2
-KS-34	81.333	1125	153	32	232	1337	200	1286	0.0	861	KS-08-1
-KS-34	81.267	1121	153	32	232	1333	203	1285	0.0	859	KS-07-2
-KS-34	80.990	1131	156	34	232	1343	204	1294	0.0	857	KS-35-2
-KS-34	81.211	1123	152	34	232	1335	203	1285	0.0	857	KS-35-1
-KS-34	81.095	1132	154	35	232	1343	204	1295	0.0	857	KS-01-2
-KS-34	81.227	1108	149	34	232	1320	205	1272	0.0	841	KS-02-1
-KS-34	81.775	1059	138	30	232	1271	204	1226	0.0	835	KS-20-1
-KS-34	81.136	1092	148	33	232	1304	203	1255	0.0	832	KS-07-1
-KS-34	81.689	1054	138	30	232	1267	202	1218	0.0	826	KS-25-2
-KS-34	80.390	1127	170	30	232	1343	206	1296	0.0	826	KS-21-2
-KS-34	80.531	1130	169	29	228	1343	199	1291	0.0	826	KS-09-1
-KS-34	80.442	1130	170	29	228	1343	202	1294	0.0	824	KS-04-1
-KS-34	80.514	1129	169	29	228	1343	201	1291	0.0	822	KS-23-2
-KS-34	79.485	1243	181	35	1	1228	2	1185	0.0	821	KS-29-2
-KS-34	81.303	1059	143	30	232	1271	199	1221	0.0	817	KS-25-1
-KS-34	81.953	1014	135	26	228	1228	201	1179	0.0	815	KS-09-2
-KS-34	79.462	1227	178	35	17	1228	14	1181	0.0	802	KS-29-1
-KS-34	79.462	1227	178	35	17	1228	16	1183	0.0	802	KS-27-2
-KS-34	79.462	1227	178	35	17	1228	16	1183	0.0	802	KS-27-1
-KS-34	80.925	1059	154	28	232	1275	202	1227	0.0	798	KS-21-1
-KS-34	81.237	986	130	31	232	1199	204	1152	0.0	760	KS-20-2
-KS-34	88.184	457	49	5	344	797	16	470	2.08e-155	540	ST-83
-KS-34	84.829	468	67	3	332	797	4	469	9.94e-134	468	ST-D1_1
-KS-34	84.549	466	68	4	332	795	5	468	1.66e-131	460	ST-B3
-KS-34	84.222	469	69	4	332	797	4	470	2.15e-130	457	ST-C2
-KS-34	84.449	463	70	2	332	793	2	463	7.74e-130	455	ST-A35
-KS-34	83.974	468	71	4	332	796	4	470	3.60e-128	449	ST-B8-2
-KS-34	84.009	469	71	3	332	797	4	471	3.60e-128	449	ST-71
-KS-34	81.237	469	82	5	332	797	3	468	2.23e-105	374	ST-127
-KS-34	78.970	466	71	12	332	796	4	443	6.42e-81	292	ST-A1
-KS-34	78.925	465	71	12	332	795	2	440	2.31e-80	291	ST-D1_7
-KS-34	78.925	465	71	12	332	795	4	442	2.31e-80	291	ST-B5
-KS-34	78.925	465	71	12	332	795	4	442	2.31e-80	291	ST-B1
-KS-34	78.465	469	72	14	332	797	2	444	5.00e-77	279	ST-C9-1
-KS-34	77.991	468	75	13	332	797	2	443	1.80e-76	278	ST-C1
-KS-34	77.944	467	81	10	332	797	2	447	8.37e-75	272	ST-B11
-KS-34	77.849	465	81	10	332	795	2	445	1.08e-73	268	ST-B7
-KS-34	77.754	463	81	10	332	793	2	443	1.40e-72	265	ST-A29
-KS-34	77.897	466	75	10	332	795	3	442	1.40e-72	265	ST-10
-KS-34	77.586	464	81	11	332	793	2	444	1.81e-71	261	ST-C7
-KS-34	77.634	465	75	11	332	793	2	440	8.42e-70	255	ST-C5
-KS-34	76.596	470	84	16	332	797	4	451	3.05e-64	237	ST-C4
-KS-34	75.424	472	99	12	332	797	2	462	3.98e-58	217	ST-7
-KS-34	76.038	313	66	7	488	795	498	806	2.43e-45	174	KS-02-2
+KS-34	99.092	1321	11	1	24	1343	1	1321	0.0	2377	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Cupriavidus,s:Cupriavidus plantarum
+KS-34	98.713	1321	16	1	24	1343	1	1321	0.0	2350	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Cupriavidus,s:Cupriavidus pampae
+KS-34	98.562	1321	18	1	24	1343	1	1321	0.0	2338	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Cupriavidus,s:Cupriavidus respiraculi
+KS-34	98.410	1321	18	2	24	1343	1	1319	0.0	2326	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Cupriavidus,s:Cupriavidus metallidurans
+KS-34	98.335	1321	21	1	24	1343	1	1321	0.0	2324	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Cupriavidus,s:Cupriavidus pauculus
+KS-34	98.262	1323	18	5	24	1343	1	1321	0.0	2316	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Cupriavidus,s:CP017749_s
+KS-34	98.259	1321	22	1	24	1343	1	1321	0.0	2316	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Cupriavidus,s:ALOU_s
+KS-34	97.959	1323	24	3	24	1343	1	1323	0.0	2296	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Cupriavidus,s:Cupriavidus taiwanensis
+KS-34	97.806	1322	26	3	24	1343	1	1321	0.0	2283	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Cupriavidus,s:Cupriavidus campinensis
+KS-34	97.659	1324	26	5	24	1343	1	1323	0.0	2274	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Cupriavidus,s:Cupriavidus nantongensis
+KS-34	97.426	1321	33	1	24	1343	1	1321	0.0	2255	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Cupriavidus,s:JQLI_s
+KS-34	97.426	1321	33	1	24	1343	1	1321	0.0	2255	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Cupriavidus,s:CP006668_s
+KS-34	97.426	1321	33	1	24	1343	1	1321	0.0	2255	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Cupriavidus,s:Cupriavidus necator
+KS-34	97.432	1324	27	7	24	1343	1	1321	0.0	2255	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Cupriavidus,s:Cupriavidus basilensis
+KS-34	97.350	1321	34	1	24	1343	1	1321	0.0	2250	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Cupriavidus,s:Cupriavidus alkaliphilus
+KS-34	97.057	1325	31	8	24	1343	1	1322	0.0	2230	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Cupriavidus,s:Cupriavidus pinatubonensis
+KS-34	97.050	1322	36	3	24	1343	1	1321	0.0	2228	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Cupriavidus,s:Cupriavidus numazuensis
+KS-34	96.901	1323	36	5	24	1343	1	1321	0.0	2217	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Cupriavidus,s:BBQM_s
+KS-34	97.127	1288	36	1	57	1343	1	1288	0.0	2209	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Cupriavidus,s:Cupriavidus gilardii
+KS-34	96.677	1324	37	4	24	1343	1	1321	0.0	2200	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Cupriavidus,s:AF067833_s
+KS-34	96.604	1325	39	6	24	1343	1	1324	0.0	2198	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Cupriavidus,s:Cupriavidus yeoncheonensis
+KS-34	96.226	1325	43	6	24	1343	1	1323	0.0	2169	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:AKCV_g,s:AKCV_s
+KS-34	95.997	1324	47	6	24	1343	1	1322	0.0	2152	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Cupriavidus,s:Cupriavidus laharis
+KS-34	95.701	1326	50	6	24	1343	1	1325	0.0	2132	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Ralstonia,s:Ralstonia solanacearum
+KS-34	95.978	1293	42	10	54	1343	1	1286	0.0	2109	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Cupriavidus,s:Cupriavidus oxalaticus
+KS-34	95.458	1321	51	9	28	1343	1	1317	0.0	2104	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Ralstonia,s:Ralstonia syzygii
+KS-34	95.772	1301	51	4	47	1343	1	1301	0.0	2100	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Cupriavidus,s:HQ748263_s
+KS-34	95.177	1327	57	6	24	1343	1	1327	0.0	2095	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Ralstonia,s:JYOB_s
+KS-34	95.177	1327	57	6	24	1343	1	1327	0.0	2095	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Ralstonia,s:JFZG_s
+KS-34	95.177	1327	57	6	24	1343	1	1327	0.0	2095	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Ralstonia,s:FOWV_s
+KS-34	95.242	1324	56	7	24	1343	1	1321	0.0	2095	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:DQ337069_g,s:DQ337069_s
+KS-34	95.177	1327	57	6	24	1343	1	1327	0.0	2095	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Ralstonia,s:CP001068_s
+KS-34	95.224	1319	56	6	32	1343	1	1319	0.0	2085	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Ralstonia,s:Ralstonia insidiosa
+KS-34	95.026	1327	59	6	24	1343	1	1327	0.0	2084	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Ralstonia,s:Ralstonia pickettii
+KS-34	96.358	1263	45	1	82	1343	24	1286	0.0	2082	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Ralstonia,s:Ralstonia syzygii
+KS-34	95.340	1309	54	6	42	1343	1	1309	0.0	2078	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Ralstonia,s:Ralstonia mannitolilytica
+KS-34	96.276	1262	46	1	83	1343	25	1286	0.0	2074	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Ralstonia,s:Ralstonia syzygii
+KS-34	96.200	1263	46	2	82	1343	24	1285	0.0	2071	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Ralstonia,s:Ralstonia pseudosolanacearum
+KS-34	95.111	1309	61	3	38	1343	1	1309	0.0	2065	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Cupriavidus,s:HQ775515_s
+KS-34	93.807	1324	77	4	24	1343	1	1323	0.0	1991	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Ralstonia,s:JF174660_s
+KS-34	93.750	1328	69	12	24	1343	1	1322	0.0	1986	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Polynucleobacter,s:Polynucleobacter cosmopolitanus
+KS-34	93.675	1328	70	12	24	1343	1	1322	0.0	1980	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Polynucleobacter,s:Polynucleobacter victoriensis
+KS-34	93.208	1325	82	6	24	1343	1	1322	0.0	1947	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Polynucleobacter,s:Polynucleobacter sinensis
+KS-34	93.208	1325	82	6	24	1343	1	1322	0.0	1947	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Polynucleobacter,s:Polynucleobacter duraquae
+KS-34	93.208	1325	82	6	24	1343	1	1322	0.0	1947	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Polynucleobacter,s:CP004348_s
+KS-34	93.202	1324	83	6	24	1343	1	1321	0.0	1945	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Polynucleobacter,s:Polynucleobacter asymbioticus
+KS-34	93.460	1315	70	13	38	1343	1	1308	0.0	1943	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Polynucleobacter,s:Polynucleobacter difficilis
+KS-34	93.132	1325	83	6	24	1343	1	1322	0.0	1941	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Polynucleobacter,s:Polynucleobacter aenigmaticus
+KS-34	93.057	1325	84	6	24	1343	1	1322	0.0	1936	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Polynucleobacter,s:Polynucleobacter sphagniphilus
+KS-34	93.046	1323	86	5	24	1343	1	1320	0.0	1934	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Noviherbaspirillum,s:Noviherbaspirillum malthae
+KS-34	93.057	1325	83	7	24	1343	1	1321	0.0	1934	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Polynucleobacter,s:Polynucleobacter wuianus
+KS-34	92.981	1325	85	6	24	1343	1	1322	0.0	1930	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Polynucleobacter,s:Polynucleobacter yangtzensis
+KS-34	92.971	1323	87	6	24	1343	1	1320	0.0	1929	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Noviherbaspirillum,s:Noviherbaspirillum massiliense
+KS-34	92.755	1325	86	9	24	1343	1	1320	0.0	1912	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Paucimonas,s:DQ337029_s
+KS-34	92.674	1324	91	5	24	1343	1	1322	0.0	1908	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Y11585_g,s:Y11585_s
+KS-34	92.679	1325	87	9	24	1343	1	1320	0.0	1906	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Noviherbaspirillum,s:Noviherbaspirillum agri
+KS-34	92.668	1323	91	6	24	1343	1	1320	0.0	1906	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:DQ450176_g,s:DQ450176_s
+KS-34	92.668	1323	91	5	24	1343	1	1320	0.0	1906	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Noviherbaspirillum,s:DQ158104_s
+KS-34	92.792	1318	87	6	31	1343	1	1315	0.0	1906	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Polynucleobacter,s:Polynucleobacter necessarius
+KS-34	92.598	1324	90	7	24	1343	1	1320	0.0	1901	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Noviherbaspirillum,s:Herbaspirillum denitrificans
+KS-34	92.748	1310	93	2	36	1343	1	1310	0.0	1897	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Cupriavidus,s:HQ747784_s
+KS-34	92.846	1314	78	13	39	1343	1	1307	0.0	1897	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Polynucleobacter,s:Polynucleobacter acidiphobus
+KS-34	92.528	1325	89	7	24	1343	1	1320	0.0	1895	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Noviherbaspirillum,s:Noviherbaspirillum humi
+KS-34	92.511	1322	95	3	24	1343	1	1320	0.0	1895	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Y11585_g,s:EU881344_s
+KS-34	92.447	1324	92	7	24	1343	1	1320	0.0	1892	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Noviherbaspirillum,s:Noviherbaspirillum soli
+KS-34	92.436	1322	96	4	24	1343	1	1320	0.0	1890	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Burkholderia,s:Burkholderia thailandensis
+KS-34	92.453	1325	90	9	24	1343	1	1320	0.0	1890	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Noviherbaspirillum,s:Noviherbaspirillum autotrophicum
+KS-34	92.377	1325	91	10	24	1343	1	1320	0.0	1884	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Burkholderia,s:jgi.1071268_s
+KS-34	92.377	1325	90	10	24	1343	1	1319	0.0	1882	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Caballeronia,s:Burkholderia nigropunctata
+KS-34	92.302	1325	92	9	24	1343	1	1320	0.0	1881	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Noviherbaspirillum,s:Noviherbaspirillum aurantiacum
+KS-34	92.290	1323	96	6	24	1343	1	1320	0.0	1879	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Burkholderia,s:Burkholderia singularis
+KS-34	92.302	1325	92	8	24	1343	1	1320	0.0	1879	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Burkholderia,s:Burkholderia pseudomallei
+KS-34	92.302	1325	92	8	24	1343	1	1320	0.0	1879	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Burkholderia,s:Burkholderia mallei
+KS-34	92.133	1322	100	4	24	1343	1	1320	0.0	1868	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Paraburkholderia,s:Paraburkholderia rhizoxinica
+KS-34	92.133	1322	98	6	24	1343	1	1318	0.0	1866	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Limnobacter_f,g:Limnobacter,s:Limnobacter thiooxidans
+KS-34	92.087	1327	93	11	24	1343	1	1322	0.0	1864	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Burkholderia,s:Burkholderia rinojensis
+KS-34	92.087	1327	93	11	24	1343	1	1322	0.0	1864	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Pandoraea,s:Pandoraea vervacti
+KS-34	92.081	1326	95	9	24	1343	1	1322	0.0	1864	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Pandoraea,s:Pandoraea sputorum
+KS-34	92.081	1326	95	9	24	1343	1	1322	0.0	1864	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Pandoraea,s:Pandoraea pulmonicola
+KS-34	92.081	1326	95	9	24	1343	1	1322	0.0	1864	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Pandoraea,s:Pandoraea pnomenusa
+KS-34	92.075	1325	95	8	24	1343	1	1320	0.0	1862	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Caballeronia,s:Caballeronia humi
+KS-34	92.057	1322	100	5	24	1343	1	1319	0.0	1860	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Limnobacter_f,g:Limnobacter,s:Limnobacter humi
+KS-34	92.063	1323	95	10	26	1343	2	1319	0.0	1858	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Massilia,s:Massilia terrae
+KS-34	92.006	1326	96	9	24	1343	1	1322	0.0	1858	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Pandoraea,s:Pandoraea faecigallinarum
+KS-34	92.000	1325	96	8	24	1343	1	1320	0.0	1857	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Noviherbaspirillum,s:LMHZ_s
+KS-34	92.000	1325	96	10	24	1343	1	1320	0.0	1857	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Massilia,s:Massilia agilis
+KS-34	91.918	1324	101	5	24	1343	1	1322	0.0	1857	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Burkholderia,s:Burkholderia pseudomultivorans
+KS-34	92.000	1325	96	8	24	1343	1	1320	0.0	1857	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Caballeronia,s:Caballeronia choica
+KS-34	92.000	1325	96	8	24	1343	1	1320	0.0	1857	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Quisquiliibacterium_f,g:HQ910358_g,s:AB186830_s
+KS-34	92.000	1325	95	11	24	1343	1	1319	0.0	1855	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Massilia,s:Massilia solisilvae
+KS-34	91.931	1326	97	9	24	1343	1	1322	0.0	1853	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Pandoraea,s:Pandoraea terrae
+KS-34	91.943	1328	93	13	24	1343	1	1322	0.0	1853	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Burkholderia,s:Burkholderia gladioli
+KS-34	91.918	1324	101	6	24	1343	1	1322	0.0	1853	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Paraburkholderia,s:Paraburkholderia endofungorum
+KS-34	91.925	1325	97	10	24	1343	1	1320	0.0	1851	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Paraburkholderia,s:Paraburkholderia caballeronis
+KS-34	91.874	1329	93	11	24	1343	1	1323	0.0	1847	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Caballeronia,s:Caballeronia jiangsuensis
+KS-34	91.855	1326	98	9	24	1343	1	1322	0.0	1847	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Pandoraea,s:Pandoraea oxalativorans
+KS-34	91.855	1326	98	9	24	1343	1	1322	0.0	1847	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Pandoraea,s:Pandoraea apista
+KS-34	91.849	1325	98	10	24	1343	1	1320	0.0	1845	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Massilia,s:Massilia chloroacetimidivorans
+KS-34	91.849	1325	98	9	24	1343	1	1320	0.0	1845	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Quisquiliibacterium_f,g:HQ910358_g,s:FJ167467_s
+KS-34	91.861	1327	94	12	24	1343	1	1320	0.0	1845	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Caballeronia,s:Caballeronia terrestris
+KS-34	91.767	1324	103	5	24	1343	1	1322	0.0	1842	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Paraburkholderia,s:FJ434114_s
+KS-34	91.786	1327	97	10	24	1343	1	1322	0.0	1842	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Burkholderia,s:Burkholderia multivorans
+KS-34	91.767	1324	101	8	24	1343	1	1320	0.0	1840	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Quisquiliibacterium_f,g:FJ820419_g,s:FJ820419_s
+KS-34	91.780	1326	98	9	24	1343	1	1321	0.0	1840	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Caballeronia,s:Caballeronia arvi
+KS-34	91.792	1328	94	11	24	1343	1	1321	0.0	1840	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Caballeronia,s:Caballeronia temeraria
+KS-34	91.717	1328	96	12	24	1343	1	1322	0.0	1838	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Burkholderia,s:Burkholderia puraquae
+KS-34	91.717	1328	96	12	24	1343	1	1322	0.0	1838	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Burkholderia,s:Burkholderia stagnalis
+KS-34	91.939	1315	96	10	34	1343	1	1310	0.0	1838	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Massilia,s:Massilia albidiflava
+KS-34	91.729	1330	92	14	24	1343	1	1322	0.0	1838	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Burkholderia,s:Burkholderia arboris
+KS-34	91.729	1330	92	14	24	1343	1	1322	0.0	1836	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Burkholderia,s:Burkholderia contaminans
+KS-34	91.711	1327	98	10	24	1343	1	1322	0.0	1836	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Burkholderia,s:Burkholderia vietnamiensis
+KS-34	91.729	1330	92	14	24	1343	1	1322	0.0	1836	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Burkholderia,s:Burkholderia lata
+KS-34	91.711	1327	98	10	24	1343	1	1322	0.0	1836	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Burkholderia,s:Burkholderia metallica
+KS-34	91.711	1327	98	10	24	1343	1	1322	0.0	1836	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Burkholderia,s:Burkholderia anthina
+KS-34	91.711	1327	98	11	24	1343	1	1322	0.0	1836	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Burkholderia,s:Burkholderia oklahomensis
+KS-34	91.698	1325	101	9	24	1343	1	1321	0.0	1834	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Caballeronia,s:Paraburkholderia schumannianae
+KS-34	91.692	1324	102	6	24	1343	1	1320	0.0	1834	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Quisquiliibacterium_f,g:HQ910358_g,s:DQ256353_s
+KS-34	91.635	1327	99	10	24	1343	1	1322	0.0	1832	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Burkholderia,s:Burkholderia territorii
+KS-34	91.642	1328	99	10	24	1343	1	1324	0.0	1832	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Caballeronia,s:Burkholderia kirkii
+KS-34	91.704	1326	94	13	24	1343	1	1316	0.0	1832	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:FM178829_g,s:FM178829_s
+KS-34	91.623	1325	101	10	24	1343	1	1320	0.0	1832	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Paraburkholderia,s:Paraburkholderia nodosa
+KS-34	91.560	1327	100	11	24	1343	1	1322	0.0	1831	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Paucimonas,s:Paucimonas lemoignei
+KS-34	91.755	1322	95	14	29	1343	1	1315	0.0	1831	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Pseudoduganella,s:Pseudoduganella eburnea
+KS-34	91.635	1327	99	10	24	1343	1	1322	0.0	1831	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Burkholderia,s:JJOA_s
+KS-34	91.673	1333	87	20	24	1343	1	1322	0.0	1831	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Herbaspirillum,s:CP022736_s
+KS-34	91.648	1329	95	13	24	1343	1	1322	0.0	1831	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Burkholderia,s:Burkholderia stabilis
+KS-34	91.648	1329	95	13	24	1343	1	1322	0.0	1831	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Burkholderia,s:Burkholderia pyrrocinia
+KS-34	91.648	1329	95	13	24	1343	1	1322	0.0	1831	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Burkholderia,s:Burkholderia plantarii
+KS-34	91.648	1329	95	13	24	1343	1	1322	0.0	1831	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Burkholderia,s:Burkholderia ambifaria
+KS-34	91.635	1327	99	10	24	1343	1	1322	0.0	1831	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Burkholderia,s:Burkholderia cepacia
+KS-34	91.635	1327	99	11	24	1343	1	1322	0.0	1831	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Burkholderia,s:Burkholderia glumae
+KS-34	91.635	1327	99	10	24	1343	1	1322	0.0	1831	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Burkholderia,s:Burkholderia latens
+KS-34	91.623	1325	101	9	24	1343	1	1320	0.0	1829	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Noviherbaspirillum,s:PAC002036_s
+KS-34	91.623	1325	101	10	24	1343	1	1320	0.0	1829	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Caballeronia,s:LGTG_s
+KS-34	91.610	1323	105	4	24	1343	1	1320	0.0	1829	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Oxalobacter,s:KI392030_s
+KS-34	91.642	1328	95	15	24	1343	1	1320	0.0	1829	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Massilia,s:EU801571_s
+KS-34	91.616	1324	103	8	24	1343	1	1320	0.0	1829	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Caldimonas,s:Caldimonas taiwanensis
+KS-34	91.616	1324	103	8	24	1343	1	1320	0.0	1829	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Paraburkholderia,s:Paraburkholderia mimosarum
+KS-34	91.623	1325	101	10	24	1343	1	1320	0.0	1829	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Paraburkholderia,s:Paraburkholderia kururiensis
+KS-34	91.616	1324	103	8	24	1343	1	1320	0.0	1829	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Caldimonas,s:Caldimonas manganoxidans
+KS-34	91.560	1327	100	10	24	1343	1	1322	0.0	1825	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Pandoraea,s:NGUR_s
+KS-34	91.560	1327	100	12	24	1343	1	1322	0.0	1825	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Paraburkholderia,s:Paraburkholderia phenoliruptrix
+KS-34	91.592	1332	90	17	24	1343	1	1322	0.0	1825	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Burkholderia,s:Burkholderia diffusa
+KS-34	91.560	1327	98	14	24	1343	1	1320	0.0	1823	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Pseudoduganella,s:FNEQ_s
+KS-34	91.592	1332	89	19	24	1343	1	1321	0.0	1823	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Burkholderia,s:Pseudomonas mesoacidophila
+KS-34	91.478	1326	103	9	24	1343	1	1322	0.0	1823	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Burkholderia,s:Burkholderia seminalis
+KS-34	91.478	1326	103	9	24	1343	1	1322	0.0	1821	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Burkholderia,s:Burkholderia dolosa
+KS-34	91.517	1332	91	20	24	1343	1	1322	0.0	1820	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Herbaspirillum,s:Herbaspirillum chlorophenolicum
+KS-34	91.510	1331	94	15	24	1343	1	1323	0.0	1820	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Burkholderia,s:Burkholderia cenocepacia
+KS-34	91.478	1326	103	8	24	1343	1	1322	0.0	1820	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Quisquiliibacterium_f,g:Quisquiliibacterium,s:HQ904198_s
+KS-34	91.497	1329	97	14	24	1343	1	1322	0.0	1820	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Massilia,s:HQ450148_s
+KS-34	91.504	1330	95	15	24	1343	1	1322	0.0	1820	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Herbaspirillum,s:Herbaspirillum seropedicae
+KS-34	91.491	1328	99	11	24	1343	1	1322	0.0	1820	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Paraburkholderia,s:CP002218_s
+KS-34	91.478	1326	103	9	24	1343	1	1322	0.0	1820	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Paraburkholderia,s:Paraburkholderia bannensis
+KS-34	91.491	1328	99	13	24	1343	1	1322	0.0	1820	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Herbaspirillum,s:Herbaspirillum lusitanum
+KS-34	91.448	1333	95	15	24	1343	1	1327	0.0	1818	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Oxalobacter,s:Oxalobacter vibrioformis
+KS-34	91.465	1324	105	6	24	1343	1	1320	0.0	1818	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Sutterellaceae,g:AP014683_g,s:FM253653_s
+KS-34	91.472	1325	103	10	24	1343	1	1320	0.0	1818	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Paraburkholderia,s:Paraburkholderia silvatlantica
+KS-34	91.472	1325	103	10	24	1343	1	1320	0.0	1818	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Paraburkholderia,s:Paraburkholderia megapolitana
+KS-34	91.510	1331	89	21	24	1343	1	1318	0.0	1816	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Paucimonas,s:EU802136_s
+KS-34	91.509	1319	106	6	24	1339	1	1316	0.0	1816	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Thiobacillus_o,f:Thiobacillaceae,g:U46750_g,s:AB748658_s
+KS-34	91.541	1324	94	15	28	1343	1	1314	0.0	1814	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Massilia,s:EF516371_s
+KS-34	91.448	1333	90	20	24	1343	1	1322	0.0	1814	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Herbaspirillum,s:CP018845_s
+KS-34	91.416	1328	100	12	24	1343	1	1322	0.0	1814	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Pandoraea,s:Pandoraea norimbergensis
+KS-34	91.416	1328	100	13	24	1343	1	1322	0.0	1814	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Herbaspirillum,s:Herbaspirillum hiltneri
+KS-34	91.749	1309	96	12	42	1343	1	1304	0.0	1814	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Massilia,s:Massilia lutea
+KS-34	91.472	1325	98	13	24	1343	1	1315	0.0	1812	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Ampullimonas,s:Ampullimonas aquatilis
+KS-34	91.373	1333	93	17	24	1343	1	1324	0.0	1810	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Oxalobacter,s:FJ374254_s
+KS-34	91.327	1326	105	10	24	1343	1	1322	0.0	1808	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Glaciimonas,s:Glaciimonas immobilis
+KS-34	91.321	1325	105	8	24	1343	1	1320	0.0	1807	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Quisquiliibacterium_f,g:HQ910358_g,s:HQ910358_s
+KS-34	91.176	1326	105	9	24	1343	1	1320	0.0	1807	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Sutterellaceae,g:AP014683_g,s:FJ755754_s
+KS-34	91.321	1325	105	10	24	1343	1	1320	0.0	1807	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Paraburkholderia,s:Paraburkholderia heleia
+KS-34	91.265	1328	100	13	24	1343	1	1320	0.0	1807	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Paraburkholderia,s:Paraburkholderia hospita
+KS-34	91.252	1326	106	9	24	1343	1	1322	0.0	1803	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Paraburkholderia,s:GQ402779_s
+KS-34	91.223	1333	100	13	24	1343	1	1329	0.0	1803	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Sterolibacterium_o,f:Sterolibacteriaceae,g:Georgfuchsia,s:DQ395940_s
+KS-34	91.291	1332	94	19	24	1343	1	1322	0.0	1803	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Herbaspirillum,s:Herbaspirillum frisingense
+KS-34	91.148	1333	104	8	24	1343	1	1332	0.0	1801	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Hydromonas,s:Z93984_s
+KS-34	91.757	1298	97	10	52	1343	1	1294	0.0	1801	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Paraburkholderia,s:Paraburkholderia dipogonis
+KS-34	91.265	1328	100	13	24	1343	1	1320	0.0	1801	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Noviherbaspirillum,s:Noviherbaspirillum suwonense
+KS-34	91.239	1324	108	8	24	1343	1	1320	0.0	1801	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Thiobacillus_o,f:Thiobacillaceae,g:U46750_g,s:FJ716413_s
+KS-34	91.239	1324	108	8	24	1343	1	1320	0.0	1801	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Paraburkholderia,s:Paraburkholderia piptadeniae
+KS-34	91.265	1328	100	15	24	1343	1	1320	0.0	1801	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:AVCC_g,s:AVCC_s
+KS-34	91.744	1296	99	6	52	1343	1	1292	0.0	1799	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Paraherbaspirillum,s:Paraherbaspirillum soli
+KS-34	91.229	1334	91	21	24	1343	1	1322	0.0	1797	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Collimonas,s:PDBX_s
+KS-34	91.705	1302	92	16	50	1343	1	1294	0.0	1797	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Massilia,s:Massilia flava
+KS-34	91.692	1300	96	10	49	1343	1	1293	0.0	1797	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Massilia,s:Massilia norwichensis
+KS-34	91.203	1330	99	16	24	1343	1	1322	0.0	1797	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Paraburkholderia,s:Paraburkholderia rhynchosiae
+KS-34	91.190	1328	103	14	24	1343	1	1322	0.0	1797	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Paraburkholderia,s:Paraburkholderia caledonica
+KS-34	91.156	1323	111	6	24	1343	1	1320	0.0	1796	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:DQ264588_g,s:DQ264588_s
+KS-34	91.190	1328	101	14	24	1343	1	1320	0.0	1796	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Collimonas,s:CP009962_s
+KS-34	91.183	1327	103	14	24	1343	1	1320	0.0	1796	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Massilia,s:Massilia timonae
+KS-34	91.176	1326	104	10	25	1343	2	1321	0.0	1794	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:PAC002541_o,f:PAC002541_f,g:AF467301_g,s:EU801319_s
+KS-34	91.108	1327	106	9	24	1343	1	1322	0.0	1792	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Undibacterium,s:Undibacterium squillarum
+KS-34	91.501	1306	100	11	43	1343	1	1300	0.0	1792	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Paraburkholderia,s:Paraburkholderia denitrificans
+KS-34	91.108	1327	106	11	24	1343	1	1322	0.0	1792	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Paraburkholderia,s:Paraburkholderia unamae
+KS-34	91.475	1302	105	5	45	1343	1	1299	0.0	1790	tax=d:Bacteria,p:Proteobacteria,c:Hydrogenophilalia,o:Hydrogenophilales,f:FJ715977_f,g:FJ715977_g,s:FN667427_s
+KS-34	91.108	1327	104	13	24	1343	1	1320	0.0	1790	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Paraburkholderia,s:Paraburkholderia caribensis
+KS-34	91.059	1331	103	13	24	1343	1	1326	0.0	1790	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:AJ012069_g,s:AJ012069_s
+KS-34	91.101	1326	106	11	24	1343	1	1320	0.0	1790	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Limnobacter_f,g:Limnobacter,s:Limnobacter litoralis
+KS-34	91.255	1315	105	8	33	1343	1	1309	0.0	1788	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Sutterellaceae,g:DQ196633_g,s:DQ196633_s
+KS-34	91.039	1328	105	14	24	1343	1	1322	0.0	1786	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Paraburkholderia,s:Paraburkholderia ginsengisoli
+KS-34	91.026	1326	107	10	24	1343	1	1320	0.0	1784	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Thiobacillus_o,f:Thiobacillaceae,g:U46750_g,s:FJ660567_s
+KS-34	91.039	1328	103	13	24	1343	1	1320	0.0	1784	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Paraburkholderia,s:Paraburkholderia ferrariae
+KS-34	91.005	1323	113	6	24	1343	1	1320	0.0	1784	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Schlegelella,s:Schlegelella thermodepolymerans
+KS-34	91.026	1326	107	9	24	1343	1	1320	0.0	1784	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Sutterellaceae,g:AP014683_g,s:AP014683_s
+KS-34	91.047	1318	112	6	24	1339	1	1314	0.0	1781	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Thiobacillus_o,f:Thiobacillaceae,g:U46750_g,s:JX434180_s
+KS-34	91.012	1324	107	12	27	1343	4	1322	0.0	1781	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:OM156_f,g:EU803579_g,s:EU803579_s
+KS-34	90.964	1328	106	11	24	1343	1	1322	0.0	1781	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Sutterellaceae,g:AP014683_g,s:EF632938_s
+KS-34	90.943	1325	112	8	24	1343	1	1322	0.0	1781	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:OM156_f,g:OM156_g,s:OM156_s
+KS-34	90.937	1324	112	6	24	1343	1	1320	0.0	1779	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Sutterellaceae,g:AP014683_g,s:PAC001802_s
+KS-34	90.937	1324	112	8	24	1343	1	1320	0.0	1779	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Robbsia,s:Robbsia andropogonis
+KS-34	90.971	1329	102	17	24	1343	1	1320	0.0	1779	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Massilia,s:Massilia lurida
+KS-34	90.889	1328	112	6	24	1343	1	1327	0.0	1779	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Rhodocyclales,f:Azovibrio_f,g:Azovibrio,s:HM184937_s
+KS-34	91.004	1334	92	22	24	1343	1	1320	0.0	1779	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Massilia,s:FAOS_s
+KS-34	90.950	1326	107	13	24	1343	1	1319	0.0	1777	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Paraburkholderia,s:FSRM_s
+KS-34	91.455	1299	93	15	53	1343	1	1289	0.0	1775	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Massilia,s:Massilia niastensis
+KS-34	90.902	1330	101	17	24	1343	1	1320	0.0	1773	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Undibacterium,s:Undibacterium terreum
+KS-34	90.834	1331	106	13	24	1343	1	1326	0.0	1773	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:PAC001921_o,f:PAC001921_f,g:PAC001921_g,s:EF540413_s
+KS-34	92.070	1261	91	9	87	1343	1	1256	0.0	1772	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Burkholderia,s:Burkholderia ubonensis
+KS-34	90.889	1328	103	14	24	1343	1	1318	0.0	1772	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Roseateles,s:Roseateles depolymerans
+KS-34	90.773	1333	105	14	24	1343	1	1328	0.0	1770	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:HM481326_g,s:HM481326_s
+KS-34	90.806	1327	110	12	24	1343	1	1322	0.0	1770	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Paraburkholderia,s:CP002013_s
+KS-34	90.847	1322	111	8	27	1343	4	1320	0.0	1770	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Quisquiliibacterium_f,g:Quisquiliibacterium,s:AB247482_s
+KS-34	91.712	1279	92	13	72	1343	1	1272	0.0	1768	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Massilia,s:Massilia umbonata
+KS-34	90.820	1329	104	17	24	1343	1	1320	0.0	1768	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:GU563773_g,s:GU563773_s
+KS-34	90.819	1318	117	4	24	1339	1	1316	0.0	1766	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Thiobacillus_o,f:Thiobacillaceae,g:U46750_g,s:AY955086_s
+KS-34	90.698	1333	107	10	24	1343	1	1329	0.0	1764	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Sterolibacterium_o,f:Sterolibacteriaceae,g:AB186832_g,s:DQ336967_s
+KS-34	90.724	1326	111	12	24	1343	1	1320	0.0	1762	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Paraburkholderia,s:Paraburkholderia ginsengiterrae
+KS-34	90.724	1326	111	10	24	1343	1	1320	0.0	1762	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Zhizhongheella,s:Caldimonas meghalayensis
+KS-34	90.731	1327	107	11	24	1343	1	1318	0.0	1760	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Aquabacterium,s:Aquabacterium olei
+KS-34	90.745	1329	103	16	24	1343	1	1318	0.0	1760	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Thiomonas_f,g:Thiomonas,s:Thiomonas intermedia
+KS-34	90.684	1331	107	13	24	1343	1	1325	0.0	1760	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Rhodocyclales,f:Zoogloeaceae,g:Thauera,s:Thauera butanivorans
+KS-34	90.677	1330	109	10	24	1343	1	1325	0.0	1760	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Rhodocyclales,f:Zoogloeaceae,g:Azoarcus,s:Azoarcus buckelii
+KS-34	90.649	1326	116	5	24	1343	1	1324	0.0	1760	tax=d:Bacteria,p:Proteobacteria,c:Hydrogenophilalia,o:Hydrogenophilales,f:Thiobacter_f,g:Thiobacter,s:Thiobacter subterraneus
+KS-34	90.649	1326	114	10	24	1343	1	1322	0.0	1759	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Thiobacillus_o,f:Thiobacillaceae,g:Sulfuritortus,s:GQ921461_s
+KS-34	90.649	1326	112	10	24	1343	1	1320	0.0	1757	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Zhizhongheella,s:Zhizhongheella caldifontis
+KS-34	90.649	1326	112	12	24	1343	1	1320	0.0	1757	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Derxia_f,g:JF697555_g,s:JF697555_s
+KS-34	90.663	1328	108	12	24	1343	1	1320	0.0	1757	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:PAC001907_o,f:PAC001907_f,g:PAC001907_g,s:AY160866_s
+KS-34	90.682	1320	115	8	24	1339	1	1316	0.0	1755	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Thiobacillus_o,f:Thiobacillaceae,g:FJ437813_g,s:FJ712609_s
+KS-34	90.663	1328	106	15	24	1343	1	1318	0.0	1755	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Massilia,s:DQ537532_s
+KS-34	90.689	1321	111	11	24	1339	1	1314	0.0	1753	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Thiobacillus_o,f:Thiobacillaceae,g:U46750_g,s:EF192880_s
+KS-34	90.559	1324	117	6	24	1343	1	1320	0.0	1751	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Sutterellaceae,g:AP014683_g,s:FJ936833_s
+KS-34	90.587	1328	107	18	24	1343	1	1318	0.0	1751	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Thiobacillus_o,f:Thiobacillaceae,g:U46750_g,s:AY212644_s
+KS-34	90.613	1321	115	9	24	1339	1	1317	0.0	1749	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Thiobacillus_o,f:Thiobacillaceae,g:Annwoodia,s:Annwoodia aquaesulis
+KS-34	90.483	1324	118	6	24	1343	1	1320	0.0	1748	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Aquabacterium,s:FJ193971_s
+KS-34	90.505	1327	112	10	24	1343	1	1320	0.0	1746	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Quisquiliibacterium_f,g:Quisquiliibacterium,s:Quisquiliibacterium transsilvanicum
+KS-34	90.483	1324	118	7	24	1343	1	1320	0.0	1746	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Sutterellaceae,g:AP014683_g,s:EU700155_s
+KS-34	90.480	1334	105	16	24	1343	1	1326	0.0	1746	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Sterolibacterium_o,f:Sterolibacteriaceae,g:Georgfuchsia,s:Georgfuchsia toluolica
+KS-34	90.930	1301	107	8	48	1343	1	1295	0.0	1744	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Quisquiliibacterium_f,g:EF520450_g,s:EF520450_s
+KS-34	90.383	1331	112	12	24	1343	1	1326	0.0	1740	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:PAC001921_o,f:PAC001921_f,g:EU735692_g,s:EU735692_s
+KS-34	90.422	1326	115	10	24	1343	1	1320	0.0	1740	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Thiobacillus_o,f:Thiobacillaceae,g:U46750_g,s:AY945924_s
+KS-34	90.376	1330	113	10	24	1343	1	1325	0.0	1738	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Rhodocyclales,f:Zoogloeaceae,g:Azoarcus,s:Azoarcus anaerobius
+KS-34	90.430	1327	111	13	24	1343	1	1318	0.0	1738	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Roseateles,s:Roseateles aquatilis
+KS-34	90.347	1326	120	6	24	1343	1	1324	0.0	1738	tax=d:Bacteria,p:Proteobacteria,c:Hydrogenophilalia,o:Hydrogenophilales,f:FJ715977_f,g:FJ715977_g,s:JX133336_s
+KS-34	90.437	1328	109	13	24	1343	1	1318	0.0	1738	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Mitsuaria,s:FOZE_s
+KS-34	90.344	1336	106	19	26	1343	3	1333	0.0	1736	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Rhodocyclales,f:Rhodocyclaceae,g:Oryzomicrobium,s:Oryzomicrobium terrae
+KS-34	91.476	1267	96	10	83	1343	30	1290	0.0	1736	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Aquabacterium,s:Aquabacterium fontiphilum
+KS-34	90.337	1335	108	17	24	1343	1	1329	0.0	1736	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Gallionellales,f:Gallionellaceae,g:Nitrotoga,s:Nitrotoga arctica
+KS-34	90.315	1332	113	12	24	1343	1	1328	0.0	1736	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Gallionellales,f:Gallionellaceae,g:Sideroxydans,s:AB240284_s
+KS-34	90.361	1328	114	10	24	1343	1	1322	0.0	1736	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Sterolibacterium_o,f:Sterolibacteriaceae,g:AB186832_g,s:AB186832_s
+KS-34	90.874	1293	112	6	54	1343	1	1290	0.0	1735	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Schlegelella,s:Schlegelella aquatica
+KS-34	90.354	1327	114	12	24	1343	1	1320	0.0	1735	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Polyangium_g1,s:Polyangium brachysporum
+KS-34	90.376	1330	106	17	24	1343	1	1318	0.0	1733	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Thiomonas_f,g:Thiomonas,s:Thiomonas bhubaneswarensis
+KS-34	90.462	1321	111	11	34	1343	1	1317	0.0	1733	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Rhodocyclales,f:Rhodocyclaceae,g:Azospira,s:Azospira restricta
+KS-34	90.279	1327	115	12	24	1343	1	1320	0.0	1729	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Mycoavidus,s:Mycoavidus cysteinexigens
+KS-34	90.264	1325	119	8	24	1343	1	1320	0.0	1729	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Aquabacterium,s:JRKM_s
+KS-34	90.240	1332	110	18	24	1343	1	1324	0.0	1729	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:AJ575697_g,s:AJ575697_s
+KS-34	90.286	1328	111	16	24	1343	1	1318	0.0	1727	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Thiomonas_f,g:Thiomonas,s:Thiomonas arsenitoxydans
+KS-34	90.271	1326	113	14	30	1343	1	1322	0.0	1725	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:PAC002541_o,f:PAC002541_f,g:PAC002541_g,s:JF703465_s
+KS-34	90.165	1332	116	11	24	1343	1	1329	0.0	1725	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Gallionellales,f:Gallionellaceae,g:Ferriphaselus,s:EF562063_s
+KS-34	90.180	1334	112	13	24	1343	1	1329	0.0	1725	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Gallionellales,f:Gallionellaceae,g:DQ386858_g,s:DQ386858_s
+KS-34	90.158	1331	115	12	24	1343	1	1326	0.0	1724	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:PAC002541_o,f:PAC002541_f,g:PAC002541_g,s:FM209145_s
+KS-34	90.226	1330	108	18	24	1343	1	1318	0.0	1724	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Thiomonas_f,g:Thiomonas,s:Thiomonas islandica
+KS-34	90.158	1331	116	10	24	1343	1	1327	0.0	1724	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Rhodocyclales,f:Zoogloeaceae,g:Thauera,s:Thauera linaloolentis
+KS-34	90.630	1302	109	9	52	1343	1	1299	0.0	1722	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Limnobacter_f,g:Limnobacter,s:JX648561_s
+KS-34	90.327	1313	121	6	34	1343	1	1310	0.0	1722	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Thiobacillus_o,f:Thiobacillaceae,g:U46750_g,s:DQ837271_s
+KS-34	90.203	1327	114	12	24	1343	1	1318	0.0	1722	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:AM777983_g,s:AM777983_s
+KS-34	90.174	1323	122	8	24	1343	1	1318	0.0	1722	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Tepidimonas,s:Tepidimonas thermarum
+KS-34	90.112	1335	111	18	24	1343	1	1329	0.0	1720	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Rhodocyclales,f:Rhodocyclaceae,g:Azospira,s:FJ393064_s
+KS-34	90.150	1330	111	18	24	1343	1	1320	0.0	1720	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Rivibacter,s:Rivibacter subsaxonicus
+KS-34	90.128	1327	117	12	24	1343	1	1320	0.0	1718	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Ramlibacter,s:Ramlibacter monticola
+KS-34	90.371	1319	105	21	35	1343	8	1314	0.0	1718	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Massilia,s:Massilia violacea
+KS-34	90.106	1324	123	6	24	1343	1	1320	0.0	1718	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Sutterellaceae,g:AP014683_g,s:HM187249_s
+KS-34	90.098	1323	119	10	24	1339	1	1318	0.0	1718	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Thiobacillus_o,f:Thiobacillaceae,g:Thiobacillus,s:DQ984604_s
+KS-34	90.075	1330	117	10	24	1343	1	1325	0.0	1716	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Rhodocyclales,f:Zoogloeaceae,g:Azoarcus,s:Azoarcus tolulyticus
+KS-34	90.325	1323	103	22	33	1343	1	1310	0.0	1716	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:Massilia,s:Massilia plicata
+KS-34	90.075	1330	117	10	24	1343	1	1325	0.0	1716	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Rhodocyclales,f:Zoogloeaceae,g:Azoarcus,s:AP012304_s
+KS-34	90.060	1328	118	12	22	1343	1	1320	0.0	1714	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Azohydromonas,s:Azohydromonas ureilytica
+KS-34	90.083	1331	113	15	24	1343	1	1323	0.0	1714	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Sterolibacterium_o,f:Sterolibacteriaceae,g:JF833874_g,s:JF833874_s
+KS-34	90.060	1328	118	14	24	1343	1	1322	0.0	1714	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Comamonas,s:Comamonas serinivorans
+KS-34	90.567	1304	103	16	49	1343	1	1293	0.0	1714	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Thiomonas_f,g:Thiomonas,s:Thiomonas perometabolis
+KS-34	90.045	1326	120	10	24	1343	1	1320	0.0	1712	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Thiobacillus_o,f:Thiobacillaceae,g:U46750_g,s:JX040326_s
+KS-34	89.948	1343	108	19	24	1343	1	1339	0.0	1712	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Sterolibacterium_o,f:Sterolibacteriaceae,g:Sterolibacterium,s:JQ668544_s
+KS-34	90.060	1328	116	15	24	1343	1	1320	0.0	1712	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:HQ166641_f,g:HQ166641_g,s:HQ166641_s
+KS-34	90.159	1321	116	13	24	1339	1	1312	0.0	1712	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Thiobacillus_o,f:Thiobacillaceae,g:U46750_g,s:FJ660557_s
+KS-34	89.992	1329	121	9	24	1343	1	1326	0.0	1712	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:AB485758_g,s:AB485758_s
+KS-34	90.030	1334	112	18	24	1343	1	1327	0.0	1712	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:PAC002541_o,f:PAC002541_f,g:AF467301_g,s:AB294330_s
+KS-34	90.068	1329	112	16	24	1343	1	1318	0.0	1711	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Piscinibacter,s:Piscinibacter defluvii
+KS-34	90.060	1328	114	17	24	1343	1	1318	0.0	1711	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Hydrogenophaga,s:Hydrogenophaga aquatica
+KS-34	90.106	1324	115	14	24	1339	1	1316	0.0	1711	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Ramlibacter,s:DQ354711_s
+KS-34	90.053	1327	116	12	24	1343	1	1318	0.0	1711	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Mitsuaria,s:Mitsuaria chitosanitabida
+KS-34	91.125	1262	104	7	89	1343	40	1300	0.0	1709	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Hydromonas,s:Hydromonas duriensis
+KS-34	90.000	1330	116	13	24	1343	1	1323	0.0	1709	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:PAC002541_o,f:PAC002541_f,g:AF467301_g,s:EU881106_s
+KS-34	89.985	1328	119	10	24	1343	1	1322	0.0	1709	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:PAC002541_o,f:PAC002541_f,g:AF467301_g,s:EU803713_s
+KS-34	90.144	1319	116	12	32	1343	1	1312	0.0	1709	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Azohydromonas,s:Azohydromonas australica
+KS-34	89.955	1324	125	8	24	1343	1	1320	0.0	1707	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Alcaligenaceae,g:Bordetella,s:Bordetella muralis
+KS-34	89.962	1325	124	9	24	1343	1	1321	0.0	1707	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Thiobacillus_o,f:Thiobacillaceae,g:U46750_g,s:HM584350_s
+KS-34	89.932	1321	131	2	24	1343	1	1320	0.0	1707	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:OM156_f,g:OM156_g,s:FJ820386_s
+KS-34	89.992	1329	115	14	24	1343	1	1320	0.0	1707	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Sterolibacterium_o,f:Sterolibacteriaceae,g:AB186832_g,s:FJ769462_s
+KS-34	89.940	1332	117	13	24	1343	1	1327	0.0	1707	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Rhodocyclales,f:Zoogloeaceae,g:FJ612290_g,s:FJ612290_s
+KS-34	89.917	1329	122	10	24	1343	1	1326	0.0	1707	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:PAC002541_o,f:PAC002541_f,g:PAC002541_g,s:EU786132_s
+KS-34	90.008	1331	111	19	24	1343	1	1320	0.0	1707	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Curvibacter,s:AY947979_s
+KS-34	89.940	1332	117	11	24	1343	1	1327	0.0	1707	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Neisseriales,f:Neisseriaceae,g:Leeia,s:Leeia oryzae
+KS-34	90.030	1334	103	25	24	1343	1	1318	0.0	1705	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Hydrogenophaga,s:Hydrogenophaga laconesensis
+KS-34	89.955	1324	123	8	26	1343	1	1320	0.0	1705	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Quisquiliibacterium_f,g:Quisquiliibacterium,s:EU639298_s
+KS-34	89.940	1332	115	13	24	1343	1	1325	0.0	1705	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Gallionellales,f:Gallionellaceae,g:Gallionella,s:EF589973_s
+KS-34	89.932	1331	117	14	24	1343	1	1325	0.0	1705	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:PAC002541_o,f:EF157188_f,g:EF157188_g,s:EF157188_s
+KS-34	90.008	1331	109	21	24	1343	1	1318	0.0	1705	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Hydrogenophaga,s:Hydrogenophaga defluvii
+KS-34	89.880	1334	117	14	24	1343	1	1330	0.0	1705	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Methylophilales,f:Methylophilaceae,g:AJ318162_g,s:AJ318162_s
+KS-34	89.917	1329	121	10	24	1343	1	1325	0.0	1705	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Rhodocyclales,f:Zoogloeaceae,g:Azoarcus,s:Azoarcus toluclasticus
+KS-34	89.857	1331	121	12	24	1343	1	1328	0.0	1703	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Oxalobacteraceae,g:AB486719_g,s:FJ264587_s
+KS-34	89.925	1330	116	17	24	1343	1	1322	0.0	1703	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Sutterellaceae,g:Sutterella,s:AY684426_s
+KS-34	90.462	1300	106	14	52	1343	1	1290	0.0	1703	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Roseateles,s:Roseateles terrae
+KS-34	89.910	1328	117	16	24	1343	1	1319	0.0	1703	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Hydrogenophaga,s:Hydrogenophaga electricum
+KS-34	89.902	1327	120	12	24	1343	1	1320	0.0	1701	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Methylibium,s:LMDY_s
+KS-34	89.887	1325	124	9	24	1343	1	1320	0.0	1701	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Alcaligenaceae,g:Bordetella,s:Bordetella tumulicola
+KS-34	89.910	1328	119	13	24	1343	1	1321	0.0	1701	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Azohydromonas,s:Azohydromonas riparia
+KS-34	89.879	1324	126	8	24	1343	1	1320	0.0	1701	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Alcaligenaceae,g:Bordetella,s:KB907784_s
+KS-34	90.362	1297	117	5	51	1343	1	1293	0.0	1701	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Sutterellaceae,g:AP014683_g,s:GU559855_s
+KS-34	89.902	1327	120	12	24	1343	1	1320	0.0	1701	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Methylibium,s:Methylibium petroleiphilum
+KS-34	89.910	1328	116	14	24	1343	1	1318	0.0	1700	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Hydrogenophaga,s:Hydrogenophaga bisanensis
+KS-34	89.902	1327	118	13	24	1343	1	1318	0.0	1700	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Aquincola,s:Aquincola tertiaricarbonis
+KS-34	89.932	1331	110	21	24	1343	1	1318	0.0	1700	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Hydrogenophaga,s:Hydrogenophaga atypica
+KS-34	89.805	1334	117	15	24	1343	1	1329	0.0	1698	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Methylophilales,f:Methylophilaceae,g:HQ116735_g,s:AJ318116_s
+KS-34	89.804	1324	127	8	24	1343	1	1320	0.0	1696	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Alcaligenaceae,g:Bordetella,s:Bordetella tumbae
+KS-34	89.887	1325	118	13	27	1343	4	1320	0.0	1696	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:EU735703_g,s:EU735703_s
+KS-34	89.767	1329	123	9	24	1343	1	1325	0.0	1694	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Rhodocyclales,f:Zoogloeaceae,g:Azoarcus,s:Azoarcus evansii
+KS-34	89.782	1331	119	14	24	1343	1	1325	0.0	1694	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:PAC002541_o,f:PAC002248_f,g:PAC002248_g,s:JX240873_s
+KS-34	90.177	1303	118	10	45	1343	2	1298	0.0	1694	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Hydrogenophaga,s:HQ755357_s
+KS-34	90.246	1302	114	10	53	1343	1	1300	0.0	1694	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Sterolibacterium_o,f:Sterolibacteriaceae,g:DQ836748_g,s:DQ836748_s
+KS-34	89.842	1329	115	15	24	1343	1	1318	0.0	1694	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Piscinibacter,s:Piscinibacter aquaticus
+KS-34	89.850	1330	113	18	24	1343	1	1318	0.0	1694	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Hydrogenophaga,s:Hydrogenophaga pseudoflava
+KS-34	89.842	1329	115	17	24	1343	1	1318	0.0	1694	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Hydrogenophaga,s:Hydrogenophaga flava
+KS-34	89.842	1329	115	19	24	1343	1	1318	0.0	1694	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Comamonas,s:Comamonas granuli
+KS-34	89.804	1324	125	9	24	1343	1	1318	0.0	1694	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Hydrogenophaga,s:Hydrogenophaga temperata
+KS-34	89.804	1324	123	11	24	1343	1	1316	0.0	1692	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Thiobacillus_o,f:Thiobacillaceae,g:U46750_g,s:JF215563_s
+KS-34	89.813	1335	109	21	24	1343	1	1323	0.0	1692	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:HQ324854_o,f:HQ324854_f,g:HQ324854_g,s:HM773450_s
+KS-34	89.722	1333	119	14	24	1343	1	1328	0.0	1692	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:PAC001921_o,f:PAC001921_f,g:DQ009366_g,s:EU287309_s
+KS-34	89.774	1330	119	12	24	1343	1	1323	0.0	1692	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:PAC002541_o,f:PAC002541_f,g:AF467301_g,s:EF126238_s
+KS-34	89.736	1325	126	10	24	1343	1	1320	0.0	1690	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Alcaligenaceae,g:Achromobacter,s:Achromobacter pulmonis
+KS-34	89.804	1324	121	10	26	1343	1	1316	0.0	1690	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Aquabacterium,s:Aquabacterium commune
+KS-34	89.647	1333	122	12	24	1343	1	1330	0.0	1688	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Sulfuricellales,f:Sulfuricellaceae,g:Sulfurirhabdus,s:Sulfurirhabdus autotrophica
+KS-34	89.751	1327	120	14	24	1343	1	1318	0.0	1688	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Ottowia,s:Ottowia beijingensis
+KS-34	89.707	1331	120	12	24	1343	1	1325	0.0	1688	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Rhodocyclales,f:Zoogloeaceae,g:Azoarcus,s:FJ821644_s
+KS-34	89.909	1318	118	15	33	1343	1	1310	0.0	1688	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Comamonas,s:Comamonas odontotermitis
+KS-34	89.751	1327	120	12	24	1343	1	1318	0.0	1688	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Ideonella,s:CM001438_s
+KS-34	89.736	1325	120	13	26	1343	1	1316	0.0	1688	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Aquabacterium,s:Aquabacterium parvum
+KS-34	89.759	1328	118	14	24	1343	1	1318	0.0	1688	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Rubrivivax,s:Rubrivivax benzoatilyticus
+KS-34	89.699	1330	117	18	24	1343	1	1320	0.0	1687	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Ramlibacter,s:LMQL_s
+KS-34	89.985	1308	121	8	42	1343	3	1306	0.0	1687	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Alcaligenaceae,g:Saccharedens,s:Saccharedens versatilis
+KS-34	89.647	1333	121	11	24	1343	1	1329	0.0	1687	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Gallionellales,f:Gallionellaceae,g:JX047107_g,s:JX047107_s
+KS-34	89.596	1336	121	12	24	1343	1	1334	0.0	1687	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Methylophilales,f:Methylophilaceae,g:Methylovorus,s:Methylovorus glucosotrophus
+KS-34	89.398	1330	128	9	24	1343	1	1327	0.0	1687	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Sterolibacterium_o,f:Sterolibacteriaceae,g:AB186832_g,s:FQ658667_s
+KS-34	90.859	1258	109	6	89	1343	22	1276	0.0	1687	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Quisquiliibacterium_f,g:HQ910358_g,s:EU083484_s
+KS-34	89.660	1325	129	6	24	1343	1	1322	0.0	1687	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:PAC001921_o,f:PAC001921_f,g:DQ009366_g,s:EF999367_s
+KS-34	89.694	1339	109	23	24	1343	1	1329	0.0	1687	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Rhodocyclales,f:Rhodocyclaceae,g:Azospira,s:AY171616_s
+KS-34	89.901	1317	118	14	34	1343	1	1309	0.0	1687	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Tepidimonas,s:Tepidimonas ignava
+KS-34	89.640	1332	121	13	24	1343	1	1327	0.0	1685	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Gallionellales,f:Gallionellaceae,g:Sideroxydans,s:EU802012_s
+KS-34	89.699	1330	117	18	24	1343	1	1320	0.0	1685	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Ramlibacter,s:Ramlibacter tataouinensis
+KS-34	89.640	1332	121	13	24	1343	1	1327	0.0	1685	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Sterolibacterium_o,f:Sterolibacteriaceae,g:Sulfurisoma,s:Sulfurisoma sediminicola
+KS-34	89.684	1328	121	15	24	1343	1	1320	0.0	1685	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Burkholderiaceae,g:Mycoavidus,s:AB558494_s
+KS-34	89.588	1335	120	15	24	1343	1	1331	0.0	1683	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Gallionellales,f:Gallionellaceae,g:Nitrotoga,s:JQ278772_s
+KS-34	89.608	1328	126	10	25	1343	1	1325	0.0	1683	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:PAC002541_o,f:PAC002541_f,g:PAC002541_g,s:EF516063_s
+KS-34	89.684	1328	119	14	24	1343	1	1318	0.0	1683	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Rubrivivax,s:Rubrivivax gelatinosus
+KS-34	90.694	1268	106	11	82	1343	23	1284	0.0	1683	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Kinneretia,s:Kinneretia asaccharophila
+KS-34	89.580	1334	119	16	24	1343	1	1328	0.0	1681	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:PAC002541_o,f:PAC002541_f,g:PAC002541_g,s:PAC002542_s
+KS-34	89.572	1333	120	14	24	1343	1	1327	0.0	1679	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Sulfuricellales,f:Sulfuricellaceae,g:Sulfuriferula,s:CP021138_s
+KS-34	89.533	1328	127	10	24	1343	1	1324	0.0	1677	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Gallionellales,f:Gallionellaceae,g:GU208442_g,s:GU208442_s
+KS-34	89.549	1330	123	16	24	1343	1	1324	0.0	1677	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Thiobacillus_o,f:Thiobacillaceae,g:Thiobacillus,s:CP000116_s
+KS-34	89.502	1324	127	10	26	1343	1	1318	0.0	1677	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Aquabacterium,s:Aquabacterium citratiphilum
+KS-34	89.593	1326	122	12	24	1343	1	1316	0.0	1676	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Leptothrix,s:Leptothrix mobilis
+KS-34	89.585	1325	124	12	24	1343	1	1316	0.0	1676	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Leptothrix,s:HQ661361_s
+KS-34	89.509	1325	131	8	24	1343	1	1322	0.0	1676	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:OM156_f,g:OM156_g,s:FJ612332_s
+KS-34	89.541	1329	124	12	24	1343	1	1323	0.0	1676	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Neisseriales,f:Neisseriaceae,g:Chitinivorax,s:AY212627_s
+KS-34	89.588	1335	111	22	24	1343	1	1322	0.0	1676	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Neisseriales,f:Neisseriaceae,g:Chitinimonas,s:Chitinimonas koreensis
+KS-34	89.307	1328	126	15	24	1343	1	1320	0.0	1676	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:AF234753_g,s:AF234753_s
+KS-34	89.705	1321	117	15	31	1343	1	1310	0.0	1674	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Vitreoscilla_g1,s:Vitreoscilla filiformis
+KS-34	89.474	1330	127	11	24	1343	1	1327	0.0	1674	tax=d:Bacteria,p:Proteobacteria,c:Hydrogenophilalia,o:Hydrogenophilales,f:Hydrogenophilaceae,g:FJ167494_g,s:FJ167494_s
+KS-34	89.482	1331	125	10	24	1343	1	1327	0.0	1674	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Gallionellales,f:Gallionellaceae,g:Gallionella,s:AB748654_s
+KS-34	89.541	1329	119	19	24	1343	1	1318	0.0	1672	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Acidovorax,s:Acidovorax konjaci
+KS-34	89.505	1334	117	17	24	1343	1	1325	0.0	1672	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Gallionellales,f:Gallionellaceae,g:Gallionella,s:GQ388822_s
+KS-34	89.458	1328	128	11	24	1343	1	1324	0.0	1672	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Brachymonas,s:CU920629_s
+KS-34	89.541	1329	119	14	24	1343	1	1318	0.0	1672	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:PAC001918_g,s:AB672287_s
+KS-34	89.474	1330	123	17	24	1343	1	1323	0.0	1670	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Sutterellaceae,g:Parasutterella,s:LT635860_s
+KS-34	89.533	1328	120	18	24	1343	1	1317	0.0	1670	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:HQ158663_g,s:HQ158663_s
+KS-34	89.387	1338	114	24	24	1343	1	1328	0.0	1670	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Rhodocyclales,f:Zoogloeaceae,g:Azoarcus,s:FR744543_s
+KS-34	89.446	1336	115	22	24	1343	1	1326	0.0	1668	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:LRRD_o,f:LRRD_f,g:LRRD_g,s:HQ445760_s
+KS-34	89.430	1334	120	16	24	1343	1	1327	0.0	1668	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Gallionellales,f:Gallionellaceae,g:GU127723_g,s:GU127723_s
+KS-34	89.422	1333	122	15	24	1343	1	1327	0.0	1668	tax=d:Bacteria,p:Proteobacteria,c:Hydrogenophilalia,o:Hydrogenophilales,f:FJ715977_f,g:FJ715977_g,s:FJ715977_s
+KS-34	89.466	1329	122	14	24	1343	1	1320	0.0	1668	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:OM156_f,g:OM156_g,s:EU805093_s
+KS-34	89.525	1327	119	16	24	1343	1	1314	0.0	1668	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Sphaerotilus,s:Sphaerotilus natans
+KS-34	89.458	1328	122	13	29	1343	3	1325	0.0	1668	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Gallionellales,f:Gallionellaceae,g:AB354610_g,s:AB354610_s
+KS-34	89.466	1329	122	13	24	1343	1	1320	0.0	1668	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:AB240291_g,s:AB240291_s
+KS-34	89.466	1329	120	16	24	1343	1	1318	0.0	1666	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Hydrogenophaga,s:MIYM_s
+KS-34	89.434	1325	126	14	25	1343	2	1318	0.0	1666	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Melaminivora,s:FJ445211_s
+KS-34	89.458	1328	122	14	24	1343	1	1318	0.0	1666	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:EU881220_g,s:EU881220_s
+KS-34	89.502	1324	122	14	29	1343	1	1316	0.0	1666	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Azohydromonas,s:Azohydromonas lata
+KS-34	89.395	1339	113	20	24	1343	1	1329	0.0	1664	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Gallionellales,f:Gallionellaceae,g:Gallionella,s:LSLI_s
+KS-34	89.371	1336	119	20	24	1343	1	1329	0.0	1664	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Sulfuricellales,f:Sulfuricellaceae,g:Sulfuriferula,s:Sulfuriferula multivorans
+KS-34	89.908	1298	117	12	53	1343	1	1291	0.0	1664	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Ramlibacter,s:Ramlibacter alkalitolerans
+KS-34	89.406	1331	122	15	24	1343	1	1323	0.0	1664	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:PAC002541_o,f:PAC002248_f,g:PAC002248_g,s:EU800310_s
+KS-34	89.566	1313	129	8	34	1343	1	1308	0.0	1664	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Tepidicella,s:Tepidicella xavieri
+KS-34	89.355	1334	123	15	24	1343	1	1329	0.0	1664	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Gallionellales,f:Gallionellaceae,g:Sideroxydans,s:AY050584_s
+KS-34	89.355	1334	121	19	24	1343	1	1327	0.0	1663	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Neisseriales,f:Neisseriaceae,g:Chromobacterium,s:Chromobacterium amazonense
+KS-34	89.406	1331	119	22	24	1343	1	1320	0.0	1663	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:JN679217_g,s:DQ520187_s
+KS-34	89.323	1330	128	11	24	1343	1	1326	0.0	1663	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:PAC002541_o,f:PAC002541_f,g:PAC002541_g,s:AB252928_s
+KS-34	89.342	1323	134	7	26	1343	1	1321	0.0	1661	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:OM156_f,g:OM156_g,s:HM127446_s
+KS-34	89.426	1324	124	14	24	1339	1	1316	0.0	1661	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Thiobacillus_o,f:Thiobacillaceae,g:FJ437813_g,s:FJ437813_s
+KS-34	89.395	1339	108	29	24	1343	1	1324	0.0	1661	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Polaromonas,s:Polaromonas jejuensis
+KS-34	89.391	1329	119	18	24	1343	1	1316	0.0	1659	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Leptothrix,s:Leptothrix ochracea
+KS-34	89.650	1314	114	16	41	1343	1	1303	0.0	1659	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:HM445266_g,s:HM445266_s
+KS-34	89.323	1330	124	12	24	1343	1	1322	0.0	1659	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Ideonella,s:GQ249369_s
+KS-34	89.663	1306	121	14	45	1343	2	1300	0.0	1657	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Ramlibacter,s:HQ809779_s
+KS-34	89.367	1326	123	14	24	1340	1	1317	0.0	1657	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Caldimonas,s:EF999406_s
+KS-34	89.248	1330	129	11	24	1343	1	1326	0.0	1657	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:PAC002541_o,f:PAC002541_f,g:PAC002541_g,s:EF516116_s
+KS-34	89.256	1331	127	15	24	1343	1	1326	0.0	1657	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:AYMW_g,s:DQ450189_s
+KS-34	89.264	1332	125	16	24	1343	1	1326	0.0	1657	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Sulfuricellales,f:Sulfuricellaceae,g:DQ083112_g,s:DQ083112_s
+KS-34	89.498	1314	124	12	41	1343	1	1311	0.0	1655	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:PAC002541_o,f:PAC002541_f,g:PAC002541_g,s:JN615836_s
+KS-34	89.197	1333	126	15	24	1343	1	1328	0.0	1655	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:PAC002541_o,f:PAC002541_f,g:PAC002541_g,s:JF116695_s
+KS-34	89.312	1338	111	26	24	1343	1	1324	0.0	1655	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:PAC002541_o,f:PAC002248_f,g:PAC002248_g,s:DQ378251_s
+KS-34	89.339	1332	116	19	24	1343	1	1318	0.0	1655	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Hydrogenophaga,s:Hydrogenophaga intermedia
+KS-34	89.256	1331	126	15	24	1343	1	1325	0.0	1655	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Neisseriales,f:Neisseriaceae,g:Chromobacterium,s:Chromobacterium violaceum
+KS-34	89.197	1333	127	14	24	1343	1	1329	0.0	1653	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Methylophilales,f:Methylophilaceae,g:HQ116735_g,s:EU662606_s
+KS-34	89.224	1327	129	10	24	1343	1	1320	0.0	1652	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:PAC002541_o,f:PAC002541_f,g:AF467301_g,s:HM243792_s
+KS-34	89.181	1331	129	13	24	1343	1	1327	0.0	1652	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Neisseriales,f:Neisseriaceae,g:Rivicola,s:CP019509_s
+KS-34	89.157	1328	134	7	24	1343	1	1326	0.0	1652	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Sterolibacterium_o,f:Sterolibacteriaceae,g:AY770957_g,s:AB552905_s
+KS-34	90.340	1263	108	14	89	1343	51	1307	0.0	1650	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Hydrogenophaga,s:Hydrogenophaga luteola
+KS-34	89.230	1337	114	25	24	1343	1	1324	0.0	1650	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:PAC002541_o,f:PAC002248_f,g:PAC002248_g,s:FJ715983_s
+KS-34	89.090	1329	130	12	24	1343	1	1323	0.0	1650	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Thiobacillus_o,f:Thiobacillaceae,g:U46750_g,s:AM167962_s
+KS-34	89.163	1338	118	23	24	1343	1	1329	0.0	1648	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Gallionellales,f:Gallionellaceae,g:Ferriphaselus,s:EU937884_s
+KS-34	89.122	1333	128	13	24	1343	1	1329	0.0	1648	tax=d:Bacteria,p:Proteobacteria,c:Hydrogenophilalia,o:Hydrogenophilales,f:Hydrogenophilaceae,g:AY555801_g,s:AY555801_s
+KS-34	89.216	1326	127	14	26	1343	3	1320	0.0	1648	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Thiobacillus_o,f:Thiobacillaceae,g:U46750_g,s:AB630465_s
+KS-34	89.114	1332	126	17	24	1343	1	1325	0.0	1644	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Neisseriales,f:Neisseriaceae,g:Chromobacterium,s:Chromobacterium vaccinii
+KS-34	90.198	1265	112	8	89	1343	44	1306	0.0	1644	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Methylophilales,f:Methylophilaceae,g:Methylovorus,s:Methylovorus menthalis
+KS-34	89.660	1296	121	12	57	1343	1	1292	0.0	1644	tax=d:Bacteria,p:Proteobacteria,c:Hydrogenophilalia,o:Hydrogenophilales,f:FJ715977_f,g:FJ715977_g,s:FJ825550_s
+KS-34	89.088	1338	121	21	24	1343	1	1331	0.0	1644	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Sulfuricellales,f:Sulfuricellaceae,g:Sulfuricella,s:DF967542_s
+KS-34	89.157	1328	124	17	24	1343	1	1316	0.0	1642	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Leptothrix,s:Leptothrix cholodnii
+KS-34	89.132	1325	130	12	28	1343	1	1320	0.0	1642	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Sutterellaceae,g:Sutterella,s:Sutterella wadsworthensis
+KS-34	89.615	1300	117	17	52	1343	1	1290	0.0	1642	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:JN679217_g,s:JN679217_s
+KS-34	89.140	1326	128	13	26	1343	1	1318	0.0	1642	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Ramlibacter,s:HQ817679_s
+KS-34	89.081	1328	129	11	24	1343	1	1320	0.0	1642	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:HM769658_g,s:HM769658_s
+KS-34	89.216	1326	122	13	34	1343	1	1321	0.0	1642	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Tepidimonas,s:Tepidimonas aquatica
+KS-34	89.048	1324	137	8	24	1343	1	1320	0.0	1640	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Melaminivora,s:Melaminivora jejuensis
+KS-34	89.088	1338	117	21	24	1343	1	1327	0.0	1640	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Gallionellales,f:Gallionellaceae,g:Gallionella,s:EU937950_s
+KS-34	89.040	1323	139	6	24	1343	1	1320	0.0	1640	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Brachymonas,s:Brachymonas chironomi
+KS-34	89.057	1325	133	10	24	1343	1	1318	0.0	1639	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Brachymonas,s:Brachymonas denitrificans
+KS-34	89.072	1336	118	21	24	1343	1	1324	0.0	1639	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Gallionellales,f:Gallionellaceae,g:Gallionella,s:FN391816_s
+KS-34	89.081	1328	127	14	24	1343	1	1318	0.0	1639	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:FJ478604_g,s:FJ478604_s
+KS-34	89.514	1297	126	10	51	1343	1	1291	0.0	1639	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Diaphorobacter,s:Diaphorobacter oryzae
+KS-34	89.502	1305	118	13	54	1343	17	1317	0.0	1639	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Methylophilales,f:Methylophilaceae,g:AY792265_g,s:AY792265_s
+KS-34	90.119	1265	113	8	89	1343	40	1302	0.0	1639	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Methylophilales,f:Methylophilaceae,g:Methylovorus,s:Methylovorus mays
+KS-34	89.389	1310	119	16	41	1343	1	1297	0.0	1637	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Sphaerotilus,s:Sphaerotilus natans
+KS-34	89.286	1316	119	19	37	1343	1	1303	0.0	1635	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Sphaerotilus,s:Sphaerotilus montanus
+KS-34	89.072	1336	114	28	24	1343	1	1320	0.0	1635	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:PAC002541_o,f:PAC002248_f,g:PAC002248_g,s:EF999347_s
+KS-34	88.947	1330	129	16	24	1343	1	1322	0.0	1635	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Giesbergeria,s:Giesbergeria voronezhensis
+KS-34	89.073	1327	124	17	24	1343	1	1313	0.0	1633	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Hylemonella,s:JEMG_s
+KS-34	88.930	1337	125	20	24	1343	1	1331	0.0	1633	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Sulfuricellales,f:Sulfuricellaceae,g:Sulfuricella,s:Sulfuricella denitrificans
+KS-34	89.073	1327	124	17	24	1343	1	1313	0.0	1633	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Hylemonella,s:Hylemonella gracilis
+KS-34	88.889	1332	133	11	25	1343	1	1330	0.0	1631	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Gallionellales,f:Gallionellaceae,g:Nitrotoga,s:EU050922_s
+KS-34	88.956	1331	127	18	24	1343	1	1322	0.0	1631	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Comamonas,s:Comamonas thiooxydans
+KS-34	88.956	1331	127	18	24	1343	1	1322	0.0	1631	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Comamonas,s:Comamonas testosteroni
+KS-34	88.981	1334	121	21	24	1343	1	1322	0.0	1631	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Polaromonas,s:AF361203_s
+KS-34	89.433	1306	113	22	50	1343	1	1293	0.0	1631	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:JN679217_g,s:AB286599_s
+KS-34	88.698	1336	126	18	24	1343	1	1327	0.0	1629	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Gallionellales,f:Gallionellaceae,g:Gallionella,s:JQ906355_s
+KS-34	88.955	1340	115	27	24	1343	1	1327	0.0	1629	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Gallionellales,f:Gallionellaceae,g:Ferriphaselus,s:Ferriphaselus amnicola
+KS-34	88.881	1349	109	26	24	1343	1	1337	0.0	1628	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:CP012157_o,f:FR749809_f,g:FR749809_g,s:FR749809_s
+KS-34	88.872	1330	133	12	24	1343	1	1325	0.0	1628	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Neisseriales,f:Neisseriaceae,g:Laribacter,s:Laribacter hongkongensis
+KS-34	89.185	1313	123	19	41	1343	1	1304	0.0	1626	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Pseudorhodoferax,s:Pseudorhodoferax aquiterrae
+KS-34	88.905	1343	112	28	24	1343	1	1329	0.0	1626	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:PAC002541_o,f:PAC002248_f,g:PAC002248_g,s:GQ156841_s
+KS-34	88.881	1331	128	18	24	1343	1	1322	0.0	1626	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Comamonas,s:BAEC_s
+KS-34	89.109	1313	127	15	42	1343	1	1308	0.0	1624	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Sutterellaceae,g:Parasutterella,s:HQ780761_s
+KS-34	89.032	1322	124	19	35	1343	1	1314	0.0	1624	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Neisseriales,f:Neisseriaceae,g:Chromobacterium,s:Chromobacterium piscinae
+KS-34	88.805	1331	132	16	24	1343	1	1325	0.0	1622	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Neisseriales,f:Neisseriaceae,g:Chromobacterium,s:Chromobacterium sphagni
+KS-34	88.814	1332	130	16	24	1343	1	1325	0.0	1622	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Neisseriales,f:Neisseriaceae,g:Pseudogulbenkiania,s:Pseudogulbenkiania subflava
+KS-34	88.814	1332	130	15	24	1343	1	1325	0.0	1622	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Neisseriales,f:Neisseriaceae,g:Pseudogulbenkiania,s:AP012224_s
+KS-34	89.160	1310	125	15	45	1343	2	1305	0.0	1622	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Neisseriales,f:Neisseriaceae,g:Chromobacterium,s:Chromobacterium pseudoviolaceum
+KS-34	88.864	1338	115	28	24	1343	1	1322	0.0	1620	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:HQ178927_g,s:HQ178927_s
+KS-34	88.872	1339	114	28	24	1343	1	1323	0.0	1620	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:CP012157_o,f:CP012157_f,g:CP012157_g,s:AF236012_s
+KS-34	88.789	1329	131	18	24	1343	1	1320	0.0	1618	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:AB076847_g,s:AB076847_s
+KS-34	88.764	1335	123	23	24	1343	1	1323	0.0	1616	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:PAC002541_o,f:PAC002248_f,g:PAC002248_g,s:DQ395705_s
+KS-34	88.872	1330	118	21	35	1343	1	1321	0.0	1615	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:PAC002541_o,f:PAC002248_f,g:PAC002248_g,s:KC009871_s
+KS-34	88.713	1329	134	14	24	1343	1	1322	0.0	1615	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Xenophilus,s:Xenophilus azovorans
+KS-34	88.772	1336	121	24	24	1343	1	1323	0.0	1615	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:CP012157_o,f:CP012157_f,g:PAC001920_g,s:EF019835_s
+KS-34	88.722	1330	130	16	24	1339	1	1324	0.0	1613	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Neisseriales,f:Neisseriaceae,g:Vogesella,s:JX222194_s
+KS-34	88.647	1330	137	12	24	1343	1	1326	0.0	1613	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:PAC002541_o,f:PAC002541_f,g:PAC002541_g,s:GQ500836_s
+KS-34	88.664	1332	133	15	24	1343	1	1326	0.0	1613	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:PAC002541_o,f:PAC002248_f,g:PAC002248_g,s:FJ478717_s
+KS-34	88.672	1333	130	17	24	1343	1	1325	0.0	1611	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Neisseriales,f:Neisseriaceae,g:Chromobacterium,s:Chromobacterium subtsugae
+KS-34	88.597	1333	134	13	24	1343	1	1328	0.0	1609	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Sulfuricellales,f:Sulfuricellaceae,g:Sulfurirhabdus,s:JQ287041_s
+KS-34	88.948	1312	127	10	45	1343	3	1309	0.0	1609	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Comamonadaceae,g:Tepidimonas,s:Tepidimonas fonticaldi
+KS-34	88.730	1331	125	21	24	1343	1	1317	0.0	1609	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:PAC002541_o,f:PAC002541_f,g:PAC002541_g,s:HQ166657_s

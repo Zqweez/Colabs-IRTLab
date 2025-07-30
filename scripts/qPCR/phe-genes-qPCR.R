@@ -346,38 +346,45 @@ genes_long <- genes_plot_data %>%
     )
   )
 
-# Calculate NC reference values for normalization (only NC-1 and NC-2, not NC-samp)
-nc_reference <- genes_long %>%
-  filter(grepl("^NC-[12]", Sample)) %>%  # Only NC-1 and NC-2
+# Calculate EHC reference values for normalization (EHC samples, excluding EHC-od)
+ehc_reference <- genes_long %>%
+  filter(grepl("^EHC-[12]", Sample)) %>%  # Only EHC-1 and EHC-2, not EHC-od
   group_by(Gene) %>%
   summarise(
-    nc_mean_cq = mean(Cq, na.rm = TRUE),
+    ehc_mean_cq = mean(Cq, na.rm = TRUE),
     .groups = "drop"
   )
 
-cat("\nNC reference values for normalization:\n")
-print(nc_reference)
+cat("\nEHC reference values for normalization:\n")
+print(ehc_reference)
 
-# Normalize Cq values and calculate relative abundance
+# Calculate fold change in copy number using PCR efficiency
+# Efficiency = 70% = 0.7, so each cycle multiplies by (1 + 0.7) = 1.7
+pcr_efficiency <- 0.7
+amplification_factor <- 1 + pcr_efficiency  # 1.7
+
 genes_long_normalized <- genes_long %>%
-  left_join(nc_reference, by = "Gene") %>%
+  left_join(ehc_reference, by = "Gene") %>%
   mutate(
-    # Normalize by dividing by NC, then take reciprocal for relative abundance
-    # Higher values = higher abundance
-    relative_abundance = 1 / (Cq / nc_mean_cq)
+    # Calculate delta Cq (difference from EHC reference)
+    delta_cq = Cq - ehc_mean_cq,
+    # Calculate fold change: amplification_factor^(-delta_cq)
+    # Negative delta_cq means lower Cq (more copies), so fold change > 1
+    # Positive delta_cq means higher Cq (fewer copies), so fold change < 1
+    fold_change = amplification_factor^(-delta_cq)
   )
 
-# Calculate summary statistics for plotting (normalized values)
+# Calculate summary statistics for plotting (fold change values)
 genes_summary <- genes_long_normalized %>%
   group_by(bio_rep, Combination, Gene) %>%
   summarise(
-    mean_abundance = mean(relative_abundance, na.rm = TRUE),
-    sd_abundance = sd(relative_abundance, na.rm = TRUE),
+    mean_fold_change = mean(fold_change, na.rm = TRUE),
+    sd_fold_change = sd(fold_change, na.rm = TRUE),
     n = n(),
     .groups = "drop"
   ) %>%
   # Handle cases where sd is NA (only one replicate)
-  mutate(sd_abundance = ifelse(is.na(sd_abundance), 0, sd_abundance))
+  mutate(sd_fold_change = ifelse(is.na(sd_fold_change), 0, sd_fold_change))
 
 # Define colors for genes
 gene_colors <- c('nidA' = '#e56562', 'phnAc' = '#51c558')
@@ -388,48 +395,50 @@ pos_jd <- position_jitterdodge(
   jitter.width = 0.10
 )
 
-# First plot: Bio_rep level with both genes (normalized)
+# First plot: Bio_rep level with both genes (fold change on log scale)
 ggplot(genes_summary,
-       aes(x = bio_rep, y = mean_abundance, fill = Gene)) +
+       aes(x = bio_rep, y = mean_fold_change, fill = Gene)) +
   geom_col(position = position_dodge(width = 0.8), width = 0.7) +
   geom_point(data = genes_long_normalized,
-             aes(x = bio_rep, y = relative_abundance, fill = Gene),
+             aes(x = bio_rep, y = fold_change, fill = Gene),
              position = pos_jd,
              shape = 21,
              size = 0.7,
              stroke = 0.6,
              alpha = 0.7) +
-  geom_errorbar(aes(ymin = mean_abundance - sd_abundance,
-                    ymax = mean_abundance + sd_abundance),
+  geom_errorbar(aes(ymin = pmax(mean_fold_change - sd_fold_change, 0.001),  # Prevent negative values on log scale
+                    ymax = mean_fold_change + sd_fold_change),
                 position = position_dodge(width = 0.8),
                 width = 0.25) +
   facet_wrap(~ Combination, scales = "free_x", nrow = 1) +
   scale_fill_manual(values = gene_colors, name = "Gene") +
-  labs(title = "Relative Gene Abundance for Biological Replicates",
-       subtitle = "Normalized to NC controls (higher bars = higher abundance)",
+  scale_y_log10(labels = function(x) sprintf("%.1f", x)) +
+  labs(title = "Fold Change in Gene Copy Number for Biological Replicates",
+       subtitle = "Normalized to EHC controls, 70% PCR efficiency (log scale)",
        x = "Biological Replicate",
-       y = "Relative Abundance (normalized to NC)") +
+       y = "Fold Change in Copy Number (log scale)") +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 8),
-        strip.text = element_text(size = 8, angle = 0))
+        strip.text = element_text(size = 8, angle = 0)) +
+  geom_hline(yintercept = 1, linetype = "dashed", color = "gray50", alpha = 0.7)
 
-ggsave("results/growth_phe/qPCR/genes/Relative-abundance-per-biorep-nidA-phnAc.pdf", width = 12, height = 6)
+ggsave("results/growth_phe/qPCR/genes/Fold-change-per-biorep-nidA-phnAc.pdf", width = 12, height = 6)
 
 ## Do significance testing per gene to assess if there is a significant difference between the samples
-# Test each gene independently for differences between Combinations using normalized abundance values
+# Test each gene independently for differences between Combinations using fold change values
 
-cat("\nPerforming statistical analysis on normalized abundance values...\n")
+cat("\nPerforming statistical analysis on fold change values...\n")
 
-# Perform Wilcoxon tests for each gene separately using relative abundance
+# Perform Wilcoxon tests for each gene separately using fold change
 stat_test_nidA <- genes_long_normalized %>%
   filter(Gene == "nidA") %>%
-  wilcox_test(relative_abundance ~ Combination, p.adjust.method = "BH") %>%
+  wilcox_test(fold_change ~ Combination, p.adjust.method = "BH") %>%
   add_significance("p.adj") %>%
   mutate(Gene = "nidA")
 
 stat_test_phnAc <- genes_long_normalized %>%
   filter(Gene == "phnAc") %>%
-  wilcox_test(relative_abundance ~ Combination, p.adjust.method = "BH") %>%
+  wilcox_test(fold_change ~ Combination, p.adjust.method = "BH") %>%
   add_significance("p.adj") %>%
   mutate(Gene = "phnAc")
 
@@ -437,7 +446,7 @@ stat_test_phnAc <- genes_long_normalized %>%
 stat_test_combined <- bind_rows(stat_test_nidA, stat_test_phnAc)
 
 # Display results
-cat("\nStatistical test results (relative abundance):\n")
+cat("\nStatistical test results (fold change):\n")
 print(stat_test_combined %>% select(Gene, group1, group2, p, p.adj, p.adj.signif))
 
 # Custom function to generate significance letters
@@ -509,26 +518,29 @@ cld_phnAc <- generate_significance_letters(stat_test_phnAc, alpha = 0.05) %>%
 # Combine letters
 cld_combined <- bind_rows(cld_nidA, cld_phnAc)
 
-cat("\nSignificance letters for nidA (relative abundance):\n")
+cat("\nSignificance letters for nidA (fold change):\n")
 print(cld_nidA)
-cat("\nSignificance letters for phnAc (relative abundance):\n")
+cat("\nSignificance letters for phnAc (fold change):\n")
 print(cld_phnAc)
 
-# Calculate combination-level summary for plotting (normalized values)
+# Calculate combination-level summary for plotting (fold change values)
 combination_summary <- genes_long_normalized %>%
   group_by(Combination, Gene) %>%
   summarise(
-    mean_abundance = mean(relative_abundance, na.rm = TRUE),
-    sd_abundance = sd(relative_abundance, na.rm = TRUE),
+    mean_fold_change = mean(fold_change, na.rm = TRUE),
+    sd_fold_change = sd(fold_change, na.rm = TRUE),
     n = n(),
     .groups = "drop"
   ) %>%
-  mutate(sd_abundance = ifelse(is.na(sd_abundance), 0, sd_abundance))
+  mutate(sd_fold_change = ifelse(is.na(sd_fold_change), 0, sd_fold_change))
 
 # Add significance letters to summary
 combination_summary_labeled <- combination_summary %>%
   left_join(cld_combined, by = c("Combination", "Gene")) %>%
-  mutate(letter_y = mean_abundance + sd_abundance + 0.1)  # Position letters above error bars
+  mutate(
+    # Position letters above error bars, accounting for log scale
+    letter_y = mean_fold_change + sd_fold_change + (mean_fold_change * 0.3)
+  )
 
 # Define colors for combinations (you can adjust these as needed)
 combination_colors <- c('KS8-od' = '#e56562', 'EHC-od' = '#51c558', 'EHC' = '#67b4ef', 
@@ -536,46 +548,50 @@ combination_colors <- c('KS8-od' = '#e56562', 'EHC-od' = '#51c558', 'EHC' = '#67
                        'KS3-100' = "#7570b3", 'KS3-KS8' = "#fbd3e1", 'NC' = "#a6cee3",
                        'NC-samp' = "#ff7f00")
 
-# Plot by combination with significance letters, faceted by gene (normalized values)
+# Plot by combination with significance letters, faceted by gene (fold change on log scale)
 ggplot(combination_summary_labeled,
-       aes(x = Combination, y = mean_abundance, fill = Combination)) +
+       aes(x = Combination, y = mean_fold_change, fill = Combination)) +
   geom_col(position = position_dodge(width = 0.8), width = 0.7) +
   geom_point(data = genes_long_normalized,
-             aes(x = Combination, y = relative_abundance, fill = Combination),
+             aes(x = Combination, y = fold_change, fill = Combination),
              position = position_jitter(width = 0.2),
              shape = 21,
              size = 0.8,
              stroke = 0.6,
              alpha = 0.7) +
-  geom_errorbar(aes(ymin = mean_abundance - sd_abundance,
-                    ymax = mean_abundance + sd_abundance),
+  geom_errorbar(aes(ymin = pmax(mean_fold_change - sd_fold_change, 0.001),  # Prevent negative values on log scale
+                    ymax = mean_fold_change + sd_fold_change),
                 position = position_dodge(width = 0.8),
                 width = 0.25) +
   geom_text(aes(x = Combination, y = letter_y, label = letters),
             size = 3, fontface = "bold") +
   facet_wrap(~ Gene, scales = "free_y", nrow = 1) +
   scale_fill_manual(values = combination_colors, name = "Combination") +
-  labs(title = "Relative Gene Abundance per Combination",
-       subtitle = "Normalized to NC controls - Letters indicate statistical significance (p<0.05)",
+  scale_y_log10(labels = function(x) sprintf("%.1f", x)) +
+  labs(title = "Fold Change in Gene Copy Number per Combination",
+       subtitle = "Normalized to EHC controls, 70% PCR efficiency - Letters indicate significance (p<0.05)",
        x = "Combination",
-       y = "Relative Abundance (normalized to NC)") +
+       y = "Fold Change in Copy Number (log scale)") +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 8),
         strip.text = element_text(size = 10, face = "bold"),
-        legend.position = "bottom")
+        legend.position = "bottom") +
+  geom_hline(yintercept = 1, linetype = "dashed", color = "gray50", alpha = 0.7)
 
-ggsave("results/growth_phe/qPCR/genes/Relative-abundance-per-combination-letters-genes.pdf", width = 12, height = 6)
+ggsave("results/growth_phe/qPCR/genes/Fold-change-per-combination-letters-genes.pdf", width = 12, height = 6)
 
 cat("\nPlotting completed successfully!\n")
 cat("Generated plots:\n")
-cat("1. Relative-abundance-per-biorep-nidA-phnAc.pdf - Biological replicate level with normalized abundance\n")
-cat("2. Relative-abundance-per-combination-letters-genes.pdf - Combination level with significance testing\n")
+cat("1. Fold-change-per-biorep-nidA-phnAc.pdf - Biological replicate level with fold change\n")
+cat("2. Fold-change-per-combination-letters-genes.pdf - Combination level with significance testing\n")
 cat("\nNormalization approach:\n")
-cat("- Cq values normalized by dividing by NC control mean (NC-1 and NC-2 only)\n")
-cat("- Relative abundance calculated as 1/(normalized Cq) - higher bars = higher abundance\n")
-cat("- NC controls excluded from normalization reference (only NC-1 and NC-2 used)\n")
+cat("- Cq values normalized to EHC control mean (EHC-1 and EHC-2, excluding EHC-od)\n")
+cat("- Fold change calculated using 70% PCR efficiency: (1.7)^(-ΔCq)\n")
+cat("- ΔCq = Sample_Cq - EHC_mean_Cq\n")
+cat("- Values > 1 indicate more copies than EHC, values < 1 indicate fewer copies\n")
+cat("- Log scale used for visualization to accommodate wide range of fold changes\n")
 cat("\nStatistical analysis summary:\n")
-cat("- Performed pairwise Wilcoxon tests on normalized abundance values for each gene\n")
+cat("- Performed pairwise Wilcoxon tests on fold change values for each gene\n")
 cat("- Applied Benjamini-Hochberg correction for multiple comparisons\n")
 cat("- Generated significance letters for each gene independently\n")
-cat("- Higher relative abundance values indicate higher gene expression\n")
+cat("- Dashed line at y=1 represents no change compared to EHC reference\n")

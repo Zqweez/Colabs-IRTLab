@@ -1,68 +1,500 @@
-KS-04	100.000	1292	0	0	4	1295	4	1295	0.0	2368	KS-04-1
-KS-04	99.453	1279	4	3	17	1295	17	1292	0.0	2326	KS-23-2
-KS-04	99.453	1279	6	1	17	1295	15	1292	0.0	2322	KS-09-1
-KS-04	99.062	1279	10	2	17	1295	17	1293	0.0	2305	KS-09-2
-KS-04	91.382	1288	98	11	14	1295	16	1296	0.0	1748	KS-29-2
-KS-04	91.438	1273	98	9	16	1282	14	1281	0.0	1736	KS-29-1
-KS-04	91.332	1269	98	10	16	1278	16	1278	0.0	1727	KS-27-2
-KS-04	91.592	1225	93	8	16	1234	16	1236	0.0	1687	KS-27-1
-KS-04	88.361	1306	124	23	4	1295	6	1297	0.0	1544	KS-21-2
-KS-04	88.378	1239	118	21	17	1242	16	1241	0.0	1472	KS-21-1
-KS-04	85.228	1293	171	20	14	1295	16	1299	0.0	1317	KS-01-1
-KS-04	85.116	1290	172	20	17	1295	16	1296	0.0	1310	KS-01-2
-KS-04	84.919	1293	174	21	14	1295	13	1295	0.0	1303	KS-35-2
-KS-04	84.973	1291	173	21	16	1295	15	1295	0.0	1301	KS-08-2
-KS-04	85.125	1284	170	21	17	1288	12	1286	0.0	1299	KS-08-1
-KS-04	85.156	1280	170	20	16	1283	14	1285	0.0	1299	KS-07-2
-KS-04	84.969	1284	173	20	16	1288	14	1288	0.0	1293	KS-35-1
-KS-04	84.806	1290	175	21	16	1294	16	1295	0.0	1291	KS-02-1
-KS-04	84.952	1256	169	20	14	1258	12	1258	0.0	1266	KS-07-1
-KS-04	84.964	1257	168	21	16	1261	13	1259	0.0	1264	KS-25-2
-KS-04	85.323	1240	162	20	16	1244	15	1245	0.0	1264	KS-20-1
-KS-04	84.836	1253	170	20	18	1259	12	1255	0.0	1258	KS-25-1
-KS-04	85.004	1147	152	20	16	1151	15	1152	0.0	1162	KS-20-2
-KS-04	82.473	1124	140	36	202	1283	234	1342	0.0	937	KS-10-1
-KS-04	83.220	1031	123	29	202	1193	219	1238	0.0	902	KS-10-2
-KS-04	80.408	1128	174	26	202	1294	228	1343	0.0	824	KS-34-1
-KS-04	81.917	1012	139	23	202	1180	228	1228	0.0	817	KS-24-1
-KS-04	81.917	1012	139	24	202	1180	228	1228	0.0	817	KS-05-2
-KS-04	81.917	1012	139	24	202	1180	229	1229	0.0	817	KS-03-1
-KS-04	81.917	1012	139	23	202	1180	224	1224	0.0	815	KS-34-2
-KS-04	81.917	1012	139	23	202	1180	215	1215	0.0	815	KS-32-1
-KS-04	81.917	1012	139	24	202	1180	227	1227	0.0	815	KS-26-1
-KS-04	81.917	1012	139	24	202	1180	223	1223	0.0	815	KS-05-1
-KS-04	81.719	1012	141	23	202	1180	220	1220	0.0	808	KS-32-2
-KS-04	81.621	1012	142	24	202	1180	229	1229	0.0	804	KS-22-2
-KS-04	81.500	1027	140	29	202	1193	225	1236	0.0	802	KS-26-2
-KS-04	80.604	1026	158	23	203	1197	226	1241	0.0	754	KS-36-1
-KS-04	80.507	1026	159	23	203	1197	225	1240	0.0	750	KS-36-2
-KS-04	79.285	1091	181	30	203	1260	229	1307	0.0	730	KS-06-1
-KS-04	79.942	1027	163	28	203	1197	224	1239	0.0	717	KS-06-2
-KS-04	79.942	1027	162	29	203	1197	225	1239	0.0	715	KS-33-1
-KS-04	79.091	880	162	17	413	1283	459	1325	9.08e-174	601	KS-11-1
-KS-04	92.079	202	16	0	203	404	224	425	1.04e-78	285	KS-11-1
-KS-04	79.025	882	161	19	413	1285	451	1317	5.47e-171	592	KS-11-2
-KS-04	92.079	202	16	0	203	404	216	417	1.04e-78	285	KS-11-2
-KS-04	90.498	442	38	4	306	745	4	443	1.18e-167	580	ST-A1
-KS-04	90.476	441	38	4	306	744	2	440	4.26e-167	579	ST-D1_7
-KS-04	90.476	441	38	4	306	744	4	442	4.26e-167	579	ST-B5
-KS-04	90.476	441	38	4	306	744	4	442	4.26e-167	579	ST-B1
-KS-04	80.076	793	138	15	413	1197	461	1241	1.98e-165	573	KS-30-1
-KS-04	92.079	202	16	0	203	404	226	427	1.04e-78	285	KS-30-1
-KS-04	89.888	445	39	6	306	746	2	444	9.21e-164	568	ST-C9-1
-KS-04	89.414	444	42	5	306	746	2	443	1.19e-162	564	ST-C1
-KS-04	79.846	779	138	14	413	1183	455	1222	1.99e-160	556	KS-30-2
-KS-04	92.079	202	16	0	203	404	220	421	1.04e-78	285	KS-30-2
-KS-04	87.755	441	51	3	306	744	3	442	4.38e-147	512	ST-10
-KS-04	87.500	440	51	4	306	742	2	440	7.32e-145	505	ST-C5
-KS-04	81.048	496	67	6	202	671	227	721	2.16e-105	374	KS-22-1
-KS-04	80.342	468	63	13	306	746	4	469	1.70e-91	327	ST-D1_1
-KS-04	80.430	465	60	15	306	742	2	463	6.12e-91	326	ST-A35
-KS-04	80.000	470	61	17	306	745	4	470	2.85e-89	320	ST-B8-2
-KS-04	80.042	471	61	16	306	746	4	471	2.85e-89	320	ST-71
-KS-04	79.744	469	65	14	306	746	4	470	1.02e-88	318	ST-C2
-KS-04	82.317	328	56	2	418	744	142	468	1.04e-78	285	ST-B3
-KS-04	93.939	99	6	0	306	404	5	103	3.95e-38	150	ST-B3
-KS-04	78.632	468	71	15	306	746	3	468	3.74e-78	283	ST-127
-KS-04	77.039	466	77	14	306	746	2	462	1.76e-66	244	ST-7
-KS-04	76.923	338	71	5	413	746	136	470	1.08e-48	185	ST-83
+KS-04	99.451	1275	4	3	23	1295	1	1274	0.0	2318	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium oryzae
+KS-04	99.450	1272	5	2	25	1295	1	1271	0.0	2314	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium fujisawaense
+KS-04	98.978	1272	11	2	25	1295	1	1271	0.0	2281	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium tardum
+KS-04	98.823	1274	13	2	23	1295	1	1273	0.0	2274	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium radiotolerans
+KS-04	98.744	1274	14	2	23	1295	1	1273	0.0	2268	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium phyllosphaerae
+KS-04	98.587	1274	16	2	23	1295	1	1273	0.0	2257	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium phyllostachyos
+KS-04	98.273	1274	20	2	23	1295	1	1273	0.0	2235	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium longum
+KS-04	97.571	1276	27	4	23	1295	1	1275	0.0	2187	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium pseudosasicola
+KS-04	97.253	1274	33	2	23	1295	1	1273	0.0	2163	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium mesophilicum
+KS-04	97.248	1272	33	2	25	1295	1	1271	0.0	2159	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium brachiatum
+KS-04	96.917	1265	37	2	32	1295	1	1264	0.0	2124	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium marchantiae
+KS-04	96.317	1276	41	5	25	1295	1	1275	0.0	2097	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium komagatae
+KS-04	96.151	1273	45	4	25	1295	1	1271	0.0	2089	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium gregans
+KS-04	96.943	1243	35	3	56	1295	3	1245	0.0	2087	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium trifolii
+KS-04	96.078	1275	44	6	25	1295	1	1273	0.0	2078	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium persicinum
+KS-04	96.349	1260	41	5	40	1295	1	1259	0.0	2073	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium bullatum
+KS-04	95.922	1275	48	4	23	1295	1	1273	0.0	2071	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium hispanicum
+KS-04	95.690	1276	51	4	23	1295	1	1275	0.0	2054	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium jeotgali
+KS-04	95.447	1274	56	2	23	1295	1	1273	0.0	2036	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium gossipiicola
+KS-04	95.447	1274	56	2	23	1295	1	1273	0.0	2036	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium dankookense
+KS-04	96.571	1225	41	1	72	1295	1	1225	0.0	2034	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium aerolatum
+KS-04	95.380	1277	53	5	23	1295	1	1275	0.0	2032	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium adhaesivum
+KS-04	95.369	1274	57	2	23	1295	1	1273	0.0	2030	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium goesingense
+KS-04	95.369	1274	57	2	23	1295	1	1273	0.0	2030	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium brachythecii
+KS-04	95.283	1272	58	2	25	1295	1	1271	0.0	2021	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium organophilum
+KS-04	95.212	1274	59	2	23	1295	1	1273	0.0	2019	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium gnaphalii
+KS-04	95.145	1277	56	6	23	1295	1	1275	0.0	2015	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium haplocladii
+KS-04	95.067	1277	54	7	23	1295	1	1272	0.0	2006	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium rhodinum
+KS-04	94.651	1290	50	8	23	1295	1	1288	0.0	1988	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:EU289509_s
+KS-04	95.265	1246	56	3	53	1295	1	1246	0.0	1977	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium cerastii
+KS-04	94.283	1277	67	5	23	1295	1	1275	0.0	1954	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium oxalidis
+KS-04	94.340	1272	70	2	25	1295	1	1271	0.0	1954	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium suomiense
+KS-04	94.872	1248	59	5	52	1295	1	1247	0.0	1951	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium thuringiense
+KS-04	94.131	1278	67	8	23	1295	1	1275	0.0	1947	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:AF409010_s
+KS-04	94.196	1275	68	5	25	1295	1	1273	0.0	1945	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium aminovorans
+KS-04	94.044	1276	72	4	23	1295	1	1275	0.0	1938	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium populi
+KS-04	94.035	1274	74	2	23	1295	1	1273	0.0	1936	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium isbiliense
+KS-04	94.039	1275	70	5	25	1295	1	1273	0.0	1934	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium extorquens
+KS-04	93.882	1275	74	4	23	1295	1	1273	0.0	1930	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium salsuginis
+KS-04	93.878	1274	74	4	25	1295	1	1273	0.0	1929	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium thiocyanatum
+KS-04	93.878	1274	74	4	25	1295	1	1273	0.0	1923	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium rhodesianum
+KS-04	93.814	1277	74	5	23	1295	1	1276	0.0	1921	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:EU289416_s
+KS-04	93.730	1276	76	4	23	1295	1	1275	0.0	1917	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium podarium
+KS-04	93.804	1275	73	5	25	1295	1	1273	0.0	1917	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium zatmanii
+KS-04	93.634	1288	65	7	23	1295	1	1286	0.0	1914	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:EU289499_s
+KS-04	93.730	1276	75	5	23	1295	1	1274	0.0	1914	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:CP024603_s
+KS-04	93.642	1274	79	2	23	1295	1	1273	0.0	1908	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:DQ532273_s
+KS-04	93.642	1274	79	2	23	1295	1	1273	0.0	1908	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:CP000943_s
+KS-04	93.500	1277	78	4	23	1295	1	1276	0.0	1899	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium variabile
+KS-04	93.765	1267	70	7	34	1295	4	1266	0.0	1899	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium pseudosasae
+KS-04	93.354	1279	77	8	23	1295	1	1277	0.0	1893	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:EU509034_s
+KS-04	93.986	1247	73	2	50	1295	1	1246	0.0	1892	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium iners
+KS-04	93.412	1275	80	4	23	1295	1	1273	0.0	1892	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:AP014704_s
+KS-04	93.182	1276	82	5	23	1295	1	1274	0.0	1875	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium aquaticum
+KS-04	93.120	1279	80	8	23	1295	1	1277	0.0	1873	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium platani
+KS-04	93.093	1274	86	2	23	1295	1	1273	0.0	1869	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:JF096886_s
+KS-04	93.098	1275	85	3	23	1295	1	1274	0.0	1869	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium nodulans
+KS-04	93.198	1279	67	8	32	1295	1	1274	0.0	1868	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium soli
+KS-04	92.840	1271	87	4	27	1295	1	1269	0.0	1845	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium tarhaniae
+KS-04	92.645	1278	87	6	23	1295	1	1276	0.0	1838	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:JTHG_s
+KS-04	92.482	1277	90	6	23	1295	1	1275	0.0	1827	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Psychroglaciecola,s:AB374377_s
+KS-04	92.471	1275	92	4	23	1295	1	1273	0.0	1825	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:EU289417_s
+KS-04	92.314	1275	93	5	23	1295	1	1272	0.0	1812	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium frigidaeris
+KS-04	92.169	1277	94	6	23	1295	1	1275	0.0	1805	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:EU289462_s
+KS-04	91.941	1278	95	7	23	1295	1	1275	0.0	1788	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:EU289454_s
+KS-04	91.881	1281	92	10	23	1295	1	1277	0.0	1784	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bosea_f,g:Bosea,s:Bosea minatitlanensis
+KS-04	91.875	1280	90	12	25	1295	3	1277	0.0	1781	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Microvirga,s:Microvirga lupini
+KS-04	91.810	1282	91	12	23	1295	1	1277	0.0	1779	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Microvirga,s:Microvirga massiliensis
+KS-04	91.803	1281	93	11	23	1295	1	1277	0.0	1779	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Chelatococcaceae,g:HQ697793_g,s:HQ697793_s
+KS-04	91.641	1280	97	8	23	1295	1	1277	0.0	1768	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bosea_f,g:Bosea,s:Bosea robiniae
+KS-04	91.634	1279	96	11	25	1295	3	1278	0.0	1764	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Microvirga,s:JF183815_s
+KS-04	91.641	1280	93	12	25	1295	3	1277	0.0	1764	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Microvirga,s:Microvirga subterranea
+KS-04	91.608	1275	103	4	23	1295	1	1273	0.0	1764	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Psychroglaciecola,s:EU861881_s
+KS-04	91.562	1280	98	8	23	1295	1	1277	0.0	1762	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Microvirga,s:JF417856_s
+KS-04	91.634	1279	94	10	25	1295	3	1276	0.0	1762	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Microvirga,s:HQ119278_s
+KS-04	91.549	1278	102	5	23	1295	1	1277	0.0	1762	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bosea_f,g:Bosea,s:Bosea vestrisii
+KS-04	91.549	1278	102	5	23	1295	1	1277	0.0	1762	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bosea_f,g:Bosea,s:Bosea eneae
+KS-04	91.569	1281	93	14	25	1295	3	1278	0.0	1759	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Microvirga,s:JF178095_s
+KS-04	91.562	1280	94	12	25	1295	3	1277	0.0	1759	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Microvirga,s:Microvirga zambiensis
+KS-04	91.608	1275	97	8	23	1290	1	1272	0.0	1759	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bosea_f,g:Bosea,s:Bosea massiliensis
+KS-04	91.491	1281	97	10	23	1295	1	1277	0.0	1757	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bosea_f,g:Bosea,s:Bosea lupini
+KS-04	91.406	1280	100	8	23	1295	1	1277	0.0	1751	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bosea_f,g:Bosea,s:Bosea thiooxidans
+KS-04	91.413	1281	95	14	25	1295	3	1278	0.0	1749	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Microvirga,s:JQ738782_s
+KS-04	91.342	1282	99	9	23	1295	1	1279	0.0	1748	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bosea_f,g:Bosea,s:Bosea lathyri
+KS-04	91.406	1280	96	11	25	1295	3	1277	0.0	1748	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Microvirga,s:Microvirga aerophila
+KS-04	91.348	1283	93	16	25	1295	3	1279	0.0	1744	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Microvirga,s:AB636942_s
+KS-04	91.328	1280	97	12	25	1295	3	1277	0.0	1742	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Microvirga,s:Microvirga flocculans
+KS-04	91.767	1251	100	2	46	1295	5	1253	0.0	1742	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:FJ889296_s
+KS-04	91.257	1281	100	10	23	1295	1	1277	0.0	1740	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Microvirga,s:FJ478774_s
+KS-04	91.820	1247	97	5	52	1295	1	1245	0.0	1738	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Psychroglaciecola,s:Psychroglaciecola arctica
+KS-04	91.270	1283	94	16	25	1295	3	1279	0.0	1738	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Microvirga,s:HM109141_s
+KS-04	91.186	1282	100	12	23	1295	1	1278	0.0	1738	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Microvirga,s:GQ129955_s
+KS-04	91.250	1280	98	12	25	1295	3	1277	0.0	1736	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Microvirga,s:Microvirga vignae
+KS-04	91.172	1280	105	8	23	1295	1	1279	0.0	1736	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Enterovirga,s:Enterovirga rhinocerotis
+KS-04	91.243	1279	100	10	25	1295	3	1277	0.0	1736	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Microvirga,s:Microvirga guangxiensis
+KS-04	91.308	1277	95	13	23	1289	1	1271	0.0	1735	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Chelatococcaceae,g:Chelatococcus,s:Chelatococcus sambhunathii
+KS-04	91.308	1277	95	13	23	1289	1	1271	0.0	1735	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Chelatococcaceae,g:Chelatococcus,s:Chelatococcus daeguensis
+KS-04	91.172	1280	103	10	23	1295	1	1277	0.0	1735	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Microvirga,s:AM412118_s
+KS-04	91.151	1277	105	8	25	1295	3	1277	0.0	1731	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Microvirga,s:Microvirga soli
+KS-04	91.574	1258	95	8	47	1295	5	1260	0.0	1731	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bosea_f,g:Bosea,s:Bosea vaviloviae
+KS-04	91.223	1276	98	13	23	1289	1	1271	0.0	1729	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Chelatococcaceae,g:Chelatococcus,s:Chelatococcus composti
+KS-04	91.030	1282	103	11	23	1295	1	1279	0.0	1725	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Microvirga,s:GQ249556_s
+KS-04	91.087	1279	102	11	25	1295	3	1277	0.0	1725	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Microvirga,s:Microvirga lotononidis
+KS-04	91.051	1285	97	16	23	1295	1	1279	0.0	1725	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:AB473917_g,s:AB473917_s
+KS-04	91.064	1287	92	16	23	1295	1	1278	0.0	1724	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:FJ711202_f,g:FJ711202_g,s:FJ711202_s
+KS-04	91.144	1276	98	13	23	1289	1	1270	0.0	1722	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Microvirga,s:JN653040_s
+KS-04	91.153	1266	107	4	25	1289	3	1264	0.0	1718	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Phreatobacter_f,g:Phreatobacter,s:Phreatobacter stygius
+KS-04	90.980	1275	109	5	23	1295	1	1271	0.0	1718	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Psychroglaciecola,s:EU289463_s
+KS-04	90.945	1281	100	13	25	1295	3	1277	0.0	1714	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Microvirga,s:Microvirga ossetica
+KS-04	91.074	1266	108	4	25	1289	3	1264	0.0	1712	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Phreatobacter_f,g:Phreatobacter,s:Phreatobacter oligotrophus
+KS-04	90.859	1280	103	12	25	1295	3	1277	0.0	1709	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Microvirga,s:HQ119076_s
+KS-04	90.902	1275	104	10	23	1289	1	1271	0.0	1707	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Chelatococcaceae,g:Chelatococcus,s:Chelatococcus asaccharovorans
+KS-04	90.796	1282	103	13	25	1295	3	1280	0.0	1705	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Microvirga,s:Microvirga arabica
+KS-04	90.831	1276	105	11	25	1292	3	1274	0.0	1703	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Microvirga,s:Microvirga indica
+KS-04	90.760	1277	109	9	23	1295	1	1272	0.0	1701	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Psychroglaciecola,s:EU861971_s
+KS-04	90.689	1278	111	7	23	1295	1	1275	0.0	1700	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:JQNH_g,s:JF417790_s
+KS-04	90.647	1283	104	16	25	1295	3	1281	0.0	1698	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Microvirga,s:EF682983_s
+KS-04	90.752	1276	102	13	25	1289	3	1273	0.0	1694	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Chelatococcaceae,g:Camelimonas,s:Camelimonas abortus
+KS-04	90.421	1284	107	13	23	1295	1	1279	0.0	1681	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Microvirga,s:JX133402_s
+KS-04	90.406	1282	107	14	23	1295	1	1275	0.0	1677	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Chelatococcaceae,g:Chelatococcus,s:Chelatococcus reniformis
+KS-04	90.335	1283	110	10	23	1295	1	1279	0.0	1676	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:PAC000517_s
+KS-04	90.297	1278	114	8	23	1295	1	1273	0.0	1670	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Afipia,s:PAC001985_s
+KS-04	90.457	1268	114	7	25	1289	3	1266	0.0	1670	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Chelatococcaceae,g:Pseudochelatococcus,s:Pseudochelatococcus contaminans
+KS-04	90.383	1279	103	18	23	1289	1	1271	0.0	1668	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:JQNH_g,s:JQNH_s
+KS-04	90.179	1283	112	13	23	1295	1	1279	0.0	1664	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Microvirga,s:GQ065523_s
+KS-04	90.149	1279	118	6	23	1295	1	1277	0.0	1663	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Afipia,s:LMDP_s
+KS-04	90.338	1273	110	10	24	1289	1	1267	0.0	1663	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:AB599867_f,g:AB599867_g,s:AB599867_s
+KS-04	90.155	1290	99	22	23	1295	1	1279	0.0	1659	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:Bradyrhizobium lablabi
+KS-04	90.242	1281	104	14	23	1289	1	1274	0.0	1659	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Chelatococcaceae,g:Chelatococcus,s:AJ009451_s
+KS-04	90.275	1275	109	13	25	1289	3	1272	0.0	1659	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylocystaceae,g:Methylocystis,s:Methylosinus trichosporium
+KS-04	90.141	1278	114	9	25	1295	3	1275	0.0	1657	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Phreatobacter_f,g:Phreatobacter,s:PAC001949_s
+KS-04	90.705	1248	104	10	50	1289	1	1244	0.0	1657	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Chelatococcaceae,g:Chelatococcus,s:Chelatococcus caeni
+KS-04	90.094	1282	113	12	23	1295	1	1277	0.0	1657	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Afipia,s:Afipia birgiae
+KS-04	90.094	1282	113	12	23	1295	1	1277	0.0	1657	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:Bradyrhizobium oligotrophicum
+KS-04	90.590	1254	104	11	52	1295	1	1250	0.0	1655	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Microvirga,s:JQ738857_s
+KS-04	90.118	1275	118	8	23	1295	1	1269	0.0	1655	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Chelatococcaceae,g:Pseudochelatococcus,s:FJ658501_s
+KS-04	90.078	1290	100	22	23	1295	1	1279	0.0	1653	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:Bradyrhizobium paxllaeri
+KS-04	90.078	1290	100	20	23	1295	1	1279	0.0	1653	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:Bradyrhizobium retamae
+KS-04	90.078	1290	100	22	23	1295	1	1279	0.0	1653	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:Bradyrhizobium valentinum
+KS-04	90.078	1290	100	22	23	1295	1	1279	0.0	1653	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:Bradyrhizobium namibiense
+KS-04	90.000	1280	120	7	23	1295	1	1279	0.0	1653	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Variibacter,s:EU289515_s
+KS-04	90.078	1290	100	22	23	1295	1	1279	0.0	1653	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:Bradyrhizobium icense
+KS-04	90.094	1282	109	13	25	1295	3	1277	0.0	1653	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Labrys_f,g:Labrys,s:Labrys miyagiensis
+KS-04	90.204	1276	107	13	25	1289	3	1271	0.0	1653	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Labrys_f,g:Labrys,s:Labrys okinawensis
+KS-04	90.016	1282	114	12	23	1295	1	1277	0.0	1652	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Chelatococcaceae,g:Chelatococcus,s:GU731297_s
+KS-04	90.047	1286	106	18	23	1295	1	1277	0.0	1652	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:CU234118_s
+KS-04	90.047	1286	106	18	23	1295	1	1277	0.0	1652	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:CAFI_s
+KS-04	90.039	1285	108	16	23	1295	1	1277	0.0	1652	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:Bradyrhizobium diazoefficiens
+KS-04	90.047	1286	106	18	23	1295	1	1277	0.0	1652	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:AXAI_s
+KS-04	89.945	1283	115	12	23	1295	1	1279	0.0	1648	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:Bradyrhizobium denitrificans
+KS-04	89.930	1281	117	10	23	1295	1	1277	0.0	1646	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Afipia,s:Afipia felis
+KS-04	89.961	1285	109	16	23	1295	1	1277	0.0	1646	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:Bradyrhizobium arachidis
+KS-04	89.961	1285	109	16	23	1295	1	1277	0.0	1646	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:Bradyrhizobium huanghuaihaiense
+KS-04	89.953	1284	111	13	23	1295	1	1277	0.0	1646	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Alsobacter_f,g:Alsobacter,s:Alsobacter metallidurans
+KS-04	89.938	1282	113	13	23	1295	1	1275	0.0	1644	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Afipia,s:ADVZ_s
+KS-04	89.922	1290	102	22	23	1295	1	1279	0.0	1642	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:Bradyrhizobium mercantei
+KS-04	89.922	1290	102	22	23	1295	1	1279	0.0	1642	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:Bradyrhizobium jicamae
+KS-04	89.922	1290	102	22	23	1295	1	1279	0.0	1642	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:Bradyrhizobium viridifuturi
+KS-04	89.922	1290	102	22	23	1295	1	1279	0.0	1642	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:Bradyrhizobium embrapense
+KS-04	89.922	1290	102	22	23	1295	1	1279	0.0	1642	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:JYMT_s
+KS-04	89.945	1273	122	5	25	1295	3	1271	0.0	1642	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylopila_f,g:Methylopila,s:Methylopila henanensis
+KS-04	89.977	1277	115	12	25	1295	3	1272	0.0	1642	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Phreatobacter_f,g:Phreatobacter,s:DQ088783_s
+KS-04	89.922	1290	102	22	23	1295	1	1279	0.0	1642	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:AUGA_s
+KS-04	89.883	1285	110	16	23	1295	1	1277	0.0	1640	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:Bradyrhizobium centrosemae
+KS-04	89.891	1286	108	18	23	1295	1	1277	0.0	1640	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:CAFJ_s
+KS-04	89.875	1284	112	14	23	1295	1	1277	0.0	1640	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:BADD_s
+KS-04	90.055	1277	106	18	25	1289	3	1270	0.0	1640	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylocystaceae,g:Methylocystis,s:Methylocystis parvus
+KS-04	90.151	1259	118	5	39	1295	1	1255	0.0	1639	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylopila_f,g:Methylopila,s:Methylopila turkensis
+KS-04	89.844	1280	118	9	23	1295	1	1275	0.0	1639	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:EU803296_f,g:EU803296_g,s:EU803296_s
+KS-04	89.891	1286	106	19	23	1295	1	1275	0.0	1639	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:CAFH_s
+KS-04	89.798	1284	115	14	23	1295	1	1279	0.0	1637	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Microvirga,s:EU881153_s
+KS-04	89.720	1284	114	14	23	1295	1	1277	0.0	1637	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Rhodopseudomonas,s:Rhodopseudomonas faecalis
+KS-04	89.798	1284	113	14	23	1295	1	1277	0.0	1635	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:Bradyrhizobium manausense
+KS-04	89.805	1285	111	16	23	1295	1	1277	0.0	1635	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:Bradyrhizobium cajani
+KS-04	89.805	1285	111	16	23	1295	1	1277	0.0	1635	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:Bradyrhizobium americanum
+KS-04	89.805	1285	111	16	23	1295	1	1277	0.0	1635	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:Bradyrhizobium shewense
+KS-04	89.805	1285	111	16	23	1295	1	1277	0.0	1635	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:Bradyrhizobium daqingense
+KS-04	89.798	1284	113	14	23	1295	1	1277	0.0	1635	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:Bradyrhizobium rifense
+KS-04	89.805	1285	111	16	23	1295	1	1277	0.0	1635	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:Bradyrhizobium betae
+KS-04	89.961	1275	110	13	25	1289	3	1269	0.0	1635	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Labrys_f,g:Labrys,s:Labrys portucalensis
+KS-04	89.805	1285	111	16	23	1295	1	1277	0.0	1635	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:Bradyrhizobium japonicum
+KS-04	89.796	1274	125	5	25	1295	3	1274	0.0	1633	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylopila_f,g:Hansschlegelia,s:Hansschlegelia beijingensis
+KS-04	89.766	1280	119	10	23	1295	1	1275	0.0	1633	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:EU803296_f,g:EU803296_g,s:DQ450166_s
+KS-04	89.767	1290	104	22	23	1295	1	1279	0.0	1631	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:NWTG_s
+KS-04	89.767	1290	104	22	23	1295	1	1279	0.0	1631	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:Bradyrhizobium tropiciagri
+KS-04	89.767	1290	104	22	23	1295	1	1279	0.0	1631	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:Bradyrhizobium pachyrhizi
+KS-04	89.788	1273	124	5	25	1295	3	1271	0.0	1631	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylopila_f,g:Methylopila,s:Methylopila oligotropha
+KS-04	89.767	1290	104	22	23	1295	1	1279	0.0	1631	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:Bradyrhizobium elkanii
+KS-04	89.898	1277	110	16	25	1289	3	1272	0.0	1631	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylocystaceae,g:Methylocystis,s:JQNK_s
+KS-04	89.766	1280	117	12	25	1295	3	1277	0.0	1631	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Chelatococcaceae,g:Camelimonas,s:Camelimonas lactis
+KS-04	89.774	1281	115	12	25	1295	3	1277	0.0	1631	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Labrys_f,g:Labrys,s:Labrys methylaminiphilus
+KS-04	89.775	1291	102	24	23	1295	1	1279	0.0	1631	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:Bradyrhizobium neotropicale
+KS-04	89.767	1290	104	22	23	1295	1	1279	0.0	1631	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:APJD_s
+KS-04	89.728	1285	112	16	23	1295	1	1277	0.0	1629	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:Bradyrhizobium lupini
+KS-04	89.728	1285	112	16	23	1295	1	1277	0.0	1629	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Rhodopseudomonas,s:Rhodopseudomonas pseudopalustris
+KS-04	89.728	1285	112	16	23	1295	1	1277	0.0	1629	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Tardiphaga,s:Tardiphaga robiniae
+KS-04	89.720	1284	114	14	23	1295	1	1277	0.0	1629	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Rhodopseudomonas,s:Rhodopseudomonas palustris
+KS-04	89.744	1287	108	19	23	1295	1	1277	0.0	1629	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Nitrobacter,s:Nitrobacter winogradskyi
+KS-04	89.728	1285	112	16	23	1295	1	1277	0.0	1629	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:Bradyrhizobium canariense
+KS-04	89.890	1276	110	16	25	1289	2	1269	0.0	1629	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylocystaceae,g:Methylocystis,s:Methylocystis echinoides
+KS-04	89.728	1285	112	16	23	1295	1	1277	0.0	1629	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:Bradyrhizobium liaoningense
+KS-04	89.728	1285	112	16	23	1295	1	1277	0.0	1629	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Rhodopseudomonas,s:Rhodopseudomonas telluris
+KS-04	89.736	1286	110	18	23	1295	1	1277	0.0	1629	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:Bradyrhizobium iriomotense
+KS-04	89.804	1275	116	9	25	1289	3	1273	0.0	1628	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Beijerinckiaceae,g:PAC000022_g,s:PAC000022_s
+KS-04	89.717	1274	125	6	25	1295	3	1273	0.0	1628	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylopila_f,g:Methylopila,s:Methylopila jiangsuensis
+KS-04	89.766	1280	114	14	25	1295	3	1274	0.0	1628	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Beijerinckiaceae,g:EU801149_g,s:EU801149_s
+KS-04	89.812	1276	114	13	23	1289	1	1269	0.0	1628	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:AZSJ_s
+KS-04	89.696	1281	118	12	23	1295	1	1275	0.0	1628	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Variibacter,s:Variibacter gotjawalensis
+KS-04	89.688	1280	118	12	25	1295	3	1277	0.0	1626	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Chelatococcaceae,g:Camelimonas,s:Camelimonas fluminis
+KS-04	89.696	1281	116	14	25	1295	3	1277	0.0	1626	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Labrys_f,g:Labrys,s:Labrys soli
+KS-04	89.704	1282	114	15	25	1295	3	1277	0.0	1626	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Beijerinckiaceae,g:EU289441_g,s:JF168546_s
+KS-04	89.725	1275	121	8	25	1295	3	1271	0.0	1626	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylopila_f,g:Methylopila,s:ARWB_s
+KS-04	89.650	1285	113	16	23	1295	1	1277	0.0	1624	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:Bradyrhizobium ottawaense
+KS-04	89.780	1272	118	12	23	1289	1	1265	0.0	1624	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Chelatococcaceae,g:Pseudochelatococcus,s:Qingshengfania soli
+KS-04	89.780	1272	118	12	23	1289	1	1265	0.0	1624	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Chelatococcaceae,g:Pseudochelatococcus,s:Pseudochelatococcus lubricantis
+KS-04	89.812	1276	111	16	25	1289	3	1270	0.0	1624	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylocystaceae,g:Methylocystis,s:KB900626_s
+KS-04	89.650	1285	113	16	23	1295	1	1277	0.0	1624	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:Bradyrhizobium yuanmingense
+KS-04	89.804	1275	113	14	25	1289	3	1270	0.0	1624	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylocystaceae,g:Methylocystis,s:AZUO_s
+KS-04	89.742	1277	114	13	27	1295	1	1268	0.0	1622	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Beijerinckiaceae,g:FJ798303_g,s:FJ798303_s
+KS-04	89.642	1284	114	15	23	1295	1	1276	0.0	1622	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:Bradyrhizobium cytisi
+KS-04	89.671	1278	116	13	23	1289	1	1273	0.0	1620	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:PAC000335_g,s:PAC000335_s
+KS-04	89.642	1284	111	18	25	1295	3	1277	0.0	1620	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Beijerinckiaceae,g:Beijerinckia,s:Beijerinckia derxii
+KS-04	89.725	1275	114	14	25	1289	3	1270	0.0	1618	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylocystaceae,g:Methylocystis,s:Methylosinus sporium
+KS-04	89.531	1280	124	8	23	1295	1	1277	0.0	1618	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Afipia,s:Oligotropha carboxidovorans
+KS-04	89.564	1284	116	14	23	1295	1	1277	0.0	1618	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:CP002418_s
+KS-04	89.556	1283	118	12	23	1295	1	1277	0.0	1618	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Rhodopseudomonas,s:Rhodopseudomonas rhenobacensis
+KS-04	89.569	1275	125	7	25	1295	3	1273	0.0	1616	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylopila_f,g:Albibacter,s:Albibacter methylovorans
+KS-04	89.663	1277	115	15	24	1289	1	1271	0.0	1616	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Pseudolabrys,s:EF516797_s
+KS-04	89.539	1281	116	15	25	1295	3	1275	0.0	1613	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Beijerinckiaceae,g:EU289441_g,s:FM873281_s
+KS-04	89.494	1285	115	16	23	1295	1	1277	0.0	1613	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Rhodopseudomonas,s:Metalliresistens boonkerdii
+KS-04	89.490	1275	126	8	25	1295	3	1273	0.0	1611	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Beijerinckiaceae,g:DQ490355_g,s:PAC000732_s
+KS-04	89.523	1279	116	15	23	1289	1	1273	0.0	1609	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:U87765_s
+KS-04	89.470	1282	117	16	23	1295	1	1273	0.0	1609	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Pseudolabrys,s:PAC002526_s
+KS-04	89.461	1281	119	15	25	1295	3	1277	0.0	1609	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Afifella_f,g:FOFG_g,s:FJ479444_s
+KS-04	89.601	1279	109	19	31	1295	1	1269	0.0	1609	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Nitrobacter,s:Nitrobacter alkalicus
+KS-04	89.631	1273	112	15	34	1295	1	1264	0.0	1607	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Microvirga,s:JX079066_s
+KS-04	89.433	1287	112	19	23	1295	1	1277	0.0	1607	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Nitrobacter,s:Nitrobacter vulgaris
+KS-04	89.470	1282	115	14	25	1295	3	1275	0.0	1607	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Labrys_f,g:Labrys,s:Labrys monachus
+KS-04	89.408	1284	116	13	23	1295	1	1275	0.0	1605	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Pseudorhodoplanes,s:Pseudorhodoplanes sinuspersici
+KS-04	89.445	1279	119	15	25	1295	3	1273	0.0	1605	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Rhizobium,s:FJ560597_s
+KS-04	89.445	1279	117	15	23	1289	1	1273	0.0	1604	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Pseudolabrys,s:PAC002084_s
+KS-04	89.408	1284	114	18	25	1295	3	1277	0.0	1604	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Beijerinckiaceae,g:Methylocapsa,s:Methylocapsa aurea
+KS-04	90.317	1229	104	12	76	1295	28	1250	0.0	1602	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:Bradyrhizobium ganzhouense
+KS-04	89.658	1257	124	6	42	1295	1	1254	0.0	1602	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylopila_f,g:Methylopila,s:Methylopila musalis
+KS-04	90.317	1229	104	12	76	1295	23	1245	0.0	1602	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Rhodopseudomonas,s:Rhodopseudomonas thermotolerans
+KS-04	90.283	1235	95	20	76	1295	21	1245	0.0	1598	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:Bradyrhizobium erythrophlei
+KS-04	89.424	1267	128	5	25	1289	3	1265	0.0	1598	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylopila_f,g:FM253651_g,s:JQ769560_s
+KS-04	89.314	1282	120	14	23	1295	1	1274	0.0	1598	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Pseudolabrys,s:JN541152_s
+KS-04	89.308	1272	132	3	25	1295	3	1271	0.0	1598	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Afifella_f,g:FOFG_g,s:FOFG_s
+KS-04	89.403	1274	121	9	23	1289	1	1267	0.0	1598	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Rhodoplanes,s:Rhodoplanes tepidamans
+KS-04	90.236	1229	104	13	76	1295	15	1236	0.0	1596	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Rhodopseudomonas,s:Rhodopseudomonas pentothenatexigens
+KS-04	90.410	1220	100	14	86	1295	1	1213	0.0	1594	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:Bradyrhizobium stylosanthis
+KS-04	90.244	1230	101	16	77	1295	19	1240	0.0	1594	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:Bradyrhizobium ingae
+KS-04	89.191	1286	119	14	23	1295	1	1279	0.0	1594	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Pseudolabrys,s:EU937846_s
+KS-04	89.210	1279	128	8	23	1295	1	1275	0.0	1594	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:EU803296_f,g:EU803296_g,s:AJ867909_s
+KS-04	89.210	1279	126	11	25	1295	3	1277	0.0	1592	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Afifella_f,g:FOFG_g,s:AB374392_s
+KS-04	90.139	1227	110	10	76	1295	8	1230	0.0	1591	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Afipia,s:Afipia massiliensis
+KS-04	89.415	1266	120	14	34	1295	1	1256	0.0	1589	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylopila_f,g:Hansschlegelia,s:Hansschlegelia plantiphila
+KS-04	89.255	1275	121	11	23	1289	1	1267	0.0	1587	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Rhodoplanes,s:Rhodoplanes azumiensis
+KS-04	90.254	1221	104	11	79	1289	25	1240	0.0	1587	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Labrys_f,g:Labrys,s:Labrys neptuniae
+KS-04	90.081	1230	105	14	76	1295	22	1244	0.0	1585	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:Bradyrhizobium subterraneum
+KS-04	89.246	1274	119	14	25	1289	3	1267	0.0	1583	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Hartmannibacter_f,g:Hartmannibacter,s:Hartmannibacter diazotrophicus
+KS-04	89.089	1274	133	6	25	1295	3	1273	0.0	1583	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylopila_f,g:Chenggangzhangella,s:Chenggangzhangella methanolivorans
+KS-04	89.088	1283	122	14	23	1295	1	1275	0.0	1583	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Variibacter,s:HQ118715_s
+KS-04	89.159	1273	129	8	25	1295	3	1268	0.0	1583	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylopila_f,g:Hansschlegelia,s:Hansschlegelia zhihuaiae
+KS-04	89.107	1276	126	11	23	1289	1	1272	0.0	1580	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Pseudolabrys,s:PAC001897_s
+KS-04	89.159	1273	124	11	25	1295	3	1263	0.0	1580	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylopila_f,g:Methylopila,s:Methylopila capsulata
+KS-04	89.097	1284	117	17	25	1295	3	1276	0.0	1580	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Phyllobacteriaceae,g:Chelativorans,s:Chelativorans composti
+KS-04	88.984	1280	129	8	23	1295	1	1275	0.0	1578	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Variibacter,s:JQ919521_s
+KS-04	89.098	1275	123	11	23	1289	1	1267	0.0	1576	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Rhodoplanes,s:Rhodoplanes elegans
+KS-04	89.910	1229	109	12	76	1295	33	1255	0.0	1576	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Rhodopseudomonas,s:Rhodopseudomonas parapalustris
+KS-04	88.967	1278	127	11	25	1295	3	1273	0.0	1574	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Beijerinckiaceae,g:DQ490355_g,s:DQ490355_s
+KS-04	89.028	1276	127	11	23	1289	1	1272	0.0	1574	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Pseudolabrys,s:DQ404659_s
+KS-04	89.002	1282	119	18	25	1295	3	1273	0.0	1572	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Brucellaceae,g:Ochrobactrum,s:Ochrobactrum lupini
+KS-04	89.038	1268	133	6	25	1289	3	1267	0.0	1572	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Stappia_f,g:Polymorphum,s:Polymorphum gilvum
+KS-04	89.002	1282	119	18	25	1295	3	1273	0.0	1572	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Brucellaceae,g:Ochrobactrum,s:Ochrobactrum anthropi
+KS-04	89.002	1282	119	18	25	1295	3	1273	0.0	1572	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Brucellaceae,g:Ochrobactrum,s:Ochrobactrum cytisi
+KS-04	89.038	1268	132	6	25	1289	3	1266	0.0	1570	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylopila_f,g:FM253651_g,s:FM253651_s
+KS-04	88.941	1275	127	11	23	1289	1	1269	0.0	1567	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Variibacter,s:GQ264159_s
+KS-04	88.950	1276	124	15	23	1289	1	1268	0.0	1565	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Pseudolabrys,s:PAC002566_s
+KS-04	89.756	1230	108	15	78	1295	3	1226	0.0	1563	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Rhodopseudomonas,s:Rhodopseudomonas harwoodiae
+KS-04	88.784	1275	135	8	25	1295	3	1273	0.0	1561	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Consotaella,s:Consotaella salsifontis
+KS-04	90.824	1177	93	13	25	1193	3	1172	0.0	1561	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Phreatobacter_f,g:EU834774_g,s:EU834774_s
+KS-04	89.714	1225	114	11	79	1295	4	1224	0.0	1559	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Pseudolabrys,s:Pseudolabrys taiwanensis
+KS-04	88.758	1272	139	4	25	1295	3	1271	0.0	1559	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylopila_f,g:AB100409_g,s:AB100409_s
+KS-04	88.794	1285	118	21	25	1295	3	1275	0.0	1557	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Brucellaceae,g:Brucella,s:Brucella vulpis
+KS-04	89.967	1216	103	16	91	1295	1	1208	0.0	1557	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Bradyrhizobium,s:Bradyrhizobium kavangense
+KS-04	88.785	1284	121	19	25	1295	3	1276	0.0	1557	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Brucellaceae,g:Daeguia,s:Daeguia caeni
+KS-04	88.794	1285	118	21	25	1295	3	1275	0.0	1557	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Brucellaceae,g:Brucella,s:Brucella microti
+KS-04	88.794	1285	118	21	25	1295	3	1275	0.0	1557	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Brucellaceae,g:Brucella,s:Brucella canis
+KS-04	88.794	1285	118	21	25	1295	3	1275	0.0	1557	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Brucellaceae,g:Brucella,s:Brucella ovis
+KS-04	88.794	1285	118	21	25	1295	3	1275	0.0	1557	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Brucellaceae,g:Brucella,s:Brucella abortus
+KS-04	88.794	1285	118	21	25	1295	3	1275	0.0	1557	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Brucellaceae,g:Brucella,s:Brucella ceti
+KS-04	88.794	1285	118	21	25	1295	3	1275	0.0	1557	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Brucellaceae,g:Brucella,s:Brucella pinnipedialis
+KS-04	88.794	1285	118	21	25	1295	3	1275	0.0	1557	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Brucellaceae,g:Brucella,s:Brucella suis
+KS-04	88.794	1285	118	21	25	1295	3	1275	0.0	1557	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Brucellaceae,g:Brucella,s:Brucella melitensis
+KS-04	88.794	1285	118	21	25	1295	3	1275	0.0	1557	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Brucellaceae,g:Brucella,s:Brucella inopinata
+KS-04	89.794	1215	117	7	79	1289	25	1236	0.0	1555	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Pleomorphomonas_f,g:Mongoliimonas,s:Mongoliimonas terrestris
+KS-04	88.776	1274	128	12	25	1289	3	1270	0.0	1552	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Pleomorphomonas_f,g:Oharaeibacter,s:Oharaeibacter diazotrophicus
+KS-04	88.776	1274	127	15	25	1289	3	1269	0.0	1552	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Afifella_f,g:FOFG_g,s:JQ800746_s
+KS-04	88.716	1285	119	21	25	1295	3	1275	0.0	1552	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Brucellaceae,g:Brucella,s:ADFB_s
+KS-04	88.716	1285	119	21	25	1295	3	1275	0.0	1552	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Brucellaceae,g:Brucella,s:Brucella neotomae
+KS-04	88.767	1273	127	14	25	1289	3	1267	0.0	1550	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Stappia_f,g:Pannonibacter,s:Pannonibacter indicus
+KS-04	88.793	1276	122	19	25	1289	3	1268	0.0	1550	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Afifella_f,g:FOFG_g,s:JX079267_s
+KS-04	88.977	1261	123	14	46	1295	6	1261	0.0	1550	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Pseudolabrys,s:FJ152854_s
+KS-04	88.672	1280	125	18	25	1295	3	1271	0.0	1548	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Rhizobium,s:LBHV_s
+KS-04	88.620	1283	125	16	25	1295	3	1276	0.0	1546	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Beijerinckiaceae,g:EU289441_g,s:JF069889_s
+KS-04	88.644	1268	138	6	25	1289	3	1267	0.0	1544	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Pleomorphomonas_f,g:Chthonobacter,s:Chthonobacter albigriseus
+KS-04	88.620	1283	122	20	25	1295	3	1273	0.0	1544	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Phyllobacteriaceae,g:Phyllobacterium,s:DQ856537_s
+KS-04	88.627	1275	130	13	23	1289	1	1268	0.0	1543	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Rhodoplanes,s:PAC000336_s
+KS-04	88.603	1281	124	18	25	1295	3	1271	0.0	1543	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Rhizobium,s:Rhizobium soli
+KS-04	88.585	1279	129	14	25	1295	3	1272	0.0	1543	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Allorhizobium,s:Allorhizobium pseudoryzae
+KS-04	88.574	1269	137	8	25	1289	3	1267	0.0	1539	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Stappia_f,g:Labrenzia,s:Labrenzia suaedae
+KS-04	88.525	1281	125	20	25	1295	3	1271	0.0	1537	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Rhizobium,s:Rhizobium zeae
+KS-04	88.567	1277	126	15	25	1289	3	1271	0.0	1537	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Afifella_f,g:FOFG_g,s:JF417795_s
+KS-04	88.474	1284	124	21	25	1295	3	1275	0.0	1537	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Brucellaceae,g:Mycoplana,s:Mycoplana dimorpha
+KS-04	88.480	1276	131	13	23	1289	1	1269	0.0	1533	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Pseudolabrys,s:PAC000070_s
+KS-04	88.465	1283	124	20	25	1295	3	1273	0.0	1533	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Rhizobium,s:FXAF_s
+KS-04	89.409	1218	119	9	79	1289	22	1236	0.0	1531	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bradyrhizobiaceae,g:Pseudolabrys,s:HQ845919_s
+KS-04	88.359	1280	133	15	23	1295	1	1271	0.0	1530	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Brevundimonas,s:Brevundimonas abyssalis
+KS-04	88.323	1276	138	11	25	1295	3	1272	0.0	1526	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Aurantimonadaceae,g:Aureimonas,s:EU289481_s
+KS-04	88.425	1270	135	11	25	1289	3	1265	0.0	1526	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Stappia_f,g:Pannonibacter,s:Pannonibacter phragmitetus
+KS-04	88.336	1286	121	26	25	1295	3	1274	0.0	1522	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodospirillales,f:Rhodospirillaceae,g:Azospirillum,s:HQ830183_s
+KS-04	88.356	1271	134	13	25	1289	3	1265	0.0	1520	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Pleomorphomonas_f,g:Prosthecomicrobium_g1,s:Prosthecomicrobium hirschii
+KS-04	88.235	1275	139	10	25	1295	3	1270	0.0	1519	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bauldia_f,g:AY221596_g,s:AY221596_s
+KS-04	88.640	1250	131	10	52	1295	1	1245	0.0	1517	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Allorhizobium,s:Rhizobium qilianshanense
+KS-04	88.097	1277	141	11	23	1295	1	1270	0.0	1511	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:DQ532201_g,s:JF922304_s
+KS-04	88.134	1281	130	16	25	1295	3	1271	0.0	1509	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Rhizobium,s:Rhizobium marinum
+KS-04	88.000	1275	148	5	23	1295	1	1272	0.0	1507	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:JPOM_g,s:DQ532251_s
+KS-04	88.056	1281	131	16	25	1295	3	1271	0.0	1504	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Pseudorhizobium,s:Pseudorhizobium pelagicum
+KS-04	87.969	1280	140	13	25	1295	3	1277	0.0	1504	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodospirillales,f:Rhodospirillaceae,g:Novispirillum,s:Novispirillum itersonii
+KS-04	88.084	1284	125	23	25	1295	3	1271	0.0	1504	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Allorhizobium,s:Allorhizobium paknamense
+KS-04	88.082	1267	145	5	25	1289	3	1265	0.0	1504	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Prosthecomicrobium_f,g:Prosthecomicrobium,s:Prosthecomicrobium pneumaticum
+KS-04	88.028	1278	136	13	25	1295	3	1270	0.0	1502	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Aurantimonadaceae,g:Aureimonas,s:EU289485_s
+KS-04	87.959	1279	139	15	23	1295	1	1270	0.0	1500	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Phenylobacterium,s:Phenylobacterium koreense
+KS-04	87.950	1278	138	16	25	1295	3	1271	0.0	1498	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Aurantimonadaceae,g:Martelella,s:Martelella suaedae
+KS-04	87.829	1290	135	12	25	1295	3	1289	0.0	1498	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Aurantimonadaceae,g:EU289426_g,s:JF178942_s
+KS-04	87.900	1281	138	15	25	1295	3	1276	0.0	1496	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodospirillales,f:Rhodospirillaceae,g:JF490035_g,s:JF490035_s
+KS-04	87.872	1278	144	10	23	1295	1	1272	0.0	1496	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:PAC000567_g,s:EF516954_s
+KS-04	87.812	1280	142	13	25	1295	3	1277	0.0	1495	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodospirillales,f:Rhodospirillaceae,g:Novispirillum,s:Novispirillum itersonii
+KS-04	87.940	1277	137	17	25	1295	3	1268	0.0	1495	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Aurantimonadaceae,g:Martelella,s:Martelella mediterranea
+KS-04	88.367	1255	125	19	50	1295	1	1243	0.0	1495	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Rhizobium,s:Rhizobium pakistanense
+KS-04	87.862	1277	139	16	25	1295	3	1269	0.0	1491	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Aurantimonadaceae,g:Martelella,s:Martelella limonii
+KS-04	88.273	1245	134	11	50	1289	1	1238	0.0	1485	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Hartmannibacter_f,g:Methylobrevis,s:Methylobrevis pamukkalensis
+KS-04	87.792	1286	129	21	25	1295	3	1275	0.0	1485	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Phyllobacteriaceae,g:Chelativorans,s:JAEQ_s
+KS-04	87.784	1277	140	16	25	1295	3	1269	0.0	1485	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Aurantimonadaceae,g:Martelella,s:Martelella endophytica
+KS-04	87.696	1276	150	7	23	1295	1	1272	0.0	1485	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Phenylobacterium,s:Phenylobacterium haematophilum
+KS-04	87.734	1280	140	16	25	1295	3	1274	0.0	1483	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodospirillales,f:Rhodospirillaceae,g:Azospirillum,s:Azospirillum humicireducens
+KS-04	87.862	1277	130	22	25	1289	3	1266	0.0	1482	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Devosia_f,g:Devosia,s:Devosia insulae
+KS-04	87.704	1285	134	20	25	1295	3	1277	0.0	1482	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Phyllobacteriaceae,g:Aliihoeflea,s:Aliihoeflea aestuarii
+KS-04	87.978	1256	137	13	47	1295	1	1249	0.0	1482	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodospirillales,f:Rhodospirillaceae,g:FJ711207_g,s:AB286642_s
+KS-04	87.549	1277	139	19	25	1295	3	1265	0.0	1480	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylopila_f,g:Methylosulfonomonas,s:Methylosulfonomonas methylovora
+KS-04	88.160	1250	133	15	52	1295	1	1241	0.0	1480	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Aurantimonadaceae,g:Martelella,s:Martelella radicis
+KS-04	87.647	1279	145	13	23	1295	1	1272	0.0	1480	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Brevundimonas,s:Brevundimonas aveniformis
+KS-04	87.745	1273	140	15	25	1289	2	1266	0.0	1478	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Pleomorphomonas_f,g:Prosthecomicrobium_g1,s:CU925731_s
+KS-04	89.514	1173	114	8	25	1193	3	1170	0.0	1476	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Acuticoccus_f,g:Acuticoccus,s:JN038224_s
+KS-04	87.568	1279	148	11	23	1295	1	1274	0.0	1476	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:AB473919_g,s:HM241020_s
+KS-04	87.647	1279	140	14	25	1295	2	1270	0.0	1476	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodospirillales,f:Rhodospirillaceae,g:Azospirillum,s:HE589862_s
+KS-04	87.793	1278	129	21	25	1289	3	1266	0.0	1476	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Devosia_f,g:Devosia,s:CP012945_s
+KS-04	87.665	1289	126	18	25	1289	3	1282	0.0	1474	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Allorhizobium,s:LMQD_s
+KS-04	87.618	1276	144	13	25	1295	3	1269	0.0	1474	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Aurantimonadaceae,g:Aureimonas,s:EU289489_s
+KS-04	87.549	1277	148	11	23	1295	1	1270	0.0	1472	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:FJ477627_g,s:FJ477627_s
+KS-04	87.707	1269	143	11	25	1289	3	1262	0.0	1472	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Pleomorphomonas_f,g:Prosthecomicrobium_g1,s:AY138237_s
+KS-04	87.578	1280	142	17	23	1295	1	1270	0.0	1472	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Caulobacter,s:Caulobacter mirabilis
+KS-04	87.461	1276	153	7	23	1295	1	1272	0.0	1469	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Brevundimonas,s:GQ009501_s
+KS-04	87.422	1280	147	14	25	1295	3	1277	0.0	1465	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Beijerinckiaceae,g:EU289441_g,s:JF234838_s
+KS-04	87.510	1289	128	19	25	1289	3	1282	0.0	1463	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Allorhizobium,s:LMQB_s
+KS-04	87.412	1279	147	13	25	1295	3	1275	0.0	1463	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodospirillales,f:Rhodospirillaceae,g:Phaeospirillum,s:Phaeospirillum molischianum
+KS-04	87.382	1276	154	7	23	1295	1	1272	0.0	1463	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Phenylobacterium,s:Phenylobacterium conjunctum
+KS-04	87.421	1272	155	4	25	1295	3	1270	0.0	1463	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhodomicrobium_f,g:Rhodomicrobium,s:Rhodomicrobium vannielii
+KS-04	87.432	1281	142	16	25	1295	3	1274	0.0	1461	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodospirillales,f:Rhodospirillaceae,g:Inquilinus,s:Inquilinus limosus
+KS-04	87.353	1273	155	5	25	1295	3	1271	0.0	1459	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhodomicrobium_f,g:Rhodomicrobium,s:Rhodomicrobium udaipurense
+KS-04	87.334	1279	149	12	23	1295	1	1272	0.0	1458	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Phenylobacterium,s:Phenylobacterium falsum
+KS-04	87.304	1276	155	7	23	1295	1	1272	0.0	1458	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:AB473919_g,s:AB473919_s
+KS-04	87.403	1286	133	24	25	1295	2	1273	0.0	1456	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodospirillales,f:Rhodospirillaceae,g:Azospirillum,s:JN698098_s
+KS-04	87.304	1276	148	12	28	1295	1	1270	0.0	1456	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodospirillales,f:Rhodospirillaceae,g:Phaeospirillum,s:Phaeospirillum fulvum
+KS-04	87.750	1249	142	11	52	1295	1	1243	0.0	1454	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Caulobacter,s:Caulobacter profunda
+KS-04	87.236	1277	154	8	23	1295	1	1272	0.0	1452	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:PAC000060_g,s:PAC000060_s
+KS-04	87.284	1274	153	8	25	1295	3	1270	0.0	1452	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhodomicrobium_f,g:Rhodomicrobium,s:EF020326_s
+KS-04	87.216	1275	156	7	23	1295	1	1270	0.0	1450	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Phenylobacterium,s:GQ264133_s
+KS-04	87.480	1278	128	20	23	1295	1	1251	0.0	1450	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Brevundimonas,s:Brevundimonas olei
+KS-04	87.236	1277	152	11	23	1295	1	1270	0.0	1450	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:EU881329_g,s:EU881329_s
+KS-04	87.236	1277	151	12	23	1295	1	1269	0.0	1450	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:FJ477627_g,s:EF520409_s
+KS-04	87.461	1276	132	16	23	1295	1	1251	0.0	1450	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Brevundimonas,s:Brevundimonas vesicularis
+KS-04	87.461	1276	132	16	23	1295	1	1251	0.0	1450	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Brevundimonas,s:Brevundimonas intermedia
+KS-04	87.461	1276	132	16	23	1295	1	1251	0.0	1450	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Brevundimonas,s:Brevundimonas nasdae
+KS-04	87.160	1285	145	19	25	1295	3	1281	0.0	1447	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodospirillales,f:Rhodospirillaceae,g:PAC001976_g,s:PAC001976_s
+KS-04	87.198	1281	146	18	25	1295	3	1275	0.0	1447	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Beijerinckiaceae,g:EU289441_g,s:JF222107_s
+KS-04	87.277	1289	131	18	25	1289	3	1282	0.0	1447	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Allorhizobium,s:FJUR_s
+KS-04	87.392	1277	131	18	23	1295	1	1251	0.0	1445	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Brevundimonas,s:Brevundimonas bacteroides
+KS-04	87.167	1278	151	12	23	1295	1	1270	0.0	1445	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:FJ477627_g,s:HQ114112_s
+KS-04	87.137	1275	157	7	23	1295	1	1270	0.0	1445	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:PAC000060_g,s:FJ466188_s
+KS-04	87.157	1277	153	11	23	1295	1	1270	0.0	1445	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Phenylobacterium,s:EU703427_s
+KS-04	87.324	1278	135	20	25	1289	3	1266	0.0	1443	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Devosia_f,g:Devosia,s:Devosia confluentis
+KS-04	87.224	1268	154	6	25	1289	3	1265	0.0	1443	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Pleomorphomonas_f,g:Prosthecomicrobium_g1,s:JN698033_s
+KS-04	87.089	1278	154	10	23	1295	1	1272	0.0	1441	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Caulobacter,s:Caulobacter hibisci
+KS-04	87.099	1279	147	16	25	1295	3	1271	0.0	1437	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodospirillales,f:Rhodospirillaceae,g:Niveispirillum,s:Niveispirillum cyanobacteriorum
+KS-04	87.031	1280	153	12	23	1295	1	1274	0.0	1437	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:PAC001798_g,s:EU445215_s
+KS-04	87.011	1278	155	10	23	1295	1	1272	0.0	1435	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:JPOM_g,s:PAC001012_s
+KS-04	87.051	1282	146	18	25	1295	3	1275	0.0	1435	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sneathiellales,f:Zavarzinia_f,g:Zavarzinia,s:Zavarzinia compransoris
+KS-04	87.122	1289	131	24	25	1289	3	1280	0.0	1434	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Allorhizobium,s:FOGR_s
+KS-04	87.216	1275	137	14	23	1295	1	1251	0.0	1434	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Brevundimonas,s:Brevundimonas mediterranea
+KS-04	87.117	1273	147	16	25	1289	3	1266	0.0	1432	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Stappia_f,g:Roseibium,s:Roseibium sediminis
+KS-04	87.021	1279	147	19	25	1295	3	1270	0.0	1432	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodospirillales,f:Rhodospirillaceae,g:AY344369_g,s:AY344369_s
+KS-04	86.933	1278	158	8	23	1295	1	1274	0.0	1432	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Caulobacter,s:Caulobacter vibrioides
+KS-04	87.014	1286	140	21	25	1295	3	1276	0.0	1430	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sneathiellales,f:Zavarzinia_f,g:Zavarzinia,s:Oleomonas sagaranensis
+KS-04	86.933	1278	156	11	23	1295	1	1272	0.0	1430	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Caulobacter,s:Caulobacter fusiformis
+KS-04	87.147	1276	136	16	23	1295	1	1251	0.0	1428	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Brevundimonas,s:Brevundimonas balnearis
+KS-04	86.688	1277	159	11	23	1295	1	1270	0.0	1428	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Phenylobacterium,s:Phenylobacterium deserti
+KS-04	86.933	1278	154	12	23	1295	1	1270	0.0	1428	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:JPOM_g,s:HQ003516_s
+KS-04	87.360	1250	146	10	46	1289	2	1245	0.0	1428	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Pleomorphomonas_f,g:Prosthecomicrobium_g1,s:DQ664255_s
+KS-04	87.137	1275	138	14	23	1295	1	1251	0.0	1428	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Brevundimonas,s:Brevundimonas aurantiaca
+KS-04	86.844	1277	159	9	23	1295	1	1272	0.0	1424	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Caulobacter,s:Caulobacter flavus
+KS-04	87.011	1278	143	21	25	1289	3	1270	0.0	1424	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Parvibaculum_f,g:Parvibaculum,s:Parvibaculum lavamentivorans
+KS-04	88.898	1162	121	8	23	1181	1	1157	0.0	1424	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Brevundimonas,s:Brevundimonas staleyi
+KS-04	86.854	1278	154	13	25	1295	3	1273	0.0	1423	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium hassiacum
+KS-04	87.069	1276	137	16	23	1295	1	1251	0.0	1423	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Brevundimonas,s:Brevundimonas poindexterae
+KS-04	86.787	1279	157	11	23	1295	1	1273	0.0	1423	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Caulobacter,s:Caulobacter ginsengisoli
+KS-04	86.766	1277	162	6	23	1295	1	1274	0.0	1421	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Caulobacter,s:PEBF_s
+KS-04	87.319	1246	147	11	56	1295	1	1241	0.0	1421	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium bradum
+KS-04	86.797	1280	156	12	25	1295	3	1278	0.0	1421	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodospirillales,f:Rhodospirillaceae,g:FJ711207_g,s:FJ711207_s
+KS-04	86.987	1291	127	34	28	1289	1	1279	0.0	1421	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sneathiellales,f:Sneathiellaceae,g:FJ205184_g,s:FJ205184_s
+KS-04	86.766	1277	162	6	23	1295	1	1274	0.0	1421	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Caulobacter,s:Caulobacter henricii
+KS-04	87.056	1267	144	15	46	1295	5	1268	0.0	1419	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodospirillales,f:Rhodospirillaceae,g:Dongia,s:EU276561_s
+KS-04	88.822	1163	120	10	23	1181	1	1157	0.0	1419	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Brevundimonas,s:Brevundimonas vancanneytii
+KS-04	86.755	1276	162	7	23	1295	1	1272	0.0	1419	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:AB473919_g,s:AB374373_s
+KS-04	86.980	1275	140	14	23	1295	1	1251	0.0	1417	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Brevundimonas,s:Brevundimonas albigilva
+KS-04	87.011	1278	134	20	23	1295	1	1251	0.0	1417	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Brevundimonas,s:CP015614_s
+KS-04	87.011	1278	134	20	23	1295	1	1251	0.0	1417	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Brevundimonas,s:Brevundimonas naejangsanensis
+KS-04	87.001	1277	136	18	23	1295	1	1251	0.0	1417	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Brevundimonas,s:Brevundimonas variabilis
+KS-04	86.688	1277	163	6	23	1295	1	1274	0.0	1415	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Caulobacter,s:Caulobacter segnis
+KS-04	87.239	1246	145	14	56	1295	3	1240	0.0	1413	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Caulobacter,s:Caulobacter daechungensis
+KS-04	86.708	1279	157	11	23	1295	1	1272	0.0	1413	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:JPOM_g,s:JF917203_s
+KS-04	88.755	1165	117	14	23	1181	1	1157	0.0	1413	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Brevundimonas,s:Brevundimonas diminuta
+KS-04	86.708	1279	155	12	25	1295	3	1274	0.0	1411	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodospirillales,f:Rhodospirillaceae,g:Dongia,s:PAC000256_s
+KS-04	86.912	1276	139	16	23	1295	1	1251	0.0	1411	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Brevundimonas,s:Brevundimonas viscosa
+KS-04	86.719	1280	153	17	23	1295	1	1270	0.0	1411	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Phenylobacterium,s:AY957905_s
+KS-04	86.072	1278	158	19	25	1295	3	1267	0.0	1411	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylopila_f,g:Albibacter,s:Albibacter helveticus
+KS-04	86.803	1273	151	14	25	1289	3	1266	0.0	1410	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Micropepsales,f:Micropepsaceae,g:Rhizomicrobium,s:PAC000101_s
+KS-04	86.922	1277	135	17	23	1295	1	1249	0.0	1410	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Asticcacaulis,s:FR720649_s
+KS-04	86.693	1285	147	22	25	1295	3	1277	0.0	1410	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:AY957890_g,s:AY957890_s
+KS-04	87.033	1257	148	15	46	1295	3	1251	0.0	1410	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium taihuense
+KS-04	86.630	1279	156	15	23	1295	1	1270	0.0	1408	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Phenylobacterium,s:AY234477_s
+KS-04	86.604	1284	149	20	25	1295	3	1276	0.0	1402	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sneathiellales,f:Ferrovibrio_f,g:Taonella,s:Taonella mepensis
+KS-04	86.688	1277	140	18	23	1295	1	1251	0.0	1402	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Brevundimonas,s:Brevundimonas bullata
+KS-04	86.830	1268	142	20	46	1295	5	1265	0.0	1400	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodospirillales,f:Rhodospirillaceae,g:PAC001976_g,s:HM438077_s
+KS-04	86.495	1281	158	13	23	1295	1	1274	0.0	1399	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Caulobacter,s:JONW_s
+KS-04	86.503	1304	132	34	25	1295	3	1295	0.0	1399	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodospirillales,f:Rhodospirillaceae,g:KC009856_g,s:JN977152_s
+KS-04	86.497	1296	140	30	25	1295	3	1288	0.0	1397	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sneathiellales,f:Sneathiellaceae,g:FJ205184_g,s:FJ202709_s
+KS-04	86.484	1280	155	18	25	1295	3	1273	0.0	1395	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodospirillales,f:Rhodospirillaceae,g:Rhodospira,s:Rhodospira trueperi
+KS-04	86.463	1278	160	13	23	1295	1	1270	0.0	1395	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Phenylobacterium,s:Phenylobacterium immobile
+KS-04	86.442	1276	163	10	25	1295	3	1273	0.0	1395	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium lentum
+KS-04	86.374	1277	165	9	23	1295	1	1272	0.0	1391	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Phenylobacterium,s:Phenylobacterium aquaticum
+KS-04	86.514	1268	162	7	25	1289	3	1264	0.0	1391	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Micropepsales,f:Micropepsaceae,g:Rhizomicrobium,s:FR667789_s
+KS-04	86.350	1304	138	25	25	1295	3	1299	0.0	1391	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodospirillales,f:Rhodospirillaceae,g:JF428923_g,s:EU133496_s
+KS-04	86.620	1278	139	20	23	1295	1	1251	0.0	1389	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Brevundimonas,s:LMPZ_s
+KS-04	88.392	1163	123	12	23	1180	1	1156	0.0	1389	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Brevundimonas,s:Brevundimonas terrae
+KS-04	86.620	1278	139	20	23	1295	1	1251	0.0	1389	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Brevundimonas,s:CP019508_s
+KS-04	86.285	1276	170	4	23	1295	1	1274	0.0	1387	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Caulobacter,s:JN656779_s
+KS-04	86.424	1289	144	25	25	1295	3	1278	0.0	1387	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodospirillales,f:Rhodospirillaceae,g:Magnetospirillum,s:AY171615_s
+KS-04	86.349	1282	157	15	25	1295	3	1277	0.0	1387	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodospirillales,f:Rhodospirillaceae,g:Telmatospirillum,s:Telmatospirillum siberiense
+KS-04	87.264	1217	145	10	79	1289	30	1242	0.0	1386	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Micropepsales,f:Micropepsaceae,g:FM212999_g,s:FR667239_s
+KS-04	86.510	1275	144	15	23	1295	1	1249	0.0	1382	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Asticcacaulis,s:PAC000515_s
+KS-04	86.261	1281	161	13	23	1295	1	1274	0.0	1382	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Caulobacter,s:Caulobacter rhizosphaerae
+KS-04	86.520	1276	143	17	23	1295	1	1250	0.0	1382	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Brevundimonas,s:Brevundimonas alba
+KS-04	86.215	1284	159	15	25	1295	3	1281	0.0	1380	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodospirillales,f:Rhodospirillaceae,g:FJ711207_g,s:FJ479421_s
+KS-04	86.258	1288	149	21	25	1295	3	1279	0.0	1378	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodospirillales,f:Rhodospirillaceae,g:DQ984631_g,s:FM209171_s
+KS-04	86.453	1277	143	18	23	1295	1	1251	0.0	1378	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Brevundimonas,s:Brevundimonas lenta
+KS-04	86.239	1279	160	16	25	1295	3	1273	0.0	1378	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodospirillales,f:Rhodospirillaceae,g:Roseospira,s:DQ103603_s
+KS-04	86.463	1278	141	20	23	1295	1	1251	0.0	1378	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Brevundimonas,s:Brevundimonas subvibrioides
+KS-04	86.453	1277	143	18	23	1295	1	1251	0.0	1378	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Brevundimonas,s:Brevundimonas denitrificans
+KS-04	88.502	1148	118	13	51	1193	1	1139	0.0	1376	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Acuticoccus_f,g:Acuticoccus,s:JN436379_s
+KS-04	86.210	1298	141	32	25	1295	3	1289	0.0	1376	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodospirillales,f:Rhodospirillaceae,g:Pelagibius,s:FJ516931_s
+KS-04	86.159	1286	154	20	25	1295	3	1279	0.0	1373	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodospirillales,f:Rhodospirillaceae,g:PAC002564_g,s:JN178889_s
+KS-04	86.178	1295	144	28	25	1295	3	1286	0.0	1373	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sneathiellales,f:Sneathiellaceae,g:Sneathiella,s:Sneathiella glossodoripedis
+KS-04	86.364	1276	146	16	23	1295	1	1251	0.0	1373	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Brevundimonas,s:Brevundimonas kwangchunensis
+KS-04	87.905	1174	130	10	25	1193	3	1169	0.0	1371	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodobacterales,f:Rhodobacteraceae,g:Paracoccus,s:Paracoccus angustae
+KS-04	86.811	1251	132	21	51	1295	1	1224	0.0	1371	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Brevundimonas,s:Brevundimonas faecalis
+KS-04	86.122	1297	145	28	25	1295	3	1290	0.0	1371	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodospirillales,f:Rhodospirillaceae,g:JF428923_g,s:EF492890_s
+KS-04	86.231	1271	162	10	25	1289	3	1266	0.0	1371	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Micropepsales,f:Micropepsaceae,g:Rhizomicrobium,s:AY913378_s
+KS-04	86.055	1298	146	22	25	1295	3	1292	0.0	1367	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sneathiellales,f:EF173360_f,g:EF173360_g,s:GU127822_s
+KS-04	86.174	1273	161	12	25	1289	3	1268	0.0	1367	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Micropepsales,f:Micropepsaceae,g:Rhizomicrobium,s:EU861871_s
+KS-04	86.555	1257	139	24	51	1289	1	1245	0.0	1363	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Devosia_f,g:Devosia,s:FM209355_s
+KS-04	86.052	1269	170	6	25	1289	3	1268	0.0	1362	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Micropepsales,f:Micropepsaceae,g:Rhizomicrobium,s:PAC001965_s
+KS-04	85.981	1284	158	20	25	1295	3	1277	0.0	1360	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodospirillales,f:Rhodospirillaceae,g:Telmatospirillum,s:AJ292593_s
+KS-04	85.904	1277	167	12	25	1295	3	1272	0.0	1356	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodospirillales,f:Rhodospirillaceae,g:Pararhodospirillum,s:Pararhodospirillum photometricum
+KS-04	88.819	1109	112	12	195	1295	188	1292	0.0	1356	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodospirillales,f:Rhodospirillaceae,g:PAC002564_g,s:EU133613_s
+KS-04	85.870	1281	165	14	25	1295	3	1277	0.0	1354	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodospirillales,f:Rhodospirillaceae,g:Telmatospirillum,s:AM162451_s
+KS-04	86.454	1255	139	19	46	1295	3	1231	0.0	1352	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Caulobacterales,f:Caulobacteraceae,g:Brevundimonas,s:Brevundimonas basaltis
+KS-04	87.489	1175	133	14	25	1193	3	1169	0.0	1343	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodobacterales,f:Rhodobacteraceae,g:Wenxinia,s:Wenxinia saemankumensis
+KS-04	85.714	1281	167	12	25	1295	3	1277	0.0	1343	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodospirillales,f:Alysiosphaera_f,g:FM253654_g,s:JF059298_s
+KS-04	87.500	1176	130	16	25	1193	3	1168	0.0	1341	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodobacterales,f:Rhodobacteraceae,g:Roseisalinus,s:Roseisalinus antarcticus
+KS-04	85.759	1285	158	23	25	1295	3	1276	0.0	1341	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sneathiellales,f:Ferrovibrio_f,g:Ferrovibrio,s:Ferrovibrio denitrificans
+KS-04	87.361	1171	142	6	25	1193	3	1169	0.0	1338	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodobacterales,f:Rhodobacteraceae,g:Sediminimonas,s:Sediminimonas qiaohouensis
+KS-04	87.394	1174	136	11	25	1193	3	1169	0.0	1338	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodobacterales,f:Rhodobacteraceae,g:Wenxinia,s:Wenxinia marina
+KS-04	87.404	1175	135	13	25	1193	3	1170	0.0	1338	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodobacterales,f:Rhodobacteraceae,g:Pseudooceanicola,s:Pseudooceanicola batsensis
+KS-04	85.572	1303	149	20	25	1295	3	1298	0.0	1334	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Hyphomicrobiaceae,g:FJ640818_g,s:FJ640818_s
+KS-04	85.559	1288	160	22	25	1295	3	1281	0.0	1330	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodospirillales,f:Rhodospirillaceae,g:JADL_g,s:PAC000722_s
+KS-04	85.816	1262	160	15	46	1295	3	1257	0.0	1330	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodospirillales,f:Rhodospirillaceae,g:AB286613_g,s:AB286613_s
+KS-04	85.392	1287	170	17	23	1295	1	1283	0.0	1325	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodospirillales,f:Rhodospirillaceae,g:FJ711207_g,s:HQ166694_s

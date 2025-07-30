@@ -1,76 +1,500 @@
-KS-08	100.000	1323	0	0	12	1334	12	1334	0.0	2407	KS-08-1
-KS-08	99.011	1314	9	4	12	1324	19	1329	0.0	2368	KS-01-1
-KS-08	99.391	1313	5	3	12	1324	16	1325	0.0	2362	KS-08-2
-KS-08	99.921	1273	1	0	12	1284	15	1287	0.0	2348	KS-07-2
-KS-08	99.765	1276	0	3	12	1286	16	1289	0.0	2337	KS-01-2
-KS-08	99.451	1275	5	2	12	1286	16	1288	0.0	2322	KS-35-2
-KS-08	99.451	1276	3	4	12	1286	17	1289	0.0	2320	KS-02-1
-KS-08	99.373	1276	5	3	12	1286	15	1288	0.0	2314	KS-35-1
-KS-08	99.294	1275	6	3	12	1286	16	1287	0.0	2309	KS-20-1
-KS-08	99.444	1258	4	3	12	1269	14	1268	0.0	2289	KS-25-2
-KS-08	99.201	1252	8	2	13	1264	12	1261	0.0	2270	KS-25-1
-KS-08	99.438	1246	5	2	12	1257	15	1258	0.0	2270	KS-07-1
-KS-08	98.691	1146	14	1	12	1157	16	1160	0.0	2050	KS-20-2
-KS-08	87.491	1319	147	17	12	1323	19	1326	0.0	1517	KS-21-2
-KS-08	88.179	1252	134	13	12	1258	16	1258	0.0	1487	KS-21-1
-KS-08	85.870	1281	156	24	12	1281	15	1281	0.0	1345	KS-29-1
-KS-08	85.904	1277	154	25	12	1277	17	1278	0.0	1345	KS-27-2
-KS-08	85.703	1287	157	26	12	1286	19	1290	0.0	1341	KS-29-2
-KS-08	85.216	1319	176	19	12	1323	15	1321	0.0	1332	KS-09-1
-KS-08	86.282	1232	146	22	12	1232	17	1236	0.0	1321	KS-27-1
-KS-08	85.413	1282	167	20	12	1286	17	1285	0.0	1314	KS-23-2
-KS-08	85.257	1282	170	19	12	1286	17	1286	0.0	1304	KS-09-2
-KS-08	85.125	1284	170	21	12	1286	17	1288	0.0	1299	KS-04-1
-KS-08	81.333	1125	153	38	200	1286	232	1337	0.0	861	KS-34-1
-KS-08	81.318	1108	149	39	200	1269	219	1306	0.0	848	KS-32-1
-KS-08	81.227	1108	150	38	200	1269	232	1319	0.0	843	KS-05-2
-KS-08	81.204	1096	150	37	200	1259	224	1299	0.0	841	KS-32-2
-KS-08	81.896	1055	136	36	200	1218	228	1263	0.0	839	KS-34-2
-KS-08	81.359	1089	146	38	200	1251	232	1300	0.0	839	KS-24-1
-KS-08	81.267	1089	148	36	200	1251	227	1296	0.0	839	KS-05-1
-KS-08	81.818	1056	135	37	200	1218	231	1266	0.0	835	KS-26-1
-KS-08	81.629	1056	138	36	200	1218	233	1269	0.0	830	KS-03-1
-KS-08	81.576	1053	137	37	200	1215	233	1265	0.0	822	KS-22-2
-KS-08	81.559	1052	136	36	200	1215	229	1258	0.0	821	KS-26-2
-KS-08	95.000	440	21	1	300	738	3	442	0.0	689	ST-10
-KS-08	94.761	439	21	2	300	736	2	440	0.0	682	ST-C5
-KS-08	80.230	870	151	19	426	1286	489	1346	0.0	636	KS-10-1
-KS-08	91.080	213	19	0	186	398	224	436	8.24e-80	289	KS-10-1
-KS-08	79.864	884	147	23	413	1286	457	1319	7.16e-180	621	KS-11-2
-KS-08	92.500	200	15	0	199	398	218	417	2.96e-79	287	KS-11-2
-KS-08	81.711	760	124	13	426	1178	474	1225	7.16e-180	621	KS-10-2
-KS-08	91.080	213	19	0	186	398	209	421	8.24e-80	289	KS-10-2
-KS-08	79.615	883	153	19	413	1286	465	1329	2.57e-179	619	KS-11-1
-KS-08	92.500	200	15	0	199	398	226	425	2.96e-79	287	KS-11-1
-KS-08	79.388	883	154	20	413	1286	470	1333	1.55e-176	610	KS-06-1
-KS-08	92.500	200	15	0	199	398	231	430	2.96e-79	287	KS-06-1
-KS-08	79.472	872	150	20	407	1269	461	1312	1.21e-172	597	KS-36-1
-KS-08	92.500	200	15	0	199	398	228	427	2.96e-79	287	KS-36-1
-KS-08	80.470	809	133	17	413	1213	467	1258	1.21e-172	597	KS-30-1
-KS-08	92.500	200	15	0	199	398	228	427	2.96e-79	287	KS-30-1
-KS-08	80.346	809	133	18	413	1213	465	1255	5.61e-171	592	KS-06-2
-KS-08	92.500	200	15	0	199	398	226	425	2.96e-79	287	KS-06-2
-KS-08	80.123	815	138	15	407	1213	460	1258	7.26e-170	588	KS-36-2
-KS-08	92.500	200	15	0	199	398	227	426	2.96e-79	287	KS-36-2
-KS-08	79.903	821	138	19	413	1225	461	1262	7.26e-170	588	KS-30-2
-KS-08	92.500	200	15	0	199	398	222	421	2.96e-79	287	KS-30-2
-KS-08	80.222	809	133	19	413	1213	466	1255	9.39e-169	584	KS-33-1
-KS-08	92.500	200	15	0	199	398	227	426	2.96e-79	287	KS-33-1
-KS-08	90.045	442	40	4	300	739	4	443	2.63e-164	569	ST-A1
-KS-08	90.023	441	40	4	300	738	2	440	9.46e-164	568	ST-D1_7
-KS-08	90.023	441	40	4	300	738	4	442	9.46e-164	568	ST-B5
-KS-08	90.023	441	40	4	300	738	4	442	9.46e-164	568	ST-B1
-KS-08	89.438	445	41	6	300	740	2	444	2.05e-160	556	ST-C9-1
-KS-08	88.964	444	44	5	300	740	2	443	2.65e-159	553	ST-C1
-KS-08	81.909	503	62	13	200	675	231	731	2.82e-114	403	KS-22-1
-KS-08	84.227	317	46	4	426	740	154	468	8.19e-85	305	ST-127
-KS-08	82.166	314	54	2	426	738	156	468	2.99e-74	270	ST-B3
-KS-08	81.962	316	55	2	426	740	155	469	3.86e-73	267	ST-D1_1
-KS-08	82.019	317	52	5	426	739	156	470	3.86e-73	267	ST-B8-2
-KS-08	82.109	313	52	4	426	736	153	463	1.39e-72	265	ST-A35
-KS-08	81.703	317	55	3	426	740	155	470	5.00e-72	263	ST-C2
-KS-08	81.818	319	52	5	426	740	155	471	5.00e-72	263	ST-71
-KS-08	79.518	332	61	5	413	740	142	470	5.07e-62	230	ST-83
-KS-08	76.017	467	80	18	300	740	2	462	3.95e-58	217	ST-7
-KS-08	77.532	316	67	3	427	740	154	467	3.09e-49	187	ST-3
-KS-08	77.178	241	51	3	427	665	733	495	3.16e-34	137	ST-3
+KS-08	97.942	1312	23	4	18	1325	1	1312	0.0	2285	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium paulinellae
+KS-08	97.942	1312	23	4	18	1325	1	1312	0.0	2285	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium algicola
+KS-08	97.866	1312	24	4	18	1325	1	1312	0.0	2279	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium limneticum
+KS-08	97.260	1314	28	8	18	1325	1	1312	0.0	2235	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium vermicomposti
+KS-08	97.104	1312	34	4	18	1325	1	1312	0.0	2224	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium amiense
+KS-08	96.956	1314	32	7	18	1325	1	1312	0.0	2213	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium czechense
+KS-08	96.799	1312	38	4	18	1325	1	1312	0.0	2202	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium chlorophenolicum
+KS-08	96.728	1314	37	6	18	1325	1	1314	0.0	2198	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:CP005084_s
+KS-08	96.728	1314	34	8	18	1325	1	1311	0.0	2194	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium cupriresistens
+KS-08	96.570	1312	41	4	18	1325	1	1312	0.0	2185	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium mellinum
+KS-08	96.575	1314	37	8	18	1325	1	1312	0.0	2185	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium rhizovicinum
+KS-08	96.570	1312	41	4	18	1325	1	1312	0.0	2185	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium japonicum
+KS-08	96.499	1314	38	8	18	1325	1	1312	0.0	2180	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:CP005188_s
+KS-08	96.497	1313	41	5	18	1325	1	1313	0.0	2180	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium indicum
+KS-08	96.420	1313	42	5	18	1325	1	1313	0.0	2174	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium lucknowense
+KS-08	96.418	1312	43	4	18	1325	1	1312	0.0	2174	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium hydrophobicum
+KS-08	96.341	1312	44	4	18	1325	1	1312	0.0	2169	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium xenophagum
+KS-08	96.265	1312	45	4	18	1325	1	1312	0.0	2163	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium francense
+KS-08	96.195	1314	42	8	18	1325	1	1312	0.0	2158	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:CP013264_s
+KS-08	96.192	1313	45	5	18	1325	1	1313	0.0	2158	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium chinhatense
+KS-08	96.037	1312	48	4	18	1325	1	1312	0.0	2146	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium yanoikuyae
+KS-08	96.037	1312	48	4	18	1325	1	1312	0.0	2146	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:ASTG_s
+KS-08	95.890	1314	46	8	18	1325	1	1312	0.0	2135	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:CP015987_s
+KS-08	95.821	1316	43	12	18	1325	1	1312	0.0	2130	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium qiguonii
+KS-08	95.808	1312	51	4	18	1325	1	1312	0.0	2130	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium quisquiliarum
+KS-08	95.738	1314	48	8	18	1325	1	1312	0.0	2124	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium xanthum
+KS-08	95.732	1312	52	4	18	1325	1	1312	0.0	2124	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium cloacae
+KS-08	95.738	1314	48	8	18	1325	1	1312	0.0	2124	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium baderi
+KS-08	95.586	1314	50	8	18	1325	1	1312	0.0	2113	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:JEMV_s
+KS-08	95.510	1314	51	8	18	1325	1	1312	0.0	2108	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:AP012222_s
+KS-08	95.895	1291	45	8	41	1325	1	1289	0.0	2098	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium vulgare
+KS-08	95.091	1324	49	7	18	1325	1	1324	0.0	2085	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium chungbukense
+KS-08	95.205	1314	55	8	18	1325	1	1312	0.0	2085	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium wenxiniae
+KS-08	95.205	1314	55	8	18	1325	1	1312	0.0	2085	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:AJVL_s
+KS-08	95.129	1314	56	8	18	1325	1	1312	0.0	2080	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium barthaii
+KS-08	95.129	1314	56	8	18	1325	1	1312	0.0	2080	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium fuliginis
+KS-08	95.053	1314	57	8	18	1325	1	1312	0.0	2076	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium jiangsuense
+KS-08	95.455	1298	49	10	34	1325	1	1294	0.0	2076	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium scionense
+KS-08	95.053	1314	57	8	18	1325	1	1312	0.0	2074	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium ummariense
+KS-08	95.363	1294	55	5	36	1325	1	1293	0.0	2067	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium fontiphilum
+KS-08	95.031	1308	58	7	18	1320	1	1306	0.0	2065	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:GQ101175_s
+KS-08	94.901	1314	59	8	18	1325	1	1312	0.0	2063	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium naphthae
+KS-08	94.901	1314	59	8	18	1325	1	1312	0.0	2063	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium faniae
+KS-08	94.745	1313	57	12	21	1325	1	1309	0.0	2047	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:IMCC1743_s
+KS-08	94.597	1314	63	7	18	1325	1	1312	0.0	2041	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium phenoxybenzoativorans
+KS-08	95.501	1267	51	6	54	1316	1	1265	0.0	2041	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingomonas flava
+KS-08	94.377	1316	62	12	18	1325	1	1312	0.0	2036	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium abikonense
+KS-08	94.377	1316	62	11	18	1325	1	1312	0.0	2025	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium subterraneum
+KS-08	94.077	1317	62	7	25	1325	1	1317	0.0	2001	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium olei
+KS-08	94.002	1317	65	14	18	1325	1	1312	0.0	1997	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:AJ009708_s
+KS-08	93.983	1313	69	10	19	1325	1	1309	0.0	1993	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:AJ000918_s
+KS-08	93.840	1315	71	10	18	1325	1	1312	0.0	1986	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Hephaestia,s:Hephaestia caeni
+KS-08	93.764	1315	72	10	18	1325	1	1312	0.0	1980	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium boeckii
+KS-08	93.693	1316	71	12	18	1325	1	1312	0.0	1975	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium endophyticum
+KS-08	93.556	1319	67	18	18	1325	1	1312	0.0	1964	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Rhizorhapis suberifaciens
+KS-08	93.803	1307	62	11	35	1325	1	1304	0.0	1962	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium sufflavum
+KS-08	93.465	1316	74	11	18	1325	1	1312	0.0	1958	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:JF697448_s
+KS-08	93.475	1318	68	18	18	1325	1	1310	0.0	1956	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:AJ318184_s
+KS-08	93.645	1306	67	16	31	1325	1	1301	0.0	1953	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium aromaticiconvertens
+KS-08	93.308	1315	78	10	18	1325	1	1312	0.0	1947	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:LARW_s
+KS-08	93.308	1315	78	10	18	1325	1	1312	0.0	1947	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas colocasiae
+KS-08	93.308	1315	78	10	18	1325	1	1312	0.0	1947	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:EU332828_s
+KS-08	93.151	1314	82	8	18	1325	1	1312	0.0	1936	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:LMID_s
+KS-08	93.080	1315	81	10	18	1325	1	1312	0.0	1930	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas laterariae
+KS-08	93.004	1315	82	10	18	1325	1	1312	0.0	1925	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:EU580479_g,s:EU580479_s
+KS-08	92.998	1314	84	8	18	1325	1	1312	0.0	1925	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:EU580479_g,s:DQ520195_s
+KS-08	93.009	1316	80	11	18	1325	1	1312	0.0	1925	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium pentaromativorans
+KS-08	92.993	1313	86	6	18	1325	1	1312	0.0	1925	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingosinicella,s:AB245346_s
+KS-08	92.933	1316	81	11	18	1325	1	1312	0.0	1919	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:FR856862_s
+KS-08	92.922	1314	85	8	18	1325	1	1312	0.0	1919	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas wittichii
+KS-08	92.966	1308	87	5	18	1320	1	1308	0.0	1916	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:JF237978_s
+KS-08	92.857	1316	82	11	18	1325	1	1312	0.0	1914	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium fontis
+KS-08	92.852	1315	84	10	18	1325	1	1312	0.0	1914	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingomonas faucium
+KS-08	92.857	1316	82	11	18	1325	1	1312	0.0	1914	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium panipatense
+KS-08	92.846	1314	86	8	18	1325	1	1312	0.0	1914	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas histidinilytica
+KS-08	92.852	1315	84	10	18	1325	1	1312	0.0	1914	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:EU580479_g,s:EU937899_s
+KS-08	92.857	1316	82	12	18	1325	1	1312	0.0	1914	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium lindaniclasticum
+KS-08	92.776	1315	85	10	18	1325	1	1312	0.0	1908	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Rhizorhabdus,s:Rhizorhabdus argentea
+KS-08	92.770	1314	87	8	18	1325	1	1312	0.0	1908	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium naphthalenivorans
+KS-08	92.705	1316	84	11	18	1325	1	1312	0.0	1903	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:Altererythrobacter lauratis
+KS-08	92.705	1316	84	11	18	1325	1	1312	0.0	1903	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium naphthae
+KS-08	92.705	1316	84	11	18	1325	1	1312	0.0	1903	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium mathurense
+KS-08	92.705	1316	84	12	18	1325	1	1312	0.0	1903	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Rhizorhabdus,s:Rhizorhabdus dicambivorans
+KS-08	92.694	1314	88	7	18	1325	1	1312	0.0	1903	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingopyxis,s:CP009452_s
+KS-08	92.705	1316	84	12	18	1325	1	1312	0.0	1903	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas sanxanigenens
+KS-08	92.624	1315	86	11	18	1325	1	1311	0.0	1901	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas haloaromaticamans
+KS-08	92.743	1309	89	6	22	1325	1	1308	0.0	1901	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingopyxis,s:Sphingopyxis solisilvae
+KS-08	92.624	1315	87	10	18	1325	1	1312	0.0	1897	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingosinicella,s:AY234707_s
+KS-08	92.618	1314	87	8	18	1325	1	1310	0.0	1895	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas changbaiensis
+KS-08	92.666	1309	89	7	18	1320	1	1308	0.0	1893	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:JF204267_s
+KS-08	92.553	1316	86	12	18	1325	1	1312	0.0	1892	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Parasphingopyxis,s:Parasphingopyxis algicola
+KS-08	92.553	1316	86	11	18	1325	1	1312	0.0	1892	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium barchaimii
+KS-08	92.530	1312	94	4	18	1325	1	1312	0.0	1892	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:FN397680_s
+KS-08	92.553	1316	86	12	18	1325	1	1312	0.0	1892	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium rosa
+KS-08	92.559	1317	83	12	18	1325	1	1311	0.0	1890	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:JN409232_s
+KS-08	92.483	1317	86	12	18	1325	1	1313	0.0	1886	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:Altererythrobacter palmitatis
+KS-08	92.466	1314	91	8	18	1325	1	1312	0.0	1886	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingosinicella,s:Sphingosinicella ginsenosidimutans
+KS-08	92.471	1315	89	9	18	1325	1	1312	0.0	1886	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:Altererythrobacter xinjiangensis
+KS-08	92.536	1313	87	11	18	1325	1	1307	0.0	1886	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:GU179687_s
+KS-08	92.477	1316	87	12	18	1325	1	1312	0.0	1886	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:EF125416_s
+KS-08	92.477	1316	87	11	18	1325	1	1312	0.0	1886	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingopyxis,s:Sphingopyxis alaskensis
+KS-08	92.542	1314	81	17	18	1320	1	1308	0.0	1882	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:JF177004_s
+KS-08	92.390	1314	92	7	18	1325	1	1312	0.0	1881	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium endophyticum
+KS-08	92.390	1314	92	7	18	1325	1	1312	0.0	1881	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingopyxis,s:Sphingopyxis flava
+KS-08	92.395	1315	90	10	18	1325	1	1312	0.0	1881	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium soli
+KS-08	92.390	1314	92	8	18	1325	1	1312	0.0	1881	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:AFMP_s
+KS-08	92.337	1318	87	14	18	1325	1	1314	0.0	1877	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:FM209357_s
+KS-08	92.337	1318	85	14	18	1325	1	1312	0.0	1875	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas qilianensis
+KS-08	92.331	1317	87	14	18	1325	1	1312	0.0	1875	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas zeicaulis
+KS-08	92.314	1314	93	8	18	1325	1	1312	0.0	1875	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:JQ072961_s
+KS-08	92.255	1317	90	12	18	1325	1	1314	0.0	1871	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:JQMC_s
+KS-08	92.243	1315	92	10	18	1325	1	1312	0.0	1869	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingopyxis,s:Sphingopyxis italica
+KS-08	92.237	1314	94	7	18	1325	1	1312	0.0	1869	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingopyxis,s:Sphingopyxis soli
+KS-08	92.185	1318	91	11	18	1325	1	1316	0.0	1868	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas prati
+KS-08	92.273	1320	81	18	18	1325	1	1311	0.0	1868	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:FOCF_s
+KS-08	92.835	1284	80	11	50	1325	1	1280	0.0	1866	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingorhabdus,s:EU196323_s
+KS-08	92.273	1320	79	17	18	1325	1	1309	0.0	1866	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas desiccabilis
+KS-08	92.161	1314	95	8	18	1325	1	1312	0.0	1864	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium humi
+KS-08	92.173	1316	91	11	18	1325	1	1312	0.0	1864	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium gossypii
+KS-08	92.173	1316	91	10	18	1325	1	1312	0.0	1864	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Blastomonas,s:Blastomonas fulva
+KS-08	92.179	1317	89	14	18	1325	1	1312	0.0	1864	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium tardum
+KS-08	92.167	1315	93	10	18	1325	1	1312	0.0	1864	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium marinum
+KS-08	92.167	1315	93	9	18	1325	1	1312	0.0	1864	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:Altererythrobacter dongtanensis
+KS-08	92.173	1316	89	12	18	1325	1	1310	0.0	1862	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Porphyrobacter,s:Porphyrobacter dokdonensis
+KS-08	92.203	1321	79	18	18	1325	1	1310	0.0	1862	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas leidyi
+KS-08	92.097	1316	92	12	18	1325	1	1312	0.0	1858	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium clariflavum
+KS-08	92.091	1315	94	9	18	1325	1	1312	0.0	1858	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:Altererythrobacter rigui
+KS-08	92.097	1316	92	12	18	1325	1	1312	0.0	1858	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:JRQQ_s
+KS-08	92.091	1315	94	10	18	1325	1	1312	0.0	1858	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Sphingobium herbicidovorans
+KS-08	92.097	1316	92	11	18	1325	1	1312	0.0	1858	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium indicum
+KS-08	92.091	1315	94	10	18	1325	1	1312	0.0	1858	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium resinovorum
+KS-08	92.091	1315	94	10	18	1325	1	1312	0.0	1858	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Croceicoccus,s:Croceicoccus naphthovorans
+KS-08	92.085	1314	96	7	18	1325	1	1312	0.0	1858	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:AM697355_s
+KS-08	92.091	1315	94	10	18	1325	1	1312	0.0	1858	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Blastomonas,s:Blastomonas natatoria
+KS-08	92.103	1317	89	15	18	1325	1	1311	0.0	1857	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:MWM_s
+KS-08	92.033	1318	93	12	18	1325	1	1316	0.0	1857	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas arantia
+KS-08	92.121	1320	82	19	18	1325	1	1310	0.0	1857	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:FNZB_s
+KS-08	92.121	1320	82	16	18	1325	1	1310	0.0	1857	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas asaccharolytica
+KS-08	92.097	1316	89	13	18	1325	1	1309	0.0	1855	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas silvisoli
+KS-08	92.673	1283	84	10	50	1325	1	1280	0.0	1855	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium sediminicola
+KS-08	92.103	1317	86	16	18	1325	1	1308	0.0	1855	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium lentum
+KS-08	92.103	1317	86	16	18	1325	1	1308	0.0	1855	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium hassiacum
+KS-08	92.027	1317	91	14	18	1325	1	1312	0.0	1853	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingorhabdus,s:LXYP_s
+KS-08	92.021	1316	93	12	18	1325	1	1312	0.0	1853	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:LMPM_s
+KS-08	92.003	1313	99	6	18	1325	1	1312	0.0	1853	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:Altererythrobacter salegens
+KS-08	92.015	1315	95	10	18	1325	1	1312	0.0	1853	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas hylomeconis
+KS-08	92.033	1318	89	13	18	1325	1	1312	0.0	1853	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas indica
+KS-08	92.421	1293	90	8	39	1325	2	1292	0.0	1853	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingosinicella,s:Sphingosinicella vermicomposti
+KS-08	92.021	1316	93	11	18	1325	1	1312	0.0	1853	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:Altererythrobacter epoxidivorans
+KS-08	92.009	1314	97	8	18	1325	1	1312	0.0	1853	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingopyxis,s:Sphingopyxis terrae
+KS-08	92.027	1317	91	14	18	1325	1	1312	0.0	1853	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:AKFJ_s
+KS-08	92.021	1316	91	12	18	1325	1	1310	0.0	1851	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium kunmingense
+KS-08	92.033	1318	87	16	18	1325	1	1310	0.0	1851	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:FM211709_s
+KS-08	92.069	1324	75	24	18	1325	1	1310	0.0	1851	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas aquatilis
+KS-08	92.214	1310	83	17	27	1325	1	1302	0.0	1851	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas molluscorum
+KS-08	91.945	1316	95	11	18	1325	1	1313	0.0	1847	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium oryzae
+KS-08	91.933	1314	98	8	18	1325	1	1312	0.0	1847	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium chloroacetimidivorans
+KS-08	91.933	1314	98	8	18	1325	1	1312	0.0	1847	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:JQ728997_s
+KS-08	91.933	1314	98	8	18	1325	1	1312	0.0	1847	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingopyxis,s:Sphingopyxis terrae
+KS-08	92.469	1288	87	10	44	1325	1	1284	0.0	1847	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingorhabdus,s:Sphingorhabdus contaminans
+KS-08	91.921	1312	102	4	18	1325	1	1312	0.0	1847	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingopyxis,s:Sphingopyxis panaciterrulae
+KS-08	91.921	1312	102	4	18	1325	1	1312	0.0	1847	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:Altererythrobacter atlanticus
+KS-08	91.939	1315	96	10	18	1325	1	1312	0.0	1847	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingopyxis,s:Sphingopyxis fribergensis
+KS-08	91.976	1321	82	18	18	1325	1	1310	0.0	1845	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:LMQP_s
+KS-08	91.945	1316	92	12	18	1325	1	1310	0.0	1845	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas gotjawalisoli
+KS-08	91.958	1318	88	16	18	1325	1	1310	0.0	1845	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas kyeonggiensis
+KS-08	91.994	1324	76	24	18	1325	1	1310	0.0	1845	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas melonis
+KS-08	91.970	1320	84	16	18	1325	1	1310	0.0	1845	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas pruni
+KS-08	91.970	1320	84	16	18	1325	1	1310	0.0	1845	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas mali
+KS-08	91.951	1317	91	14	18	1325	1	1311	0.0	1845	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingopyxis,s:Sphingopyxis taejonensis
+KS-08	91.985	1310	95	10	23	1325	1	1307	0.0	1844	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Blastomonas,s:Blastomonas ursincola
+KS-08	91.863	1315	97	9	18	1325	1	1312	0.0	1842	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingopyxis,s:Sphingopyxis nepalensis
+KS-08	91.875	1317	93	13	18	1325	1	1312	0.0	1842	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:Altererythrobacter troitsensis
+KS-08	91.875	1317	93	13	18	1325	1	1312	0.0	1842	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium guangzhouense
+KS-08	92.835	1270	90	1	18	1286	1	1270	0.0	1842	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Stakelama,s:Stakelama algicida
+KS-08	91.869	1316	95	11	18	1325	1	1312	0.0	1842	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:JXQC_s
+KS-08	91.875	1317	93	13	18	1325	1	1312	0.0	1842	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingopyxis,s:Sphingopyxis ginsengisoli
+KS-08	91.875	1317	91	13	18	1325	1	1310	0.0	1840	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:NSLI_s
+KS-08	91.882	1318	90	15	18	1325	1	1311	0.0	1840	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas dokdonensis
+KS-08	91.882	1318	90	15	18	1325	1	1311	0.0	1840	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas jeddahensis
+KS-08	91.888	1319	87	19	18	1325	1	1310	0.0	1840	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:LMQO_s
+KS-08	91.869	1316	93	12	18	1325	1	1310	0.0	1840	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium aquiterrae
+KS-08	91.882	1318	89	17	18	1325	1	1310	0.0	1840	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas hankookensis
+KS-08	91.875	1317	91	15	18	1325	1	1310	0.0	1840	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas koreensis
+KS-08	91.966	1307	95	10	26	1325	1	1304	0.0	1838	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas montana
+KS-08	91.894	1320	83	21	20	1325	1	1310	0.0	1838	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:AF170744_g,s:AF170744_s
+KS-08	91.787	1315	98	10	18	1325	1	1312	0.0	1836	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Blastomonas,s:Blastomonas marina
+KS-08	91.768	1312	104	4	18	1325	1	1312	0.0	1836	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingopyxis,s:Sphingopyxis indica
+KS-08	91.775	1313	102	6	18	1325	1	1312	0.0	1836	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingorhabdus,s:Sphingorhabdus wooponensis
+KS-08	91.793	1316	96	12	18	1325	1	1312	0.0	1836	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:DQ811848_s
+KS-08	91.787	1315	98	10	18	1325	1	1312	0.0	1836	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingosinicella,s:Sphingosinicella soli
+KS-08	91.793	1316	96	12	18	1325	1	1312	0.0	1836	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingorhabdus,s:CP018154_s
+KS-08	91.800	1317	92	14	18	1325	1	1310	0.0	1834	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas gimensis
+KS-08	91.787	1315	97	11	18	1325	1	1311	0.0	1834	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Stakelama,s:Stakelama pacifica
+KS-08	91.781	1314	96	10	18	1325	1	1308	0.0	1832	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:EU118985_s
+KS-08	91.692	1312	105	4	18	1325	1	1312	0.0	1831	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:LMHH_s
+KS-08	91.711	1315	99	9	18	1325	1	1312	0.0	1831	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:Altererythrobacter deserti
+KS-08	91.705	1314	101	8	18	1325	1	1312	0.0	1831	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:Altererythrobacter marinus
+KS-08	91.705	1314	101	8	18	1325	1	1312	0.0	1831	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingopyxis,s:DQ088789_s
+KS-08	91.711	1315	99	10	18	1325	1	1312	0.0	1831	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingosinicella,s:Sphingosinicella xenopeptidilytica
+KS-08	91.711	1315	99	10	18	1325	1	1312	0.0	1831	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingosinicella,s:Sphingosinicella microcystinivorans
+KS-08	91.742	1320	87	16	18	1325	1	1310	0.0	1829	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas ginsenosidimutans
+KS-08	91.742	1320	87	16	18	1325	1	1310	0.0	1829	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas adhaesiva
+KS-08	91.717	1316	95	12	18	1325	1	1310	0.0	1829	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Porphyrobacter,s:Porphyrobacter donghaensis
+KS-08	91.742	1320	87	19	18	1325	1	1310	0.0	1829	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:ALBQ_s
+KS-08	91.717	1316	93	14	18	1325	1	1308	0.0	1827	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium arabidopsis
+KS-08	91.793	1316	86	16	22	1325	1	1306	0.0	1827	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas hunanensis
+KS-08	91.635	1315	100	10	18	1325	1	1312	0.0	1825	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingopyxis,s:Sphingopyxis bauzanensis
+KS-08	91.641	1316	98	12	18	1325	1	1312	0.0	1825	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium lotistagni
+KS-08	91.667	1320	90	17	18	1325	1	1312	0.0	1825	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas carri
+KS-08	91.635	1315	100	10	18	1325	1	1312	0.0	1825	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:JF309146_s
+KS-08	91.724	1317	89	19	21	1325	3	1311	0.0	1825	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas fonticola
+KS-08	91.667	1320	90	18	18	1325	1	1312	0.0	1825	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Porphyrobacter,s:GQ264058_s
+KS-08	91.641	1316	98	12	18	1325	1	1312	0.0	1825	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas alpina
+KS-08	91.673	1321	88	19	18	1325	1	1312	0.0	1825	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:EU580479_g,s:DQ295907_s
+KS-08	91.679	1322	86	22	18	1325	1	1312	0.0	1825	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:Altererythrobacter mangrovi
+KS-08	91.622	1313	104	6	18	1325	1	1312	0.0	1825	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:CP018221_s
+KS-08	91.622	1313	104	6	18	1325	1	1312	0.0	1825	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas fennica
+KS-08	91.641	1316	96	12	18	1325	1	1310	0.0	1823	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Porphyrobacter,s:Porphyrobacter colymbi
+KS-08	91.641	1316	96	14	18	1325	1	1310	0.0	1823	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas lacus
+KS-08	91.641	1316	96	12	18	1325	1	1310	0.0	1823	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Erythrobacter,s:GU227429_s
+KS-08	91.654	1318	92	17	18	1325	1	1310	0.0	1823	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas glacialis
+KS-08	91.578	1318	97	12	18	1325	1	1314	0.0	1821	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Qipengyuania,s:Qipengyuania sediminis
+KS-08	91.762	1311	90	17	25	1325	1	1303	0.0	1821	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas panni
+KS-08	91.917	1299	92	11	35	1325	13	1306	0.0	1820	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Blastomonas,s:Blastomonas aquatica
+KS-08	91.597	1321	89	21	18	1325	1	1312	0.0	1820	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas hengshuiensis
+KS-08	91.572	1317	97	12	18	1325	1	1312	0.0	1820	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium malaysiense
+KS-08	91.553	1314	103	8	18	1325	1	1312	0.0	1820	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingopyxis,s:JQFJ_s
+KS-08	91.559	1315	101	10	18	1325	1	1312	0.0	1820	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingorhabdus,s:Sphingorhabdus marina
+KS-08	91.496	1317	96	14	18	1325	1	1310	0.0	1820	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:FJ191452_s
+KS-08	91.898	1296	97	8	36	1325	1	1294	0.0	1820	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:EU440723_s
+KS-08	91.546	1313	105	6	18	1325	1	1312	0.0	1820	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingopyxis,s:Sphingopyxis granuli
+KS-08	91.597	1321	89	16	18	1325	1	1312	0.0	1820	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:ATTI_s
+KS-08	91.559	1315	101	9	18	1325	1	1312	0.0	1820	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingopyxis,s:Sphingopyxis chilensis
+KS-08	91.585	1319	93	18	18	1325	1	1312	0.0	1820	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingorhabdus,s:Sphingorhabdus pacifica
+KS-08	91.565	1316	97	12	18	1325	1	1310	0.0	1818	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Porphyrobacter,s:Porphyrobacter tepidarius
+KS-08	91.597	1321	87	21	18	1325	1	1310	0.0	1818	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas frigidaeris
+KS-08	91.400	1314	105	7	18	1325	1	1312	0.0	1818	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingopyxis,s:Sphingopyxis macrogoltabida
+KS-08	91.528	1322	90	19	18	1325	1	1314	0.0	1816	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:LMKL_s
+KS-08	91.565	1316	95	14	18	1325	1	1308	0.0	1816	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium rhizosphaerae
+KS-08	91.565	1316	95	14	18	1325	1	1308	0.0	1816	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium subterraneum
+KS-08	91.489	1316	100	12	18	1325	1	1312	0.0	1816	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingorhabdus,s:Sphingorhabdus flavimaris
+KS-08	91.578	1318	91	16	18	1325	1	1308	0.0	1816	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium stygium
+KS-08	91.483	1315	102	10	18	1325	1	1312	0.0	1814	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingopyxis,s:Sphingopyxis witflariensis
+KS-08	91.483	1315	102	10	18	1325	1	1312	0.0	1814	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Parasphingopyxis,s:Parasphingopyxis lamellibrachiae
+KS-08	91.641	1304	102	7	27	1325	5	1306	0.0	1812	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas crusticola
+KS-08	91.476	1314	102	10	18	1325	1	1310	0.0	1812	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingorhabdus,s:AJ620193_s
+KS-08	91.457	1311	106	6	19	1325	1	1309	0.0	1810	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:Altererythrobacter soli
+KS-08	91.489	1316	96	14	18	1325	1	1308	0.0	1810	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium ginsenosidimutans
+KS-08	91.489	1316	97	13	18	1325	1	1309	0.0	1810	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Porphyrobacter,s:Porphyrobacter neustonensis
+KS-08	91.426	1318	97	15	18	1325	1	1312	0.0	1808	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:Altererythrobacter aquiaggeris
+KS-08	91.514	1308	104	7	18	1320	1	1306	0.0	1808	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingosinicella,s:JF236117_s
+KS-08	91.394	1313	107	6	18	1325	1	1312	0.0	1808	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingorhabdus,s:Sphingorhabdus rigui
+KS-08	91.433	1319	95	15	18	1325	1	1312	0.0	1808	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas azotifigens
+KS-08	91.413	1316	101	11	18	1325	1	1312	0.0	1808	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingopyxis,s:Sphingopyxis baekryungensis
+KS-08	91.413	1316	99	12	18	1325	1	1310	0.0	1807	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Porphyrobacter,s:Porphyrobacter cryptus
+KS-08	91.439	1320	92	15	18	1325	1	1311	0.0	1807	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas carotinifaciens
+KS-08	91.540	1312	93	12	18	1320	1	1303	0.0	1807	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas oligophenolica
+KS-08	91.420	1317	95	17	18	1325	1	1308	0.0	1805	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomicrobium,s:Sphingomicrobium astaxanthinifaciens
+KS-08	91.426	1318	93	16	18	1325	1	1308	0.0	1805	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:FWXL_s
+KS-08	91.420	1317	95	16	18	1325	1	1308	0.0	1805	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:FPEH_s
+KS-08	91.394	1313	103	10	18	1325	1	1308	0.0	1805	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomicrobium,s:Sphingomicrobium lutaoense
+KS-08	91.324	1314	106	8	18	1325	1	1312	0.0	1803	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingoaurantiacus,s:Sphingoaurantiacus capsulatus
+KS-08	91.351	1318	98	16	18	1325	1	1312	0.0	1803	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium fluoreni
+KS-08	91.324	1314	106	8	18	1325	1	1312	0.0	1803	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:Altererythrobacter aestuarii
+KS-08	91.331	1315	104	10	18	1325	1	1312	0.0	1803	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:Altererythrobacter marensis
+KS-08	91.344	1317	100	13	18	1325	1	1312	0.0	1803	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingopyxis,s:Sphingopyxis panaciterrae
+KS-08	91.344	1317	98	13	18	1325	1	1310	0.0	1801	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas trueperi
+KS-08	91.337	1316	100	14	18	1325	1	1310	0.0	1801	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas astaxanthinifaciens
+KS-08	91.337	1316	100	12	18	1325	1	1310	0.0	1801	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Porphyrobacter,s:CP017113_s
+KS-08	91.337	1316	98	14	18	1325	1	1308	0.0	1799	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium pokkalii
+KS-08	91.344	1317	96	17	18	1325	1	1308	0.0	1799	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomicrobium,s:Sphingomicrobium aestuariivivum
+KS-08	91.248	1314	107	8	18	1325	1	1312	0.0	1799	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas canadensis
+KS-08	91.327	1326	84	25	18	1325	1	1313	0.0	1797	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:LMPG_s
+KS-08	91.275	1318	99	15	18	1325	1	1312	0.0	1797	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:Altererythrobacter aquaemixtae
+KS-08	91.848	1288	90	14	46	1325	1	1281	0.0	1797	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium aquaticum
+KS-08	91.275	1318	99	15	18	1325	1	1312	0.0	1797	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas ginsenosidivorax
+KS-08	91.275	1318	99	16	18	1325	1	1312	0.0	1797	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:FM875685_s
+KS-08	91.268	1317	101	13	18	1325	1	1312	0.0	1797	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:Altererythrobacter namhicola
+KS-08	91.255	1315	105	10	18	1325	1	1312	0.0	1797	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Pacificimonas,s:Pacificimonas flava
+KS-08	91.255	1315	105	10	18	1325	1	1312	0.0	1797	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:AM697005_s
+KS-08	91.275	1318	99	14	18	1325	1	1312	0.0	1797	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas pituitosa
+KS-08	91.261	1316	101	12	18	1325	1	1310	0.0	1796	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Porphyrobacter,s:JQMU_s
+KS-08	91.255	1315	103	12	18	1325	1	1310	0.0	1796	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:GQ396809_s
+KS-08	91.261	1316	101	12	18	1325	1	1310	0.0	1796	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Porphyrobacter,s:Porphyrobacter sanguineus
+KS-08	91.261	1316	101	12	18	1325	1	1310	0.0	1796	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Porphyrobacter,s:CP021378_s
+KS-08	91.255	1315	103	12	18	1325	1	1310	0.0	1796	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas sediminicola
+KS-08	91.275	1318	95	20	18	1325	1	1308	0.0	1794	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas jaspsi
+KS-08	91.255	1315	101	12	18	1325	1	1308	0.0	1794	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium tardaugens
+KS-08	91.192	1317	98	16	18	1325	1	1308	0.0	1794	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:AY212578_s
+KS-08	91.424	1306	98	12	28	1325	1	1300	0.0	1794	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Porphyrobacter,s:Erythromicrobium ramosum
+KS-08	91.179	1315	106	10	18	1325	1	1312	0.0	1792	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:Altererythrobacter sediminis
+KS-08	91.179	1315	106	10	18	1325	1	1312	0.0	1792	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:Altererythrobacter aestiaquae
+KS-08	91.284	1308	107	7	18	1320	1	1306	0.0	1792	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:JF128290_s
+KS-08	91.232	1323	90	20	18	1325	1	1312	0.0	1792	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas insulae
+KS-08	91.179	1315	106	10	18	1325	1	1312	0.0	1792	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingorhabdus,s:Sphingorhabdus litoris
+KS-08	91.318	1313	95	16	18	1320	1	1304	0.0	1790	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:JF139748_s
+KS-08	91.185	1316	102	13	18	1325	1	1310	0.0	1790	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas aerolata
+KS-08	91.225	1322	90	23	18	1325	1	1310	0.0	1790	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas japonica
+KS-08	91.199	1318	96	16	18	1325	1	1308	0.0	1788	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium flavum
+KS-08	91.192	1317	98	16	18	1325	1	1308	0.0	1788	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Erythrobacter,s:Erythrobacter pelagi
+KS-08	91.199	1318	96	16	18	1325	1	1308	0.0	1788	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium aromaticivorans
+KS-08	91.123	1318	101	15	18	1325	1	1312	0.0	1786	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Croceicoccus,s:Croceicoccus pelagius
+KS-08	91.116	1317	103	13	18	1325	1	1312	0.0	1786	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:Altererythrobacter xiamenensis
+KS-08	91.442	1297	101	9	36	1325	1	1294	0.0	1786	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:EU276570_s
+KS-08	91.109	1316	105	12	18	1325	1	1312	0.0	1786	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:Altererythrobacter luteolus
+KS-08	91.109	1316	103	12	18	1325	1	1310	0.0	1784	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Erythrobacter,s:LT629743_s
+KS-08	91.109	1316	103	12	18	1325	1	1310	0.0	1784	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Erythrobacter,s:Erythrobacter litoralis
+KS-08	91.435	1296	99	11	38	1325	1	1292	0.0	1783	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:Altererythrobacter halimionae
+KS-08	91.047	1318	102	15	18	1325	1	1312	0.0	1781	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:Altererythrobacter confluentis
+KS-08	91.020	1314	110	7	18	1325	1	1312	0.0	1781	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:Altererythrobacter buctensis
+KS-08	91.130	1319	93	18	21	1325	1	1309	0.0	1781	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas cynarae
+KS-08	91.116	1317	98	17	18	1325	1	1307	0.0	1781	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium capsulatum
+KS-08	91.344	1317	75	24	18	1325	1	1287	0.0	1779	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:KQ954256_s
+KS-08	91.027	1315	106	10	18	1325	1	1310	0.0	1779	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Erythrobacter,s:JN881606_s
+KS-08	91.453	1287	105	5	43	1325	17	1302	0.0	1777	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:Altererythrobacter aerius
+KS-08	91.422	1294	93	17	43	1325	2	1288	0.0	1773	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:Altererythrobacter endophyticus
+KS-08	90.957	1316	105	12	18	1325	1	1310	0.0	1773	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Erythrobacter,s:CP000157_s
+KS-08	90.978	1319	96	18	18	1325	1	1307	0.0	1773	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:AM746688_s
+KS-08	90.964	1317	103	16	18	1325	1	1310	0.0	1773	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:Sphingomonas ginsengisoli
+KS-08	90.923	1322	96	18	18	1325	1	1312	0.0	1770	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:JROH_s
+KS-08	90.888	1317	106	13	18	1325	1	1312	0.0	1770	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:Altererythrobacter ishigakiensis
+KS-08	90.881	1316	106	12	18	1325	1	1310	0.0	1768	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:Altererythrobacter aurantiacus
+KS-08	90.895	1318	102	15	18	1325	1	1310	0.0	1768	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Erythrobacter,s:Erythrobacter gaetbuli
+KS-08	90.833	1320	103	18	18	1325	1	1314	0.0	1766	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingoaurantiacus,s:DQ906837_s
+KS-08	90.826	1319	103	17	18	1325	1	1312	0.0	1764	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:Altererythrobacter oceanensis
+KS-08	90.819	1318	103	15	18	1325	1	1310	0.0	1762	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Erythrobacter,s:AY858797_s
+KS-08	91.116	1317	78	25	18	1325	1	1287	0.0	1762	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium nitrogenifigens
+KS-08	90.798	1315	107	13	18	1325	1	1308	0.0	1760	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Erythrobacter,s:Erythrobacter westpacificensis
+KS-08	90.744	1318	106	14	18	1325	1	1312	0.0	1759	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Croceicoccus,s:Croceicoccus marinus
+KS-08	90.729	1316	110	12	18	1325	1	1312	0.0	1759	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:EU488078_s
+KS-08	90.642	1325	104	13	18	1325	1	1322	0.0	1757	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingorhabdus,s:Sphingorhabdus arenilitoris
+KS-08	90.729	1316	108	12	18	1325	1	1310	0.0	1757	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Erythrobacter,s:JMIV_s
+KS-08	90.744	1318	105	16	18	1325	1	1311	0.0	1757	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Parablastomonas,s:AY212603_s
+KS-08	90.744	1318	105	14	18	1325	1	1311	0.0	1757	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Erythrobacter,s:Erythrobacter flavus
+KS-08	91.063	1298	100	14	36	1325	1	1290	0.0	1755	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingomonas,s:JN020191_s
+KS-08	91.328	1280	102	9	53	1325	1	1278	0.0	1755	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:HQ219287_s
+KS-08	91.614	1276	92	13	18	1286	1	1268	0.0	1751	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Porphyrobacter,s:Porphyrobacter algicida
+KS-08	90.646	1315	109	14	18	1325	1	1308	0.0	1749	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Erythrobacter,s:Erythrobacter luteus
+KS-08	91.078	1289	105	10	44	1325	1	1286	0.0	1749	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingoaurantiacus,s:Sphingoaurantiacus polygranulatus
+KS-08	90.923	1300	100	16	36	1325	1	1292	0.0	1746	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Porphyrobacter,s:JQ426597_s
+KS-08	90.523	1319	107	16	18	1325	1	1312	0.0	1742	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Croceicoccus,s:Croceicoccus mobilis
+KS-08	90.826	1319	80	25	18	1325	1	1289	0.0	1742	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Novosphingobium,s:Novosphingobium acidiphilum
+KS-08	90.433	1317	110	14	18	1325	1	1310	0.0	1735	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Erythrobacter,s:AAMW_s
+KS-08	90.350	1316	113	12	18	1325	1	1310	0.0	1733	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Erythrobacter,s:Erythrobacter citreus
+KS-08	91.297	1264	101	9	68	1325	13	1273	0.0	1731	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingorhabdus,s:JX949388_s
+KS-08	90.335	1314	115	12	19	1325	1	1309	0.0	1731	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:AF468353_s
+KS-08	90.623	1301	107	13	36	1325	1	1297	0.0	1727	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Porphyrobacter,s:JQ428704_s
+KS-08	90.505	1306	110	12	28	1325	1	1300	0.0	1727	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Erythrobacter,s:Erythrobacter vulgaris
+KS-08	90.259	1314	118	8	18	1325	1	1310	0.0	1724	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Qipengyuania,s:PAC001938_s
+KS-08	90.498	1305	108	16	27	1325	6	1300	0.0	1724	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Erythrobacter,s:Erythrobacter arachoides
+KS-08	90.274	1316	114	12	18	1325	1	1310	0.0	1724	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Erythrobacter,s:Citrimicrobium luteum
+KS-08	90.274	1316	114	12	18	1325	1	1310	0.0	1724	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Erythrobacter,s:Erythrobacter nanhaisediminis
+KS-08	90.274	1316	114	12	18	1325	1	1310	0.0	1724	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Erythrobacter,s:Erythrobacter seohaensis
+KS-08	90.259	1314	116	12	18	1325	1	1308	0.0	1722	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Erythrobacter,s:Erythrobacter aquimixticola
+KS-08	90.198	1316	117	10	18	1325	1	1312	0.0	1720	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:FR686295_s
+KS-08	90.754	1287	104	14	46	1325	1	1279	0.0	1718	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Erythrobacter,s:Erythrobacter odishensis
+KS-08	90.198	1316	115	12	18	1325	1	1310	0.0	1718	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Erythrobacter,s:Erythrobacter aquimaris
+KS-08	90.627	1291	106	15	44	1325	1	1285	0.0	1714	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingoaurantiacus,s:EU571151_s
+KS-08	90.114	1315	120	10	18	1325	1	1312	0.0	1714	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Zymomonas,s:Zymomonas mobilis
+KS-08	90.137	1318	112	16	18	1325	1	1310	0.0	1712	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Erythrobacter,s:LZRP_s
+KS-08	90.114	1315	116	12	18	1324	1	1309	0.0	1711	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Erythrobacter,s:Erythrobacter lutimaris
+KS-08	90.038	1315	121	10	18	1325	1	1312	0.0	1709	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Zymomonas,s:Zymomonas mobilis
+KS-08	90.076	1320	109	20	18	1325	1	1310	0.0	1707	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Erythrobacter,s:Erythrobacter jejuensis
+KS-08	90.053	1317	115	14	18	1325	1	1310	0.0	1707	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Erythrobacter,s:AEUE_s
+KS-08	90.068	1319	109	21	18	1325	1	1308	0.0	1705	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Erythrobacter,s:Erythrobacter marinus
+KS-08	90.046	1316	115	16	18	1325	1	1308	0.0	1705	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Erythrobacter,s:Erythrobacter atlanticus
+KS-08	89.977	1317	116	14	18	1325	1	1310	0.0	1701	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Erythrobacter,s:LMAF_s
+KS-08	89.962	1315	118	14	18	1325	1	1308	0.0	1700	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Erythrobacter,s:Erythrobacter gangjinensis
+KS-08	90.745	1275	100	17	62	1325	3	1270	0.0	1700	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:Altererythrobacter indicus
+KS-08	89.947	1313	116	14	22	1325	1	1306	0.0	1694	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Erythrobacter,s:Citromicrobium bathyomarinum
+KS-08	89.713	1322	113	23	18	1325	1	1313	0.0	1694	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingosinicella,s:JN178410_s
+KS-08	90.573	1273	107	12	62	1325	5	1273	0.0	1690	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:Altererythrobacter gangjinensis
+KS-08	89.726	1314	127	8	18	1325	1	1312	0.0	1687	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Zymomonas,s:Zymomonas mobilis
+KS-08	89.674	1317	122	14	18	1325	1	1312	0.0	1681	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:AY957890_g,s:AY957890_s
+KS-08	89.650	1314	128	8	18	1325	1	1312	0.0	1681	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:AY957890_g,s:AM930304_s
+KS-08	89.438	1316	125	12	18	1325	1	1310	0.0	1663	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Erythrobacter,s:Erythrobacter longus
+KS-08	88.694	1309	141	7	18	1320	1	1308	0.0	1605	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:AY957890_g,s:CU923390_s
+KS-08	88.686	1317	130	19	19	1325	2	1309	0.0	1604	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhodobiaceae,g:Rhodobium,s:Rhodobium orientis
+KS-08	88.666	1297	131	15	39	1325	1	1291	0.0	1581	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:AY957890_g,s:FN667525_s
+KS-08	88.374	1316	134	19	19	1325	2	1307	0.0	1580	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhodobiaceae,g:Rhodobium,s:Rhodobium gokarnense
+KS-08	88.079	1317	141	16	18	1325	1	1310	0.0	1563	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhodobiaceae,g:Breoghania,s:Breoghania corrubedonensis
+KS-08	88.036	1329	130	23	18	1325	1	1321	0.0	1561	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Parvibaculum_f,g:Rhodoligotrophos,s:Rhodoligotrophos jinshengii
+KS-08	88.030	1320	138	20	18	1325	1	1312	0.0	1559	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Phyllobacteriaceae,g:Phyllobacterium,s:Phyllobacterium endophyticum
+KS-08	87.909	1315	147	11	18	1325	1	1310	0.0	1552	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Ensifer,s:Ensifer adhaerens
+KS-08	88.034	1312	139	17	24	1325	1	1304	0.0	1552	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Phyllobacteriaceae,g:Phyllobacterium,s:Phyllobacterium brassicacearum
+KS-08	87.936	1318	142	16	18	1325	1	1311	0.0	1552	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Phyllobacteriaceae,g:Chelativorans,s:Chelativorans composti
+KS-08	87.955	1320	135	22	18	1325	1	1308	0.0	1550	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Phyllobacteriaceae,g:Phyllobacterium,s:DQ856537_s
+KS-08	87.833	1315	148	11	18	1325	1	1310	0.0	1546	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Ensifer,s:Ensifer americanus
+KS-08	87.681	1315	150	11	18	1325	1	1310	0.0	1541	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Ensifer,s:Ensifer fredii
+KS-08	87.706	1334	131	23	18	1325	1	1327	0.0	1539	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Shinella,s:Shinella daejeonensis
+KS-08	87.991	1299	143	13	36	1325	1	1295	0.0	1537	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:JQ426719_s
+KS-08	87.690	1316	148	13	18	1325	1	1310	0.0	1535	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Pararhizobium,s:LMDA_s
+KS-08	88.599	1263	128	16	73	1325	53	1309	0.0	1535	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Phyllobacteriaceae,g:Phyllobacterium,s:Phyllobacterium sophorae
+KS-08	87.614	1316	149	13	18	1325	1	1310	0.0	1530	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Ensifer,s:Ensifer glycinis
+KS-08	87.670	1322	137	26	18	1325	1	1310	0.0	1530	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Cohaesibacteraceae,g:HM799009_g,s:HM799009_s
+KS-08	87.642	1319	143	19	18	1325	1	1310	0.0	1530	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Phyllobacteriaceae,g:Phyllobacterium,s:Phyllobacterium trifolii
+KS-08	87.633	1318	144	19	19	1325	1	1310	0.0	1528	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Cohaesibacteraceae,g:JF514260_g,s:GU118281_s
+KS-08	87.538	1316	152	12	18	1325	1	1312	0.0	1526	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:DQ486506_o,f:DQ486506_f,g:DQ486506_g,s:JX047084_s
+KS-08	88.569	1251	135	8	81	1325	37	1285	0.0	1526	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Ensifer,s:Ensifer sesbaniae
+KS-08	87.529	1315	152	11	18	1325	1	1310	0.0	1524	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Ensifer,s:Ensifer mexicanus
+KS-08	87.538	1316	150	13	18	1325	1	1310	0.0	1524	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Ensifer,s:Ensifer sojae
+KS-08	87.509	1321	143	22	18	1325	1	1312	0.0	1520	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Phyllobacteriaceae,g:Hoeflea,s:EF123312_s
+KS-08	87.462	1316	151	13	18	1325	1	1310	0.0	1519	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Ciceribacter,s:Ciceribacter thiooxidans
+KS-08	87.750	1298	146	13	36	1325	3	1295	0.0	1519	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Pararhizobium,s:Pararhizobium sphaerophysae
+KS-08	87.348	1320	145	21	18	1325	1	1310	0.0	1519	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Phyllobacteriaceae,g:Phyllobacterium,s:Phyllobacterium myrsinacearum
+KS-08	87.586	1313	143	19	24	1325	1	1304	0.0	1519	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Phyllobacteriaceae,g:Phyllobacterium,s:Phyllobacterium bourgognense
+KS-08	87.443	1322	144	22	18	1325	1	1314	0.0	1517	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhodobiaceae,g:Microbaculum,s:Microbaculum marinum
+KS-08	87.434	1329	138	26	18	1325	1	1321	0.0	1517	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Kordiimonadales,f:Kordiimonadaceae,g:Kordiimonas,s:Kordiimonas sediminis
+KS-08	87.386	1316	156	10	18	1325	1	1314	0.0	1517	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:DQ486506_o,f:DQ486506_f,g:DQ486506_g,s:JF767280_s
+KS-08	88.419	1252	135	10	81	1325	34	1282	0.0	1515	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Ensifer,s:Ensifer shofinae
+KS-08	87.386	1316	152	13	18	1325	1	1310	0.0	1513	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Ensifer,s:Ensifer terangae
+KS-08	87.396	1317	150	15	18	1325	1	1310	0.0	1513	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Ensifer,s:Ensifer aridi
+KS-08	87.396	1317	150	14	18	1325	1	1310	0.0	1513	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Ensifer,s:Ensifer saheli
+KS-08	87.376	1315	154	11	18	1325	1	1310	0.0	1513	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Rhizobium,s:Rhizobium azooxidifex
+KS-08	87.330	1326	146	19	18	1325	1	1322	0.0	1513	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Kordiimonadales,f:Kordiimonadaceae,g:Kordiimonas,s:JQ032462_s
+KS-08	87.386	1316	152	13	18	1325	1	1310	0.0	1513	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Ensifer,s:Sinorhizobium chiapanecum
+KS-08	87.386	1316	151	14	18	1325	1	1309	0.0	1511	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Ensifer,s:Ensifer kummerowiae
+KS-08	87.300	1315	157	10	18	1325	1	1312	0.0	1509	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Brucellaceae,g:Mycoplana,s:NWUC_s
+KS-08	87.310	1316	155	12	18	1325	1	1312	0.0	1509	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Pararhizobium,s:LMFA_s
+KS-08	87.510	1313	140	23	28	1325	1	1304	0.0	1509	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhodobiaceae,g:Tepidamorphus,s:Tepidamorphus gemmatus
+KS-08	87.348	1320	147	20	19	1325	2	1314	0.0	1509	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhodobiaceae,g:Lutibaculum,s:Lutibaculum baratangense
+KS-08	88.212	1264	131	18	73	1325	138	1394	0.0	1507	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Phyllobacteriaceae,g:Phyllobacterium,s:Phyllobacterium loti
+KS-08	87.322	1333	134	22	18	1325	1	1323	0.0	1507	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Hyphomicrobiaceae,g:DQ395471_g,s:JQ347372_s
+KS-08	87.348	1320	146	20	18	1325	1	1311	0.0	1507	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhodobiaceae,g:FJ825967_g,s:FJ825967_s
+KS-08	87.310	1316	153	13	18	1325	1	1310	0.0	1507	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Ensifer,s:Ensifer medicae
+KS-08	87.330	1326	141	20	18	1325	1	1317	0.0	1507	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Kordiimonadales,f:Kordiimonadaceae,g:Kordiimonas,s:Kordiimonas gwangyangensis
+KS-08	87.329	1318	149	17	18	1325	1	1310	0.0	1507	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Rhizobium,s:Rhizobium daejeonense
+KS-08	87.255	1326	146	16	18	1325	1	1321	0.0	1506	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Kordiimonadales,f:Kordiimonadaceae,g:Kordiimonas,s:Kordiimonas aestuarii
+KS-08	87.274	1328	142	18	18	1325	1	1321	0.0	1506	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Hyphomicrobiaceae,g:Tepidicaulis,s:BAOK_s
+KS-08	87.320	1317	150	16	18	1325	1	1309	0.0	1506	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Ensifer,s:Ensifer numidicus
+KS-08	87.329	1318	148	17	18	1325	1	1309	0.0	1506	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Ensifer,s:Ensifer morelensis
+KS-08	87.433	1305	150	14	30	1325	1	1300	0.0	1504	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Rhizobium,s:Rhizobium helanshanense
+KS-08	87.443	1314	139	19	18	1316	1	1303	0.0	1504	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bauldia_f,g:Bauldia,s:AM935446_s
+KS-08	87.244	1317	152	15	18	1325	1	1310	0.0	1502	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Ensifer,s:Ensifer meliloti
+KS-08	87.253	1318	150	17	18	1325	1	1310	0.0	1502	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Phyllobacteriaceae,g:Tianweitania,s:Tianweitania sediminis
+KS-08	87.263	1319	148	18	18	1325	1	1310	0.0	1502	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Rhizobium,s:DQ401094_s
+KS-08	87.338	1311	150	15	24	1325	1	1304	0.0	1502	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Phyllobacteriaceae,g:Phyllobacterium,s:Phyllobacterium ifriqiyense
+KS-08	87.253	1318	150	17	18	1325	1	1310	0.0	1502	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Ensifer,s:Ensifer garamanticus
+KS-08	87.292	1322	142	22	18	1325	1	1310	0.0	1502	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Phyllobacteriaceae,g:Aquamicrobium,s:Aquamicrobium lusatiense
+KS-08	87.215	1314	157	11	18	1325	1	1309	0.0	1500	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Hyphomicrobiaceae,g:Anderseniella,s:Anderseniella baltica
+KS-08	87.187	1319	151	18	18	1325	1	1312	0.0	1498	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Phyllobacteriaceae,g:Aliihoeflea,s:Aliihoeflea aestuarii
+KS-08	87.216	1322	144	24	18	1325	1	1311	0.0	1496	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Phyllobacteriaceae,g:Nitratireductor,s:Nitratireductor aestuarii
+KS-08	87.197	1320	147	22	18	1325	1	1310	0.0	1496	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Pseudoxanthobacter_f,g:Amorphus,s:Amorphus coralli
+KS-08	87.104	1326	149	15	18	1325	1	1322	0.0	1496	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Kordiimonadales,f:Kordiimonadaceae,g:Kordiimonas,s:HQ225065_s
+KS-08	87.981	1273	143	10	18	1286	1	1267	0.0	1496	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Parvibaculum_f,g:Parvibaculum,s:Parvibaculum indicum
+KS-08	87.168	1317	153	15	18	1325	1	1310	0.0	1496	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Ensifer,s:Ensifer arboris
+KS-08	87.148	1315	156	13	19	1325	2	1311	0.0	1495	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodospirillales,f:Rhodospirillaceae,g:Roseospirillum,s:Roseospirillum parvum
+KS-08	87.253	1318	143	17	18	1316	1	1312	0.0	1495	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bauldia_f,g:Bauldia,s:AB630720_s
+KS-08	87.244	1317	142	22	23	1325	1	1305	0.0	1493	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Phyllobacteriaceae,g:Aquamicrobium,s:Aquamicrobium defluvii
+KS-08	88.044	1263	132	17	73	1325	26	1279	0.0	1493	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodospirillales,f:Rhodospirillaceae,g:Aestuariispira,s:EF092257_s
+KS-08	87.280	1305	152	13	29	1325	1	1299	0.0	1493	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Ensifer,s:Ensifer kostiensis
+KS-08	87.111	1319	149	21	19	1325	2	1311	0.0	1489	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Cohaesibacteraceae,g:JF514260_g,s:FJ202972_s
+KS-08	87.029	1326	149	19	18	1325	1	1321	0.0	1489	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Kordiimonadales,f:Kordiimonadaceae,g:EU287303_g,s:DQ917818_s
+KS-08	87.072	1315	156	14	21	1325	1	1311	0.0	1489	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:DQ486506_o,f:DQ486506_f,g:DQ486506_g,s:DQ486506_s
+KS-08	87.036	1319	153	16	18	1325	1	1312	0.0	1487	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:DQ486506_o,f:DQ486506_f,g:DQ486506_g,s:CP016093_s
+KS-08	87.075	1323	144	24	18	1325	1	1311	0.0	1487	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Phyllobacteriaceae,g:Aquamicrobium,s:Aquamicrobium segne
+KS-08	87.045	1320	149	19	18	1325	1	1310	0.0	1485	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Pararhizobium,s:Pararhizobium antarcticum
+KS-08	86.973	1328	147	23	18	1325	1	1322	0.0	1485	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Kordiimonadales,f:Kordiimonadaceae,g:Kordiimonas,s:Kordiimonas lipolytica
+KS-08	87.045	1320	149	18	18	1325	1	1310	0.0	1485	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Pararhizobium,s:LMEY_s
+KS-08	87.055	1321	148	21	18	1325	1	1311	0.0	1485	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Phyllobacteriaceae,g:Ahrensia,s:Ahrensia marina
+KS-08	87.045	1320	149	18	18	1325	1	1310	0.0	1485	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Pararhizobium,s:JQJO_s
+KS-08	87.857	1260	142	11	73	1325	18	1273	0.0	1483	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Kordiimonadales,f:Kordiimonadaceae,g:Kordiimonas,s:EF092185_s
+KS-08	87.968	1255	135	16	81	1325	49	1297	0.0	1482	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Ensifer,s:Ensifer psoraleae
+KS-08	86.960	1319	154	18	18	1325	1	1312	0.0	1482	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhodobiaceae,g:Breoghania,s:AY588950_s
+KS-08	86.950	1318	154	17	18	1325	1	1310	0.0	1480	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Ensifer,s:Ensifer alkalisoli
+KS-08	87.826	1265	135	19	73	1325	32	1289	0.0	1480	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Phyllobacteriaceae,g:Phyllobacterium,s:Phyllobacterium catacumbae
+KS-08	87.033	1311	151	19	28	1325	1	1305	0.0	1476	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodospirillales,f:Rhodospirillaceae,g:Pelagibius,s:AY258098_s
+KS-08	86.914	1322	149	24	18	1325	1	1312	0.0	1476	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Phyllobacteriaceae,g:Hoeflea,s:Hoeflea phototrophica
+KS-08	86.848	1323	148	25	18	1325	1	1312	0.0	1474	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Kaistia_f,g:Kaistia,s:Kaistia adipata
+KS-08	86.798	1318	158	16	18	1325	1	1312	0.0	1471	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Phyllobacteriaceae,g:Hoeflea,s:AJ890097_s
+KS-08	86.757	1329	149	16	18	1325	1	1323	0.0	1469	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Hyphomicrobiaceae,g:GQ246350_g,s:DQ860071_s
+KS-08	86.778	1316	160	13	18	1325	1	1310	0.0	1469	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Rhizobium,s:AF235998_s
+KS-08	89.270	1165	117	8	167	1325	131	1293	0.0	1467	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Rhizobium,s:Rhizobium alvei
+KS-08	86.767	1330	145	23	18	1325	1	1321	0.0	1467	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodospirillales,f:Rhodospirillaceae,g:FJ358857_g,s:FJ358857_s
+KS-08	87.749	1257	134	19	81	1325	52	1300	0.0	1465	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Phyllobacteriaceae,g:Corticibacterium,s:Corticibacterium populi
+KS-08	87.700	1252	144	10	81	1325	47	1295	0.0	1465	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Ciceribacter,s:Ciceribacter lividus
+KS-08	86.692	1315	165	10	18	1325	1	1312	0.0	1465	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Rhizobium,s:Rhizobium halophytocola
+KS-08	87.700	1252	144	10	81	1325	34	1282	0.0	1465	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Rhizobium,s:Rhizobium subbaraonis
+KS-08	87.852	1243	139	12	81	1316	42	1279	0.0	1463	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Pararhizobium,s:Pararhizobium capsulatum
+KS-08	86.712	1317	159	15	18	1325	1	1310	0.0	1463	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Rhizobium,s:LMDR_s
+KS-08	86.667	1320	161	13	18	1325	1	1317	0.0	1463	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Erythrobacteraceae,g:Altererythrobacter,s:FM209356_s
+KS-08	86.742	1320	153	22	18	1325	1	1310	0.0	1463	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Cohaesibacteraceae,g:DQ395424_g,s:DQ395424_s
+KS-08	86.782	1324	145	28	18	1325	1	1310	0.0	1463	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Kaistia_f,g:Kaistia,s:Kaistia geumhonensis
+KS-08	86.662	1327	152	18	18	1325	1	1321	0.0	1461	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Kordiimonadales,f:Kordiimonadaceae,g:Kordiimonas,s:Kordiimonas aquimaris
+KS-08	86.646	1318	161	15	18	1325	1	1313	0.0	1459	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Rhizobium,s:Rhizobium populi
+KS-08	87.343	1272	147	14	63	1325	2	1268	0.0	1459	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Cohaesibacteraceae,g:GQ441313_g,s:GU233828_s
+KS-08	86.667	1320	156	17	18	1325	1	1312	0.0	1459	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Microvirga,s:Microvirga subterranea
+KS-08	86.591	1320	157	20	18	1325	1	1312	0.0	1454	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Cohaesibacteraceae,g:JF514260_g,s:JF514260_s
+KS-08	86.550	1316	166	11	18	1325	1	1313	0.0	1454	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:FJ793198_g,s:FJ793198_s
+KS-08	86.472	1338	149	17	18	1325	1	1336	0.0	1454	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhodospirillales,f:Rhodospirillaceae,g:AJ890093_g,s:AJ890093_s
+KS-08	86.531	1329	151	25	18	1325	1	1322	0.0	1452	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Kordiimonadales,f:Kordiimonadaceae,g:Kordiimonas,s:Kordiimonas lacus
+KS-08	87.007	1293	147	21	43	1325	15	1296	0.0	1452	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Pseudoxanthobacter_f,g:Amorphus,s:Amorphus orientalis
+KS-08	86.550	1316	163	13	18	1325	1	1310	0.0	1452	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Rhizobiaceae,g:Rhizobium,s:Rhizobium rosettiformans
+KS-08	86.631	1324	148	27	18	1325	1	1311	0.0	1452	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Phyllobacteriaceae,g:Ahrensia,s:Ahrensia kielensis
+KS-08	86.917	1307	140	28	42	1325	11	1309	0.0	1452	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Hyphomicrobiaceae,g:Tepidicaulis,s:Tepidicaulis marinus
+KS-08	86.556	1324	150	24	18	1325	1	1312	0.0	1448	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Phyllobacteriaceae,g:Oricola,s:Oricola cellulosilytica
+KS-08	86.531	1329	147	27	18	1325	1	1318	0.0	1448	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Hyphomicrobiaceae,g:ALYF_g,s:EF574506_s
+KS-08	87.274	1273	154	8	18	1286	1	1269	0.0	1448	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Parvibaculum_f,g:Parvibaculum,s:Parvibaculum lavamentivorans
+KS-08	86.436	1327	157	18	18	1325	1	1323	0.0	1447	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:DQ486506_o,f:DQ486506_f,g:AY625147_g,s:FM242428_s

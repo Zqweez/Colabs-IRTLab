@@ -4,7 +4,7 @@ library(seqinr)
 library(Biostrings)
 library(ggplot2)
 library(stringr)
-library(dplyr)
+library(tidyverse)
 library(dichromat)
 library(ComplexHeatmap)
 library(dendextend)
@@ -14,6 +14,8 @@ library(RColorBrewer)
 library(colorspace) 
 library(Polychrome)
 library(viridis)
+library(parallel)
+library(doSNOW)
 
 # Load MSA file
 msa_file <- "data/sanger/KS_only_formatted_consensus.fasta" # File with only one KS filtered for summary
@@ -40,7 +42,7 @@ names(dna) <- sprintf("%s", df$sample)
 writeXStringSet(dna, filepath = "data/sanger/formatted_consensus.fasta", format   = "fasta")
 
 # Prepare the taxa
-taxa_strains <- read.csv("data/sanger/blast_top_hit_ezbio.tsv", sep = "\t", header = TRUE)
+taxa_strains <- read.csv("data/sanger/blast_top_hit_single_KS.tsv", sep = "\t", header = TRUE)
 taxa_strains <- taxa_strains %>%
   mutate(
     genus = sub(",s:.*", "", sub(".*g:", "", taxa)),
@@ -57,19 +59,28 @@ alignment_type <- "local" # or "global"
 gap_opening <- -5
 gap_extension <- -2
 
-sub_df <- df %>% filter(str_starts(sample,"KS"))
+sub_df <- df %>% 
+  filter(str_starts(sample,"KS")) %>%
+  filter(!str_starts(sample,"KS-28")) %>%
+  group_by(group) %>%
+  slice_head(n = 1) %>%
+  mutate(
+    sample = group  # Use the group name as the sample name
+  )
+
+
 dna_set <- DNAStringSet(sub_df$sequence)
 names(dna_set) <- sub_df$sample
 
 # Create empty matrix
 alignment_results <- data.frame()
 n <- length(dna_set)
-sequence_lengths <- setNames(nchar(df$sequence), df$sample) # To calculate weighed PID score
+sequence_lengths <- setNames(nchar(sub_df$sequence), sub_df$sample) # To calculate weighed PID score
 
 num_cores <- max(1L, parallel::detectCores() - 2L)
 cl <- makeCluster(num_cores)
 registerDoSNOW(cl)
-cat(paste("Registered", num_cores, "cores for parallel processing.\n"))
+cat("Registered", num_cores, "cores.\n")
 # Generate all unique pairs of indices to iterate over
 pairs <- combn(1:n, 2, simplify = FALSE)
 
@@ -91,7 +102,7 @@ alignment_results_parallel <- foreach(
   
   # Perform pairwise alignment (same logic as before)
   aln <- pwalign::pairwiseAlignment(dna_set[[i]], dna_set[[j]],
-                                    type = alignment_type,
+                                       type = alignment_type,
                                     substitutionMatrix = NULL,
                                     gapOpening = gap_opening,
                                     gapExtension = gap_extension
@@ -134,18 +145,6 @@ alignment_results <- identity_matrix %>%
                names_to  = "Sample2",
                values_to = "pid_weighted")
 
-# Heatmap
-heat_colors <- c("#000000", "#120054", "#71047a", "#cf2649", "#fe9564", "#ffdda1", "#ffffda") # c("white", "white", "lightblue", "steelblue", "grey10")
-ggplot(alignment_results, aes(Sample1, Sample2, fill = pid_weighted)) +
-  geom_tile(color = "white") +
-  scale_fill_gradientn(colors = heat_colors, values = scales::rescale(c(0, 30, 40, 60, 80, 97, 100)), limits = c(0, 100)) +
-  #scale_fill_viridis(option = "G", name = "Abundance", direction = 1, na.value = "white") +
-  xlab("") + ylab("") +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 6), axis.text.y = element_text(size = 6)) +
-  labs(title = "Pairwise Aligned (local) Sequence Identity Heatmap", subtitle = "Weighted by alignment length / shortest sequence", fill = "% Identity")
-ggsave("results/sanger_plots/Heatmap-local-weighted-align-fire.pdf", width = 8, height = 8)
-
 ## Hierarcheal clustering of the pid data
 distance_matrix <- 100 - identity_matrix  # Low pid => high distance
 distance_obj <- as.dist(distance_matrix)
@@ -159,6 +158,7 @@ dev.off()
 
 ## Clustergram with genus in the annotation on the right
 pid_mat <- as.matrix(identity_matrix)
+
 dist_obj <- as.dist(1 - pid_mat / 100)   # values 0-1; 0 = identical
 combined_cols <- colorRamp2(
   c(0, 90, 95),
@@ -194,7 +194,7 @@ ht <- Heatmap(
     color_ide <- ifelse(identity_i < 20, "#bbb", "#000")
     grid.text(sprintf("%.0f", identity_i),        # one decimal place
               x, y,
-              gp = gpar(fontsize = 4, col = color_ide))# change to white if fill is dark
+              gp = gpar(fontsize = 6, col = color_ide))# change to white if fill is dark
   },
   
   # cosmetic
@@ -235,7 +235,7 @@ pastelise <- function(cols, desat = 0.6, lighten = 0.3) {
     lighten  (amount = lighten)      # push luminance up toward white
 }
 gen_cols <- pastelise(gen_cols)
-names(gen_cols) <- c(cluster_levels)
+names(gen_cols) <- cluster_levels
 
 # Order the annotation in a nice order
 cluster_to_genus <- setNames(clu_genus$genus_lab, clu_genus$cluster)
@@ -265,11 +265,13 @@ row_anno <- rowAnnotation(
 
 ht_full <- ht + row_anno
 
-pdf("results/sanger_plots/Heatmap-genus-ks-complete.pdf", width = 9, height = 8, useDingbats = FALSE)  # safer for non-standard fonts
-draw(ht_full)
+pdf("results/sanger_plots/Heatmap-genus-ks-presentation.pdf", width = 9, height = 8, useDingbats = FALSE, bg = "transparent")  # safer for non-standard fonts
+grid.newpage()                   # start a blank (transparent) page
+draw(ht_full,
+     newpage = FALSE, background = NA) 
 grid.text(
   "Local weighted alignment, average linkage",
-  x = unit(0.44, "npc"),                    # centred
+  x = unit(0.44, "npc"),                    # centered
   y = unit(1, "npc") - unit(24, "pt"),                   
   gp = gpar(fontsize = 10)
 )
@@ -296,7 +298,7 @@ ggplot(pca_df, aes(x = PC1, y = PC2, color = group, label = Sample)) +
   ylab(sprintf("PC2 (%s)%%", round(100 * pca_var[2], 1))) +
   labs(title = "PCA of Pairwise Identity local weighted")
 
-ggsave("figures/PCA-PID-weighted-PC1-PC2.pdf", width = 8, height = 5)
+#ggsave("figures/PCA-PID-weighted-PC1-PC2.pdf", width = 8, height = 5)
 
 ## K-means from the identity matrix and plotted with PCA
 set.seed(42)
@@ -317,4 +319,4 @@ ggplot(pca_df, aes(x = PC1, y = PC2, color = Cluster, label = Sample)) +
   geom_text(vjust = -1, size = 1.5, show.legend = FALSE) +
   theme_minimal() +
   labs(title = "PCA of weighted PID + K-means Clustering", subtitle = sprintf("Based on PC1-6, K=%s", k))
-ggsave("figures/K-means-PC1-6-local-wieghted.pdf", width = 8, height = 5)
+#ggsave("figures/K-means-PC1-6-local-wieghted.pdf", width = 8, height = 5)

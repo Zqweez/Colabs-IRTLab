@@ -1,0 +1,27 @@
+query	pident	length	mismatch	gapopen	qstart	qend	sstart	send	evalue	bitscore	taxa
+KS-01	98.169	1311	18	6	25	1329	1	1311	0.0	2289.0	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium paulinellae
+KS-02	98.197	1276	20	3	23	1295	1	1276	0.0	2235.0	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium paulinellae
+KS-03	98.538	1300	17	2	25	1322	1	1300	0.0	2311.0	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Cupriavidus,s:Cupriavidus plantarum
+KS-04	99.451	1275	4	3	23	1295	1	1274	0.0	2318.0	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium oryzae
+KS-05	98.399	1312	18	3	19	1327	1	1312	0.0	2320.0	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Cupriavidus,s:Cupriavidus plantarum
+KS-06	99.236	1309	7	3	24	1329	1	1309	0.0	2370.0	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Alcaligenaceae,g:Achromobacter,s:Achromobacter insolitus
+KS-07	98.226	1240	20	2	21	1258	1	1240	0.0	2176.0	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium paulinellae
+KS-08	97.942	1312	23	4	18	1325	1	1312	0.0	2285.0	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium paulinellae
+KS-09	98.852	1307	9	6	21	1321	1	1307	0.0	2337.0	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium oryzae
+KS-10	98.826	1363	8	8	24	1378	1	1363	0.0	2433.0	tax=d:Bacteria,p:Proteobacteria,c:Gammaproteobacteria,o:Xanthomonadales,f:Xanthomonadaceae,g:Stenotrophomonas,s:MUYX_s
+KS-11	99.312	1309	7	2	19	1325	1	1309	0.0	2375.0	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Alcaligenaceae,g:Achromobacter,s:Achromobacter xylosoxidans
+KS-20	97.958	1273	22	4	22	1290	1	1273	0.0	2217.0	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium paulinellae
+KS-21	98.812	1263	10	5	22	1279	1	1263	0.0	2263.0	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Brucellaceae,g:Ochrobactrum,s:Ochrobactrum intermedium
+KS-22	98.326	717	12	0	23	739	1	717	0.0	1267.0	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Cupriavidus,s:Cupriavidus plantarum
+KS-23	99.005	1307	6	7	23	1322	1	1307	0.0	2346.0	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Methylobacteriaceae,g:Methylobacterium,s:Methylobacterium oryzae
+KS-24	98.541	1302	17	2	24	1323	1	1302	0.0	2316.0	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Cupriavidus,s:Cupriavidus plantarum
+KS-25	97.995	1247	23	2	17	1261	1	1247	0.0	2178.0	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium paulinellae
+KS-26	98.541	1302	17	2	23	1322	1	1302	0.0	2311.0	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Cupriavidus,s:Cupriavidus plantarum
+KS-27	99.424	1215	6	1	23	1236	1	1215	0.0	2207.0	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bosea_f,g:Bosea,s:Bosea thiooxidans
+KS-29	98.892	1264	11	3	21	1281	1	1264	0.0	2265.0	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Rhizobiales,f:Bosea_f,g:Bosea,s:Bosea thiooxidans
+KS-30	99.07	1290	8	4	21	1306	1	1290	0.0	2324.0	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Alcaligenaceae,g:Achromobacter,s:Achromobacter xylosoxidans
+KS-32	99.232	1302	9	1	11	1311	1	1302	0.0	2350.0	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Cupriavidus,s:Cupriavidus plantarum
+KS-33	98.183	1321	11	13	20	1327	1	1321	0.0	2313.0	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Alcaligenaceae,g:Achromobacter,s:Achromobacter insolitus
+KS-34	99.092	1321	11	1	24	1343	1	1321	0.0	2377.0	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Ralstonia_f,g:Cupriavidus,s:Cupriavidus plantarum
+KS-35	98.189	1270	21	2	21	1288	1	1270	0.0	2228.0	tax=d:Bacteria,p:Proteobacteria,c:Alphaproteobacteria,o:Sphingomonadales,f:Sphingomonadaceae,g:Sphingobium,s:Sphingobium paulinellae
+KS-36	99.461	1298	3	4	21	1314	1	1298	0.0	2361.0	tax=d:Bacteria,p:Proteobacteria,c:Betaproteobacteria,o:Burkholderiales,f:Alcaligenaceae,g:Achromobacter,s:Achromobacter piechaudii

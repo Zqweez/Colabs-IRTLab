@@ -14,7 +14,7 @@ import re
 # --- Config ---
 input_fasta = Path("data/sanger/KS_only_formatted_consensus.fasta")
 # Chose which database to use ezbiocloud/ezbio_db or SILVA/silva_nr99_db base name only, no .nsq etc.
-blast_db = Path("databases/Isolates/isolate_db")
+blast_db = Path("databases/ezbiocloud/ezbio_db")
 vsearch_db = Path("databases/ezbiocloud/ezbiocloud.fa") # VSEARCH database, if using VSEARCH
 
 output_dir = Path("data/sanger/04_taxa_files")

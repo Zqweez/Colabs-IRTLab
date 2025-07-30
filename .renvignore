@@ -1,0 +1,36 @@
+# renv ignore file
+# Exclude data directories and files
+data/
+data/*
+
+# Exclude database directories and files
+databases/
+databases/*
+
+# Exclude results directories and files
+results/
+results/*
+
+# Exclude other common files that shouldn't be tracked by renv
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.xlsx
+*.xls
+*.csv
+*.txt
+*.log
+
+# Exclude R project files
+*.Rproj
+.Rproj.user/
+
+# Exclude system files
+.DS_Store
+Thumbs.db
+
+# Exclude temporary files
+*~
+.#*
+#*#
