@@ -525,7 +525,7 @@ ggplot(sample_quant_summary,
   theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 8),
         strip.text = element_text(size = 8, angle = 0))
 
-ggsave("results/growth_phe/qPCR/cells-ml-samples.pdf", width = 10, height = 8)
+ggsave("results/growth_phe/qPCR/cells-ml-samples.pdf", width = 8, height = 5)
 
 
 # Save quantification results
