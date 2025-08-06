@@ -111,7 +111,7 @@ ggplot(summary_df,
   facet_wrap(~ Combination, scales = "free_x", nrow = 1) +
   scale_fill_manual(values = date_colors, name = "Date") +
   labs(title = "Phenanthrene/Decane Ratios Across Samples",
-       subtitle = "Corrected",
+       subtitle = "Corrected for volume change",
        x = "Duplicate",
        y = "Phenanthrene/Decane (mean ± SD)") +
   theme_minimal() +
@@ -142,9 +142,10 @@ ggplot(summary_nap_df,
   
   facet_wrap(~ Combination, scales = "free_x", nrow = 1) +
   scale_fill_manual(values = date_colors, name = "Date") +
-  labs(title = "Phenanthrene/Decane Ratios Across Samples",
+  labs(title = "Naphthol/Decane Ratios Across Samples",
+       subtitle = "Corrected for volume change",
        x = "Duplicate",
-       y = "Phenanthrene/Decane (mean ± SD)") +
+       y = "Naphthol/Decane (mean ± SD)") +
   theme_minimal() +
   theme(legend.position = "bottom")
 ggsave("results/gcms_plots/l-tubes-nap-corrected-final.pdf", width = 8, height = 5)

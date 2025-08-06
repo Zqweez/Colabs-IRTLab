@@ -344,7 +344,8 @@ genes_long <- genes_plot_data %>%
       Gene == "Corrected_Cq_phnAc" ~ "phnAc",
       TRUE ~ Gene
     )
-  )
+  ) %>%
+  filter(!is.na(Cq))
 
 # Calculate EHC reference values for normalization (EHC samples, excluding EHC-od)
 ehc_reference <- genes_long %>%
@@ -378,13 +379,13 @@ genes_long_normalized <- genes_long %>%
 genes_summary <- genes_long_normalized %>%
   group_by(bio_rep, Combination, Gene) %>%
   summarise(
-    mean_fold_change = mean(fold_change, na.rm = TRUE),
-    sd_fold_change = sd(fold_change, na.rm = TRUE),
+    mean_Cq_change = mean(Cq, na.rm = TRUE),
+    sd_Cq_change = sd(Cq, na.rm = TRUE),
     n = n(),
     .groups = "drop"
   ) %>%
   # Handle cases where sd is NA (only one replicate)
-  mutate(sd_fold_change = ifelse(is.na(sd_fold_change), 0, sd_fold_change))
+  mutate(sd_Cq_change = ifelse(is.na(sd_Cq_change), 0, sd_Cq_change))
 
 # Define colors for genes
 gene_colors <- c('nidA' = '#e56562', 'phnAc' = '#51c558')
@@ -397,30 +398,28 @@ pos_jd <- position_jitterdodge(
 
 # First plot: Bio_rep level with both genes (fold change on log scale)
 ggplot(genes_summary,
-       aes(x = bio_rep, y = mean_fold_change, fill = Gene)) +
+       aes(x = bio_rep, y = mean_Cq_change, fill = Gene)) +
   geom_col(position = position_dodge(width = 0.8), width = 0.7) +
   geom_point(data = genes_long_normalized,
-             aes(x = bio_rep, y = fold_change, fill = Gene),
+             aes(x = bio_rep, y = Cq, fill = Gene),
              position = pos_jd,
              shape = 21,
              size = 0.7,
              stroke = 0.6,
              alpha = 0.7) +
-  geom_errorbar(aes(ymin = pmax(mean_fold_change - sd_fold_change, 0.001),  # Prevent negative values on log scale
-                    ymax = mean_fold_change + sd_fold_change),
+  geom_errorbar(aes(ymin = pmax(mean_Cq_change - sd_Cq_change, 0.001),  # Prevent negative values on log scale
+                    ymax = mean_Cq_change + sd_Cq_change),
                 position = position_dodge(width = 0.8),
                 width = 0.25) +
   facet_wrap(~ Combination, scales = "free_x", nrow = 1) +
   scale_fill_manual(values = gene_colors, name = "Gene") +
-  scale_y_log10(labels = function(x) sprintf("%.1f", x)) +
-  labs(title = "Fold Change in Gene Copy Number for Biological Replicates",
-       subtitle = "Normalized to EHC controls, 70% PCR efficiency (log scale)",
+  labs(title = "Quantification Cycle for Biological Replicates",
+       subtitle = "Technical replicates shown as points",
        x = "Biological Replicate",
-       y = "Fold Change in Copy Number (log scale)") +
+       y = "Quantification Cycle (Cq)") +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 8),
-        strip.text = element_text(size = 8, angle = 0)) +
-  geom_hline(yintercept = 1, linetype = "dashed", color = "gray50", alpha = 0.7)
+        strip.text = element_text(size = 8, angle = 0))
 
 ggsave("results/growth_phe/qPCR/genes/Fold-change-per-biorep-nidA-phnAc.pdf", width = 12, height = 6)
 
@@ -539,16 +538,21 @@ combination_summary_labeled <- combination_summary %>%
   left_join(cld_combined, by = c("Combination", "Gene")) %>%
   mutate(
     # Position letters above error bars, accounting for log scale
-    letter_y = mean_fold_change + sd_fold_change + (mean_fold_change * 0.3)
+    letter_y = mean_fold_change + sd_fold_change + 0.2
   )
 
 # Define colors for combinations (you can adjust these as needed)
-combination_colors <- c('KS8-od' = '#e56562', 'EHC-od' = '#51c558', 'EHC' = '#67b4ef', 
-                       'KS8-10' = "#e6ab02", 'KS8-100' = "#fed996", 'KS3-10' = "#1b9e77", 
-                       'KS3-100' = "#7570b3", 'KS3-KS8' = "#fbd3e1", 'NC' = "#a6cee3",
-                       'NC-samp' = "#ff7f00")
+combination_colors <- c('#e56562', '#51c558', '#67b4ef',   "#e6ab02", "#fed996", "#1b9e77", "#7570b3", "#fbd3e1",
+  "#a6cee3", "#b2df8a"
+)
+# combination_colors <- c('KS8-od' = '#e56562', 'EHC-od' = '#51c558', 'EHC' = '#67b4ef', 
+#                        'KS8-10' = "#e6ab02", 'KS8-100' = "#fed996", 'KS3-10' = "#1b9e77", 
+#                        'KS3-100' = "#7570b3", 'KS3-KS8' = "#fbd3e1", 'NC' = "#a6cee3",
+#                        'NC-samp' = "#ff7f00")
 
 # Plot by combination with significance letters, faceted by gene (fold change on log scale)
+y_max <- ceiling(max(combination_summary_labeled$mean_fold_change +
+                       combination_summary_labeled$sd_fold_change)*1.2)
 ggplot(combination_summary_labeled,
        aes(x = Combination, y = mean_fold_change, fill = Combination)) +
   geom_col(position = position_dodge(width = 0.8), width = 0.7) +
@@ -565,20 +569,29 @@ ggplot(combination_summary_labeled,
                 width = 0.25) +
   geom_text(aes(x = Combination, y = letter_y, label = letters),
             size = 3, fontface = "bold") +
-  facet_wrap(~ Gene, scales = "free_y", nrow = 1) +
+  facet_wrap(~ Gene, nrow = 1) +
   scale_fill_manual(values = combination_colors, name = "Combination") +
-  scale_y_log10(labels = function(x) sprintf("%.1f", x)) +
+  scale_y_continuous(
+    breaks        = seq(0, y_max, by = 1),      # major grid every 1
+    minor_breaks  = seq(0, y_max, by = 0.5)    # minor grid every 0.5
+  ) +
   labs(title = "Fold Change in Gene Copy Number per Combination",
        subtitle = "Normalized to EHC controls, 70% PCR efficiency - Letters indicate significance (p<0.05)",
        x = "Combination",
-       y = "Fold Change in Copy Number (log scale)") +
+       y = "Fold Change in Copy Number") +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 8),
         strip.text = element_text(size = 10, face = "bold"),
-        legend.position = "bottom") +
+        legend.position = "none",
+        panel.grid.major.x = element_blank(),                 # keep x grid clean
+        panel.grid.major.y = element_line(colour = "grey40",  # darker major lines
+                                          linewidth = 0.4),
+        panel.grid.minor.y = element_line(colour = "grey70",  # extra horizontal lines
+                                          linewidth = 0.25),
+        panel.grid.minor.x = element_blank()) +
   geom_hline(yintercept = 1, linetype = "dashed", color = "gray50", alpha = 0.7)
 
-ggsave("results/growth_phe/qPCR/genes/Fold-change-per-combination-letters-genes.pdf", width = 12, height = 6)
+ggsave("results/growth_phe/qPCR/genes/nidA-Fold-change-per-combination-letters-genes.pdf", width = 12, height = 8)
 
 cat("\nPlotting completed successfully!\n")
 cat("Generated plots:\n")

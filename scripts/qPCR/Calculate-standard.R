@@ -2,6 +2,7 @@ library(tidyverse)
 library(readxl)
 library(ggplot2)
 library(gridExtra)  # For combining plots
+library(rstatix)    # For statistical analysis
 
 ## Load the sample data both Cq and Amplification
 sample_data_raw <- read_excel("data/phe_growth/qPCR/Kasper_2025-07-28 14-45-16_BR005661 -  Quantification Amplification Results.xlsx", sheet = "SYBR")
@@ -427,7 +428,7 @@ p_combined <- ggplot(combined_data, aes(x = Log10_copies, y = Cq_Value, color = 
 print(p_combined)
 
 # Save the combined plot
-ggsave("results/growth_phe/qPCR/standard_curve_comparison.pdf", p_combined, width = 10, height = 8)
+ggsave("results/growth_phe/qPCR/standard_curve_comparison.pdf", p_combined, width = 12, height = 8)
 
 # Calculate sample concentrations using both curves
 cat("\nCalculating sample concentrations...\n")
@@ -527,6 +528,152 @@ ggplot(sample_quant_summary,
 
 ggsave("results/growth_phe/qPCR/cells-ml-samples.pdf", width = 8, height = 5)
 
+# Add statistical analysis to compare combinations using Wilcoxon tests
+cat("\nPerforming statistical analysis on log10 corrected values...\n")
+
+# Load rstatix for easier statistical testing (if not already loaded)
+if (!require(rstatix, quietly = TRUE)) {
+  install.packages("rstatix")
+  library(rstatix)
+}
+
+# Prepare data for statistical analysis - using corrected values
+sample_quant_stats <- sample_quant %>%
+  select(Sample_Name, bio_rep, Combination, Log10_copies_corrected) %>%
+  filter(!is.na(Log10_copies_corrected))
+
+# Perform Kruskal-Wallis test first
+# H₀: All groups come from the same distribution
+# H₁: At least one group differs in median
+kw_test <- sample_quant_stats %>% 
+  kruskal_test(Log10_copies_corrected ~ Combination)
+cat("Kruskal-Wallis test results:\n")
+print(kw_test)
+
+# Post-hoc pairwise comparisons using Wilcoxon tests
+stat_test <- sample_quant_stats %>%
+  wilcox_test(Log10_copies_corrected ~ Combination, p.adjust.method = "BH") %>%
+  add_significance("p.adj")
+
+cat("\nPairwise Wilcoxon test results:\n")
+print(stat_test)
+
+# Custom function to generate significance letters
+generate_significance_letters <- function(stat_results, alpha = 0.05) {
+  # Get unique groups
+  groups <- unique(c(stat_results$group1, stat_results$group2))
+  groups <- sort(groups)
+  
+  # Create adjacency matrix for significant comparisons
+  n_groups <- length(groups)
+  sig_matrix <- matrix(FALSE, nrow = n_groups, ncol = n_groups)
+  rownames(sig_matrix) <- groups
+  colnames(sig_matrix) <- groups
+  
+  # Fill matrix with significant comparisons (p.adj < alpha)
+  for(i in seq_len(nrow(stat_results))) {
+    if(stat_results$p.adj[i] < alpha) {
+      g1 <- stat_results$group1[i]
+      g2 <- stat_results$group2[i]
+      sig_matrix[g1, g2] <- TRUE
+      sig_matrix[g2, g1] <- TRUE
+    }
+  }
+  
+  # Generate letters using a simple algorithm
+  letters_assigned <- character(n_groups)
+  names(letters_assigned) <- groups
+  current_letter <- 1
+
+  for(i in seq_len(n_groups)) {
+    if(letters_assigned[i] == "") {
+      # Find all groups that are NOT significantly different from this one
+      same_group <- c(i)
+      for(j in (i+1):n_groups) {
+        if(j <= n_groups && !sig_matrix[i, j]) {
+          same_group <- c(same_group, j)
+        }
+      }
+      
+      # Assign the same letter to all groups in this set
+      letter <- letters[current_letter]
+      for(idx in same_group) {
+        if(letters_assigned[idx] == "") {
+          letters_assigned[idx] <- letter
+        } else {
+          # If already has a letter, combine them
+          if (!grepl(letter, letters_assigned[idx])) {
+            letters_assigned[idx] <- paste0(letters_assigned[idx], letter)
+          }
+        }
+      }
+      current_letter <- current_letter + 1
+    }
+  }
+  
+  return(data.frame(
+    Combination = names(letters_assigned),
+    letters = letters_assigned,
+    stringsAsFactors = FALSE
+  ))
+}
+
+# Generate significance letters
+cld_df <- generate_significance_letters(stat_test, alpha = 0.05)
+cat("\nSignificance letters:\n")
+print(cld_df)
+
+# Create summary with letters for the updated plot
+sample_quant_summary_labeled <- sample_quant %>%
+  group_by(Combination) %>% # bio_rep,
+  summarise(
+    mean_log10_corr = mean(Log10_copies_corrected, na.rm = TRUE),
+    sd_log10_corr = sd(Log10_copies_corrected, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  left_join(cld_df, by = "Combination") %>%
+  mutate(letter_y = mean_log10_corr + sd_log10_corr + 0.3)  # Position letters above error bars
+
+# Also create a simpler plot showing combinations without faceting for easier comparison
+y_max <- ceiling(max(combination_summary_labeled$mean_fold_change +
+                       combination_summary_labeled$sd_fold_change)*1.2)
+ggplot(sample_quant_summary_labeled,
+       aes(x = Combination, y = mean_log10_corr,
+           fill = factor(Combination))) +
+  geom_col(width = 0.7) +
+  geom_point(data = sample_quant_stats,
+             aes(x = Combination, y = Log10_copies_corrected,
+                 fill = factor(Combination)),
+             position = position_jitter(width = 0.2),
+             shape = 21,
+             size = 1.5,
+             stroke = 0.6,
+             alpha = 0.7) +
+  geom_errorbar(aes(ymin = mean_log10_corr - sd_log10_corr,
+                    ymax = mean_log10_corr + sd_log10_corr),
+                width = 0.25) +
+  geom_text(aes(x = Combination, y = letter_y, label = letters),
+            size = 4, fontface = "bold") +
+  scale_fill_manual(values = Cq_colors, name = "Combination") +
+  scale_y_continuous(
+    breaks        = seq(0, y_max, by = 1),      # major grid every 1
+    minor_breaks  = seq(0, y_max, by = 0.5)    # minor grid every 0.5
+  ) +
+  labs(title = "Cells/mL Comparison Across Combinations",
+       subtitle = "Letters indicate statistical significance (p<0.05, Wilcoxon test with BH correction)",
+       x = "Consortium Combination",
+       y = expression(Log[10](cells/mL))) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 10),
+        legend.position = "none",
+        panel.grid.major.x = element_blank(),                 # keep x grid clean
+        panel.grid.major.y = element_line(colour = "grey40",  # darker major lines
+                                          linewidth = 0.4),
+        panel.grid.minor.y = element_line(colour = "grey70",  # extra horizontal lines
+                                          linewidth = 0.25),
+        panel.grid.minor.x = element_blank())  # Remove legend since it's redundant with x-axis
+
+ggsave("results/growth_phe/qPCR/cells-ml-combinations-comparison-stats.pdf", width = 10, height = 6)
 
 # Save quantification results
 write.csv(sample_quantification, "results/growth_phe/qPCR/sample_quantification_results.csv", row.names = FALSE)
