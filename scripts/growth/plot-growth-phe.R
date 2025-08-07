@@ -5,7 +5,7 @@ library(slider)
 # ---- Samples are
 # This part is to modify the raw data in dt files and save it as CSV files with a correct header
 samples <- c("20250702-m1.dt1", "20250702-m2.dt2", "20250702-m4.dt4")
-samples <- c("20250714-m1.dt1", "20250714-m2.dt2", "20250714-m4.dt4")
+# samples <- c("20250714-m1.dt1", "20250714-m2.dt2", "20250714-m4.dt4")
 sample <- samples[3]
 
 growth <- read.table(paste0("./data/phe_growth/",sample), sep = ",", header = FALSE)
@@ -50,6 +50,7 @@ growth_long <- growth %>%
     Isolate   = factor(Isolate)
   )
 
+# Calculate the sliding median
 sliding_window <- 5
 growth_smooth <- growth_long %>% 
   group_by(Isolate, Replicate) %>% 
@@ -64,10 +65,31 @@ breaks_sel <- growth$point[seq(1, nrow(growth), by = round(nrow(growth)/16))] # 
 growth_plot <- growth_smooth %>%
   mutate(Iso_rep = sub("_", " ", Iso_rep))
 
+combination_colors <- c(
+  '#e56562',  # warm red
+  '#51c558',  # green
+  '#67b4ef',  # light blue
+  '#e6ab02',  # mustard yellow
+  '#fed996',  # light peach
+  '#1b9e77',  # dark green
+  '#7570b3',  # purple
+  '#fbd3e1',  # pink
+  '#a6cee3',  # sky blue
+  '#b2df8a',  # pastel green
+  '#ff7f00',  # orange
+  '#cab2d6',  # lavender
+  '#ffff99',  # yellow
+  '#fb9a99',  # salmon
+  '#66c2a5',  # teal
+  '#fc8d62',  # coral
+  '#8da0cb',  # steel blue
+  '#e78ac3'   # rose
+)
+
 ggplot(growth_plot,
        aes(x = point, y = OD_smooth,
-           colour = Iso_rep,          # colour → strain family
-           group  = interaction(Isolate, Replicate))) +     # different symbol for -1 / -2
+           color = Iso_rep          # colour → strain family
+           )) +     # group  = interaction(Isolate, Replicate) different symbol for -1 / -2
   geom_line(linewidth = 0.4) +
   geom_point(aes(y = OD600),size = 0.02, alpha = 0.6) +
   scale_x_continuous(
@@ -79,7 +101,8 @@ ggplot(growth_plot,
       name   = "Day & Time since start"
     )
   ) +
-  scale_colour_brewer(palette = "Set1") +
+  scale_fill_manual(values = combination_colors) +
+  # scale_colour_brewer(palette = "Set1") +
   labs(y = expression(OD[600]),
        colour  = "Isolate",
        title   = "Growth curves for Communities") +
@@ -94,69 +117,3 @@ ggplot(growth_plot,
   )
 
 ggsave(paste0("./results/growth_phe/", sample,"-growth-curves.pdf"), width = 8, height = 5)
-
-# Do statistical analysis of the data
-# 
-# library(dplyr)
-# library(tidyr)
-# library(growthcurver)
-# growth_long_stat <- growth_long
-# 
-# fits <- growth_long_stat %>% 
-#   group_by(Isolate, Replicate) %>% 
-#   summarize(
-#     model = list(
-#       SummarizeGrowth(elapsed_h, OD600)   # returns a gcfit object
-#     ),
-#     .groups = "drop"                      # keep one row per group
-#   ) %>%
-#   mutate(
-#     vals = map(model, ~ .x$vals),          # extract the parameters
-#     data = map(model, ~ .x$data)           # extract the data
-#   )
-# # Extract the data from the fits and make it into long format, ready for plotting
-# pred <- fits %>%                                   
-#   mutate(pred_df = map(data, \(d)                   
-#                        tibble(elapsed_h = d$t,                       
-#                               OD_fit    = d$N)                       
-#   )) %>%
-#   select(Isolate, Replicate, pred_df) %>%          
-#   unnest(pred_df) %>%                             
-#   mutate(Replicate = factor(Replicate)) 
-# 
-# # Plot the fitted curves
-# shape_vals    <- c(`1` = 16, `2` = 17)             
-# linetype_vals <- c(`1` = "dashed", `2` = "dotted")
-# 
-# ggplot(data = growth_long, 
-#        aes(x = elapsed_h, y = OD600,
-#            colour = Isolate,
-#            shape  = factor(Replicate))) +
-#   geom_point(size = 0.5, alpha = 0.8) +
-#   geom_line(linewidth = 0.1) +
-#   geom_line(data = pred,
-#             aes(x = elapsed_h, y = OD_fit,
-#                 colour   = Isolate,
-#                 linetype = Replicate,                       # dashed vs dotted
-#                 group    = interaction(Isolate, Replicate)),
-#             linewidth = 0.5) +
-#   scale_shape_manual(values = shape_vals,    name = "Replicate") +
-#   scale_linetype_manual(values = linetype_vals, name = "Replicate") +
-#   scale_colour_brewer(palette = "Set1") +
-#   scale_x_continuous(
-#     name   = "Datapoint",
-#     breaks = breaks_sel,
-#     sec.axis = dup_axis(
-#       breaks = breaks_sel,
-#       labels = growth$time_lbl[match(breaks_sel, growth$point)],
-#       name   = "Day & Time since start"
-#     )
-#   ) +
-#   labs(y = expression(OD[600]),
-#        colour  = "Isolate",
-#        title   = "Growth curves: raw vs model") +
-#   theme_minimal(base_size = 12) +
-#   theme(
-#     axis.text.x.top  = element_text(size = 8, angle = 45, hjust = 0),
-#     plot.title       = element_text(hjust = 0.5)
-#   )

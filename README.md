@@ -2,7 +2,7 @@
 
 This repository is associated with the work done in the IRTLab at the Laboratory of Microbial Genetics and Evolution, Graduate School of Life Sciences, Tohoku University.
 
-This repository contains comprehensive scripts, data structures, and workflows for analyzing microbial data generated from GC-MS, Sanger sequencing, next-generation sequencing (NGS), and growth curve experiments. The project characterizes microbial isolates, quantifies phenanthrene degradation, performs taxonomic identification, and clusters microbial communities based on sequence similarity and phylogenetic relationships.
+This repository contains comprehensive scripts, data structures, and workflows for analyzing microbial data generated from GC-MS, qPCR gene expression analysis, Sanger sequencing, next-generation sequencing (NGS), and growth curve experiments. The project characterizes microbial isolates, quantifies phenanthrene degradation through both chemical analysis (GC-MS) and qPCR of degradation genes, performs taxonomic identification, and clusters microbial communities based on sequence similarity and phylogenetic relationships.
 
 ------------------------------------------------------------------------
 
@@ -14,6 +14,9 @@ project-root/
 │   ├── gcms_raw/           # GC-MS chromatogram data (.txt, .xlsx, .pdf)
 │   ├── growth/             # Growth curve data (.dt files, .csv, .txt)
 │   ├── phe_growth/         # Phenanthrene growth experiments
+│   │   └── qPCR/           # qPCR data for gene expression analysis
+│   │       ├── nidA/       # nidA gene expression data
+│   │       └── phnAc/      # phnAc gene expression data
 │   ├── ngs/                # NGS sequencing data
 │   │   ├── raw_reads/      # Raw FASTQ files
 │   │   ├── filtered/       # Filtered reads
@@ -39,7 +42,8 @@ project-root/
 │   ├── gcms/              # GC-MS analysis (R)
 │   ├── growth/            # Growth curve analysis (R)
 │   ├── ngs/               # NGS pipelines (Python, R, Quarto)
-│   └── sanger/            # Sanger sequencing analysis (R)
+│   ├── qPCR/              # qPCR gene expression analysis (R)
+│   └── sanger/            # Sanger sequencing analysis (R, Python)
 ├── install_packages.R      # Automated R package installation
 ├── setup_renv.R           # Reproducible environment setup
 ├── R_ENVIRONMENT_SETUP.md  # Detailed environment guide
@@ -51,43 +55,58 @@ project-root/
 
 ## Analysis Workflows
 
-### 1. GC-MS Analysis (Phenanthrene Degradation)
+### 1. GC-MS and qPCR Analysis (Integrated Phenanthrene Degradation Study)
 
-**Goal**: Quantify phenanthrene degradation using GC-MS chromatography.
+**Goal**: Quantify phenanthrene degradation using GC-MS chromatography and analyze gene abundance using qPCR. Also using qPCR of 16S rRNA to quantify the growth and using an external standard converting the Cq values to cells/mL. These analyses are conducted on the same sample sets to provide complementary evidence of degradation activity.
 
 **Data**:
 - `data/gcms_raw/L-tubes.xlsx`: Processed phenanthrene/decane ratios
 - `data/gcms_raw/naphtol-calibration.xlsx`: 1-Naphthol calibration data
 - `data/gcms_raw/*.txt`: Raw chromatogram outputs
 - `data/gcms_raw/*.pdf`: Chromatogram visualizations
+- `data/phe_growth/qPCR/*.xlsx`: qPCR results including Cq values, standard curves, and amplification data
+- `data/phe_growth/qPCR/nidA/`: nidA gene expression data (ring-hydroxylating dioxygenase)
+- `data/phe_growth/qPCR/phnAc/`: phnAc gene expression data (phenanthrene dioxygenase)
 
 **Scripts**:
 - `scripts/gcms/GCMS-phe-nap.R`: Analyzes phenanthrene degradation across samples and dates
-- `scripts/gcms/GCMS-nap-calibration.R`: Naphthol calibration curve analysis
+- `scripts/gcms/GCMS-nap-calibration.R`: 1-Naphthol calibration curve analysis
+- `scripts/qPCR/plot-qPCR.R`: Visualization of 16S rRNA qPCR results.
+- `scripts/qPCR/analyze-qPCR.R`: Comprehensive qPCR data analysis and Cq calculations for 16S rRNA
+- `scripts/qPCR/Calculate-standard.R`: Standard curve generation and efficiency calculations for 16S rRNA
+- `scripts/qPCR/phe-genes-qPCR.R`: Gene expression analysis for phenanthrene degradation genes
 
-**Output**: `results/gcms_plots/` - Bar plots with error bars showing degradation over time
+**Features**:
+- Integrated analysis of chemical degradation (GC-MS) and gene expression (qPCR)
+- Standard curve validation and efficiency calculations
+- Multi-gene expression profiling (nidA, phnAc)
+- Statistical analysis of expression levels across isolates
+
+**Output**: `results/gcms_plots/` - Chemical degradation analysis, qPCR gene expression plots, and integrated degradation assessments
 
 ---
 
-### 2. Growth Curve Analysis
+### 2. Growth Curve Analysis (Phenanthrene-Supplemented Media)
 
-**Goal**: Analyze microbial growth using OD600 measurements from biophotorecorder.
+**Goal**: Analyze microbial growth in phenanthrene-supplemented media using OD600 measurements from biophotorecorder.
+
+**Note**: Basic LB media growth curves have been removed from the final analysis to focus on phenanthrene-specific growth responses.
 
 **Data**:
-- `data/growth/*.dt*`: Raw biophotorecorder data files
-- `data/growth/*.csv`: Converted growth data with headers
 - `data/phe_growth/*.dt*`: Growth with phenanthrene supplementation
+- `data/phe_growth/*.csv`: Converted growth data with headers
 
 **Scripts**:
-- `scripts/growth/plot-growth.R`: Basic growth curve visualization and statistical modeling
+- `scripts/growth/plot-growth.R`: Basic growth curve visualization and statistical modeling for LB curves
 - `scripts/growth/plot-growth-phe.R`: Phenanthrene-supplemented growth analysis
 
 **Features**:
 - Automatic time correction for midnight rollovers
 - Sliding window smoothing
-- Growth parameter estimation (μ_max, lag time, generation time)
+- Focus on phenanthrene-utilizing isolates
+- (Growth parameter estimation (μ_max, lag time, generation time) this never got implemented so the code is commented out)
 
-**Output**: `results/growth_models/`, `results/growth_phe/` - Growth curves and statistical summaries
+**Output**: `results/growth_models/`, `results/growth_phe/` - Growth curves
 
 ---
 
@@ -104,6 +123,8 @@ project-root/
 **Scripts**:
 - `scripts/sanger/16s_cluster_kmers.R`: K-mer based sequence clustering and PCA
 - `scripts/sanger/16s_cluster_alignment.R`: Pairwise alignment clustergrams
+- `scripts/sanger/run_blast.py`: Automated BLAST analysis against multiple databases
+- `scripts/sanger/sanger_mafft_align.py`: Multiple sequence alignment using MAFFT
 
 **Features**:
 - Parallel pairwise sequence alignment
@@ -128,6 +149,7 @@ project-root/
 - `scripts/ngs/ASV.qmd`: Complete DADA2 pipeline (QC → filtering → denoising → ASV table)
 - `scripts/ngs/analyze_asvs.qmd`: ASV community analysis, clustering, and visualization
 - `scripts/ngs/run_blast_ngs.py`: Taxonomic assignment using BLAST against multiple databases
+- `scripts/ngs/isolate-ASV-blast.py`: BLAST analysis comparing isolate sequences to ASVs
 - `scripts/ngs/16S-comparison-KS-vs-original.R`: Compare ASVs with Sanger consensus sequences
 
 **Features**:
@@ -142,16 +164,6 @@ project-root/
 
 ---
 
-### 5. Comparative Analysis
-
-**Goal**: Integrate results across different sequencing methods and experimental conditions.
-
-**Scripts**:
-- `scripts/ngs/16S-comparison-KS-vs-original.R`: Detailed comparison between Sanger and NGS results
-- Cross-reference isolate identities with growth and degradation capabilities
-
----
-
 ## Path Handling
 
 All scripts assume you are running from the **repository root** and use **relative paths**. 
@@ -159,7 +171,7 @@ All scripts assume you are running from the **repository root** and use **relati
 When working in RStudio, ensure your working directory is set to the project root:
 ```r
 getwd()  # Should show the repository root
-# If not, use: setwd("path/to/COLABS-IRTLab")
+# If not, use: setwd("path/to/Colabs-IRTLab")
 ```
 
 ---
@@ -196,8 +208,8 @@ kasperst@chalmers.se
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/Zqweez/COLABS-IRTLab.git
-   cd COLABS-IRTLab
+   git clone https://github.com/Zqweez/Colabs-IRTLab.git
+   cd Colabs-IRTLab
    ```
 
 2. **Set up R environment** (choose one option):
@@ -234,9 +246,10 @@ This limits R's virtual memory to 16GB, adjust as needed, preventing system cras
 - **Visualization**: `ggplot2`, `ComplexHeatmap`, `dendextend`
 - **Parallel Processing**: `doSNOW`, `foreach`
 
-**Python Packages** (for BLAST scripts):
+**Python Packages** (for BLAST and alignment scripts):
 - `biopython`, `pandas`, `pathlib`
 
 **External Tools**:
 - BLAST+ suite (`blastn`)
+- MAFFT (for multiple sequence alignment)
 - VSEARCH (optional, for SINTAX classification)
