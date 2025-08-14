@@ -2,7 +2,9 @@
 
 This repository is associated with the work done in the IRTLab at the Laboratory of Microbial Genetics and Evolution, Graduate School of Life Sciences, Tohoku University.
 
-This repository contains comprehensive scripts, data structures, and workflows for analyzing microbial data generated from GC-MS, qPCR gene expression analysis, Sanger sequencing, next-generation sequencing (NGS), and growth curve experiments. The project characterizes microbial isolates, quantifies phenanthrene degradation through both chemical analysis (GC-MS) and qPCR of degradation genes, performs taxonomic identification, and clusters microbial communities based on sequence similarity and phylogenetic relationships.
+This repository contains scripts, data structures, and workflows for analyzing microbial data generated from GC-MS, qPCR gene expression analysis, Sanger sequencing, next-generation sequencing (NGS), and growth curve experiments. The project characterizes microbial isolates, quantifies phenanthrene degradation through both chemical analysis (GC-MS) and qPCR of degradation genes, performs taxonomic identification, and clusters microbial communities based on sequence similarity and phylogenetic relationships.
+
+Disclaimer: due to time limitations, not all scripts are fully commented and are not structured in an ideal way. If you have any questions, please don't hesitate to contact me.
 
 ------------------------------------------------------------------------
 
