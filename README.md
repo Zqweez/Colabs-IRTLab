@@ -17,7 +17,7 @@ project-root/
 │   ├── growth/             # Growth curve data (.dt files, .csv, .txt)
 │   ├── phe_growth/         # Phenanthrene growth experiments
 │   │   └── qPCR/           # qPCR data for gene expression analysis
-│   │       ├── nidA/       # nidA gene expression data
+│   │       ├── nidA/       # nidAc gene expression data
 │   │       └── phnAc/      # phnAc gene expression data
 │   ├── ngs/                # NGS sequencing data
 │   │   ├── raw_reads/      # Raw FASTQ files
